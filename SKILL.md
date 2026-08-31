@@ -131,8 +131,10 @@ CLASSIFY → MODEL → RETRIEVE → CONSTRAIN → SYNTHESIZE → TOKENIZE → DE
      depth check (redesign/depth.md: style-blind structural diff
      matches the classified depth; reclothe test for FULL) +
      capability ledger closed + scope fidelity (no invented
-     features — redesign/extraction.md). FAIL = return to
-     re-derivation, fix the output.
+     features — redesign/extraction.md). For FULL, run the pre-code
+     PLAN checkpoint and post-render RENDER checkpoint in
+     redesign/full-redesign-execution.md when tooling permits. FAIL =
+     return to re-derivation and change the output.
 
 ## Redesign tasks (major capability)
 
@@ -158,7 +160,7 @@ this skill reasons).
 | Any design work | foundations/principles.md, foundations/visual-hierarchy.md, foundations/layout.md, foundations/color.md |
 | Classification | taxonomy.md |
 | Product model (before any IA decision) | foundations/product-modeling.md |
-| Redesign | redesign/{depth,extraction,workflow,diagnosis,preservation,originality,screenshot-analysis,prioritization,evolution-cases}.md |
+| Redesign | redesign/{depth,extraction,workflow,diagnosis,preservation,originality,screenshot-analysis,prioritization,evolution-cases,full-redesign-execution}.md |
 | Platform | platforms/{README,web,flutter,react-native,swiftui,uikit,jetpack-compose,android,cross-platform}.md |
 | Device class | devices/{mobile,tablet,foldable,desktop,large-screen}.md |
 | Input model | input/{touch,mouse-keyboard,stylus-voice}.md |
@@ -204,7 +206,7 @@ Dimensions AUTO-ACTIVATE each other — users never enumerate categories:
 |---|---|
 | iOS / iPadOS / SwiftUI / UIKit / Apple | platforms/{swiftui,uikit}.md (+ devices/mobile.md; iPad adds devices/tablet.md; Apple evidence labels recovered — see v2.1 research log) |
 | platform≠web (flutter/RN/swiftui/uikit/compose/android) | platforms/README.md + its file + accessibility/mobile.md + devices/mobile.md (if app) |
-| redesign intent | redesign/depth.md (classify depth FIRST) + redesign/workflow.md (+ diagnosis, preservation; add prioritization for scoping) |
+| redesign intent | redesign/depth.md (classify depth FIRST) + redesign/workflow.md (+ diagnosis, preservation; add prioritization for scoping; FULL also loads redesign/full-redesign-execution.md) |
 | Arabic/RTL + platform≠web | rtl/cross-platform.md (in addition to rtl/implementation.md on web) |
 | mobile/tablet/foldable/desktop/TV target | matching devices/* + matching input/* |
 | forms/checkout/onboarding flows | ux/forms-validation.md + ux/states.md |

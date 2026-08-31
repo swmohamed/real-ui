@@ -112,6 +112,12 @@ components · delete obsolete presentation components — while required
 logic, routes, and data survive. "Preserve functionality" never means
 "preserve the DOM."
 
+For FULL, `full-redesign-execution.md` makes that permission operational:
+the validated new shell is created before old presentation components are
+considered for reuse. Logic/data imports are expected; wholesale reuse of the
+old page subtree before the new structure exists is a PLAN/implementation
+failure.
+
 ## Capability-loss test (before finalizing)
 
 > Which capabilities existed before? For each: where is it now —

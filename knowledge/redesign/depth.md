@@ -119,6 +119,9 @@ randomness — the same rule as redesign/workflow.md stage 4, aimed at depth.
 - REDESIGN/FULL: stage 3.5 re-derives the model BEFORE verdicts.
 - Stage 8 QA includes this file's structural diff + extraction.md's
   capability-loss + scope-fidelity gates (hard-fail semantics).
+- FULL also loads `full-redesign-execution.md`: its structured PLAN gate
+  runs before presentation code and its RENDER gate runs on same-viewport
+  screenshots plus DOM structure when browser tooling is available.
 - prioritization.md sequences whatever survives verdicts at any depth.
 - POLISH/REFRESH skip 1.5's quarantine + 3.5 (no re-derivation) —
   evolution defaults (redesign/preservation.md) apply unchanged.

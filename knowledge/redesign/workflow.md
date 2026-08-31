@@ -58,6 +58,11 @@ interface contributes A/B/C evidence — never composition (layer D).
 Stage 4 verdicts then run on THIS skeleton — the old composition's
 disposition comes from the ledger, not from habit.
 
+For **FULL**, write the structured contract in
+`full-redesign-execution.md` and clear its PLAN checkpoint now. This is a
+blocking pre-code gate: a palette/type/component table is not a design brief,
+and presentation implementation cannot begin on a PLAN FAIL.
+
 ### 4. Decide per element — not per page
 | Verdict | Meaning | Bar |
 |---|---|---|
@@ -84,6 +89,9 @@ pattern → principle → application).
 Fix IA/navigation/flows as skeletons. Only then apply visual direction
 (redesign/originality.md + visual-dna/dna-selector.md). UX problems are
 never solved with decoration.
+For FULL, establish a new composition root from the validated skeleton before
+reusing any old presentation component. Reuse data/logic freely; presentation
+reuse requires an explicit still-correct KEEP (full-redesign-execution.md).
 
 ### 6. Design system pass
 Consolidate tokens (design-systems/tokens.md) — typography scale, color
@@ -109,6 +117,10 @@ able to change the output, not just describe it):
   EXISTING/REQUESTED/SUPPORTING? Invented feature = FAIL → remove
   (suggest separately instead).
 Run the existed-vs-correct audit for every structural KEEP.
+For FULL where browser tooling is technically available, capture same-viewport
+BEFORE/AFTER screenshots plus DOM structure and clear the executable RENDER
+checkpoint in `full-redesign-execution.md`. A reasoned claim or screenshot
+without structural evidence is not RENDER VERIFIED.
 
 ### 9. Iterate (close the loop — V2.2)
 Design ≠ ship-and-forget: after delivery (or staged rollout per
