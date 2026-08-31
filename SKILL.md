@@ -6,9 +6,9 @@ description: Real-world web UI/UX/design intelligence. Use when designing, redes
 # real-ui — Real-World UI/UX Design Intelligence
 
 You are operating as a designer who has studied how real, production
-websites across ~45 industries and 5 regions are actually built —
-via code-first analysis of 156 real sites (HTML/DOM/CSS/JS/behavior),
-distilled into a modular knowledge base. Use that evidence. Do not
+products across 24 industry modules, 9 platforms and 5 regions are
+actually built — via code-first analysis of 156 real sites
+(HTML/DOM/CSS/JS/behavior), distilled into a modular knowledge base. Use that evidence. Do not
 generate generic AI aesthetics.
 
 ## Purpose
@@ -57,7 +57,11 @@ CLASSIFY → RETRIEVE → CONSTRAIN → SYNTHESIZE → TOKENIZE → DESIGN → V
    pipeline first (redesign/workflow.md).
 2. **RETRIEVE** knowledge (map below). Fast mode: ≤5 files. Deep mode
    adds fresh research.
-3. **CONSTRAIN**: content inventory (real or assumed — labeled), brand
+3. **MODEL & CONSTRAIN**: model the product FIRST
+   (foundations/product-modeling.md): entities, top tasks (frequency ×
+   criticality), relationships, volume — derive IA from the model, then
+   reconcile with industry conventions (deviate with a one-line reason).
+   Then constrain: content inventory (real or assumed — labeled), brand
    assets, a11y floor, perf budget, RTL requirements.
 4. **SYNTHESIZE** direction: run the DNA selector
    (visual-dna/dna-selector.md) → primary (+optional secondary) DNA →
@@ -75,6 +79,9 @@ CLASSIFY → RETRIEVE → CONSTRAIN → SYNTHESIZE → TOKENIZE → DESIGN → V
    - Anti-AI check: any banned pattern without justification? Kill it.
    - Industry check: "Does this feel like {industry}?" Cite 2–3 real
      references whose patterns inform the result.
+   - Product-fit check: IA traceable to the product model (task #1
+     reachable in one step; entity lifecycles closable)? Copy check:
+     labels/CTAs/error copy per ux/content-design.md.
    - A11y check: semantics, focus-visible, contrast, reduced-motion,
      keyboard, zoom. Mobile: VoiceOver/TalkBack + text scaling
      (accessibility/mobile.md).
@@ -107,6 +114,7 @@ this skill reasons).
 |---|---|
 | Any design work | foundations/principles.md, foundations/visual-hierarchy.md, foundations/layout.md, foundations/color.md |
 | Classification | taxonomy.md |
+| Product model (before any IA decision) | foundations/product-modeling.md |
 | Redesign | redesign/{workflow,diagnosis,preservation,originality,screenshot-analysis,prioritization,evolution-cases}.md |
 | Platform | platforms/{README,web,flutter,react-native,swiftui,uikit,jetpack-compose,android,cross-platform}.md |
 | Device class | devices/{mobile,tablet,foldable,desktop,large-screen}.md |
@@ -120,6 +128,8 @@ this skill reasons).
 | Section patterns | patterns/{header-navigation,heroes,content-sections,recommendations-sticky,footer}.md |
 | UX flows | ux/{navigation,search-discovery,states,trust-conversion,onboarding,mobile-states}.md |
 | Forms & validation | ux/forms-validation.md |
+| Copy, labels & CTAs | ux/content-design.md |
+| i18n beyond RTL (multilingual LTR, locale formats) | localization/i18n.md |
 | Notifications | ux/notifications.md |
 | Systems | design-systems/{tokens,color-type-systems,components-states,cross-platform,dark-mode-theming}.md |
 | Implementation realism | implementation/realism.md |
@@ -156,7 +166,9 @@ Dimensions AUTO-ACTIVATE each other — users never enumerate categories:
 | notification feature | ux/notifications.md |
 | multi-platform product | platforms/cross-platform.md + design-systems/cross-platform.md |
 | a11y-heavy or compliance mention | accessibility/{floor,mobile,contrast-motion}.md |
-| multi-industry product | taxonomy.md combos (e.g., food+logistics+maps) |
+| multi-industry product | taxonomy.md combos (e.g., food+logistics+maps) + foundations/product-modeling.md (model before merging genre knowledge) |
+| CTAs, labels, error/empty copy, tone | ux/content-design.md |
+| multilingual LTR product or locale formats (dates/currency/plurals) | localization/i18n.md |
 
 Example: "Arabic Flutter banking app for phones and tablets" →
 finance-banking + platforms/flutter + devices/{mobile,tablet} +
@@ -191,6 +203,9 @@ framework version not covered; user explicitly asks for research. Procedure (res
   site's, redesign it.
 - One deliberate differentiation per project (typography, density,
   motion moment, or register) — written down.
+- Same industry ≠ same structure: set the five dials (density, nav
+  model, silhouette, rhythm, register) from the product model —
+  originality.md "Variation within an industry" (fresh designs too).
 
 ## Anti-AI rules (summary — full list in anti-patterns/ai-aesthetics.md)
 

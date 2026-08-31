@@ -71,6 +71,31 @@ shadow: none→hover-tier only, or border-only systems (modern preference)
   label adjacent (ر.س ١٢٩ or 129 ر.س — pick regional convention per
   market: SAR usually follows the number: 129 ر.س)
 
+## When NOT to use a card (decision rule)
+
+Cards are one container among several — the default-card reflex is a
+template smell. Choose by content shape + task verb
+(foundations/product-modeling.md):
+
+| Content shape / task | Use instead of cards | Why |
+|---|---|---|
+| Dense, comparable, many attributes | Table / data grid (ui/data-display.md) | scanning, sorting, alignment beat chrome |
+| Homogeneous simple rows (settings, history, members) | List rows (leading + trailing slot) | cards add border noise ×N |
+| Relational / cross-referenced data | Table + facets or tree | relationships need structure, not tiles |
+| Definition pairs (label: value) | Description list / two-column form | no action = no card needed |
+| Sequential reading (article, steps) | Prose + section flow | cards break reading flow |
+| 2–4 big entities (accounts, projects) | Cards ARE right | browsable, media, comparable at glance |
+| Media-forward browsing (products, recipes, games) | Cards ARE right | image-led comparison |
+
+Card cost ledger: each card adds border+padding+shadow chrome, weakens
+scannability of aligned data, and multiplies on mobile (stack of
+one-item boxes). Rule of thumb: if users mainly READ/compare fields →
+no cards; if users mainly BROWSE/choose visually → cards.
+
+Dashboard special case: don't wrap every widget in a card — group by
+proximity + section headers; reserve card chrome for genuinely
+independent modules (pages/dashboard.md).
+
 ## Anti-patterns
 
 - Nested-card chaos (cards inside cards) — use list rows inside cards
