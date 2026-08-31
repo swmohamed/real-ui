@@ -1,0 +1,96 @@
+# Industry: Fashion, Luxury, Beauty
+
+## Characteristics
+Brand-first commerce: the catalog sells, but the **worldview** converts.
+Fashion spans utility (ASOS/Zara class) to aspiration (Ounass/Rolex class);
+beauty adds education + shade/ingredient complexity. Imagery > words.
+
+## User intents
+1. Browse for inspiration (editorial loop)
+2. Find specific item (search/filter by size/color/brand)
+3. Evaluate fit/quality (size guides, reviews, materials)
+4. Buy; return easily (returns anxiety is the conversion barrier)
+5. Beauty: learn routines, match shade, check ingredients
+
+## Business goals
+Full-price sell-through, brand heat (drops, editorial), loyalty/app installs,
+returns containment (fit info).
+
+## Information architecture
+- Fashion utility: Home (gender split entry) → categories → PLP (grid) → PDP
+  (gallery, size selector, fit notes) → bag/checkout. Editorial lookbooks
+  interleave shelves.
+- Luxury: Home = campaign film/imagery → curated collections → very few,
+  very large products. Lookbook/editorial pages; clienteling/appointment
+  booking; no visible price on some jewelry (POA pattern).
+- Beauty: routines/education hub + shade finder quizzes + PDP with ingredient
+  accordions + UGC gallery.
+
+## Navigation
+- Fashion: top nav with mega-menu imagery; gender switcher persistent;
+  utility row (search, account, wishlist, bag) right-aligned
+- Luxury: minimal text nav (5–7 links), typography-led; hamburger tolerated
+- Beauty: shop-by-concern/category + education nav
+
+## Components that define the genre
+- **Editorial hero** (full-bleed campaign, thin caption, single CTA or none)
+- PLP: 3:4 imagery, dense hover-swap (alternate shot), quick-add sizes popover
+- PDP gallery: stacked large images (luxury) or thumbnails+zoom (utility);
+  size selector with availability states; fit/size guide modal
+- Lookbook spreads, shop-the-look hotspots
+- Beauty: shade swatch strips, before/after sliders, ingredient tables,
+  routine builders
+- Wishlist hearts everywhere; "recently viewed"
+
+## Visual characteristics (OBSERVED + well-documented class knowledge)
+- Utility fashion: sans (Helvetica Now on Nike OBSERVED), 0–8px radius, dense
+  grids, promo strips
+- Luxury: high-contrast minimalism — white or near-black canvas, serif display
+  (Didone class) or spaced-out sans, letter-spacing 0.05–0.2em, hairline rules,
+  radius 0–4px, zero to one accent. Photography is the interface.
+- Beauty: soft warm neutrals, blush/skin-tone palettes, rounded geometry
+  (Glossier 12–20px class), pastel semantic sets, illustration-friendly
+- Motion: slow fades (0.5–0.8s) on luxury, none on the buy path
+
+## Interaction patterns
+- Hover image-swap (fashion PLP standard)
+- Sticky size/CTA on mobile PDP
+- Editorial → commerce: shoppable hotspots on lookbook images
+- Beauty quizzes (shade finder) with progressive disclosure
+- Wishlist + back-in-stock notifications (retention loop)
+
+## Mobile patterns
+- Fashion is 70%+ mobile: thumb grids, swipe galleries, sticky bag bar
+- Luxury: video heroes muted-autoplay, tap-through editorial chapters
+
+## Arabic/MENA considerations
+- Gulf luxury (Ounass class): Arabic editorial voice, Ramadan/Eid gifting
+  hubs, modest-fashion categories (عبايات، محرمات) as first-class IA
+- Fashion Arabic IA: gender split "نسائي / رجالي / أطفال" mirrors EN
+- Photography direction respects regional modesty norms on mass retail
+- Luxury keeps brand-global identity + Arabic overlays (Ounass ar OBSERVED
+  404 — verify live in Deep Mode); Namshi (INFERRED) = regional fashion-first
+  reference with bilingual UX
+- Sizes stay Latin (XS/S/M) even in Arabic UI — sizing systems are global
+
+## Conventions (follow)
+Gender/category entry, hover-swap, size-selector with stock states, editorial
+interleaving, wishlist, lookbook hotspots, delivery/returns reassurance near
+price, price in local currency with correct formatting (AED/SAR/EGP).
+
+## Overused/anti-patterns
+- Auto-playing lookbook videos with sound
+- Full-screen age-gate-style intros (luxury cliché that kills SEO + patience)
+- Hiding price behind "add to bag" (only acceptable jewelry/watch POA)
+- SaaS gradient buttons on luxury (instantly downgrades the brand)
+- Dense promo badges on luxury PDPs
+
+## Strong references
+Nike, Zara (INFERRED), ASOS (INFERRED), Glossier, Sephora (INFERRED),
+Ounass, Namshi, Mr Porter (INFERRED), Rolex (INFERRED — blocked), Chanel/LV
+(class knowledge, verify in Deep Mode), Arabic: Ounass/Namshi class.
+
+## Decision guidance
+Ask: utility or aspiration? Utility → density + speed + filters. Aspiration →
+whitespace + serif display + restraint. Never blend: promo badges on luxury
+or empty poetry on utility both fail.

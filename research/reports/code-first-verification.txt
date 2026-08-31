@@ -1,0 +1,23 @@
+--- shahid (ar, dir=rtl) ---
+  fonts: ['var(--font-shahid),sans-serif', 'var(--font-shahidMedium)']
+  radii: ['16px', '9999px', 'calc((500 / 1024) * 100vw)']
+  theme: #0c9 | gradients: 67 | blur: 30
+  cq: 0 | reduced-motion: 0 | bps: ['768', '1024', '1440']
+  => INFERENCE: dark streaming identity, MBC-green accent, media cards 16px+pills, RTL product
+--- jarir (ar, dir=rtl) ---
+  fonts: ['Tajawal,Tajawal Fallback,sans-serif', 'Tajawal']
+  radii: ['4px', '8px', '50%']
+  theme:  | gradients: 23 | blur: 0
+  cq: 0 | reduced-motion: 1 | bps: []
+  => INFERENCE: Tajawal identity, Nuxt SPA, retail register 4-8px radius
+--- kooora (ar, dir=rtl) ---
+  fonts: ['var(--fco-font-family-body)', 'var(--fco-font-family-heading)']
+  radii: ['var(--fco-radius-md)', 'var(--fco-radius-rounded)', '0']
+  theme:  | gradients: 190 | blur: 0
+  cq: 6 | reduced-motion: 5 | bps: ['1024', '768', '1023']
+  => INFERENCE: fco- design system, utility-sports instrument, tokenized radii, date-nav
+
+--- VIOLATION AUDIT FROM CODE-ONLY SIGNALS ---
+  zoom-blocking viewport (maximum-scale=1): ['vercel', 'substack', 'disneyplus', 'nba', 'ted', 'extra-ar', 'emiratesnbd-ar', 'almosafer-ar', 'bein-ar', 'kooora', 'filgoal', 'almentor', 'hawaaworld', 'spotify', 'toyota', '500px', 'cargo']
+  lang=ar without dir=rtl: ['alrajhi', 'bein-ar', 'filgoal', 'yallakora', 'mubasher', 'porsche']
+  missing <main> on homepage: 71/156 sites

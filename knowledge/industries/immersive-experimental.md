@@ -1,0 +1,94 @@
+# Industry: VR/AR, WebGL, Immersive & Experimental Web
+
+## Characteristics
+The web's frontier lab: scroll-driven 3D scenes, shader backgrounds, physics
+toys, sound-reactive visuals. Used by: XR products, creative agencies,
+portfolios, game marketing, music/album sites. Highest risk of performance
+and accessibility failure; highest ceiling of memorability.
+
+## User intents
+1. Experience something novel (the point)
+2. Evaluate the product (VR hardware/app — utility surfaces still needed)
+3. Understand capability (agencies: "can they build this?")
+4. Play (interactive toys)
+
+## Business goals
+Brand differentiation, virality/shares, awards (Awwwards OBSERVED class),
+hardware/app conversions for XR products.
+
+## Information architecture
+- XR product sites: standard product IA (buy, specs, support) + immersive
+  hero layer — do NOT sacrifice the conversion tree for the toy
+- Agency/experimental: single-page narratives with scene chapters;
+  contact/credits reachable without completing the experience
+- Game marketing: trailer-first + platform store links + press-kit links
+
+## Navigation
+- Persistent minimal overlay nav (must survive over canvas; contrast over
+  any scene)
+- Progress/chapter indicators; skip-experience escape hatch (mandatory)
+- Meta Quest OBSERVED: standard commerce IA under an immersive skin —
+  discipline worth copying
+
+## Components that define the genre
+- Full-viewport canvas scenes (Three.js/WebGL/WebGPU) with DOM overlays
+- Scroll progress → scene state binding (scrollytelling with 3D sets)
+- Cursor/pointer feedback (custom cursors, magnetic buttons)
+- Loading experiences (progress with brand narrative — make waiting fun)
+- Audio toggles (off by default; on = permission)
+- "View in AR" quick-look buttons (USDZ/GLB on supporting devices)
+
+## Visual characteristics
+- Type over 3D: massive display faces with strong contrast scrims; kinetic
+  type (variable-font weight animation)
+- Palette from shaders/materials; DOM UI stays monochrome over the scene
+- Custom cursor + hover-reactive meshes; grain/scanline post-effects as
+  identity
+- Brutalist/mono labels as "technical HUD" accents (coordinates, version
+  tags — the genre's trust-detail language)
+
+## Interaction patterns
+- Scroll velocity → camera; hover → focus targets; click → scene beats
+- Device-orientation parallax (mobile) with permission prompts
+- Performance tiers: detect GPU/mobile → reduce (lower DPR, fewer lights,
+  disable post) — graceful degradation is the professional marker
+- WebGL-fail fallback: static poster + full content access
+
+## Mobile patterns
+- Mobile = often a different experience: simplified scenes or video fallback
+- Touch: pinch/drag mapped to camera; disable custom scroll physics on
+  touch (native scroll wins)
+- Battery respect: pause rAF when hidden (visibility API)
+
+## Arabic/MENA considerations
+- Immersive Arabic type experiments (kinetic Kufi) are an open frontier —
+  Arabic display in 3D scenes needs font engineering (remap to mesh or
+  SDF fonts with Arabic shaping support — most SDF pipelines break Arabic
+  joining! Verify rendering approach before promising Arabic in-canvas)
+- RTL scene choreography: scroll-narratives read right-to-left (sequence
+  order flips), camera moves invert
+- Regional agencies/festivals produce award-tier Arabic immersive work —
+  reference via Deep Mode research
+
+## Conventions (follow)
+Escape hatches, audio opt-in, loading narrative, perf-tier detection,
+fallback content parity, credits/contact outside the canvas, reduced-motion
+full-bypass to static.
+
+## Overused/anti-patterns
+- 3D for 3D's sake on conversion pages (configurator? yes; SaaS pricing?
+  no)
+- Scroll-jacking without native-scroll fallback
+- 8MB shader heroes on mobile data
+- Custom cursors that break touch
+- WebGL-only contact info
+
+## Strong references
+Meta Quest (OBSERVED), Awwwards winners (OBSERVED index), active campaign
+sites by Active Theory/Resn/Unit9 class (INFERRED — temporal by nature;
+research live in Deep Mode), Igloo/Yugo Nakamura class (historical canon).
+
+## Decision guidance
+Budget immersion against task: brand film moment (high), product conversion
+tree (standard UI), long-tail content (fast static). Never let the scene
+hold information hostage.

@@ -1,0 +1,98 @@
+# Industry: Sports & Fitness
+
+## Characteristics
+High-energy, results-first, tribal identity. Two modes: **media** (news,
+highlights, analysis) and **utility** (scores, stats, tracking). Fitness
+adds coaching/tracking products. Live-ness defines the experience class.
+
+## User intents
+1. Check scores/fixtures NOW (utility mode: speed over beauty)
+2. Follow a team/league (personalized feeds)
+3. Watch highlights (video hub)
+4. Read analysis (editorial mode)
+5. Fitness: log workout / follow a plan / track progress
+
+## Business goals
+Subscriptions (streaming rights, premium analysis), engagement/habits
+(fitness apps), betting-adjacent traffic (regulated markets), merch/tickets.
+
+## Information architecture
+- Scores-first home: live strip (ticker) → today's fixtures by league →
+  top news → video → tables/standings widgets
+- League pages: fixtures/results/tables/stats tabs
+- Match page: live score header, momentum events (timeline of goals/cards),
+  lineups, stats bars, commentary feed, odds (where legal)
+- Club pages, player pages (stat panels)
+- Fitness: today's plan, history calendar, progress charts, library
+
+## Navigation
+- League/team selector (dropdown or rail) + section nav (Scores, News,
+  Video, Watch, Standings)
+- Personalization: star teams → custom "my teams" strip persists
+- Arabic OBSERVED: Kooora (31M-pageview-class utility) ships a dedicated
+  `fco-` design system with date-bar navigation (السبت 15 أغسطس OBSERVED as
+  nav CTA) — date IS navigation in scores products
+
+## Components that define the genre
+- Live score cards/cards rows: crest + abbreviation + score + minute badge
+  (red live dot)
+- League tables (POS/TEAM/P/W/D/L/GD/PTS) — the rare legitimate `<table>`
+- Stat comparison bars (possession, shots — mirrored bars)
+- Match timeline (event icons on a minute axis)
+- News cards with team-colored kickers; video highlight tiles with duration
+- Fitness: rings/progress bars, streak flames, calendar heatmaps, PR badges
+
+## Visual characteristics (OBSERVED)
+- Team/league colors drive accents; base canvas white (media) or dark
+  (streaming-adjacent, beIN OBSERVED dark with play-icon density)
+- Condensed display type for scores/headlines (Roboto Condensed OBSERVED on
+  NBA/ESPN class; heavy weights 700–900)
+- Kooora OBSERVED: Tailwind-based `fco-` tokens, 190 gradient declarations
+  (arena-light effects), dark hero utility hybrid
+- Radius 4–10px + pills (beIN 0–11px OBSERVED); reds/blacks for live urgency
+- Fitness: bright motivational gradients (Strava orange class), big numerals
+
+## Interaction patterns
+- Auto-updating score cells (websocket polling) with flash-on-change
+- Ticker strips for breaking transfers
+- Personalized team strip with reorder
+- Fitness: streak mechanics, shareable result cards (social loop)
+
+## Mobile patterns
+- Score widgets/compact cards; match pages with tabbed sections
+- Live match tracker = vertical event feed
+- Fitness: bottom tab (Today/Plan/Progress/Social) + quick-log buttons
+
+## Arabic/MENA considerations (heavily OBSERVED)
+- Football dominates entirely (كورة = the category name); leagues: Saudi
+  Pro League, Egyptian Premier League, European with Arabic commentary
+- Kooora/FilGoal/Yallakora OBSERVED trio: FilGoal (Almarai font, Bootstrap+
+  Tailwind), YallaKora (dense fixtures + standings), Kooora (token-system
+  maturity + bilingual) — the regional canon
+- beIN Arabic OBSERVED: bilingual toggle ع/EN + dark video-first
+- RTL standings tables flip (PTS column reads right); match minute + score
+  direction flips; crests never mirror
+- Live commentary feeds right-to-left with minute chips
+  (الدقيقة ٩٠+٢ → Western digits common)
+
+## Conventions (follow)
+Scores above the fold, live state visible (red dot + minute), league tables
+as real tables, condensed numerals, team-colored kickers, personalization
+strip, highlight tiles with duration badges.
+
+## Overused/anti-patterns
+- Giant hero banners before scores (users came for numbers)
+- Hiding tables behind tabs with no deep links
+- Countdown autoplay video with sound
+- Fitness-shame copy patterns (motivate, don't guilt)
+- Mixed betting UI in markets where it's illegal (compliance = UX)
+
+## Strong references
+ESPN, NBA (Roboto Condensed OBSERVED), BBC Sport, beIN (AR), Kooora (AR),
+FilGoal (AR), YallaKora (AR), Strava, Olympics (INFERRED — blocked).
+
+## Decision guidance
+Speed-first utility or media-first editorial — decide by audience. Utility:
+dense, tabular, live-updating, team colors. Media: video tiles + editorial
+cards + tribal color energy. Arabic football portals: date-bar navigation,
+RTL tables, Kooora-class token maturity.
