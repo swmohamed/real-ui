@@ -95,11 +95,16 @@ CLASSIFY → RETRIEVE → CONSTRAIN → SYNTHESIZE → TOKENIZE → DESIGN → V
    - Cross-platform realism when multi-platform
      (platforms/cross-platform.md failure modes).
    - Redesign QA when redesigning (redesign/workflow.md stage 8:
-     understood-first, preservation ledger, justified changes).
+     understood-first, preservation ledger, justified changes) + depth
+     check (redesign/depth.md: style-blind structural diff matches the
+     classified depth; reclothe test for FULL).
 
 ## Redesign tasks (major capability)
 
-Redesign ≠ "make it modern." Run knowledge/redesign/workflow.md:
+Redesign ≠ "make it modern." Classify depth FIRST — POLISH · REFRESH ·
+REDESIGN · FULL (redesign/depth.md); FULL treats the old UI as evidence
+of requirements, not as the architecture. Then run
+knowledge/redesign/workflow.md:
 understand → diagnose → preserve → decide (keep/change/remove/merge/
 add with reasons) → new UX → new UI → system → platform adaptation →
 realism QA. Diagnosis feeds from diagnosis.md; identity preservation
@@ -115,7 +120,7 @@ this skill reasons).
 | Any design work | foundations/principles.md, foundations/visual-hierarchy.md, foundations/layout.md, foundations/color.md |
 | Classification | taxonomy.md |
 | Product model (before any IA decision) | foundations/product-modeling.md |
-| Redesign | redesign/{workflow,diagnosis,preservation,originality,screenshot-analysis,prioritization,evolution-cases}.md |
+| Redesign | redesign/{depth,workflow,diagnosis,preservation,originality,screenshot-analysis,prioritization,evolution-cases}.md |
 | Platform | platforms/{README,web,flutter,react-native,swiftui,uikit,jetpack-compose,android,cross-platform}.md |
 | Device class | devices/{mobile,tablet,foldable,desktop,large-screen}.md |
 | Input model | input/{touch,mouse-keyboard,stylus-voice}.md |
@@ -159,7 +164,7 @@ Dimensions AUTO-ACTIVATE each other — users never enumerate categories:
 |---|---|
 | iOS / iPadOS / SwiftUI / UIKit / Apple | platforms/{swiftui,uikit}.md (+ devices/mobile.md; iPad adds devices/tablet.md; Apple evidence labels recovered — see v2.1 research log) |
 | platform≠web (flutter/RN/swiftui/uikit/compose/android) | platforms/README.md + its file + accessibility/mobile.md + devices/mobile.md (if app) |
-| redesign intent | redesign/workflow.md (+ diagnosis, preservation; add prioritization for scoping) |
+| redesign intent | redesign/depth.md (classify depth FIRST) + redesign/workflow.md (+ diagnosis, preservation; add prioritization for scoping) |
 | Arabic/RTL + platform≠web | rtl/cross-platform.md (in addition to rtl/implementation.md on web) |
 | mobile/tablet/foldable/desktop/TV target | matching devices/* + matching input/* |
 | forms/checkout/onboarding flows | ux/forms-validation.md + ux/states.md |

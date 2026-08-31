@@ -1,8 +1,10 @@
 # Redesign Workflow (the pipeline)
 
 A redesign is NOT "make it modern." Understand first, change with
-reasons, preserve what works. Default outcome: **the same product
-evolved** — not a stranger wearing its logo.
+reasons, preserve what WORKS — and change composition when the product
+model justifies it. First action: classify DEPTH (stage 0).
+POLISH/REFRESH default to "the same product evolved"; REDESIGN/FULL
+re-derive structure (they do NOT default to the old composition).
 
 ## Pipeline (stage gates — do not skip stages)
 
@@ -11,6 +13,13 @@ CURRENT PRODUCT → CURRENT UX → CURRENT UI → WHAT WORKS → WHAT FAILS →
 WHY IT FAILS → KEEP/CHANGE/REMOVE/MERGE/ADD → NEW UX → NEW UI →
 DESIGN SYSTEM → PLATFORM ADAPTATION → REALISM QA
 ```
+
+### 0. Classify depth (redesign/depth.md — before anything else)
+POLISH · REFRESH · REDESIGN · FULL REDESIGN, from explicit words +
+scope signals (depth.md signals table). Depth sets every preservation
+default downstream. FULL treats the old interface as evidence of
+requirements (functionality, content, workflows, routes, constraints),
+never as the required architecture.
 
 ### 1. Understand (inputs: code, screenshots, user description)
 Read the real product — HTML/CSS for web (code-first), screenshots as
@@ -27,10 +36,17 @@ List what MUST survive: brand personality, recognition assets, useful
 workflows, terminology users know, information structure, muscle memory.
 Also list what is safe to sacrifice and what actively harms.
 
+### 3.5 Re-derive from the product model (REDESIGN/FULL only)
+Model the product fresh (foundations/product-modeling.md): entities →
+top tasks → relationships → volume → priority → new IA skeleton. The
+old interface contributes EVIDENCE (requirements, workflows, content,
+routes), not composition. Stage 4 verdicts then compare old elements
+against this skeleton — not against habit.
+
 ### 4. Decide per element — not per page
 | Verdict | Meaning | Bar |
 |---|---|---|
-| KEEP | works + users rely on it | default for anything working |
+| KEEP | works + users rely on it | POLISH/REFRESH: default for anything working. REDESIGN/FULL: re-earned — still correct after stage 3.5 ("it existed" is not a reason) |
 | CHANGE | right idea, wrong execution | visual/interaction fix only |
 | REMOVE | harmful or dead weight | requires a stated reason |
 | MERGE | duplicated concepts | collapse, keep strongest name |
@@ -63,7 +79,11 @@ desktop, hover states only where a pointer exists.
 
 ### 8. Realism QA + Redesign QA (tests/v2-quality-gate.md)
 Realism: does it look like a real product? Redesign: was the old product
-understood, strengths preserved, changes justified, identity intact?
+understood, requirements preserved, changes justified, identity intact?
+Depth check (redesign/depth.md): style-blind structural diff old↔new
+matches the classified depth? FULL preserving nearly everything
+without justification = insufficient depth → reclassify or redo.
+Run the reclothe test + existed-vs-correct audit.
 
 ### 9. Iterate (close the loop — V2.2)
 Design ≠ ship-and-forget: after delivery (or staged rollout per
@@ -73,8 +93,8 @@ upfront (task completion, tickets, activation…); feed learnings back
 prioritization.md). Small loop: observe → diagnose (diagnosis.md) →
 adjust. Evolution happens in measured steps (evolution-cases.md).
 
-## Transformation mode (only when explicitly requested)
-
-User asks for complete transformation → stages 1–3 still run (you must
-know what you are killing), but preservation rules relax; state what is
-intentionally discarded and why. Never silently transform.
+## Transformation mode (= FULL REDESIGN)
+Explicit "complete transformation"/rebrand requests classify as FULL
+(depth.md). Stages 1–3 still run (you must know what you are killing);
+preservation targets requirements + brand, not composition; state what
+is intentionally discarded and why. Never silently transform.

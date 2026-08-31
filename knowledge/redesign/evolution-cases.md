@@ -19,7 +19,7 @@ For any studied product change, extract in this order:
 3. PRINCIPLE — the transferable rule ("brand constants survive system
    overhauls"; "new business layers import their industry's UX bar —
    trust UX upgrades ride with monetization").
-4. APPLICATION — how it maps to THIS project (workflow.md stages).
+4. APPLICATION — how it maps to THIS project (redesign/workflow.md stages).
 
 ## Corpus-observed evolution signals (v1+v2 evidence)
 

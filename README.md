@@ -30,7 +30,7 @@ behave like a senior product designer instead of a template assembler:
 
 | Module | Coverage |
 |---|---|
-| `knowledge/` | **115 files**: 25-dimension audit coverage · 24 industries · 9 platforms (web, Flutter, React Native, SwiftUI, UIKit, Jetpack Compose, Android, cross-platform) · devices (phone/tablet/foldable/desktop/TV) · input models · redesign intelligence (7 files) · forms & validation · notifications · states · data-viz · dark-mode theming · implementation realism · typography (Latin + Arabic) · RTL cross-platform · accessibility (WCAG 2.2 official criteria) · visual DNA catalog · anti-patterns |
+| `knowledge/` | **115 files**: 25-dimension audit coverage · 24 industries · 9 platforms (web, Flutter, React Native, SwiftUI, UIKit, Jetpack Compose, Android, cross-platform) · devices (phone/tablet/foldable/desktop/TV) · input models · redesign intelligence (8 files — incl. depth classification) · forms & validation · notifications · states · data-viz · dark-mode theming · implementation realism · typography (Latin + Arabic) · RTL cross-platform · accessibility (WCAG 2.2 official criteria) · visual DNA catalog · anti-patterns |
 | `research/` | Live code-first research pipeline (Python tools) + evidence logs. Built on a **156-site corpus** (~31MB production CSS analyzed) + **39 MENA/RTL sites**, refreshed with 2026 fetches: Apple DocC/WWDC, Android/Material official repos, React Native official source, MDN, W3C GitHub, NN/g, and real product evidence (quran.com, Kraken, Coinbase, Bayt, Wuzzuf, flynas, Bosta…) |
 | `tests/` | Self-tests, quality gates, behavioral + adversarial test suites (V1 → V2.2) |
 
