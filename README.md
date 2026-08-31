@@ -49,7 +49,7 @@ research logs, never fabricated.
 ### One-liner (skills CLI — recommended)
 
 ```bash
-npx skills add SwMohamed/real-ui
+npx skills add swmohamed/real-ui
 ```
 
 Works with the standard agent-skills CLI (skills.sh): installs into the
@@ -61,7 +61,7 @@ and more). Local pre-publish testing works too:
 ### Zero-Node alternative (installs to EVERY agent on the machine)
 
 ```bash
-git clone https://github.com/SwMohamed/real-ui.git
+git clone https://github.com/swmohamed/real-ui.git
 cd real-ui
 python scripts/install.py
 ```
