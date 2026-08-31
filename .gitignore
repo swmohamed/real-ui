@@ -1,0 +1,11 @@
+# raw fetched evidence (third-party HTML/JSON — regenerate with research/tools)
+research/raw/
+# corpus extraction JSONs (contain copied CSS from real sites)
+research/reports/*.json
+# python
+__pycache__/
+*.pyc
+# os
+.DS_Store
+Thumbs.db
+desktop.ini

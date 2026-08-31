@@ -1,0 +1,314 @@
+corpus: 145 sites with CSS evidence
+
+== BREAKPOINT FREQUENCY (media-query width, count of sites using) ==
+    319px  20
+    320px  206
+    350px  10
+    375px  71
+    399px  44
+    400px  39
+    450px  10
+    479px  27
+    480px  255
+    481px  49
+    500px  37
+    530px  13
+    540px  26
+    544px  25
+    550px  10
+    566px  12
+    575px  41
+    576px  273
+    599px  272
+    600px  825
+    601px  8
+    603px  79
+    604px  8
+    639px  15
+    640px  230
+    641px  628
+    650px  102
+    657px  22
+    671px  16
+    672px  64
+    700px  14
+    720px  17
+    721px  30
+    734px  49
+    740px  44
+    751px  14
+    760px  72
+    767px  796
+    768px  2641
+    769px  109
+    770px  12
+    771px  26
+    800px  28
+    810px  8
+    819px  99
+    820px  145
+    833px  156
+    834px  21
+    840px  96
+    841px  67
+    850px  10
+    880px  24
+    889px  9
+    890px  22
+    900px  227
+    901px  10
+    940px  20
+    959px  41
+    960px  403
+    961px  22
+    976px  13
+    990px  22
+    991px  172
+    992px  522
+   1000px  154
+   1007px  87
+   1008px  38
+   1023px  277
+   1024px  1317
+   1025px  128
+   1040px  20
+   1041px  31
+   1055px  16
+   1056px  52
+   1079px  23
+   1080px  66
+   1090px  18
+   1091px  9
+   1100px  153
+   1119px  17
+   1120px  85
+   1130px  17
+   1136px  70
+   1150px  8
+   1175px  9
+   1179px  10
+   1180px  63
+   1199px  55
+   1200px  448
+   1210px  14
+   1211px  14
+   1270px  8
+   1279px  340
+   1280px  641
+   1281px  16
+   1300px  23
+   1312px  20
+   1320px  16
+   1321px  20
+   1400px  194
+   1422px  22
+   1439px  102
+   1440px  462
+   1441px  46
+   1450px  13
+   1470px  14
+   1536px  30
+   1540px  17
+   1541px  16
+   1584px  21
+   1600px  130
+   1680px  33
+   1700px  17
+   1870px  16
+   1871px  20
+   1910px  29
+   1919px  14
+   1920px  355
+   1921px  8
+
+== PRIMARY FONT FAMILIES (sites) ==
+   24  sans-serif
+   17  Inter
+   15  Arial
+   13  ui-monospace
+    8  ui-sans-serif
+    7  swiper-icons
+    6  var(--font-mono)
+    6  Helvetica Neue
+    6  -apple-system
+    5  Georgia
+    5  var(--default-font-family
+    5  var(--default-mono-font-family
+    5  Open Sans
+    5  Roboto
+    4  var(--font-sans)
+    4  Noto Sans Arabic
+    4  system-ui
+    4  serif
+    3  var(--font-primary)
+    3  Courier New
+    3  SF Pro Display
+    3  Noto Sans SC
+    3  Noto Sans JP
+    3  Noto Sans KR
+    3  SFMono-Regular
+    3  Proxima Nova
+    3  Inter Fallback
+    3  Tahoma
+    3  FontAwesome
+    3  Almarai
+    3  Helvetica
+    2  var(--font-monospace)
+    2  var(--font-inter)
+    2  Inter Display
+    2  Inter Tight
+    2  var(--font-heading)
+    2  Source Code Pro
+    2  Ubuntu
+    2  SF Pro Text
+    2  Helvetica Now Text
+
+== GOOGLE FONTS LOADED ==
+    9  Open Sans
+    4  Almarai
+    2  Source Sans Pro
+    2  Roboto
+    2  STIX Two Text
+    2  Noto Naskh Arabic
+    2  Readex Pro
+    1  Noto Sans
+    1  Ubuntu
+    1  Lora
+    1  fawry_pro
+    1  Poppins
+    1  Inter
+
+== BORDER-RADIUS VALUES (px, sites) ==
+  4px    62
+  8px    35
+  3px    34
+  10px   32
+  2px    31
+  6px    29
+  12px   26
+  5px    26
+  16px   24
+  20px   22
+  9999px 14
+  24px   13
+  100px  11
+  1px    10
+  30px   10
+  7px    10
+  50px   9
+  40px   7
+  32px   7
+  999px  6
+
+== TECHNIQUE ADOPTION (of 145 sites w/ CSS) ==
+  container_queries         28  (19%)
+  prefers_reduced_motion    58  (40%)
+  prefers_color_scheme      16  (11%)
+  focus_visible             80  (55%)
+  backdrop_filter           52  (35%)
+  position_sticky           72  (49%)
+
+== FRAMEWORK HINTS ==
+   90  tailwind
+   64  gtm
+   46  font-awesome
+   42  next.js
+   33  jquery
+   26  bootstrap
+   23  nuxt/vue
+    7  react
+    6  webflow
+    5  astro
+    4  wp-block
+    3  lucide
+    2  framer
+    1  svelte
+    1  squarespace
+
+== ARABIC/RTL SITES: 31 ==
+  15  inherit
+   7  Arial
+   5  swiper-icons
+   5  ui-sans-serif
+   5  ui-monospace
+   4  Roboto
+   4  monospace
+   4  Amazon Ember
+   3  PayPal Pro
+   3  FontAwesome
+   3  sans-serif
+   3  Almarai
+   3  HelveticaNeueBold
+   3  HelveticaNeueReg
+   3  Tajawal
+   3  Ubuntu
+   3  Dubai
+   3  Open Sans
+  RTL CSS techniques: {'css :dir/[dir=rtl] rules': 21, ':lang(ar) rules': 2}
+  RTL breakpoints: [(768, 543), (1280, 311), (1279, 283), (767, 244), (1024, 220), (900, 211), (600, 128), (820, 121), (819, 99), (1023, 85)]
+
+== MAX-WIDTH VALUES ==
+  1280px   12
+  1200px   10
+  1024px   10
+  640px    9
+  720px    8
+  600px    7
+  960px    7
+  768px    7
+  800px    5
+  1000px   4
+  900px    4
+  1600px   4
+  1440px   4
+  700px    3
+  1100px   3
+  1320px   3
+
+== VIEWPORT META ==
+   42  width=device-width, initial-scale=1
+   16  width=device-width, initial-scale=1.0
+   15  
+   10  width=device-width
+    4  width=device-width, initial-scale=1, viewport-fit=cover
+    4  width=device-width, initial-scale=1, shrink-to-fit=no
+    4  width=device-width, initial-scale=1.0, viewport-fit=cover
+    3  width=device-width, initial-scale=1, maximum-scale=1
+
+== SEMANTIC HTML (sites containing >=1) ==
+  header      99 (68%)
+  nav        105 (72%)
+  main        84 (57%)
+  footer      75 (51%)
+  section     88 (60%)
+  article     30 (20%)
+  form        63 (43%)
+  svg        102 (70%)
+  table        3 (2%)
+  dialog       9 (6%)
+  details      7 (4%)
+  avg h1 per homepage: 1.0
+
+== FONT-SIZE VALUES ==
+  16px     73
+  14px     68
+  12px     61
+  1rem     55
+  .875rem  42
+  18px     40
+  20px     36
+  1.5rem   34
+  1.25rem  32
+  13px     31
+  24px     29
+  1.125rem 27
+  10px     25
+  11px     21
+  .75rem   19
+  2rem     19
+  15px     19
+  32px     18
+  22px     17
+  2.25rem  13
+  3rem     13
+  2.5rem   12

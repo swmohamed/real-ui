@@ -1,0 +1,506 @@
+industry | n | radius-top(px) | shadows% | gradients% | backdrop% | sticky% | cq% | darkmq% | fonts | container
+saas/dev                 | 25 | [(8, 10), (3, 9), (4, 9), (12, 5), (2, 5), (6, 4)] | 92 | 84 | 36 | 56 | 44 | 24 | ['var(--font-mono)', 'Inter', 'var(--font-sans)', 'Inter Display', 'GitLab Sans'] | [('1200px', 3), ('940px', 2), ('1320px', 2), ('961px', 1), ('910px', 1)]
+ecommerce/marketplace    | 13 | [(4, 6), (5, 5), (6, 5), (12, 5), (8, 5), (10, 4)] | 85 | 69 | 31 | 54 | 0 | 8 | ['Ubuntu', 'Apercu', 'Tiempos Headline', 'Amazon Ember Modern Display', 'Tajawal'] | [('1000px', 2), ('996px', 2), ('1024px', 1), ('980px', 1), ('1600px', 1)]
+travel/food              |  8 | [(4, 5), (16, 4), (8, 3), (10, 3), (12, 2), (32, 2)] | 88 | 75 | 38 | 75 | 0 | 0 | ['Airbnb Cereal VF', 'SoDoSans', 'Open Sans', 'sans-serif', 'Nunito'] | [('1200px', 2), ('1440px', 1), ('1520px', 1), ('976px', 1), ('1025px', 1)]
+finance/banking          | 15 | [(10, 5), (4, 5), (3, 4), (5, 3), (20, 2), (100, 1)] | 100 | 93 | 47 | 53 | 13 | 13 | ['Inter', 'UniversNext', 'FF Mark', 'Source Sans Pro', 'Opensans-Regular'] | [('1024px', 3), ('1600px', 1), ('1280px', 1), ('1536px', 1), ('960px', 1)]
+news/media               | 16 | [(4, 5), (3, 4), (6, 4), (10, 3), (8, 3), (7, 3)] | 75 | 69 | 31 | 50 | 25 | 6 | ['BBC Reith Sans', 'BBC Reith Qalam', 'Roboto', 'HelveticaNeueBold', 'GH Guardian Headline'] | [('1280px', 2), ('1200px', 1), ('1100px', 1), ('1600px', 1), ('1024px', 1)]
+entertainment/streaming  |  6 | [(4, 3), (2, 3), (16, 2), (6, 2), (10, 2), (5, 2)] | 100 | 100 | 83 | 67 | 33 | 0 | ['Inter', 'var(--encore-title-font-stack)', 'var(--FONT-FAMILY)', 'Roobert', 'Noto Sans Arabic'] | [('1100px', 1), ('1024px', 1), ('1280px', 1)]
+gaming                   |  7 | [(16, 5), (4, 4), (12, 4), (8, 3), (10, 2), (3, 2)] | 86 | 86 | 29 | 57 | 14 | 14 | ['Inter Var', 'Proxima Nova', 'Torus', 'var(--mc-default--fontlist)', 'var(--mc-legends-fontlist)'] | [('1200px', 2), ('960px', 2), ('1240px', 1), ('1098px', 1)]
+gov/institution          |  8 | [(4, 3), (2, 2), (10, 2), (3, 2), (15, 2), (14, 1)] | 75 | 75 | 12 | 25 | 12 | 0 | ['GDS Transport', 'sans-serif', 'Merriweather Web', 'Source Sans Pro Web', 'Roboto Mono Web'] | [('960px', 2), ('1140px', 1), ('1320px', 1), ('1100px', 1)]
+health/edu               |  7 | [(4, 4), (2, 2), (100, 1), (8, 1), (3, 1), (10, 1)] | 71 | 43 | 14 | 29 | 29 | 14 | ['Inter', 'Source Sans Pro', 'menlo', 'Frutiger W01', 'slick'] | [('960px', 1), ('1280px', 1), ('1024px', 1)]
+sports                   |  5 | [(4, 5), (10, 3), (5, 2), (20, 2), (80, 2), (6, 2)] | 100 | 80 | 20 | 40 | 20 | 0 | ['var(--font-body)', 'Roboto', 'Roboto Condensed', 'Arial', 'serif'] | [('1440px', 1), ('1024px', 1), ('1280px', 1), ('1352px', 1)]
+social/community         |  4 | [(2, 2), (8, 1), (16, 1), (12, 1), (3, 1), (5, 1)] | 75 | 75 | 50 | 50 | 0 | 0 | ['Abcgintodiscordnord', 'Ggsans', 'ABCGintoNormal-Bold', '-apple-system', 'SFMono-Regular'] | [('1180px', 1), ('1280px', 1), ('1024px', 1)]
+creative/portfolio       | 10 | [(4, 5), (5, 5), (3, 3), (2, 3), (12, 3), (10, 3)] | 90 | 70 | 30 | 60 | 20 | 10 | ['Proxima Nova Extra Condensed', 'MoMA Sans', 'Tate regular', 'sans-serif', 'Inter'] | [('900px', 2), ('980px', 1), ('1200px', 1), ('1020px', 1), ('935px', 1)]
+real-estate/auto         |  6 | [(4, 3), (16, 2), (24, 2), (28, 2), (8, 2), (2, 2)] | 100 | 100 | 50 | 50 | 17 | 33 | ['Porsche Next', 'var(--sbsa-faGMXV)', 'Inter', 'var(--sbsa-bTZOq)', 'swiper-icons'] | [('1280px', 1), ('992px', 1)]
+enterprise/industrial    |  8 | [(4, 3), (20, 2), (8, 2), (16, 2), (12, 2), (6, 2)] | 50 | 50 | 12 | 12 | 0 | 12 | ['FontAwesome', 'Arial', 'UberMoveText', 'Dcom-EDE!important', 'Open Sans'] | [('1200px', 1), ('1324px', 1), ('1024px', 1), ('1440px', 1), ('1272px', 1)]
+
+
+=== FLAGSHIP DEEP DIVES ===
+
+## stripe (en-US, dir=) fw=next.js,tailwind
+   h1: ['Financial infrastructure to grow your revenue.   Accept payments, offer financial services, and implement custom revenue']
+   nav/a/svg counts: nav=1 a=91 svg=141 form=0 img=34 button=28
+   fonts: ['sohne-var', 'SourceCodePro'] | bps: ['9', '6', '9', '6'] | radius: ['3px', 'var(--hds-space-core-radius-sm)', '1px'] | gradients:3 backdrop:2 sticky:0 cq:1
+   theme-color:  | cta: ['Products', 'Solutions', 'Developers', 'Resources']
+   jsonld: ['ContactPoint', 'ImageObject', 'Organization', 'Person', 'Place', 'PostalAddress']
+   icon classes: [['hds-icon hds-icon-hover-arrow', 51], ['hds-icon hds-icon-hover-arrow customer-story-button__icon--arrow', 4], ['billing-plan-graphic__icon-wrapper', 1]]
+
+## linear (en, dir=) fw=next.js,react
+   h1: ['The product     development     system for teams     and agents  The product development   system for teams and agents  ']
+   nav/a/svg counts: nav=2 a=13 svg=50 form=0 img=8 button=30
+   fonts: ['var(--font-monospace)'] | bps: ['6', '1', '7', '1'] | radius: ['var(--rounded-full)', '6px'] | gradients:0 backdrop:0 sticky:0 cq:0
+   theme-color: #08090a | cta: ['Product', 'Resources', 'Linear', 'Pulse']
+   jsonld: []
+   icon classes: []
+
+## openai (en-US, dir=ltr) fw=next.js,tailwind,font-awesome
+   h1: []
+   nav/a/svg counts: nav=1 a=90 svg=38 form=1 img=18 button=23
+   fonts: ['var(--font-sans)', 'KaTeX_Main'] | bps: ['7', '7', '8', '1'] | radius: ['50%', '8px', '2px'] | gradients:63 backdrop:2 sticky:2 cq:27
+   theme-color:  | cta: ['Products', 'Log in', 'Research', 'Products']
+   jsonld: []
+   icon classes: []
+
+## anthropic (en, dir=) fw=tailwind,font-awesome,webflow,jquery
+   h1: ['AI  research  and  products  that put safety at the frontier']
+   nav/a/svg counts: nav=13 a=183 svg=43 form=1 img=0 button=17
+   fonts: ['var(--_text-style---font-family)', 'var(--_typography---font--detail)'] | bps: ['9', '4', '7', '7'] | radius: ['var(--radius--main)', 'var(--radius--large)', 'var(--radius--round)'] | gradients:4 backdrop:0 sticky:5 cq:1
+   theme-color:  | cta: ['Try Claude', 'Log in to Claude', 'Download app', 'Try Claude']
+   jsonld: []
+   icon classes: [['u-hide-if-empty u-icon-16', 19], ['icon-embed-xsmall w-embed', 8], ['u-icon-24', 6]]
+
+## github (en, dir=) fw=tailwind
+   h1: ['The future of building happens together']
+   nav/a/svg counts: nav=1 a=70 svg=66 form=1 img=0 button=18
+   fonts: [] | bps: [] | radius: [] | gradients:0 backdrop:0 sticky:0 cq:0
+   theme-color: #1e2327 | cta: ['Platform', 'Solutions', 'Resources', 'Open Source']
+   jsonld: []
+   icon classes: [['octicon octicon-link-external', 10], ['octicon octicon-triangle-right NavDropdown-module__buttonIcon__Tkl8_', 5], ['octicon octicon-copilot NavLink-module__icon__ltGNM', 2]]
+
+## apple (en-US, dir=ltr) fw=
+   h1: ['Apple']
+   nav/a/svg counts: nav=2 a=141 svg=64 form=1 img=97 button=16
+   fonts: ['SF Pro Text,SF Pro Icons,Helvetica Neue,Helvetica,Arial,sans-serif', 'SF Pro AR,SF Pro AR Text,SF Pro Text,SF Pro Gulf,SF Pro Icons,Helvetica Neue,Helvetica,Arial,sans-serif'] | bps: ['8', '1', '8', '4'] | radius: ['1.2px', '980px', 'var(--sk-button-border-radius)'] | gradients:0 backdrop:70 sticky:1 cq:0
+   theme-color:  | cta: ['Shop and Learn', 'Apple Wallet', 'Account', 'Entertainment']
+   jsonld: ['ContactPoint', 'Organization', 'SearchAction', 'WebPage', 'WebSite']
+   icon classes: []
+
+## nike (en-EG, dir=) fw=next.js,react,tailwind,bootstrap
+   h1: ['Find Your Perfect Running Shoe']
+   nav/a/svg counts: nav=4 a=136 svg=97 form=0 img=7 button=1
+   fonts: ['"Helvetica Now Text",Helvetica,Arial,sans-serif', 'nike-glyphs'] | bps: ['1', '6', '9', '1'] | radius: ['var(--podium-cds-button-border-radius)', 'var(--podium-cds-size-border-radius-s)', '50%'] | gradients:4 backdrop:2 sticky:0 cq:0
+   theme-color:  | cta: ['Find a Store', 'Find a Store', 'Download iOS', 'Download Android']
+   jsonld: ['WebPage']
+   icon classes: [['btn-icon-wrapper', 1]]
+
+## sephora (en, dir=) fw=font-awesome
+   h1: []
+   nav/a/svg counts: nav=0 a=0 svg=0 form=0 img=0 button=0
+   fonts: [] | bps: ['7', '1', '9', '9'] | radius: [] | gradients:0 backdrop:0 sticky:0 cq:0
+   theme-color:  | cta: []
+   jsonld: []
+   icon classes: []
+
+## airbnb (en, dir=ltr) fw=font-awesome
+   h1: ['Airbnb homepage']
+   nav/a/svg counts: nav=1 a=14 svg=7 form=1 img=9 button=2
+   fonts: ["'Airbnb Cereal VF'", "'Airbnb Cereal VF','Circular',-apple-system,'BlinkMacSystemFont','Roboto','Helvetica Neue',sans-serif"] | bps: ['7', '9', '1', '1'] | radius: ['12px', '32px', '20px'] | gradients:94 backdrop:93 sticky:2 cq:0
+   theme-color: #ffffff | cta: []
+   jsonld: ['SearchAction', 'WebSite']
+   icon classes: [['icon alert-icon icon-alert-alt', 1]]
+
+## paypal (ar-EG, dir=rtl) fw=tailwind,bootstrap,gtm
+   h1: ['إرسال وطلب']
+   nav/a/svg counts: nav=2 a=47 svg=3 form=0 img=2 button=3
+   fonts: ['inherit', 'PayPal Pro,Century Gothic,Helvetica,Arial,sans-serif'] | bps: ['1', '6', '1', '1'] | radius: ['.25rem', '50%', '.75rem'] | gradients:14 backdrop:12 sticky:1 cq:0
+   theme-color: #012169 | cta: ['شخصي', 'الحصول على التطبيق', 'تجاري', 'بدء الاستخدام']
+   jsonld: ['Article', 'Corporation', 'ImageObject', 'WebPage', 'WebSite']
+   icon classes: [['glnv-rb-content rtl:[--glnv-after-icon-rotate:180deg]', 1], ['interaction-icon size-5 static translate-none icon-rotate', 1], ['glnv-root glnv-base-font text-lg leading-default lg:text-link-font-size lg:leading-text-link-line-height bg-primary max-lg:max-h-none shadow-none p-0 z-header-index max-lg:h-auto relative top-0 w-full box-border lg:p-0 before:border-0 before:shadow-none max-lg:before:h-[3.5rem] before:bg-primary before:top-0 before:z-[-1] before:absolute before:block before:w-full rtl:[--glnv-after-icon-rotate:180deg] ppe default compact-grid supreme-font after:border-header-bottom after:content-[&quot;&quot;] after:block after:top-[3.5rem] after:absolute after:w-full lg:after:top-[5.5rem] rtl:direction-rtl after:border-b-[.0625rem]', 1]]
+
+## monzo (en-GB, dir=ltr) fw=next.js,nuxt/vue
+   h1: ['Monzo for all your money']
+   nav/a/svg counts: nav=9 a=153 svg=54 form=0 img=72 button=28
+   fonts: ['var(--font-stack-body)', 'var(--font-stack-title)'] | bps: ['1', '7', '4', '1'] | radius: ['var(--corner-radius-large)', 'var(--corner-radius-medium)', '1rem'] | gradients:16 backdrop:4 sticky:2 cq:0
+   theme-color: #112231 | cta: ['Personal', 'Sign up', 'Sign up', 'Previous slide']
+   jsonld: ['Organization', 'PostalAddress']
+   icon classes: []
+
+## coinbase (en, dir=) fw=tailwind,font-awesome
+   h1: ['It’s time to take control']
+   nav/a/svg counts: nav=1 a=184 svg=1 form=1 img=23 button=16
+   fonts: ['var(--cds-font-sans)', 'var(--cds-font-display)'] | bps: ['1', '7', '7', '1'] | radius: ['var(--borderRadius-200)', 'var(--borderRadius-100)', 'var(--borderRadius-400)'] | gradients:2 backdrop:1 sticky:6 cq:0
+   theme-color:  | cta: ['\U000f074a', '\U000f04b0', '\U000f0696', 'Tradable']
+   jsonld: ['ContactPoint', 'Organization']
+   icon classes: []
+
+## theguardian (en, dir=) fw=
+   h1: []
+   nav/a/svg counts: nav=0 a=0 svg=0 form=0 img=1 button=0
+   fonts: ['"GH Guardian Headline"', '"Guardian Egyptian Web"'] | bps: ['9'] | radius: [] | gradients:0 backdrop:0 sticky:0 cq:0
+   theme-color: #052962 | cta: []
+   jsonld: []
+   icon classes: []
+
+## nytimes (en, dir=) fw=
+   h1: ['New York Times - Top Stories']
+   nav/a/svg counts: nav=5 a=83 svg=16 form=1 img=24 button=17
+   fonts: ['nyt-franklin,helvetica,arial,sans-serif', "nyt-cheltenham,cheltenham-fallback-georgia,cheltenham-fallback-noto,georgia,'times new roman',times,serif"] | bps: ['7', '1', '6', '7'] | radius: ['50%', '3px', '2px'] | gradients:4 backdrop:4 sticky:0 cq:1
+   theme-color:  | cta: ['Go']
+   jsonld: ['EntryPoint', 'ImageObject', 'ItemList', 'ListItem', 'NewsMediaOrganization', 'Organization']
+   icon classes: [['_icon_1vvjj_157 _fullscreen-icon-only_1vvjj_333 _iconOnly_1vvjj_422', 1], ['_icon_1vvjj_157 _close-icon-only_1vvjj_445 _iconOnly_1vvjj_422', 1]]
+
+## bbc (en-GB, dir=) fw=next.js,tailwind,bootstrap,font-awesome
+   h1: ['News']
+   nav/a/svg counts: nav=6 a=240 svg=36 form=0 img=54 button=24
+   fonts: ['BBC Reith Sans,BBCReithSans-fallback,sans-serif', 'BBC Reith Serif,BBCReithSerif-fallback,serif'] | bps: ['5', '1', '7', '1'] | radius: ['0'] | gradients:0 backdrop:1 sticky:3 cq:0
+   theme-color: #ffffff | cta: ['Home', 'News', 'Sport', 'Business']
+   jsonld: ['NewsMediaOrganization', 'WebPage']
+   icon classes: [['TextFragment-styles__TextFragmentStyled-sc-99e7c69b-0 fa-DACi', 1]]
+
+## spotify (en, dir=ltr) fw=
+   h1: []
+   nav/a/svg counts: nav=0 a=0 svg=0 form=0 img=0 button=0
+   fonts: ['inherit', 'var(--encore-title-font-stack)'] | bps: [] | radius: ['4px', '50%', '8px'] | gradients:54 backdrop:4 sticky:1 cq:11
+   theme-color:  | cta: []
+   jsonld: []
+   icon classes: []
+
+## disneyplus (eng, dir=) fw=next.js,tailwind,gtm
+   h1: ['New Originals, blockbusters and series']
+   nav/a/svg counts: nav=0 a=0 svg=0 form=0 img=24 button=4
+   fonts: ['var(--FONT-FAMILY)', 'Inter'] | bps: ['7', '7', '1', '9'] | radius: ['var(--RADIUS-03)', 'var(--RADIUS-01)', 'var(--RADIUS-02)'] | gradients:230 backdrop:29 sticky:3 cq:0
+   theme-color:  | cta: ['Log In', 'Get Started', 'Cookie Settings']
+   jsonld: ['Organization', 'WebSite', 'type.googleapis.com/pagedata.OnboardingPageData', 'type.googleapis.com/widget.SEOWidget', 'type.googleapis.com/widget.UserRegistrationContainerWidget', 'type.googleapis.com/widget.WebFooterWidget']
+   icon classes: [['icon-caret-down soul-icon inherit ICON_FONTSIZE_04', 5], ['icon-caret-down soul-icon ON_IMAGE_ALT _2z6E6BV9K54kwhtneIMIW6', 1], ['icon-caret-forward soul-icon ON_IMAGE ICON_FONTSIZE_04', 1]]
+
+## twitch (, dir=) fw=
+   h1: []
+   nav/a/svg counts: nav=0 a=0 svg=2 form=0 img=0 button=0
+   fonts: ['Inter', 'Roobert'] | bps: ['7', '9', '9', '1'] | radius: ['var(--border-radius-small)', '50%', '2px'] | gradients:22 backdrop:0 sticky:1 cq:1
+   theme-color:  | cta: []
+   jsonld: ['Organization']
+   icon classes: []
+
+## steam (en, dir=) fw=jquery
+   h1: []
+   nav/a/svg counts: nav=0 a=246 svg=0 form=0 img=164 button=0
+   fonts: [] | bps: [] | radius: [] | gradients:0 backdrop:0 sticky:0 cq:0
+   theme-color: #171a21 | cta: ['Install Steam', 'See More', 'See More', 'Customize, Explore by Tag, &amp More']
+   jsonld: []
+   icon classes: []
+
+## itchio (en, dir=) fw=tailwind,gtm
+   h1: ['itch.io']
+   nav/a/svg counts: nav=0 a=393 svg=3 form=2 img=81 button=2
+   fonts: ['Lato, sans-serif', 'var(--itchio_default_font, Lato),sans-serif'] | bps: ['6', '8', '6', '8'] | radius: ['3px', '2px', '4px'] | gradients:62 backdrop:0 sticky:3 cq:0
+   theme-color:  | cta: ['Browse Games', 'Game Jams', 'Upload Game', 'Developer Logs']
+   jsonld: ['Organization', 'WebSite']
+   icon classes: [['icon icon-playlist_add', 60], ['icon icon-windows8', 30], ['icon icon-tux', 11]]
+
+## poki (en, dir=ltr) fw=font-awesome
+   h1: []
+   nav/a/svg counts: nav=3 a=207 svg=0 form=0 img=204 button=4
+   fonts: ['Proxima Nova', 'Torus'] | bps: ['7', '9', '1', '1'] | radius: ['16px', 'inherit', '4px'] | gradients:3 backdrop:0 sticky:1 cq:0
+   theme-color: #83ffe7 | cta: ['What are you playing today?']
+   jsonld: ['Brand', 'ContactPoint', 'Country', 'ImageObject', 'ItemList', 'ListItem']
+   icon classes: []
+
+## crazygames (en, dir=ltr) fw=next.js
+   h1: ['Free Online Games at CrazyGames']
+   nav/a/svg counts: nav=1 a=120 svg=0 form=1 img=68 button=30
+   fonts: ['var(--font-nunito)'] | bps: ['1', '6', '4', '1'] | radius: ['30px', '16px', '8px'] | gradients:153 backdrop:2 sticky:0 cq:6
+   theme-color: #212233 | cta: ['Contact us', 'Learn more']
+   jsonld: ['Brand', 'ContactPoint', 'EntryPoint', 'MobileApplication', 'Offer', 'Organization']
+   icon classes: [['Icon_icon__OracF Icon_icon-chevron-right__deyMH Icon_size20__yF8AY', 24], ['Icon_icon__OracF Icon_icon-originals6__wBxi4 Icon_size20__yF8AY', 3], ['Icon_icon__OracF Icon_icon-star2__IqoGR Icon_size16___120c', 3]]
+
+## govuk (en, dir=) fw=tailwind
+   h1: ['The best place to find government services and information']
+   nav/a/svg counts: nav=1 a=107 svg=13 form=3 img=4 button=13
+   fonts: ['"GDS Transport",arial,sans-serif', 'sans-serif'] | bps: ['6', '7', '6', '3'] | radius: ['50%', '0'] | gradients:0 backdrop:0 sticky:1 cq:4
+   theme-color: #1d70b8 | cta: ['Accept additional cookies', 'Reject additional cookies', 'Hide cookie message', 'Menu']
+   jsonld: []
+   icon classes: []
+
+## uae-gov-ar (, dir=rtl) fw=tailwind,bootstrap,jquery
+   h1: ['&#x627;&#x644;&#x645;&#x646;&#x635;&#x629; &#x627;&#x644;&#x631;&#x633;&#x645;&#x64A;&#x629; &#x644;&#x62D;&#x643;&#x648']
+   nav/a/svg counts: nav=1 a=183 svg=177 form=0 img=29 button=10
+   fonts: ['var(--bs-font-sans-serif)', 'var(--bs-body-font-family)'] | bps: ['1', '5', '7', '9'] | radius: ['4px', '0', '3px 0 0 3px'] | gradients:41 backdrop:0 sticky:0 cq:0
+   theme-color:  | cta: []
+   jsonld: []
+   icon classes: []
+
+## visitsaudi-ar (ar, dir=rtl) fw=gtm
+   h1: []
+   nav/a/svg counts: nav=0 a=1 svg=0 form=0 img=1 button=1
+   fonts: ['var(--font-primary-regular)', 'var(--font-primary-semibold)'] | bps: ['1', '7', '1', '1'] | radius: ['1rem', '50%', '10px'] | gradients:13 backdrop:5 sticky:3 cq:0
+   theme-color:  | cta: []
+   jsonld: ['ContactPoint', 'Organization', 'SearchAction', 'WebSite']
+   icon classes: []
+
+## nhs (en, dir=) fw=tailwind
+   h1: ['NHS website for England   Find information and services to help you manage your health']
+   nav/a/svg counts: nav=1 a=48 svg=14 form=1 img=0 button=2
+   fonts: ['menlo,"Cascadia Mono","Segoe UI Mono",consolas,"Liberation Mono",monospace', '"Frutiger W01"'] | bps: ['6', '6', '7', '3'] | radius: ['.25rem', '0', '.1052631579em'] | gradients:0 backdrop:0 sticky:0 cq:0
+   theme-color:  | cta: ['Search', 'Browse  More']
+   jsonld: []
+   icon classes: [['nhsuk-icon nhsuk-icon--arrow-right-circle', 6], ['nhsuk-icon nhsuk-icon--chevron-right-circle', 2], ['nhsuk-icon nhsuk-icon--search', 1]]
+
+## coursera (en, dir=ltr) fw=tailwind
+   h1: []
+   nav/a/svg counts: nav=2 a=9 svg=7 form=1 img=0 button=4
+   fonts: ['inherit', "'Source Sans Pro'"] | bps: ['5', '7', '1', '1'] | radius: ['var(--cds-border-radius-100)', 'var(--cds-border-radius-50)', '0'] | gradients:41 backdrop:0 sticky:1 cq:8
+   theme-color: #0056D2 | cta: ['Explore']
+   jsonld: []
+   icon classes: []
+
+## duolingo (, dir=ltr) fw=gtm
+   h1: []
+   nav/a/svg counts: nav=0 a=0 svg=0 form=0 img=0 button=0
+   fonts: [] | bps: [] | radius: [] | gradients:0 backdrop:0 sticky:0 cq:0
+   theme-color:  | cta: []
+   jsonld: []
+   icon classes: []
+
+## nba (en, dir=) fw=next.js
+   h1: []
+   nav/a/svg counts: nav=1 a=297 svg=26 form=1 img=95 button=30
+   fonts: ['var(--font-body)', "'Roboto'"] | bps: ['1', '7', '6', '1'] | radius: ['4px', '.25rem', 'var(--rounded-full)'] | gradients:18 backdrop:7 sticky:3 cq:0
+   theme-color: #000000 | cta: ['Navigation Toggle', 'Games', 'Schedule', 'Watch']
+   jsonld: ['BreadcrumbList', 'ListItem', 'Organization', 'SportsOrganization', 'WebPage']
+   icon classes: []
+
+## reddit (en, dir=) fw=
+   h1: []
+   nav/a/svg counts: nav=0 a=0 svg=1 form=1 img=0 button=0
+   fonts: [] | bps: [] | radius: ['100%'] | gradients:0 backdrop:0 sticky:0 cq:0
+   theme-color:  | cta: []
+   jsonld: []
+   icon classes: []
+
+## discord (en, dir=) fw=tailwind,font-awesome,webflow,gtm
+   h1: ['Group chat that’s all fun &amp; games']
+   nav/a/svg counts: nav=17 a=137 svg=31 form=0 img=171 button=1
+   fonts: ['Abcgintodiscordnord,Arial,sans-serif', 'Ggsans,sans-serif'] | bps: ['7', '4', '9', '9'] | radius: ['8px', '16px', '12px'] | gradients:23 backdrop:0 sticky:2 cq:0
+   theme-color: #161cbb | cta: []
+   jsonld: ['BreadcrumbList', 'ContactPoint', 'ImageObject', 'ListItem', 'Organization', 'SearchAction']
+   icon classes: [['icon-home-2025 w-embed', 1], ['icon-2tQ9Jt', 1]]
+
+## zillow (en, dir=) fw=next.js,nuxt/vue,tailwind,gtm
+   h1: ['Rentals. Homes. Agents. Loans.']
+   nav/a/svg counts: nav=2 a=272 svg=21 form=1 img=7 button=17
+   fonts: ['var(--sbsa-faGMXV)', '"Inter","Adjusted Arial",Tahoma,Geneva,sans-serif'] | bps: ['8', '1', '7', '8'] | radius: ['12px', '0', 'var(--sbsa-jHyVPA)'] | gradients:1 backdrop:0 sticky:2 cq:0
+   theme-color:  | cta: ['Sign in', 'Sign in', 'Open Buy sub-menu', 'Open Rent sub-menu']
+   jsonld: []
+   icon classes: []
+
+## toyota (en, dir=) fw=tailwind,bootstrap,gtm
+   h1: []
+   nav/a/svg counts: nav=2 a=133 svg=102 form=0 img=44 button=25
+   fonts: ['tcomMed,HelveticaNeueMedium,Helvetica Neue Medium,Arial,sans-serif', 'tcomLight,HelvNeueLight,Helvetica Neue Light,Arial,sans-serif'] | bps: ['7', '1', '1', '1'] | radius: ['8px', '24px', '2px'] | gradients:9 backdrop:0 sticky:1 cq:0
+   theme-color:  | cta: ['Vehicles', 'Shop', 'Support &amp; Service', 'Account                      Account']
+   jsonld: ['WebPage']
+   icon classes: [['user-icon-logged-out', 2], ['user-icon-logged-in', 2], ['icon-wrap', 1]]
+
+## porsche (ar-EG, dir=) fw=nuxt/vue,astro,gtm
+   h1: ['Macan Electric.']
+   nav/a/svg counts: nav=0 a=7 svg=0 form=0 img=14 button=0
+   fonts: ['Porsche Next', 'Porsche Next,PingFang SC,Microsoft YaHei,Noto Sans SC,Arial Narrow,Arial,sans-serif'] | bps: ['7', '1', '1', '4'] | radius: ['1px', '4px', '100%'] | gradients:4 backdrop:2 sticky:0 cq:0
+   theme-color:  | cta: []
+   jsonld: ['WebSite']
+   icon classes: []
+
+## moma (en, dir=) fw=nuxt/vue,tailwind,gtm,jquery
+   h1: ['Welcome']
+   nav/a/svg counts: nav=1 a=131 svg=54 form=2 img=34 button=23
+   fonts: ['MoMA Sans', 'MoMA Sans Condensed'] | bps: ['7', '1', '4', '1'] | radius: ['50%', '.4rem', '0'] | gradients:38 backdrop:0 sticky:0 cq:0
+   theme-color:  | cta: ['Visit', 'Exhibitions and events', 'Art and artists', 'Membership']
+   jsonld: ['GeoCoordinates', 'ImageObject', 'Map', 'PostalAddress']
+   icon classes: [['icon-link', 1], ['icon-link__text--body', 1]]
+
+## ted (en, dir=) fw=next.js,tailwind,bootstrap,font-awesome
+   h1: []
+   nav/a/svg counts: nav=3 a=215 svg=13 form=2 img=17 button=26
+   fonts: ['Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji', 'inherit'] | bps: ['7', '7', '6', '1'] | radius: ['4px', '50%', '0'] | gradients:12 backdrop:2 sticky:1 cq:0
+   theme-color: #EB0028 | cta: ['WATCH', 'DISCOVER', 'ATTEND', 'PARTICIPATE']
+   jsonld: []
+   icon classes: [['icon-plus-circle mr-2 text-tui-xl font-bold text-black', 8], ['icon-chevron-left z-1 relative whitespace-nowrap text-black order-last text-tui-xl', 3], ['icon-chevron-right z-1 relative whitespace-nowrap text-black order-last text-tui-xl', 3]]
+
+## youm7 (ar, dir=rtl) fw=tailwind,font-awesome,gtm,jquery
+   h1: ['اليوم السابع']
+   nav/a/svg counts: nav=1 a=460 svg=0 form=1 img=196 button=1
+   fonts: ["'FontAwesome'"] | bps: [] | radius: ['.1em'] | gradients:0 backdrop:0 sticky:0 cq:0
+   theme-color: #ffffff | cta: []
+   jsonld: ['NewsMediaOrganization', 'SearchAction', 'WebPage', 'WebSite']
+   icon classes: [['fa fa-calendar', 1], ['fa fa-clock-o', 1], ['fa fa-home', 1]]
+
+## cnn-arabic (ar, dir=rtl) fw=react,font-awesome
+   h1: []
+   nav/a/svg counts: nav=1 a=117 svg=39 form=1 img=30 button=4
+   fonts: ['sans-serif', 'Roboto'] | bps: ['1', '7', '9', '1'] | radius: ['50%', '6px', '4px'] | gradients:12 backdrop:4 sticky:2 cq:2
+   theme-color: #000000 | cta: ['Search', 'الرئيسية', 'آخر الأخبار']
+   jsonld: ['EntryPoint', 'SearchAction', 'WebSite']
+   icon classes: []
+
+## skynews-arabia (ar, dir=rtl) fw=tailwind,gtm,jquery
+   h1: ['أخبار اليوم | سكاي نيوز عربية']
+   nav/a/svg counts: nav=3 a=215 svg=31 form=4 img=325 button=2
+   fonts: ['HelveticaNeueBold', 'HelveticaNeueBold, "Times New Roman"'] | bps: ['7', '1', '1', '7'] | radius: ['50%', '5px', '4px'] | gradients:9 backdrop:0 sticky:0 cq:0
+   theme-color: #E9EEFF | cta: ['راديو', 'مباشر', 'مباشر', 'راديو']
+   jsonld: ['ImageObject', 'ItemList', 'ListItem', 'Organization', 'SearchAction', 'WebSite']
+   icon classes: [['hoverStateMenuSocialIcon social-icon-svg', 7]]
+
+## jarir (ar, dir=rtl) fw=nuxt/vue
+   h1: []
+   nav/a/svg counts: nav=0 a=0 svg=0 form=0 img=0 button=0
+   fonts: ['Tajawal,Tajawal Fallback,sans-serif', 'Tajawal'] | bps: [] | radius: ['4px', '8px', '50%'] | gradients:23 backdrop:0 sticky:1 cq:0
+   theme-color:  | cta: []
+   jsonld: []
+   icon classes: []
+
+## amazon-eg-ar (ar-ae, dir=rtl) fw=nuxt/vue,tailwind,jquery
+   h1: []
+   nav/a/svg counts: nav=1 a=62 svg=0 form=1 img=18 button=5
+   fonts: ['inherit', "'Amazon Ember Modern Display'"] | bps: ['1', '1', '1', '1'] | radius: ['5px', '3px 3px 3px 3px', '0\\9'] | gradients:20 backdrop:0 sticky:0 cq:0
+   theme-color:  | cta: ['اشترك في برايم']
+   jsonld: []
+   icon classes: [['icon-container', 1], ['a-icon a-icon-info a-icon-mini shortcut-help-icon', 1], ['hm-icon-label', 1]]
+
+## jumia-eg-ar (ar, dir=rtl) fw=nuxt/vue,tailwind,gtm
+   h1: []
+   nav/a/svg counts: nav=1 a=208 svg=144 form=1 img=187 button=25
+   fonts: ['Ubuntu,-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica Neue,Arial,sans-serif', 'Ubuntu,BlinkMacSystemFont,Helvetica Neue,Arial,sans-serif'] | bps: ['1'] | radius: ['4px', '6px', '8px'] | gradients:5 backdrop:0 sticky:1 cq:0
+   theme-color: #ffffff | cta: ['البحث', 'تسجيل الدخول', 'تحدث معنا', 'أقبل ملفات تعريف الارتباط']
+   jsonld: []
+   icon classes: []
+
+## extra-ar (ar, dir=rtl) fw=gtm
+   h1: []
+   nav/a/svg counts: nav=0 a=23 svg=0 form=0 img=0 button=0
+   fonts: ['Dubai', 'var(--mdc-typography-subtitle1-font-family,var(--mdc-typography-font-family,"Dubai"))'] | bps: ['9', '7', '1', '1'] | radius: ['0', '0.375rem', '50%'] | gradients:1 backdrop:0 sticky:12 cq:0
+   theme-color: #0065A4 | cta: []
+   jsonld: []
+   icon classes: []
+
+## arabianoud (ar, dir=rtl) fw=nuxt/vue,tailwind,gtm
+   h1: ['العربية للعود']
+   nav/a/svg counts: nav=1 a=91 svg=4 form=1 img=36 button=19
+   fonts: ['swiper-icons', 'sallaicons!important'] | bps: ['1', '7', '9', '6'] | radius: ['.375rem', '9999px', '0'] | gradients:17 backdrop:66 sticky:1 cq:0
+   theme-color:  | cta: ['العربية', 'مصر', 'المزيد...', 'المزيد...']
+   jsonld: ['Organization', 'WebPage']
+   icon classes: [['sicon-keyboard_arrow_left text-xl rtl:group-hover:-translate-x-2 ltr:group-hover:translate-x-2 transition-transform duration-300', 4], ['sicon-keyboard_arrow_down', 2], ['header-btn__icon icon sicon-search', 2]]
+
+## emiratesnbd-ar (ar, dir=rtl) fw=tailwind,bootstrap,gtm
+   h1: []
+   nav/a/svg counts: nav=2 a=481 svg=0 form=0 img=15 button=3
+   fonts: ['swiper-icons', 'Arial,sans-serif'] | bps: ['3', '1'] | radius: ['4px', '3px', '3px 3px 0 0'] | gradients:37 backdrop:0 sticky:0 cq:0
+   theme-color:  | cta: ['-->', 'icon-close-thin', 'icon-close-thin']
+   jsonld: ['WebPage']
+   icon classes: [['icomoon icon-angle-right small ml-2', 16], ['dropdown-menu__icon-img', 10], ['icomoon icon-angle-right', 10]]
+
+## alrajhi (ar, dir=) fw=next.js,tailwind,font-awesome,gtm
+   h1: ['تجربة مصرفية صُمّمت لك']
+   nav/a/svg counts: nav=0 a=109 svg=6 form=0 img=38 button=23
+   fonts: ['inherit', 'ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,Liberation Mono,Courier New,monospace'] | bps: ['6', '7', '1', '1'] | radius: ['9999px', 'var(--rounded-btn,.5rem)', 'var(--rounded-box,1rem)'] | gradients:46 backdrop:44 sticky:2 cq:2
+   theme-color: #ffffff | cta: ['لمعرفة المزيد', 'لمعرفة المزيد', 'لمعرفة المزيد', 'لمعرفة المزيد']
+   jsonld: []
+   icon classes: [['arb-font-icon arb-text-2xl arb-text-gray-500 arb-icon-chevronRight', 9], ['arb-text-base-100 arb-rounded-full arb-p-0 arb-flex arb-justify-center arb-items-center arb-w-12 arb-h-12 arb-aspect-square arb-icon-radical-red', 2], ['arb-text-base-100 arb-rounded-full arb-p-0 arb-flex arb-justify-center arb-items-center arb-w-12 arb-h-12 arb-aspect-square arb-icon-blue-bolt', 2]]
+
+## stc (ar, dir=rtl) fw=tailwind,bootstrap,font-awesome,gtm
+   h1: ['سوا للكل باقات ما تقصّر معك']
+   nav/a/svg counts: nav=1 a=612 svg=15 form=6 img=43 button=21
+   fonts: ["'FontAwesome'", 'FontAwesome'] | bps: ['7', '7', '1'] | radius: ['50%', '.1em'] | gradients:0 backdrop:0 sticky:0 cq:0
+   theme-color: #ffffff | cta: ['الجوال          -->', 'الباقات          -->', 'المفوتر          -->', 'مفوتر برو - مع جهاز مجاني          -->']
+   jsonld: []
+   icon classes: [['stc-icon-circle-right', 100], ['position-absolute top-0 start-100 translate-middle p-1 bg-danger border border-light rounded-circle nav-cart__icon-dot hide', 5], ['stc-icon-star-full', 5]]
+
+## almosafer-ar (ar, dir=rtl) fw=next.js,tailwind
+   h1: ['العالم ينتظرك']
+   nav/a/svg counts: nav=0 a=225 svg=66 form=0 img=35 button=8
+   fonts: ["'Open Sans'", '"Open Sans","NotoSansArabicUI"'] | bps: ['6', '5', '1', '9'] | radius: ['0', '50%', '100%'] | gradients:1 backdrop:0 sticky:1 cq:0
+   theme-color: #fff | cta: ['تسجيل الدخول', 'ابحث', 'أشهر الوجهات', 'أشهر الفنادق']
+   jsonld: ['Answer', 'ContactPoint', 'FAQPage', 'Organization', 'Question']
+   icon classes: []
+
+## hungerstation-ar (ar-SA, dir=rtl) fw=next.js,tailwind,gtm
+   h1: ['حمل تطبيق هنقرستيشن وأستمتع  بأفضل    العروض']
+   nav/a/svg counts: nav=4 a=43 svg=14 form=0 img=38 button=10
+   fonts: ['bold', 'light'] | bps: ['7', '4', '9', '1'] | radius: ['.75rem', '0', '.25rem'] | gradients:10 backdrop:4 sticky:4 cq:0
+   theme-color: #ffd700 | cta: ['حمل التطبيق الآن', 'عربي', 'حمل التطبيق الآن', 'حمل التطبيق الآن']
+   jsonld: ['Organization', 'WebSite']
+   icon classes: []
+
+## propertyfinder-ar (ar, dir=rtl) fw=next.js,font-awesome,gtm
+   h1: []
+   nav/a/svg counts: nav=0 a=0 svg=0 form=0 img=0 button=0
+   fonts: ['__Open_Sans_40b2ae', '__arFont_c0e974'] | bps: ['7'] | radius: ['var(--styleguide-border-radius-m,8px)', '14px', 'var(--styleguide-border-radius-l,12px)'] | gradients:6 backdrop:0 sticky:0 cq:1
+   theme-color: #ffffff | cta: []
+   jsonld: ['EntryPoint', 'SearchAction']
+   icon classes: []
+
+## aqarmap (ar, dir=rtl) fw=next.js,tailwind,gtm
+   h1: ['ابدأ البحث عن بيت أحلامك']
+   nav/a/svg counts: nav=3 a=53 svg=34 form=4 img=32 button=13
+   fonts: ['swiper-icons', 'ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji'] | bps: ['7', '9', '1', '5'] | radius: ['var(--rounded-box,1rem)', 'var(--rounded-btn,.5rem)', '.25rem'] | gradients:24 backdrop:8 sticky:1 cq:0
+   theme-color: #007dbe | cta: ['أظهر المزيد', 'احسب قيمة عقارك', 'احسب قيمة عقارك', 'استكشف الباقات']
+   jsonld: ['ContactPoint', 'Country', 'GeoCoordinates', 'ImageObject', 'MobileApplication', 'OpeningHoursSpecification']
+   icon classes: []
+
+## shahid (ar, dir=rtl) fw=next.js,tailwind,font-awesome,gtm
+   h1: ['مسلسلات مجانية، قنوات مباشرة، افلام | MBC شاهد | الرئيسية | MBC شاهد']
+   nav/a/svg counts: nav=0 a=26 svg=5 form=0 img=8 button=3
+   fonts: ['var(--font-shahid),sans-serif', 'var(--font-shahidMedium)'] | bps: ['7', '1', '1', '1'] | radius: ['16px', '9999px', 'calc((500 / 1024) * 100vw)'] | gradients:67 backdrop:30 sticky:2 cq:0
+   theme-color: #0c9 | cta: ['شاهد الآن']
+   jsonld: ['ImageObject', 'Organization', 'SearchAction', 'WebPage', 'WebSite']
+   icon classes: []
+
+## bein-ar (ar-mena, dir=) fw=next.js,tailwind,font-awesome
+   h1: ['مقاطع beIN القصيرة']
+   nav/a/svg counts: nav=1 a=107 svg=65 form=0 img=107 button=10
+   fonts: ['Arial,Helvetica,sans-serif', 'serif'] | bps: ['4', '1'] | radius: ['0', '11px', '5px'] | gradients:4 backdrop:0 sticky:0 cq:0
+   theme-color:  | cta: ['EN', 'EN', 'ع', 'انضم إلى قائمة النشرة الإخبارية']
+   jsonld: ['BreadcrumbList', 'ListItem']
+   icon classes: [['bng-icon-new-play', 39]]
+
+## kooora (ar, dir=rtl) fw=next.js,tailwind,gtm
+   h1: []
+   nav/a/svg counts: nav=1 a=220 svg=3 form=0 img=170 button=79
+   fonts: ['var(--fco-font-family-body)', 'var(--fco-font-family-heading)'] | bps: ['1', '7', '1', '7'] | radius: ['var(--fco-radius-md)', 'var(--fco-radius-rounded)', '0'] | gradients:190 backdrop:0 sticky:4 cq:6
+   theme-color:  | cta: ['السبت 15 أغسطس', 'الأحد 16 أغسطس', 'الاثنين 17 أغسطس', 'الثلاثاء 18 أغسطس']
+   jsonld: ['ImageObject', 'Organization']
+   icon classes: [['fco-svg-icon-placeholder', 24], ['fco-svg-icon-placeholder fco-global-navigation__trigger-icon fco-global-navigation__trigger-icon--on', 21], ['fco-svg-icon-placeholder fco-global-navigation__trigger-icon fco-global-navigation__trigger-icon--off', 21]]
+
+## filgoal (ar, dir=) fw=tailwind,bootstrap,gtm,jquery
+   h1: []
+   nav/a/svg counts: nav=1 a=239 svg=53 form=0 img=130 button=0
+   fonts: ['sans-serif', '"Almarai",sans-serif'] | bps: ['1', '9', '1', '7'] | radius: ['50%', '20px', '3px'] | gradients:12 backdrop:0 sticky:0 cq:0
+   theme-color: #181817 | cta: []
+   jsonld: ['NewsMediaOrganization', 'Organization', 'SearchAction', 'WebPage', 'WebSite']
+   icon classes: []
+
+## salla (ar-SA, dir=rtl) fw=nuxt/vue,font-awesome,framer,gtm
+   h1: ['سلة.. تجارة ذكيَّة وسهلة']
+   nav/a/svg counts: nav=0 a=16 svg=33 form=0 img=48 button=0
+   fonts: ['"Inter"', '"Inter Display"'] | bps: ['8', '8', '1', '1'] | radius: ['inherit', '40px', '85px'] | gradients:12 backdrop:0 sticky:0 cq:0
+   theme-color:  | cta: []
+   jsonld: []
+   icon classes: []
+
+## zid (en, dir=) fw=next.js,tailwind,font-awesome,lucide
+   h1: ['من القصص إلى الأرقام']
+   nav/a/svg counts: nav=10 a=97 svg=54 form=0 img=33 button=4
+   fonts: ['Suisse', 'Codec Pro'] | bps: ['6', '1', '7', '1'] | radius: ['var(--radius)', '9999px', '1.5rem'] | gradients:10 backdrop:3 sticky:2 cq:0
+   theme-color:  | cta: ['أنشئ متجرك', 'Previous slide', 'Next slide']
+   jsonld: []
+   icon classes: [['lucide lucide-arrow-right h-4 w-4 opacity-0 group-hover/item:opacity-100 rotate-180', 38], ['lucide lucide-chevron-down h-4 w-4', 5], ['lucide lucide-menu h-5 w-5', 1]]
+
+## edraak (ar, dir=rtl) fw=font-awesome,gtm
+   h1: []
+   nav/a/svg counts: nav=2 a=53 svg=0 form=2 img=11 button=11
+   fonts: ["'slick'"] | bps: [] | radius: [] | gradients:0 backdrop:0 sticky:0 cq:0
+   theme-color:  | cta: ['مجالات التعلم', 'مجالات التعلم']
+   jsonld: []
+   icon classes: [['fa-solid fa-chevron-down', 3], ['fa-solid fa-magnifying-glass', 2], ['fa-solid fa-xmark', 2]]
+
+## almentor (en, dir=rtl) fw=tailwind,material-icons
+   h1: ['استثمر في مستقبلك، تعلم في أي وقت وأي مكان']
+   nav/a/svg counts: nav=1 a=46 svg=82 form=0 img=46 button=36
+   fonts: ["'Inter'", "'Noto Kufi Arabic'"] | bps: ['9', '7', '7', '9'] | radius: ['50%', '100%', '0'] | gradients:11 backdrop:2 sticky:0 cq:1
+   theme-color:  | cta: ['اشترك', 'ابحث', 'user_control_menu.light_mode', 'إنشاء حساب جديد']
+   jsonld: []
+   icon classes: [['mat-icon notranslate mat-icon-no-color', 35], ['btn btn-link icon-item mobile-menu-icon', 1], ['icon-item language-link', 1]]
+
+## hawaaworld (ar, dir=rtl) fw=tailwind
+   h1: []
+   nav/a/svg counts: nav=3 a=84 svg=130 form=0 img=23 button=85
+   fonts: ['-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Helvetica Neue,Arial,sans-serif', 'inherit'] | bps: ['1', '6', '7', '1'] | radius: ['0', '4px', '2px'] | gradients:6 backdrop:36 sticky:4 cq:0
+   theme-color: #ffffff | cta: ['close', 'Close', 'عرض القائمة', 'عرض قائمة المستخدم']
+   jsonld: ['WebPage']
+   icon classes: []
+
+## poki-ar (ar, dir=rtl) fw=font-awesome
+   h1: []
+   nav/a/svg counts: nav=3 a=189 svg=0 form=0 img=186 button=4
+   fonts: ['Proxima Nova', 'Torus'] | bps: ['7', '9', '1', '1'] | radius: ['16px', 'inherit', '4px'] | gradients:3 backdrop:0 sticky:1 cq:0
+   theme-color: #83ffe7 | cta: ['ماذا ستلعب اليوم؟']
+   jsonld: ['Brand', 'ContactPoint', 'Country', 'ImageObject', 'ItemList', 'ListItem']
+   icon classes: []
