@@ -1,0 +1,112 @@
+{
+  "case_id": "ecommerce-field-supply",
+  "depth": "FULL REDESIGN",
+  "request": "Use REAL-UI for a FULL REDESIGN of an existing outdoor-supply catalog. Preserve the actual catalog, discovery, cart, and fulfillment capabilities; re-derive the interface and validate it in a browser.",
+  "product": {
+    "purpose": "Help day hikers compare a small technical catalog, confirm fit and availability, and build a pickup-ready kit.",
+    "users": ["new hikers", "returning outdoor customers"],
+    "user_intents": ["find gear for a trip", "compare fit and weight", "check pickup availability", "add an item to cart"],
+    "primary_tasks": ["narrow the catalog", "compare products", "choose a variant and fulfillment"],
+    "capabilities": ["browse", "search", "filter", "compare", "product-details", "variants", "availability", "cart"],
+    "workflows": ["browse -> narrow -> compare -> product", "search -> product -> variant -> cart", "product -> pickup check -> cart"],
+    "entities": ["category", "product", "variant", "store", "inventory", "cart"],
+    "relationships": ["category contains products", "product has variants", "variant has inventory by store", "cart contains variants"],
+    "content_data": ["36 products", "price", "weight", "capacity", "rating", "variant", "store availability"],
+    "routes": ["/shop", "/category/:slug", "/product/:slug", "/search", "/compare", "/cart"],
+    "business_logic": ["facet counts", "variant inventory", "comparison limit", "cart totals", "pickup eligibility"],
+    "technical_constraints": ["responsive commerce web", "fast product-list rendering", "deep-linkable filters"],
+    "seo_requirements": ["crawlable categories and products", "one h1", "product metadata", "canonical filtered routes"],
+    "accessibility_requirements": ["labeled filters", "non-color-only availability", "keyboard compare", "visible focus", "reflow"],
+    "platform_context": ["web", "desktop comparison", "phone shopping and pickup"]
+  },
+  "presentation_before": {
+    "navigation_model": "brand header with mega-menu, search, account, and cart",
+    "zones": ["campaign-hero", "category-circles", "promotion-tiles", "product-grid", "newsletter-band"],
+    "sequence": ["campaign-hero", "category-circles", "promotion-tiles", "product-grid", "newsletter-band"],
+    "grouping": {"promotion": ["campaign-hero", "promotion-tiles"], "discovery": ["category-circles", "product-grid"], "retention": ["newsletter-band"]},
+    "representations": {"browse": "category circles", "products": "uniform cards", "offers": "campaign tiles", "filters": "drawer"},
+    "primary_interactions": ["open campaign", "tap category", "open product card"],
+    "density": "low-density campaign landing page followed by card grid",
+    "responsive_model": "campaign blocks and cards stack on phone",
+    "silhouette": "hero -> category bubbles -> promo mosaic -> product cards",
+    "component_tree": ["Storefront", "CampaignHero", "CategoryBubbles", "PromoTiles", "ProductGrid", "Newsletter"],
+    "visual_system": ["lifestyle photography", "rounded tiles", "earth palette", "large campaign type"]
+  },
+  "research": [
+    {"source": "https://baymard.com/research/ecommerce-product-lists", "label": "SOURCE-OBSERVED", "finding": "Product-list usability depends on useful product information and category-specific comparison support.", "product_use": "Expose weight, capacity, price, and pickup state because those fields exist in this catalog; do not copy a marketplace template."},
+    {"source": "https://baymard.com/blog/current-state-product-list-and-filtering", "label": "SOURCE-OBSERVED", "finding": "Filtering and sorting problems still obstruct product finding in benchmarked stores.", "product_use": "Keep applied filters and result counts adjacent to the catalog workbench."},
+    {"source": "https://www.w3.org/WAI/WCAG22/Understanding/target-size-minimum.html", "label": "PLATFORM RULE", "finding": "Pointer targets need sufficient size or spacing under WCAG 2.2 AA.", "product_use": "Facet controls, compare toggles, and mobile task tabs use comfortably separated targets."}
+  ],
+  "design_brief": {
+    "product_priorities": ["decision-ready comparison", "inventory honesty", "fast narrowing", "cart continuity"],
+    "user_priorities": ["see meaningful differences", "know what is available", "avoid losing filters", "buy the right variant"],
+    "capabilities_to_preserve": ["browse", "search", "filter", "compare", "product-details", "variants", "availability", "cart"],
+    "research_findings": ["lists need category-specific attributes", "applied filters need context", "targets need sufficient size"],
+    "real_ui_knowledge": ["foundations/product-modeling.md", "industries/ecommerce.md", "pages/listing-search.md", "ux/search-discovery.md", "ui/data-display.md", "accessibility/floor.md"],
+    "ia_direction": "Make trip intent and comparable specifications the catalog entry point; keep fulfillment and cart state in view.",
+    "navigation_direction": "A compact shop masthead leads into a kit finder and catalog workbench; phone uses Find, Results, Compare, and Cart tasks.",
+    "content_representation": "Use an aligned product matrix for technical fields and a persistent comparison tray instead of promotional card sections.",
+    "interaction_direction": "Users narrow, mark up to three items, inspect details, then choose variant and fulfillment without losing the result set.",
+    "responsive_priorities": ["result count and applied filters remain visible", "comparison becomes a dedicated view", "cart state persists", "filters use a labeled sheet"],
+    "structures_to_preserve": ["product/category routes", "real catalog fields", "cart and inventory logic", "brand voice"],
+    "structures_to_change": ["remove campaign-led authority", "replace category bubbles with trip finder", "replace uniform cards with comparison rows", "move availability into decisions"],
+    "out_of_scope_features": ["membership program", "personalized recommendations", "subscriptions", "editorial journal", "advertising"]
+  },
+  "decisions": [
+    {"decision": "Lead with a trip-use finder instead of a campaign hero.", "evidence": "trip type, duration, and load are real selection inputs", "knowledge": "product-modeling.md + ecommerce.md", "product_reason": "the entry point helps form a viable kit", "confidence": "HIGH"},
+    {"decision": "Represent products as specification rows.", "evidence": "weight, capacity, price, and pickup state are comparable", "knowledge": "data-display.md + Baymard product lists", "product_reason": "customers can see material differences before opening details", "confidence": "HIGH"},
+    {"decision": "Exclude membership and recommendation features.", "evidence": "neither exists in supplied scope", "knowledge": "redesign/extraction.md", "product_reason": "industry convention does not authorize new business logic", "confidence": "HIGH"}
+  ],
+  "capability_ledger": [
+    {"id": "browse", "status": "TRANSFORM", "source": "category routes", "before": "category circles and grid", "after": "trip-finder and product-matrix"},
+    {"id": "search", "status": "RELOCATE", "source": "search route", "before": "global header", "after": "catalog-toolbar"},
+    {"id": "filter", "status": "TRANSFORM", "source": "existing facets", "before": "drawer", "after": "facet-rail with applied state"},
+    {"id": "compare", "status": "TRANSFORM", "source": "compare route", "before": "card checkbox", "after": "product-matrix and comparison-tray"},
+    {"id": "product-details", "status": "RELOCATE", "source": "product routes", "before": "separate card destination", "after": "product-matrix detail links"},
+    {"id": "variants", "status": "RELOCATE", "source": "product variants", "before": "product detail only", "after": "decision-drawer"},
+    {"id": "availability", "status": "TRANSFORM", "source": "store inventory", "before": "product detail text", "after": "matrix state and fulfillment-dock"},
+    {"id": "cart", "status": "PRESERVE", "source": "cart route", "before": "header icon", "after": "fulfillment-dock"}
+  ],
+  "scope_ledger": [
+    {"id": "browse", "classification": "EXISTING REQUIREMENT", "reason": "category/catalog routes"},
+    {"id": "search", "classification": "EXISTING REQUIREMENT", "reason": "search route"},
+    {"id": "filter", "classification": "EXISTING REQUIREMENT", "reason": "existing facet logic"},
+    {"id": "compare", "classification": "EXISTING REQUIREMENT", "reason": "compare route and limit"},
+    {"id": "product-details", "classification": "EXISTING REQUIREMENT", "reason": "product routes"},
+    {"id": "variants", "classification": "EXISTING REQUIREMENT", "reason": "catalog data"},
+    {"id": "availability", "classification": "EXISTING REQUIREMENT", "reason": "inventory logic"},
+    {"id": "cart", "classification": "EXISTING REQUIREMENT", "reason": "cart route and totals"},
+    {"id": "membership", "classification": "HYPOTHESIS", "implemented": false, "reason": "not supplied"},
+    {"id": "recommendations", "classification": "OUT OF SCOPE", "implemented": false, "reason": "no recommendation logic"}
+  ],
+  "proposed_structure": {
+    "navigation_model": "shop masthead into trip finder and catalog workbench with phone task destinations",
+    "zones": ["trip-finder", "catalog-toolbar", "facet-rail", "product-matrix", "comparison-tray", "fulfillment-dock"],
+    "sequence": ["trip-finder", "catalog-toolbar", "facet-rail", "product-matrix", "comparison-tray", "fulfillment-dock"],
+    "grouping": {"intent": ["trip-finder"], "narrowing": ["catalog-toolbar", "facet-rail"], "decision": ["product-matrix", "comparison-tray"], "transaction": ["fulfillment-dock"]},
+    "representations": {"browse": "trip query", "filters": "visible facets and applied tokens", "products": "specification rows", "compare": "persistent tray", "fulfillment": "store and cart dock"},
+    "primary_interactions": ["set trip intent", "apply/remove facet", "mark compare", "open product", "check pickup", "open cart"],
+    "density": "compact decision workbench with aligned technical fields",
+    "responsive_model": "desktop facet/matrix/tray; phone task destinations and stacked spec rows",
+    "silhouette": "intent band -> filter rail + dense matrix -> comparison and fulfillment docks"
+  },
+  "structural_decisions": [
+    {"dimension": "navigation_model", "before": "mega-menu store header", "after": "shop tasks and workbench", "evidence": "catalog workflows", "product_reason": "navigation begins with finding and deciding"},
+    {"dimension": "zones", "before": "campaign/category/promo/grid/newsletter", "after": "intent/toolbar/facets/matrix/compare/fulfillment", "evidence": "screen contracts", "product_reason": "all zones serve selection or transaction"},
+    {"dimension": "sequence", "before": "promotion before products", "after": "intent and narrowing before decision", "evidence": "task order", "product_reason": "shorter path to a suitable item"},
+    {"dimension": "grouping", "before": "promotion/discovery/retention", "after": "intent/narrowing/decision/transaction", "evidence": "workflow model", "product_reason": "groups by customer decision stage"},
+    {"dimension": "representations", "before": "bubbles/tiles/cards", "after": "query/facets/spec rows/docks", "evidence": "catalog attributes", "product_reason": "makes comparison explicit"},
+    {"dimension": "primary_interactions", "before": "campaign and card opening", "after": "narrow/compare/check fulfillment", "evidence": "primary tasks", "product_reason": "supports the complete buying decision"},
+    {"dimension": "density", "before": "airy campaign layout", "after": "dense technical workbench", "evidence": "36-item catalog and comparable fields", "product_reason": "more decision data per viewport"},
+    {"dimension": "responsive_model", "before": "stacked campaign/cards", "after": "phone task views and stacked spec rows", "evidence": "mobile shopping workflow", "product_reason": "preserves context without squeezing a table"},
+    {"dimension": "silhouette", "before": "hero/bubbles/mosaic/grid", "after": "intent/workbench/docks", "evidence": "style-blind re-derivation", "product_reason": "the form follows equipment selection"}
+  ],
+  "kept_structure": [],
+  "implementation": {"before": "before/site/index.html", "after": "after/site/index.html"},
+  "render": {
+    "viewports": {"desktop": {"width": 1440, "height": 900}, "mobile": {"width": 390, "height": 844}},
+    "screenshots": {"before_desktop": "before-desktop.png", "before_mobile": "before-mobile.png", "after_desktop": "after-desktop.png", "after_mobile": "after-mobile.png"},
+    "snapshots": {"before_desktop": "evidence/before-desktop.json", "before_mobile": "evidence/before-mobile.json", "after_desktop": "evidence/after-desktop.json", "after_mobile": "evidence/after-mobile.json"},
+    "a11y": {"before_desktop": "evidence/before-desktop-a11y.json", "before_mobile": "evidence/before-mobile-a11y.json", "after_desktop": "evidence/after-desktop-a11y.json", "after_mobile": "evidence/after-mobile-a11y.json"}
+  }
+}

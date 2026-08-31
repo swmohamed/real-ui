@@ -1,0 +1,81 @@
+{
+  "title": "Field Supply — kit finder",
+  "viewport": {
+    "width": 390,
+    "height": 844
+  },
+  "h1_count": 1,
+  "landmarks": {
+    "header": 1,
+    "nav": 2,
+    "main": 1,
+    "footer": 1
+  },
+  "zones": [
+    {
+      "id": "trip-finder",
+      "box": {
+        "x": 12,
+        "y": 77,
+        "width": 366,
+        "height": 160
+      },
+      "visible": true
+    },
+    {
+      "id": "catalog-toolbar",
+      "box": {
+        "x": 12,
+        "y": 237,
+        "width": 366,
+        "height": 134
+      },
+      "visible": true
+    },
+    {
+      "id": "facet-rail",
+      "box": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0
+      },
+      "visible": false
+    },
+    {
+      "id": "product-matrix",
+      "box": {
+        "x": 12,
+        "y": 371,
+        "width": 366,
+        "height": 344
+      },
+      "visible": true
+    },
+    {
+      "id": "comparison-tray",
+      "box": {
+        "x": 12,
+        "y": 727,
+        "width": 366,
+        "height": 102
+      },
+      "visible": true
+    },
+    {
+      "id": "fulfillment-dock",
+      "box": {
+        "x": 12,
+        "y": 841,
+        "width": 366,
+        "height": 91
+      },
+      "visible": true
+    }
+  ],
+  "horizontal_overflow": false,
+  "document_width": 390,
+  "console_errors": [],
+  "surface": "redesign/ecommerce/after",
+  "device": "mobile"
+}

@@ -1,0 +1,71 @@
+{
+  "title": "Relayboard — priority queue",
+  "viewport": {
+    "width": 1440,
+    "height": 900
+  },
+  "h1_count": 1,
+  "landmarks": {
+    "header": 1,
+    "nav": 3,
+    "main": 1,
+    "footer": 1
+  },
+  "zones": [
+    {
+      "id": "context-rail",
+      "box": {
+        "x": 51,
+        "y": 69,
+        "width": 220,
+        "height": 832
+      },
+      "visible": true
+    },
+    {
+      "id": "view-switcher",
+      "box": {
+        "x": 271,
+        "y": 69,
+        "width": 1118,
+        "height": 72
+      },
+      "visible": true
+    },
+    {
+      "id": "priority-queue",
+      "box": {
+        "x": 271,
+        "y": 141,
+        "width": 788,
+        "height": 671
+      },
+      "visible": true
+    },
+    {
+      "id": "work-inspector",
+      "box": {
+        "x": 1059,
+        "y": 141,
+        "width": 330,
+        "height": 760
+      },
+      "visible": true
+    },
+    {
+      "id": "schedule-strip",
+      "box": {
+        "x": 271,
+        "y": 812,
+        "width": 788,
+        "height": 89
+      },
+      "visible": true
+    }
+  ],
+  "horizontal_overflow": false,
+  "document_width": 1440,
+  "console_errors": [],
+  "surface": "redesign/saas/after",
+  "device": "desktop"
+}

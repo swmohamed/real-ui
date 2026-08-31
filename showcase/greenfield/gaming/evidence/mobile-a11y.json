@@ -1,0 +1,18 @@
+{
+  "surface": "greenfield/gaming",
+  "device": "mobile",
+  "viewport": {
+    "width": 390,
+    "height": 844
+  },
+  "engine": "axe-core",
+  "axe_version": "4.12.1",
+  "counts": {
+    "inapplicable": 54,
+    "incomplete": 0,
+    "passes": 35,
+    "violations": 0
+  },
+  "violations": [],
+  "incomplete": []
+}

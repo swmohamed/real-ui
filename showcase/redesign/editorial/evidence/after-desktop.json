@@ -1,0 +1,71 @@
+{
+  "title": "The Civic Wire — morning edition",
+  "viewport": {
+    "width": 1440,
+    "height": 900
+  },
+  "h1_count": 1,
+  "landmarks": {
+    "header": 1,
+    "nav": 2,
+    "main": 1,
+    "footer": 1
+  },
+  "zones": [
+    {
+      "id": "edition-ribbon",
+      "box": {
+        "x": 50,
+        "y": 85,
+        "width": 1340,
+        "height": 30
+      },
+      "visible": true
+    },
+    {
+      "id": "briefing-index",
+      "box": {
+        "x": 50,
+        "y": 115,
+        "width": 1340,
+        "height": 176
+      },
+      "visible": true
+    },
+    {
+      "id": "lead-package",
+      "box": {
+        "x": 50,
+        "y": 291,
+        "width": 838,
+        "height": 611
+      },
+      "visible": true
+    },
+    {
+      "id": "chronology-wire",
+      "box": {
+        "x": 888,
+        "y": 291,
+        "width": 503,
+        "height": 611
+      },
+      "visible": true
+    },
+    {
+      "id": "topic-desks",
+      "box": {
+        "x": 50,
+        "y": 903,
+        "width": 1340,
+        "height": 235
+      },
+      "visible": true
+    }
+  ],
+  "horizontal_overflow": false,
+  "document_width": 1440,
+  "console_errors": [],
+  "surface": "redesign/editorial/after",
+  "device": "desktop"
+}

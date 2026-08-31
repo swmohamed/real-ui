@@ -1,0 +1,71 @@
+{
+  "title": "Field Supply — baseline",
+  "viewport": {
+    "width": 390,
+    "height": 844
+  },
+  "h1_count": 1,
+  "landmarks": {
+    "header": 1,
+    "nav": 1,
+    "main": 1,
+    "footer": 1
+  },
+  "zones": [
+    {
+      "id": "campaign-hero",
+      "box": {
+        "x": 12,
+        "y": 87,
+        "width": 366,
+        "height": 436
+      },
+      "visible": true
+    },
+    {
+      "id": "category-circles",
+      "box": {
+        "x": 12,
+        "y": 559,
+        "width": 366,
+        "height": 276
+      },
+      "visible": true
+    },
+    {
+      "id": "promotion-tiles",
+      "box": {
+        "x": 12,
+        "y": 871,
+        "width": 366,
+        "height": 398
+      },
+      "visible": true
+    },
+    {
+      "id": "product-grid",
+      "box": {
+        "x": 12,
+        "y": 1305,
+        "width": 366,
+        "height": 459
+      },
+      "visible": true
+    },
+    {
+      "id": "newsletter-band",
+      "box": {
+        "x": 12,
+        "y": 1788,
+        "width": 366,
+        "height": 205
+      },
+      "visible": true
+    }
+  ],
+  "horizontal_overflow": false,
+  "document_width": 390,
+  "console_errors": [],
+  "surface": "redesign/ecommerce/before",
+  "device": "mobile"
+}

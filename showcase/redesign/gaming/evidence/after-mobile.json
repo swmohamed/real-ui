@@ -1,0 +1,71 @@
+{
+  "title": "El3abha — play deck",
+  "viewport": {
+    "width": 390,
+    "height": 844
+  },
+  "h1_count": 1,
+  "landmarks": {
+    "header": 1,
+    "nav": 2,
+    "main": 1,
+    "footer": 1
+  },
+  "zones": [
+    {
+      "id": "resume-dock",
+      "box": {
+        "x": 12,
+        "y": 71,
+        "width": 366,
+        "height": 72
+      },
+      "visible": true
+    },
+    {
+      "id": "play-deck",
+      "box": {
+        "x": 12,
+        "y": 153,
+        "width": 366,
+        "height": 577
+      },
+      "visible": true
+    },
+    {
+      "id": "library-explorer",
+      "box": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0
+      },
+      "visible": false
+    },
+    {
+      "id": "challenge-status",
+      "box": {
+        "x": 12,
+        "y": 740,
+        "width": 366,
+        "height": 140
+      },
+      "visible": true
+    },
+    {
+      "id": "score-ledger",
+      "box": {
+        "x": 12,
+        "y": 890,
+        "width": 366,
+        "height": 164
+      },
+      "visible": true
+    }
+  ],
+  "horizontal_overflow": false,
+  "document_width": 390,
+  "console_errors": [],
+  "surface": "redesign/gaming/after",
+  "device": "mobile"
+}

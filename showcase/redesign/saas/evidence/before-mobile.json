@@ -1,0 +1,71 @@
+{
+  "title": "Relayboard — baseline",
+  "viewport": {
+    "width": 390,
+    "height": 844
+  },
+  "h1_count": 1,
+  "landmarks": {
+    "header": 1,
+    "nav": 1,
+    "main": 1,
+    "footer": 1
+  },
+  "zones": [
+    {
+      "id": "welcome-strip",
+      "box": {
+        "x": 12,
+        "y": 87,
+        "width": 366,
+        "height": 364
+      },
+      "visible": true
+    },
+    {
+      "id": "kpi-cards",
+      "box": {
+        "x": 12,
+        "y": 487,
+        "width": 366,
+        "height": 286
+      },
+      "visible": true
+    },
+    {
+      "id": "kanban-board",
+      "box": {
+        "x": 12,
+        "y": 809,
+        "width": 366,
+        "height": 328
+      },
+      "visible": true
+    },
+    {
+      "id": "activity-rail",
+      "box": {
+        "x": 12,
+        "y": 1173,
+        "width": 366,
+        "height": 179
+      },
+      "visible": true
+    },
+    {
+      "id": "quick-actions",
+      "box": {
+        "x": 12,
+        "y": 1388,
+        "width": 366,
+        "height": 138
+      },
+      "visible": true
+    }
+  ],
+  "horizontal_overflow": false,
+  "document_width": 390,
+  "console_errors": [],
+  "surface": "redesign/saas/before",
+  "device": "mobile"
+}

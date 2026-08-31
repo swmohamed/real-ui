@@ -1,0 +1,20 @@
+{
+  "title": "Relay Desk — support handoff",
+  "viewport": {
+    "width": 1440,
+    "height": 900
+  },
+  "h1_count": 1,
+  "landmarks": {
+    "header": 1,
+    "nav": 3,
+    "main": 1,
+    "footer": 1
+  },
+  "zones": [],
+  "horizontal_overflow": false,
+  "document_width": 1440,
+  "console_errors": [],
+  "surface": "greenfield/saas",
+  "device": "desktop"
+}

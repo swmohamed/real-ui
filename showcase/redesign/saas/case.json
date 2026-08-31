@@ -1,0 +1,112 @@
+{
+  "case_id": "saas-relayboard",
+  "depth": "FULL REDESIGN",
+  "request": "Use REAL-UI for a FULL REDESIGN of this existing team-work planning product. Preserve its actual capabilities, workflows, routes, data, and logic; re-derive the interface without layout suggestions and validate it in a browser.",
+  "product": {
+    "purpose": "Help a small delivery team decide what needs attention now, assign work, and move tasks through a simple status workflow.",
+    "users": ["project leads", "contributors"],
+    "user_intents": ["triage urgent work", "see work by project", "assign and update a task", "review deadlines", "find a task"],
+    "primary_tasks": ["triage the next task", "update task ownership/status", "review upcoming work"],
+    "capabilities": ["projects", "task-triage", "status-workflow", "assignment", "scheduling", "search", "create-task", "saved-views"],
+    "workflows": ["open workspace -> triage queue -> inspect -> update", "search -> open task", "project -> view -> create task"],
+    "entities": ["workspace", "project", "task", "person", "due date", "saved view"],
+    "relationships": ["workspace has projects", "project has tasks", "task has assignee/status/due date", "view filters tasks"],
+    "content_data": ["task titles", "priority", "status", "assignee", "due date", "project", "recent changes"],
+    "routes": ["/workspace", "/projects/:id", "/tasks/:id", "/search", "/views/:id"],
+    "business_logic": ["status transitions", "assignment", "due-date ordering", "saved filters"],
+    "technical_constraints": ["desktop-first responsive web app", "deep-linkable task state", "keyboard support"],
+    "seo_requirements": ["authenticated app routes are not marketing pages", "meaningful page titles"],
+    "accessibility_requirements": ["keyboard task path", "visible focus", "status not color-only", "drag alternatives", "reflow"],
+    "platform_context": ["web app", "desktop pointer/keyboard", "phone touch for quick updates"]
+  },
+  "presentation_before": {
+    "navigation_model": "top app bar plus project dropdown",
+    "zones": ["welcome-strip", "kpi-cards", "kanban-board", "activity-rail", "quick-actions"],
+    "sequence": ["welcome-strip", "kpi-cards", "kanban-board", "activity-rail", "quick-actions"],
+    "grouping": {"overview": ["welcome-strip", "kpi-cards"], "work": ["kanban-board"], "support": ["activity-rail", "quick-actions"]},
+    "representations": {"triage": "kpi cards", "workflow": "kanban columns", "activity": "card rail", "actions": "button cluster"},
+    "primary_interactions": ["open board card", "drag task", "use quick action"],
+    "density": "airy card dashboard",
+    "responsive_model": "columns stack into long card sections",
+    "silhouette": "welcome -> metrics -> board -> activity cards",
+    "component_tree": ["Dashboard", "Welcome", "MetricGrid", "Board", "ActivityCard", "QuickActions"],
+    "visual_system": ["rounded dashboard cards", "soft gray canvas", "blue accent", "large whitespace"]
+  },
+  "research": [
+    {"source": "https://atlassian.design/components/navigation-system/", "label": "SOURCE-OBSERVED", "finding": "Atlassian's current app navigation system separates persistent product context from page content.", "product_use": "Use a context rail only because workspaces/projects are real entities; do not copy Atlassian's composition."},
+    {"source": "https://atlassian.design/components/pragmatic-drag-and-drop/design-guidelines", "label": "DESIGN PRINCIPLE", "finding": "Reordering needs visible affordances, clear outcome feedback, and accessible non-drag actions.", "product_use": "The inspector exposes move/status controls; drag is optional, not the only workflow."},
+    {"source": "https://design-system.service.gov.uk/components/task-list/", "label": "DESIGN PRINCIPLE", "finding": "Task/status lists are useful when users need to understand and choose work, but should not replace a simpler flow without evidence.", "product_use": "A priority queue fits the extracted triage job; it is not used as a universal dashboard pattern."}
+  ],
+  "design_brief": {
+    "product_priorities": ["triage speed", "task context", "safe status changes", "deadline visibility"],
+    "user_priorities": ["know what needs attention", "update without losing context", "find project work quickly"],
+    "capabilities_to_preserve": ["projects", "task-triage", "status-workflow", "assignment", "scheduling", "search", "create-task", "saved-views"],
+    "research_findings": ["persistent context can support deep app trees", "drag needs an accessible twin", "status lists help users choose work"],
+    "real_ui_knowledge": ["foundations/product-modeling.md", "industries/saas-dev.md", "pages/dashboard.md", "ui/data-display.md", "devices/desktop.md", "accessibility/floor.md"],
+    "ia_direction": "Make the triage queue the workspace home; projects and saved views are context, while task details open in a persistent inspector.",
+    "navigation_direction": "Context rail for workspace/project/view switching plus command search; phone uses Projects, Queue, and Schedule destinations.",
+    "content_representation": "Prioritized task rows with aligned status/owner/due data; inspector for edits; schedule strip for time horizon.",
+    "interaction_direction": "Keyboard-first queue navigation and inline status actions; drag remains optional with menu equivalents.",
+    "responsive_priorities": ["queue remains primary", "inspector becomes a route/sheet", "schedule condenses by day", "project context remains visible"],
+    "structures_to_preserve": ["project/task URLs", "known status terms", "create/search shortcuts"],
+    "structures_to_change": ["remove welcome and KPI authority", "replace board-first home with queue", "replace activity card rail with task history inside inspector"],
+    "out_of_scope_features": ["AI assistant", "subscription upsell", "chat", "time tracking", "new analytics"]
+  },
+  "decisions": [
+    {"decision": "Use the priority queue as the first screen.", "evidence": "triage is the highest-frequency and highest-risk task", "knowledge": "product-modeling.md + dashboard.md", "product_reason": "the live work state is the product, not a welcome overview", "confidence": "HIGH"},
+    {"decision": "Open task details in a persistent inspector on desktop.", "evidence": "users update tasks while preserving queue context", "knowledge": "dashboard.md + devices/desktop.md", "product_reason": "reduces return navigation and keeps selection orientation", "confidence": "HIGH"},
+    {"decision": "Keep drag optional.", "evidence": "Atlassian guidance and WCAG dragging alternative", "knowledge": "accessibility/contrast-motion.md", "product_reason": "status changes must work for keyboard and touch users", "confidence": "HIGH"}
+  ],
+  "capability_ledger": [
+    {"id": "projects", "status": "RELOCATE", "source": "existing project dropdown/routes", "before": "top dropdown", "after": "context-rail"},
+    {"id": "task-triage", "status": "TRANSFORM", "source": "board and priority data", "before": "kpi cards and kanban", "after": "priority-queue"},
+    {"id": "status-workflow", "status": "TRANSFORM", "source": "kanban transitions", "before": "drag columns", "after": "queue status controls and work-inspector"},
+    {"id": "assignment", "status": "RELOCATE", "source": "task cards", "before": "card avatar", "after": "work-inspector"},
+    {"id": "scheduling", "status": "TRANSFORM", "source": "due dates", "before": "card metadata", "after": "schedule-strip"},
+    {"id": "search", "status": "RELOCATE", "source": "search route", "before": "top icon", "after": "context-rail command search"},
+    {"id": "create-task", "status": "PRESERVE", "source": "existing action", "before": "quick action", "after": "priority-queue toolbar"},
+    {"id": "saved-views", "status": "TRANSFORM", "source": "saved filters", "before": "board filter", "after": "view-switcher"}
+  ],
+  "scope_ledger": [
+    {"id": "projects", "classification": "EXISTING REQUIREMENT", "reason": "existing routes/data"},
+    {"id": "task-triage", "classification": "EXISTING REQUIREMENT", "reason": "existing board work"},
+    {"id": "status-workflow", "classification": "EXISTING REQUIREMENT", "reason": "existing status transitions"},
+    {"id": "assignment", "classification": "EXISTING REQUIREMENT", "reason": "existing task ownership"},
+    {"id": "scheduling", "classification": "EXISTING REQUIREMENT", "reason": "existing due dates"},
+    {"id": "search", "classification": "EXISTING REQUIREMENT", "reason": "existing route"},
+    {"id": "create-task", "classification": "EXISTING REQUIREMENT", "reason": "existing action"},
+    {"id": "saved-views", "classification": "EXISTING REQUIREMENT", "reason": "existing filters"},
+    {"id": "ai-assistant", "classification": "HYPOTHESIS", "implemented": false, "reason": "not in supplied scope"},
+    {"id": "subscription-upsell", "classification": "OUT OF SCOPE", "implemented": false, "reason": "no billing requirement"}
+  ],
+  "proposed_structure": {
+    "navigation_model": "workspace/project/view context rail with command search and phone task destinations",
+    "zones": ["context-rail", "view-switcher", "priority-queue", "work-inspector", "schedule-strip"],
+    "sequence": ["context-rail", "view-switcher", "priority-queue", "work-inspector", "schedule-strip"],
+    "grouping": {"context": ["context-rail", "view-switcher"], "work": ["priority-queue", "work-inspector"], "time": ["schedule-strip"]},
+    "representations": {"triage": "aligned priority list", "workflow": "row controls and inspector", "activity": "task history", "schedule": "time strip"},
+    "primary_interactions": ["move through queue", "inspect/update selected task", "switch saved view", "search command", "create task"],
+    "density": "dense operational list with one contextual inspector",
+    "responsive_model": "desktop rail/list/inspector; phone destinations with list then full task detail",
+    "silhouette": "persistent context rail -> operational queue -> selected-task inspector"
+  },
+  "structural_decisions": [
+    {"dimension": "navigation_model", "before": "top bar/dropdown", "after": "context rail/phone destinations", "evidence": "real workspace hierarchy", "product_reason": "persistent project context"},
+    {"dimension": "zones", "before": "welcome/metrics/board/activity/actions", "after": "context/views/queue/inspector/schedule", "evidence": "screen contracts", "product_reason": "regions map to work decisions"},
+    {"dimension": "sequence", "before": "overview before work", "after": "context and queue first", "evidence": "task ranking", "product_reason": "triage has shortest path"},
+    {"dimension": "grouping", "before": "overview/work/support", "after": "context/work/time", "evidence": "entity relationships", "product_reason": "work stays attached to project and deadline"},
+    {"dimension": "representations", "before": "cards/kanban", "after": "list/inspector/strip", "evidence": "aligned comparable task fields", "product_reason": "scanning and editing beat card chrome"},
+    {"dimension": "primary_interactions", "before": "drag and quick actions", "after": "queue navigation and explicit controls", "evidence": "workflow plus accessibility", "product_reason": "fast and input-independent"},
+    {"dimension": "density", "before": "airy dashboard", "after": "dense operations", "evidence": "expert recurring use", "product_reason": "more relevant work per viewport"},
+    {"dimension": "responsive_model", "before": "stacked cards", "after": "task destinations and detail route", "evidence": "mobile interaction model", "product_reason": "phone updates do not mimic three-pane desktop"},
+    {"dimension": "silhouette", "before": "dashboard sections", "after": "workbench shell", "evidence": "style-blind plan", "product_reason": "the product is a queue, not a brochure"}
+  ],
+  "kept_structure": [],
+  "implementation": {"before": "before/site/index.html", "after": "after/site/index.html"},
+  "render": {
+    "viewports": {"desktop": {"width": 1440, "height": 900}, "mobile": {"width": 390, "height": 844}},
+    "screenshots": {"before_desktop": "before-desktop.png", "before_mobile": "before-mobile.png", "after_desktop": "after-desktop.png", "after_mobile": "after-mobile.png"},
+    "snapshots": {"before_desktop": "evidence/before-desktop.json", "before_mobile": "evidence/before-mobile.json", "after_desktop": "evidence/after-desktop.json", "after_mobile": "evidence/after-mobile.json"},
+    "a11y": {"before_desktop": "evidence/before-desktop-a11y.json", "before_mobile": "evidence/before-mobile-a11y.json", "after_desktop": "evidence/after-desktop-a11y.json", "after_mobile": "evidence/after-mobile-a11y.json"}
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "surface": "redesign/saas/before",
+  "device": "desktop",
+  "viewport": {
+    "width": 1440,
+    "height": 900
+  },
+  "engine": "axe-core",
+  "axe_version": "4.12.1",
+  "counts": {
+    "inapplicable": 58,
+    "incomplete": 0,
+    "passes": 31,
+    "violations": 0
+  },
+  "violations": [],
+  "incomplete": []
+}
