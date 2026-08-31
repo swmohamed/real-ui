@@ -46,7 +46,19 @@ research logs, never fabricated.
 
 ## Install
 
-### Quick way (recommended)
+### One-liner (skills CLI — recommended)
+
+```bash
+npx skills add SwMohamed/real-ui
+```
+
+Works with the standard agent-skills CLI (skills.sh): installs into the
+universal `~/.agents/skills` hub (or the current project's) and wires up
+every agent it detects (Claude Code, Codex, Cursor, Gemini CLI, Copilot,
+and more). Local pre-publish testing works too:
+`npx skills add /path/to/real-ui`.
+
+### Zero-Node alternative (installs to EVERY agent on the machine)
 
 ```bash
 git clone https://github.com/SwMohamed/real-ui.git
@@ -54,11 +66,11 @@ cd real-ui
 python scripts/install.py
 ```
 
-The installer auto-detects **every** agent skills folder on your machine
+This installer auto-detects **every** agent skills folder on the machine
 (pi, Claude Code, Codex, Cursor, Gemini CLI, OpenCode, Windsurf, Continue,
 Roo, Factory, Qoder, Trae, Kilo Code, CodeBuddy, Warp, Augment, Codewhale,
-and any other `~/.<agent>/skills` convention), installs the skill into
-each, and verifies every copy is identical.
+and any other `~/.<agent>/skills` convention), installs real **copies**
+into each (no symlinks), and verifies every copy is identical.
 
 Verify anytime:
 
