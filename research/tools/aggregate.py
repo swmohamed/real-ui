@@ -1,11 +1,27 @@
 #!/usr/bin/env python3
-"""Aggregate cross-corpus findings from all fetched reports."""
-import json, glob, re, collections
+"""Aggregate cross-corpus findings from all fetched reports.
 
-def load():
+Prevalence metrics count each site at most once per value. Declaration counts
+inside a site's CSS are evidence of repetition, not additional sites.
+"""
+import collections
+import json
+import os
+from pathlib import Path
+import re
+from metrics import site_value_prevalence
+
+RESEARCH_DIR = Path(__file__).resolve().parents[1]
+REPORTS_DIR = Path(os.environ.get("REAL_UI_REPORTS_DIR", RESEARCH_DIR / "reports"))
+
+def load(report_dir=REPORTS_DIR):
     sites = {}
-    for f in sorted(glob.glob("reports/*.json")):
-        for s in json.load(open(f, encoding="utf-8")):
+    for f in sorted(Path(report_dir).glob("*.json")):
+        with f.open(encoding="utf-8") as handle:
+            report = json.load(handle)
+        if not isinstance(report, list):
+            continue
+        for s in report:
             if s["status"] == "ok" and s.get("css"):
                 sites[s["name"]] = s
     return sites
@@ -14,12 +30,9 @@ sites = load()
 print(f"corpus: {len(sites)} sites with CSS evidence")
 
 # 1. breakpoints
-bp = collections.Counter()
-for s in sites.values():
-    for val, n in s["css"]["breakpoints"]:
-        bp[int(val)] += n
+bp = site_value_prevalence(sites, "css", "breakpoints", transform=int)
 std = [(k,v) for k,v in sorted(bp.items()) if v>=8]
-print("\n== BREAKPOINT FREQUENCY (media-query width, count of sites using) ==")
+print("\n== BREAKPOINT PREVALENCE (sites where width is retained in extracted evidence) ==")
 for k,v in std: print(f"  {k:5d}px  {v}")
 
 # 2. fonts
@@ -57,7 +70,7 @@ for k in ["container_queries","prefers_reduced_motion","prefers_color_scheme","f
 # 5. frameworks
 fw = collections.Counter()
 for s in sites.values(): fw.update(s["html"].get("framework_hints", []))
-print("\n== FRAMEWORK HINTS ==")
+print("\n== STORED FRAMEWORK HINTS (heuristic source signals, not adoption rates) ==")
 for k,v in fw.most_common(15): print(f"  {v:3d}  {k}")
 
 # 6. Arabic vs global comparison
@@ -75,9 +88,7 @@ for s in ar.values():
     if c["dir_rtl_rules"]: tech["css :dir/[dir=rtl] rules"] += 1
     if c["lang_ar_rules"]: tech[":lang(ar) rules"] += 1
 print("  RTL CSS techniques:", dict(tech))
-arbp = collections.Counter()
-for s in ar.values():
-    for val, n in s["css"]["breakpoints"]: arbp[int(val)] += n
+arbp = site_value_prevalence(ar, "css", "breakpoints", transform=int)
 print("  RTL breakpoints:", sorted([(k,v) for k,v in arbp.items() if v>=5], key=lambda x:-x[1])[:10])
 
 # 7. max-width conventions

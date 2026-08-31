@@ -1,7 +1,7 @@
 # Platform DNA: Jetpack Compose (Android, declarative)
 
-Sources: developer.android.com fetched 2025-08 `[OBSERVED]` — adaptive
-layouts, large screens, Material 3 in Compose pages.
+Sources: developer.android.com adaptive navigation/window-class and Compose
+docs checked 2026-08 `[OBSERVED]`.
 
 ## Adaptive scaffolds (official, use as design vocabulary) `[OBSERVED]`
 
@@ -44,12 +44,12 @@ screen must define its states (loading/empty/error/content/
 offline — ux/mobile-states.md) BEFORE pixels; states are first-class,
 not error-handling garnish.
 
-## Window size classes `[OBSERVED - screens doc: sw ≥ 600dp; full class
-cutoffs are the documented standard 600/840]`
+## Window size classes `[PLATFORM RULE — current Android adaptive docs]`
 
-compact (<600dp) medium (600–839) expanded (≥840) drive layout/nav
-switching (responsive/adaptive-models.md) — reason from classes, not
-device names.
+compact (<600dp), medium (600–839), expanded (840–1199), large
+(1200–1599), and extra-large (≥1600) drive layout/navigation choices
+(responsive/adaptive-models.md). Width and height are independent and
+dynamic; reason from current window state, not device names.
 
 ## Android-specific UX rules
 

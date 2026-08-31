@@ -45,7 +45,7 @@ else supports the search → results → detail → book funnel.
 Bookings/commission, upsells (insurance, rooms), loyalty programs,
 cross-sell (flights+hotel+car bundles).
 
-## Information architecture
+## Candidate information-architecture patterns (not a product sitemap)
 - Home: hero search widget (destination, dates, occupancy) + inspiration
   shelves (destinations, deals, "popular now")
 - Results page: map+list split (hotels) or matrix (flights) with filters
@@ -63,7 +63,7 @@ cross-sell (flights+hotel+car bundles).
 - Almosafer (AR OBSERVED): Open Sans + NotoSansArabicUI, bilingual, FAQ
   schema, national-currency pricing
 
-## Components that define the genre
+## Candidate components observed in the genre
 - **Search widget**: tabbed product switch + grouped fields + date-range
   picker + guest selector + big CTA (ابحث OBSERVED)
 - Results card: image strip, name+stars, location chip, sub-scores
@@ -107,7 +107,7 @@ cross-sell (flights+hotel+car bundles).
   conventions (larger default groups)
 - Cancellation clarity in Arabic with green/red badges mirrored RTL
 
-## Conventions (follow)
+## Conventions to evaluate (adopt only when model-supported)
 Search widget above all, map+list duality, free-cancellation badges, review
 sub-scores, total-price honesty, sticky summaries, destination inspiration
 shelves, currency/language switchers.
@@ -124,7 +124,7 @@ Booking, Airbnb, Ryanair, Marriott (INFERRED), Expedia (INFERRED),
 Almosafer (AR), Wego (AR/EN), Qatar Airways/Emirates class (INFERRED),
 VisitSaudi (AR gov-tourism OBSERVED).
 
-## Decision guidance
+## Contextual decision prompts
 Intent traffic (ads/direct): search-first, dense results, trust chips.
 Inspiration traffic (social/brand): destination shelves + editorial. Both
 share: photography warmth, price honesty, cancellation clarity. MENA adds

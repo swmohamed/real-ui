@@ -9,9 +9,11 @@ majority globally. Design phone-first as the real product, not a port.
 - Safe areas: notch + home-indicator insets on sticky elements
 - One-hand zone: primary actions bottom 60% of screen; destructive/
   secondary top-right (hard to reach accidentally)
-- Thumb targets: 44px min, 48–56 preferred; 8px+ separation
+- Thumb targets: prefer 44px, with 48–56 for frequent primary actions;
+  keep safe separation. WCAG 2.2 AA minimum is 24×24 CSS px or an allowed
+  spacing/inline/equivalent exception
 
-## Canonical mobile patterns by job
+## Candidate mobile transformations by job
 
 **Browse**: 2-col grids (commerce/games/media), swipe rails with peek,
 pull-to-refresh on feeds
@@ -21,8 +23,9 @@ keyboard states with search-in-suggestions; recent/saved chips above pad
 accordions, bottom-sheet comparisons
 **Convert**: single-column checkout, wallets above forms (Apple/Google Pay
 one-tap), numeric keyboards for OTPs (inputmode), autofill tokens
-**Navigate**: bottom tabs ≤5 + hamburger tree; section chips rails;
-breadcrumb → back button + page title
+**Navigate**: bottom destinations when 3–5 top-level modes dominate; otherwise
+use a shallow visible header, drawer, rail (larger windows), search-first
+surface, or contextual tabs. Preserve a clear back/orientation path.
 **Consume**: article typography 17–18px, media full-bleed, sticky minimal
 chrome, reading progress thin
 **Operate** (dashboards): card-stacked KPIs, tables → card lists or

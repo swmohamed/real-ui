@@ -1,8 +1,9 @@
 # research/ — Audit Trail
 
 This directory contains the evidence base for the real-ui skill. The
-knowledge in `knowledge/` is distilled from this research; nothing in the
-knowledge base claims analysis that isn't backed here.
+knowledge in `knowledge/` is distilled from this research plus cited official
+platform/standards sources. Source extraction is not render/runtime evidence;
+see `knowledge/research/method.md` for the evidence-mode contract.
 
 ## Contents
 
@@ -27,7 +28,9 @@ knowledge base claims analysis that isn't backed here.
 - Blocked/inaccessible hosts recorded honestly (see
   knowledge/research/saturation-and-confidence.md for the list)
 
-## Reproducing / extending (Deep Mode)
+## Reproducing / extending the evidence base (Deep / Audit mode)
+
+Run these from the `research/` directory:
 
 ```
 python tools/fetch_analyze.py raw/<batch>.json reports/<batch>.json   # urllib path
@@ -35,5 +38,6 @@ python tools/retry_curl.py raw/<batch>.json reports/<batch>.json      # curl pat
 python tools/aggregate.py                                             # refresh corpus stats
 ```
 
-Label new findings OBSERVED/INFERRED; respect robots/blocks; never
+Label new findings SOURCE-OBSERVED/RUNTIME-OBSERVED/RENDER-OBSERVED/
+INFERRED; respect robots/blocks; never
 re-publish site content — extract patterns only.

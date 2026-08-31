@@ -1,18 +1,21 @@
 # Page Type: Dashboard / App Shell / Logged-in Product
 
-The daily workspace: information density + speed + state clarity. Marketing
-aesthetics are wrong here; instrument aesthetics are right.
+The daily workspace: task speed + state clarity at the density its users and
+content require. “Dashboard” does not automatically mean KPI cards, a left
+rail, or instrument styling; derive the workspace from the product model.
 
-## Anatomy
+## Candidate anatomy (select from the screen contract)
 
-- **App shell** (persistent): top bar (product, search/⌘K, notifications,
-  help, account) + left nav rail (sections, collapsible) + content region
+- **App shell** (when navigation depth requires it): product identity + only
+  in-scope global actions + a navigation model chosen for task frequency and
+  window class; a left rail is one option, not the default
 - **First screen**: the user's live state (balance, today's tasks, live
   metrics), not a welcome hero
-- Widgets/cards in a 12-col grid; density tiers per role (exec overview
-  sparse, operator views dense)
+- Representations chosen per question: aligned lists/tables, timelines,
+  charts with source data, or genuinely independent widgets; a 12-column
+  card grid is optional
 - Empty states designed as onboarding (first-use teaches)
-- Global: quick-create button, search-everything, keyboard shortcuts
+- Global actions only when supported by scope and task frequency
 
 ## Widget/card rules
 
@@ -39,18 +42,21 @@ aesthetics are wrong here; instrument aesthetics are right.
 - Draft autosave + "unsaved changes" guards
 - Validation inline on blur; server errors mapped to fields
 
-## Navigation model
+## Navigation candidates
 
-- Left rail with grouped sections + icons + labels (icon-only with tooltips
-  on collapse; persistence preference)
+- Choose tabs, a rail, sidebar, search-first command surface, or shallow
+  in-page navigation from task frequency, hierarchy depth, and window class
 - Breadcrumbs in deep trees (settings > billing > invoices)
 - Deep-linkable everything (URL = state: filters, tabs, selected rows)
 
 ## Mobile behavior
 
-- Bottom tab navigation (4–5 max) + hamburger for the long tail
-- Cards stack; tables become card lists or horizontal-scroll with sticky
-  first column
+- Use bottom destinations only when 3–5 top-level modes dominate; otherwise
+  choose a model suited to the hierarchy and platform
+- Re-prioritize each region. Independent widgets may stack; tables retain
+  comparison through column priority, horizontal scroll/sticky identifiers,
+  disclosure, or a record-detail transition. Convert to cards only when
+  records make sense independently
 - Quick actions as floating action button or bar
 - Offline/slow states explicit (sync indicators)
 

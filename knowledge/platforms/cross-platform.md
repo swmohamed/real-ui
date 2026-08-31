@@ -9,7 +9,9 @@ Color roles · type ramp (families may vary slightly per platform for
 text rendering, hierarchy must match) · spacing scale · radius family ·
 elevation philosophy · iconography style · motion personality ·
 component SEMANTICS (a "card" means the same thing everywhere) · brand
-voice/microcopy · information architecture (same tasks, same order).
+voice/microcopy · shared capability and terminology model. Task coverage
+stays equivalent; priority, grouping, and navigation order may adapt to
+device context and native conventions without scope loss.
 
 ## Platform-specific expression (must be native)
 

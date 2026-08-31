@@ -4,6 +4,10 @@
 
 ## Profile & account pages
 
+All account/settings capabilities below are candidates and require scope
+evidence (`pages/README.md`). Do not invent billing, notifications, connected
+apps, sessions, avatars, deletion, maps, phone/chat, or team content.
+
 - Identity block: avatar (upload with crop), name, role/status, meta
 - Tabs/sections: Personal info, Security, Notifications, Billing, Connected
   apps, Sessions/devices, Danger zone (delete account — honest but
@@ -64,8 +68,9 @@
   untranslated — البريد الإلكتروني fine; API keys stay Latin)
 - Phone fields: country code selector + LTR number field; Saudi/EG/UAE
   formats (+966 5X XXX XXXX)
-- Date inputs: Gregorian (default) or Hijri per product; dual display for
-  official contexts
+- Date inputs: use the product/locale calendar policy (Gregorian, Hijri, or
+  another supported calendar); dual display only where users or regulation
+  require it
 
 ## Anti-patterns
 

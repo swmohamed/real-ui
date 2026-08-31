@@ -59,8 +59,12 @@ Lead story treatment: big headline + standfirst + image (news front pages)
 Task grid / links-first above the fold (gov portals, utilities, intranets)
 - **Use when**: efficiency IS the brand promise (GDS insight)
 
-## Universal hero rules
-- One h1 on page lives here; one primary CTA; height never exceeds 100svh
+## Hero quality constraints (when a hero is justified)
+- Keep one clear page h1; place it in the hero when that region carries the
+  page's main subject. Use only actions supported by the page job; a routing
+  or product-surface page may need several task links or no promotional CTA
+- Avoid trapping the next required content below an oversized viewport-height
+  composition; verify at short as well as tall viewports
 - Text sizes clamp() responsive (no media-query jumps)
 - RTL: split heroes mirror; scrims stay bottom; CTA icon flips
 - Performance budget: hero LCP ≤2.5s on 4G mid-tier device or simplify

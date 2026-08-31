@@ -59,8 +59,11 @@ layout. Drag-and-drop needs accessible alternatives `[DESIGN PRINCIPLE]`.
 
 ## Targets & motor (cross-ref)
 
-≥44/48dp targets `[PLATFORM RULE]`; WCAG 2.2 target-size 24px minimum
-on web; switch-access logical order (input/stylus-voice.md).
+Prefer generous hit regions: Apple HIG generally recommends 44×44pt (its
+accessibility page distinguishes a 44×44pt default from 28×28pt minimum), and
+Android recommends 48×48dp. WCAG 2.2 AA target-size is 24×24 CSS px on web or
+an allowed exception; switch-access order stays logical
+(input/stylus-voice.md).
 
 ## Mobile a11y QA
 

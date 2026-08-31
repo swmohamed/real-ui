@@ -16,7 +16,7 @@ Motivation design (streaks, progress) is structural, not decorative.
 Enrollments/subscriptions (B2C), seat licenses (B2B/2School), completion →
 renewal, institutional procurement cycles.
 
-## Information architecture
+## Candidate information-architecture patterns (not a product sitemap)
 - Consumer: Home (value + catalog preview) → Browse (subject tree) → Course
   page (syllabus, instructor, reviews, preview lessons, price/enroll) →
   Learning player (video + transcript + exercises + notes) → Certificates
@@ -33,7 +33,7 @@ renewal, institutional procurement cycles.
 - Almentor OBSERVED (AR video-learning): Inter + Noto Kufi Arabic pairing,
   Material icons, search + category rails, subscription CTAs (اشترك)
 
-## Components that define the genre
+## Candidate components observed in the genre
 - Course cards: provider logo, title, level chip, rating + count, duration,
   price/audit tag, "bestseller" flags
 - Syllabus accordions (modules → lessons with durations + preview locks)
@@ -78,7 +78,7 @@ renewal, institutional procurement cycles.
   weight than institution badges (talent culture)
 - Bilingual certificates (name in Arabic + English) for employer sharing
 
-## Conventions (follow)
+## Conventions to evaluate (adopt only when model-supported)
 Subject-tree browse, rich course pages with preview, syllabus accordions,
 ratings-with-count, certificates, progress/resume, financial-aid honesty,
 instructor credibility panels.
@@ -95,7 +95,7 @@ Coursera (OBSERVED), Khan Academy, Duolingo, edX, Medium-class publishing
 adjacent, Edraak (AR OBSERVED), Almentor (AR OBSERVED), Udemy (INFERRED),
 universities (INFERRED class).
 
-## Decision guidance
+## Contextual decision prompts
 Learner-motivation products: friendly bright systems, progress mechanics,
 player excellence. Institutional: heraldic serif trust, dense accurate
 tables. Arabic: Kufi energy or Naskh readability depending on audience age,

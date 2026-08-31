@@ -2,8 +2,9 @@
 
 Distilled from live code-first research: **156 websites fetched across ~45
 industries and 5 regions; ~31 MB of production CSS parsed; 145 sites yielded
-full CSS evidence.** Every number below is **OBSERVED** in the corpus unless
-labeled otherwise. Raw JSON evidence lives in `research/reports/` (audit trail).
+full CSS evidence.** Every number below is **SOURCE-OBSERVED** in the corpus
+unless labeled otherwise: it describes fetched source, not verified rendering
+or runtime behavior. Raw JSON evidence lives in `research/reports/`.
 
 Corpus composition: global leaders (Stripe, Apple, GitHub, BBC, gov.uk,
 Airbnb, Vercel, PayPal, ESPN, Toyota, MoMA…), conventional high-traffic sites,
@@ -15,22 +16,28 @@ Property Finder, Shahid, Kooora, FilGoal, Salla, Zid, Edraak…).
 
 Media-query width frequency across 145 sites (count = sites using that width):
 
-- **Tier 1 (ubiquitous):** 768px (used by ~90% of corpus), 1024px, 1280px.
-- **Tier 2 (common):** 480, 600/641, 767/769, 960, 992, 1200, 1440, 1920.
-- **Tier 3 (situational):** 375, 576/599, 820, 900, 1100, 1120, 1180, 1279, 1600.
+- **Most prevalent:** 768px (91/145 sites, 63%) and 1024px (63/145, 43%).
+- **Common:** 767 (54), 1200 (46), 1280 (41), 600 (34), 480/640/1440
+  (32 each), 1023 (27), 992 (25), 991 (24), 320 (21), 1920 (20).
+- **Situational:** 375 (13), 576 (19), 599 (10), 769 (11), 960 (12),
+  1100 (8), 1199 (17), 1279 (13), 1536 (11), 1600 (14).
 
 Interpretation (OBSERVED + INFERRED):
 - Paired values (600/601, 767/768, 1023/1024, 1279/1280) show **two strategies
   coexisting**: desktop-first `max-width` (799, 1023, 1279, 1439) and
   mobile-first `min-width` (641, 769, 1025, 1281). Modern Tailwind-era sites
   skew mobile-first; legacy enterprise skews desktop-first.
-- **A 4-step system (640 / 768 / 1024 / 1280) covers the overwhelming majority
-  of real behavior.** Add 1536/1600 only for wide-desktop optimizations.
+- At least one width in a 640/768/1024/1280 candidate set appears in 104/145
+  sites (72%); only 18 contain all four in the retained CSS evidence. This set
+  is a useful research prompt, not a universal breakpoint system. Choose
+  project breakpoints from content stress and platform needs.
 - Only ~19% of sites use container queries yet (2025) — but adopters are the
   design-system leaders (Spotify 11 `@container` blocks, gov.uk 4, Coursera 8,
   Kooora 6, CrazyGames 6). Treat as progressive enhancement, not foundation.
-- RTL/MENA sites use the **same dominant breakpoints** (768, 1280, 1024, 900,
-  600, 820) — Arabic UX adapts content, not the grid lattice.
+- RTL/MENA source samples share several common candidates with the wider
+  corpus (notably 768, 1200, 767, 1024, 992, 600, 1440, 1280). This does not
+  authorize one grid: localized content and task stress still determine each
+  product's breakpoints.
 
 ## 2. Typography — the real font stack of the web
 
@@ -60,32 +67,37 @@ Interpretation (OBSERVED + INFERRED):
   (Tajawal/Almarai match Inter/Open Sans energy). Naskh appears where trust and
   editorial reading matter; Kufi for headers/edgy brands.
 
-**Type scales (OBSERVED):**
-- UI text sizes cluster tightly: 16 / 14 / 12 / 13 / 15px = 70%+ of declarations.
-- Display sizes: 18–32px for heroes on product sites; editorial headlines go
-  higher via clamp() not seen in static CSS (INFERRED).
+**Type scales (SOURCE-OBSERVED):**
+- The most prevalent retained values by site are 16px (73), 14px (68), 12px
+  (61), 1rem (55), and .875rem (42). Retention is limited to each site's top
+  extracted values, so this is not a declaration-share measurement.
+- 18–32px values are also common in source. Which elements use them and
+  whether they are above the fold requires render/runtime inspection.
 - rem scales mirror Tailwind's: 1, 1.125, 1.25, 1.5, 2, 2.25, 2.5, 3.
 - **h1 discipline is real: average exactly 1.0 h1 per homepage across corpus.**
 - Body line-height conventions: 1.5–1.7; UI labels 1.2–1.3.
 
 ## 3. Color & theming
 
-- `theme-color` present on ~60% of sites; values confirm palettes:
+- `theme-color` appears on 57/145 CSS-evidence sites (~39%); sampled values
+  include:
   Stripe #635bff-family blue/purple, TED #EB0028 red, NHS blue family,
   Kooora green, Aqarmap #007dbe, Extra #0065A4, Shahid #0c9 (MBC green).
 - Dark-mode via `prefers-color-scheme` in CSS: only 11% (manual toggles
   dominate via class strategy — INFERRED).
 - Streaming/gaming/crypto default to dark canvases WITHOUT media queries
   (hard-coded dark identity, OBSERVED: Steam #171a21, Disney+ deep navy).
-- Gradients: 100% of entertainment/streaming sites and finance sites use
-  gradients in CSS; ~84% of SaaS. Volume is what differs: Disney+ 230
+- Gradients appear in 100% of the six entertainment/streaming source samples,
+  93% of 15 finance samples, and 84% of 25 SaaS samples. Presence does not
+  prove visible prominence. Volume differs: Disney+ 230
   declarations vs Stripe 3. Gradient COUNT is a personality dial.
 
 ## 4. Radius — the real numbers
 
 Top border-radius values across corpus (sites): **4px (62), 8px (35), 3px (34),
 10px (32), 2px (31), 6px (29), 12px (26), 16px (24), 20px (22)**, pill
-(9999/999/100/50px ≈ 40 sites combined).
+(9999/999/100/50px) appear in at least 34 sites in the retained top-value
+evidence (one site counted once).
 - **The real web is much less rounded than AI defaults.** 2–6px is the
   institutional/news norm; 8–12px is the product norm; 16–24px is reserved for
   media cards and playful/consumer brands (Airbnb 12/20/32; Poki 16;
@@ -96,9 +108,10 @@ Top border-radius values across corpus (sites): **4px (62), 8px (35), 3px (34),
 
 ## 5. Component & layout facts
 
-- Container max-widths (OBSERVED): 1024 / 1200 / 1280 dominate; text measures
-  600–800; gov.uk uses 960–1140. Nobody ships >1600 content containers.
-- Viewport meta: `width=device-width, initial-scale=1` is 80%+ standard;
+- Container max-widths (retained SOURCE-OBSERVED values): 1280 (12 sites),
+  1200/1024 (10 each), and 640 (9) are most prevalent. The top-value sample
+  cannot prove larger container values are absent.
+- A viewport containing `width=device-width` appears on 130/145 sites (~90%);
   `viewport-fit=cover` (notch) on modern iOS-aware sites; **`maximum-scale=1`
   still appears — it's an accessibility violation to avoid.**
 - Sticky positioning: 49% of sites (nav bars, filter bars, app CTAs).
@@ -143,8 +156,12 @@ Top border-radius values across corpus (sites): **4px (62), 8px (35), 3px (34),
 
 ## 8. Framework reality
 
-- Tailwind class grammar detected on **58%** of corpus (90/156) — including
-  BBC News redesign and gov.uk components. Utility CSS is the lingua franca.
+- The legacy framework-hint report flagged Tailwind on 90/145 sites, but the
+  original detector treated generic `flex`/`grid` class names as Tailwind and
+  therefore cannot support an adoption-rate claim. The detector is now
+  restricted to distinctive responsive/state variants or arbitrary-value
+  grammar; corpus prevalence is **UNVERIFIED until reports are regenerated**.
+  Utility-class implementation remains a project choice, not a corpus mandate.
 - Next.js on 27% of sites; jQuery persists on 21% (33) — mostly MENA enterprise
   and legacy retail; Bootstrap on 17%; Font Awesome on 29% (46) — still the
   most common icon system on the real web (MENA: stc, Youm7, Emirates NBD).

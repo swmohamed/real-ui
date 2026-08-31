@@ -45,7 +45,7 @@ MAY be used to produce OBSERVATIONS. Rules:
    or "bad UX"; that reasoning is ours.
 5. **Before/after evidence** — for redesign delivery, capture what
    changed vs the screenshot: region map (kept/moved/removed) + visual
-   hierarchy shift, matching preservation.md's ledger.
+   hierarchy shift, matching redesign/preservation.md's ledger.
 
 ## Evidence phrasing
 

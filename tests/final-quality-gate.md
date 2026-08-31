@@ -68,7 +68,7 @@ Every box verified with commands/evidence, not assertion.
 - [x] Context-aware — industry/region/language/page-type retrieval
 - [x] Non-duplicative — cross-references audited; no file repeats another's
       role
-- [x] Fast to retrieve — ≤8 files per task (fast mode), 6-axis token
+- [x] Fast to retrieve — focused optional modules in normal mode, 6-axis token
       differentiation proven
 - [x] Original — ≥2 reference classes per synthesis mandated
 - [x] Resistant to generic AI aesthetics — 15-item banned list +
@@ -76,7 +76,7 @@ Every box verified with commands/evidence, not assertion.
 - [x] Works without image analysis — proven by
       reports/code-first-verification.txt (3/3 design-language inferences
       + violation audit derived purely from code)
-- [x] Can use fresh research — Deep Mode protocol + reusable research
+- [x] Can use fresh research — targeted research or Deep/Audit protocol + reusable research
       tools in research/tools/
 
 ## SELF-TESTS
@@ -91,4 +91,5 @@ Every box verified with commands/evidence, not assertion.
   in saturation-and-confidence.md; never cited as "analyzed"
 - Deep JS bundle analysis and visual/screenshot verification not performed
   (by design — code-first mandate)
-- Corpus is a 2025 snapshot; Deep Mode is the refresh path
+- Corpus is a 2025 snapshot; targeted research or an explicit Deep/Audit
+  evidence task is the refresh path

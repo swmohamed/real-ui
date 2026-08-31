@@ -33,9 +33,13 @@ multiple axes — never force one label. This file drives retrieval combos.
 
 ## Rules
 
-1. Retrieve the PRIMARY industry file fully; skim secondaries for the
-   overlapping sections only.
-2. Platform + device axes decide platforms/* and devices/* files.
-3. Arabic/RTL axis adds rtl/* files (see rtl/global-vs-arabic.md).
-4. Product type decides pages/* and ux/* emphasis (dashboard ≠ landing).
-5. Redesign tasks always add redesign/* (start at redesign/workflow.md).
+1. Model the product and write its scope/content-priority ledgers before
+   retrieving genre or page patterns (`foundations/product-modeling.md`).
+2. Load `industries/README.md`, then retrieve the PRIMARY industry file;
+   skim secondaries for overlapping terminology, risk, or workflow only.
+   Industry files do not create scope or architecture.
+3. Platform + device axes decide platforms/* and devices/* files.
+4. Arabic/RTL axis adds rtl/* files (see rtl/global-vs-arabic.md).
+5. Product type may activate `pages/README.md` plus relevant page catalogs;
+   it never selects a fixed page sequence.
+6. Redesign tasks always add redesign/* (start at redesign/workflow.md).

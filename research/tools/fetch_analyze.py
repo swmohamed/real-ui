@@ -5,7 +5,8 @@ Fetches public HTML (+ primary CSS) and extracts observable design evidence:
 structure, semantics, tokens, breakpoints, typography, colors, radii, shadows,
 icons, frameworks, JSON-LD, RTL attributes. Saves a compact JSON report.
 """
-import json, re, sys, os, hashlib
+import json, re, sys, hashlib
+from datetime import datetime, timezone
 from urllib.parse import urljoin, urlparse
 import urllib.request, gzip, io
 
@@ -36,6 +37,27 @@ def top_counts(items, n=12):
         if i: d[i] = d.get(i, 0) + 1
     return sorted(d.items(), key=lambda x: -x[1])[:n]
 
+def extract_breakpoint_widths(css):
+    """Extract classic and Media Queries Level 4 width boundaries."""
+    widths = []
+    for media in re.findall(r"@media[^{]+", css, re.I):
+        candidates = re.findall(
+            r"(?:min|max)-width\s*:\s*([\d.]+)(px|em|rem)", media, re.I
+        )
+        candidates += re.findall(
+            r"\bwidth\s*(?:<=|>=|<|>)\s*([\d.]+)(px|em|rem)", media, re.I
+        )
+        candidates += re.findall(
+            r"([\d.]+)(px|em|rem)\s*(?:<=|>=|<|>)\s*width\b", media, re.I
+        )
+        for number, unit in candidates:
+            value = float(number)
+            if unit.lower() in ("em", "rem"):
+                value *= 16
+            if 300 <= value <= 2000:
+                widths.append(int(value))
+    return widths
+
 def analyze_html(html):
     h = {}
     for tag in ["header","nav","main","section","article","aside","footer","form","button","a","img","svg","table","figure","ul","ol","dialog","details","summary","canvas","iframe","video","picture"]:
@@ -59,7 +81,9 @@ def analyze_html(html):
         "next.js": r"__NEXT_DATA__|/_next/static",
         "react": r"data-reactroot|react[-_]dom|__REACT",
         "nuxt/vue": r"__NUXT__|data-v-[0-9a-f]{8}|vue",
-        "tailwind": r'(?:class="[^"]*\b(?:flex|grid|text-\[|bg-\[|md:flex|lg:grid|hover:bg-)[^"]*")',
+        # Use distinctive variant/arbitrary-value grammar. Generic class names
+        # such as "flex" or "grid" are not evidence of Tailwind.
+        "tailwind": r'class="[^"]*(?:\b(?:sm|md|lg|xl|2xl|dark|hover|focus|focus-visible|group-hover):[^\s"]+|\b(?:text|bg|border|ring|rounded|shadow|gap|space-[xy]|p[trblxy]?|m[trblxy]?|w|h|min-w|max-w)-\[[^\]]+\])',
         "bootstrap": r'bootstrap(?:\.min)?\.(?:css|js)|class="[^"]*\bcol-md-',
         "font-awesome": r"font-?awesome|fa-solid|fa-",
         "material-icons": r"material-icons|material-symbols",
@@ -108,13 +132,7 @@ def analyze_html(html):
 
 def analyze_css(css):
     c = {}
-    mq = re.findall(r"@media[^{]+", css)
-    widths = []
-    for m in mq:
-        for w in re.findall(r"(?:min|max)-width\s*:\s*([\d.]+)(px|em|rem)", m):
-            val = float(w[0])
-            if w[1] == "em" or w[1] == "rem": val *= 16
-            if 300 <= val <= 2000: widths.append(int(val))
+    widths = extract_breakpoint_widths(css)
     c["breakpoints"] = top_counts([str(w) for w in widths], 14)
     c["container_queries"] = len(re.findall(r"@container", css))
     c["font_families"] = top_counts(re.findall(r"font-family\s*:\s*([^;}]+)", css), 10)
@@ -155,17 +173,41 @@ def analyze_css(css):
     return c
 
 def get_css_links(html, base):
-    links = re.findall(r'<link[^>]+href="([^"]+\.css[^"]*)"', html, re.I)
+    links = re.findall(r"<link[^>]+href=['\"]([^'\"]+\.css[^'\"]*)['\"]", html, re.I)
     out = []
+    base_origin = urlparse(base).netloc.lower()
+    seen = set()
     for l in links:
         u = urljoin(base, l)
+        if urlparse(u).netloc.lower() != base_origin: continue
         if any(b in u for b in ["googletagmanager","google-analytics","facebook","twitter","cdn.jsdelivr.net/npm/"]): continue
+        if u in seen: continue
+        seen.add(u)
         out.append(u)
     return out[:MAX_CSS_FILES]
+
+def looks_like_css(text, content_type, url):
+    if not text or len(text) <= 500:
+        return False
+    content_type = (content_type or "").lower()
+    prefix = text.lstrip()[:100].lower()
+    if "text/html" in content_type or prefix.startswith(("<!doctype html", "<html")):
+        return False
+    if "text/css" in content_type or urlparse(url).path.lower().endswith(".css"):
+        return True
+    return bool(re.search(r"(?:^|[}\s])(?:@media|@font-face|[.#:\w-]+\s*{)", text[:5000]))
 
 def process(site):
     name, url = site["name"], site["url"]
     report = {"name": name, "url": url, "industry": site.get("industry",""), "region": site.get("region","global"), "lang_expected": site.get("lang","")}
+    report["fetched_at_utc"] = datetime.now(timezone.utc).isoformat()
+    report["analysis_scope"] = {
+        "html_cap_bytes": HTML_CAP,
+        "css_cap_per_file_bytes": CSS_CAP_PER_FILE,
+        "max_linked_css_files": MAX_CSS_FILES,
+        "linked_css_policy": "same-origin, deduplicated, document order",
+        "stored_value_lists_are_top_n": True,
+    }
     html, err, final = fetch(url)
     if html is None:
         # try http→https retry once or www alt
@@ -180,19 +222,23 @@ def process(site):
     report["html_bytes_capped"] = len(html)
     report["html"] = analyze_html(html)
     css_texts = []
+    css_sources = []
     for u in get_css_links(html, final):
-        css, cerr, _ = fetch(u, cap=CSS_CAP_PER_FILE)
-        if css and len(css) > 500 and "text/css" not in str(cerr)[:40] or (css and len(css) > 500):
+        css, content_type, css_final = fetch(u, cap=CSS_CAP_PER_FILE)
+        if looks_like_css(css, content_type, css_final):
             css_texts.append(css)
+            css_sources.append(css_final[:240])
     # inline style blocks too
     inline = "\n".join(re.findall(r"<style[^>]*>(.*?)</style>", html, re.S|re.I))
     if inline: css_texts.append(inline)
     all_css = "\n".join(css_texts)
     report["css_bytes_analyzed"] = len(all_css)
+    report["css_sources_analyzed"] = css_sources
+    report["inline_style_bytes_analyzed"] = len(inline)
     report["css"] = analyze_css(all_css) if len(all_css) > 500 else None
     # keep small evidence sample: first nav + first section opener
     nav = re.search(r"<nav[^>]*>.*?</nav>", html, re.S|re.I)
-    report["nav_sample_hash"] = hashlib.md5((nav.group(0) if nav else "").encode()).hexdigest()[:8]
+    report["nav_sample_hash"] = hashlib.sha256((nav.group(0) if nav else "").encode()).hexdigest()[:12]
     return report
 
 def run_batch(batchfile, outfile):

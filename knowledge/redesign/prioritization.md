@@ -40,7 +40,7 @@ you'll need for the real fix.
 | Big-bang | rebrand/explicit transformation only | full token set day one |
 | Staged by surface | default | new system ships per section; bridge tokens (old↔new) documented |
 | Progressive/flagged | risky products (finance, government) | feature-flagged designs, A/B where possible |
-| User-cohort staged | large user bases | cohort notes in regression ledger (preservation.md) |
+| User-cohort staged | large user bases | cohort notes in regression ledger (redesign/preservation.md) |
 
 Each stage must END shippable (no half-skinned surfaces live together
 except through a documented bridge — two systems visible at once =
@@ -50,7 +50,7 @@ the inconsistency diagnosis.md flags).
 
 Pick 2–3: task completion rate / time-to-complete / support tickets
 per flow / activation / return usage / brand-recognition check
-(preservation.md tests). If a redesign can't name what improves, it's
+(redesign/preservation.md tests). If a redesign can't name what improves, it's
 aesthetic churn — cut it or justify as explicit rebrand.
 
 ## Kill-switch honesty

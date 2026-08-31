@@ -1,7 +1,10 @@
 # Visual DNA Catalog — 14 Style Genomes
 
-Each DNA = a coherent design personality derived from real-world reference
-classes. Use `dna-selector.md` to choose; never blend more than two.
+Each DNA is a descriptive reference family derived from real-world classes,
+not an industry preset or token recipe. Use `dna-selector.md` only after the
+product/content/brand model. Usually choose one primary family and, when a
+specific need warrants it, one secondary; additional influences require an
+explicit coherence rationale.
 
 Format: Signature · Typography · Color · Geometry/radius · Density &
 spacing · Imagery · Motion · UX posture · Industries · Avoid when ·
@@ -114,4 +117,5 @@ calm. USE SPARINGLY (closest to AI-slop when generic).
 - Swiss × Terminal (dev tool) ✓
 - Playful × Commerce (kids' retail) ✓
 - Luxury × Gaming ✗ · GDS × Cinematic ✗ (register war)
-- Max two parents; one dominant (70/30), expressed via tokens not vibes.
+- Prefer one dominant family with any secondary influence named by role and
+  expressed through tokens. No fixed blend ratio substitutes for judgment.

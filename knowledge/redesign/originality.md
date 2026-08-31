@@ -12,7 +12,7 @@ PRODUCT (content, data, workflows)
 + AUDIENCE (consumers? pros? Arabic-first?)
 + BUSINESS MODEL (subscription calm vs transactional urgency)
 + PLATFORM (native conventions — platforms/*)
-+ EXISTING BRAND ASSETS (what survives — preservation.md)
++ EXISTING BRAND ASSETS (what survives — redesign/preservation.md)
 = VISUAL DIRECTION → then tokens → then components
 ```
 

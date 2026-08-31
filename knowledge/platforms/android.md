@@ -1,7 +1,8 @@
 # Platform DNA: Android (native, View-system & conventions)
 
 Android DNA independent of iOS (never port iOS idioms blindly).
-Sources: developer.android.com large-screens/adaptive docs 2025-08
+Sources: developer.android.com adaptive apps, canonical layouts, and
+accessibility docs checked 2026-08
 `[OBSERVED]` + stable platform conventions `[DESIGN PRINCIPLE]`.
 
 ## The Android contract
@@ -23,8 +24,9 @@ Sources: developer.android.com large-screens/adaptive docs 2025-08
 
 ## Large screens (official doctrine) `[OBSERVED]`
 
-- Support smallest width ≥ 600dp as a first-class target (docs);
-  window size classes 600/840 drive layout+nav switching
+- Treat 600dp+ windows as a first-class target; current width classes are
+  compact <600, medium 600–839, expanded 840–1199, large 1200–1599,
+  extra-large ≥1600. Height class and posture are separate inputs
   (responsive/adaptive-models.md).
 - Canonical layouts: list-detail, supporting pane — same doctrine as
   Compose (jetpack-compose.md) applies to Views.
@@ -39,7 +41,9 @@ Sources: developer.android.com large-screens/adaptive docs 2025-08
 - Bottom navigation (3–5) for top destinations; nav drawer/rail for
   many; drawer hidden = hamburger (fine on Android).
 - Bottom sheets are native vocabulary (drag handle, peek heights,
-  expandable detents) — prefer over iOS-style centered modals.
+  expandable detents) for contextual secondary content/actions. Use dialogs
+  for blocking decisions or focused modal tasks; neither is a universal
+  replacement for the other.
   Official M3 definitions (material-components-android, fetched 2026-08
   `[PLATFORM RULE]`): bottom sheet = "slide up from the bottom of the
   screen to reveal more content"; banner = container for "important,
@@ -66,6 +70,6 @@ scale + display size; ellipsize rules per text class `[PLATFORM RULE]`.
 ## Android QA
 
 [ ] back works everywhere [ ] gesture + button nav both fine [ ] insets
-handled [ ] 48dp targets [ ] font scale 200% survivable [ ] bottom
-sheets over center modals [ ] Material semantics kept [ ] sw600 layout
-designed (not stretched phone) [ ] RTL mirrors correctly
+handled [ ] 48dp targets [ ] font scale 200% survivable [ ] sheet vs dialog
+chosen by interaction need [ ] Material semantics kept [ ] all relevant
+window classes designed (not stretched phone) [ ] RTL mirrors correctly

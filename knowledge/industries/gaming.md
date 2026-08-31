@@ -16,7 +16,7 @@ dark-friendly, kinetic. Discovery is thumbnail-led: the game tile IS the product
 Ad impressions + session time (free portals); premium sales + wishlist
 funnel (stores); subscriptions (Game Pass class); engagement/retention.
 
-## Information architecture (real-world standard)
+## Candidate information-architecture patterns (not a product sitemap)
 - Home = curated shelves (Featured, New, Popular, by-genre, by-tag)
 - Game detail page (play/embed CTA or buy CTA, media, description, ratings,
   related)
@@ -33,7 +33,7 @@ funnel (stores); subscriptions (Game Pass class); engagement/retention.
   cart/install-client CTA (Steam: install CTA in global nav, OBSERVED).
 - Media: section nav (News, Reviews, Guides, Videos) + trending rail.
 
-## Components that define the genre
+## Candidate components observed in the genre
 - **Game tile/card**: 16:9 or 4:3 thumb, title, (rating badge, tag chip,
   "NEW"/"HOT" corner flag, play overlay on hover). Radius 12–16px (OBSERVED:
   Poki 16px, CrazyGames 16px tiles).
@@ -79,7 +79,7 @@ funnel (stores); subscriptions (Game Pass class); engagement/retention.
 - Kids audience → larger touch targets (56px+), louder saturation, no dark
   default (parents' daylight contexts).
 
-## Conventions (follow)
+## Conventions to evaluate (adopt only when model-supported)
 Thumb-first grids, one-tap play, tags as browse axis, hover preview, corner
 badges, ratings on tiles, genre-colored accents.
 
@@ -93,9 +93,10 @@ badges, ratings on tiles, genre-colored accents.
 ## Strong references
 Poki (+/ar), CrazyGames, itch.io (indie-utility counterpoint: 2–4px radius,
 Lato, text-forward), Steam (store density), IGN/GameSpot (media), Roblox,
-Epic Games Store (INFERRED — blocked from corpus; verify in Deep Mode).
+Epic Games Store (INFERRED — blocked from corpus; verify with targeted current
+research when the reference matters).
 
-## Decision guidance
+## Contextual decision prompts
 For a browser-gaming portal default: light candy canvas OR dark store canvas
 (audience-dependent), 16px-radius tiles, 2-col mobile/6-col desktop grid,
 hover-play overlay, tag chips, instant search, zero-friction play. Deviate

@@ -16,7 +16,7 @@ extra step loses 5–20% of the funnel (industry-accepted heuristic).
 Conversion rate, AOV (cross-sell, bundles), repeat purchase (app install,
 loyalty), marketplace take-rate.
 
-## Information architecture
+## Candidate information-architecture patterns (not a product sitemap)
 - Home: promo hero (deals/seasonal) + category tiles + deal shelves +
   personalized rows (logged-in) + trust strip (delivery/returns/payment)
 - Category → filters sidebar/facets → sort → product grid → pagination or
@@ -33,7 +33,7 @@ loyalty), marketplace take-rate.
   hamburger+drawer OBSERVED on .eg/.sa variants)
 - Breadcrumbs on category/PDP (SEO + orientation)
 
-## Components that define the genre
+## Candidate components observed in the genre
 - Product card: image (square 1:1 mass / 3:4 fashion), title 2-line clamp,
   price + strike-through original, rating stars + count, badges (SALE, NEW,
   best seller), quick-add on hover (desktop)
@@ -79,7 +79,7 @@ loyalty), marketplace take-rate.
 - Numerals: Western digits in prices on mass sites (faster scanning);
   Arabic-Indic acceptable in editorial content
 
-## Conventions (follow)
+## Conventions to evaluate (adopt only when model-supported)
 Search-first header, facet filters + sort, 2-col mobile grid, sticky buy box,
 delivery-date prominence, payment-method logos near CTA, breadcrumbs, cart
 drawer, review photos.
@@ -96,7 +96,7 @@ Amazon.eg/.sa (AR), Jumia (AR/Africa), Noon (INFERRED — blocked; widely
 documented), IKEA, LEGO, Argos (INFERRED), Walmart/Target class, Extra (AR),
 Jarir (AR), Alibaba class (B2B variant: RFQ forms, supplier trust tiers).
 
-## Decision guidance
+## Contextual decision prompts
 Default: white canvas, search-center header, deal shelves with honest
 urgency, 1:1 product images, facet filters, sticky mobile buy bar, 4–8px
 radius, bright but systematized promo colors. Luxury/fashion exceptions in

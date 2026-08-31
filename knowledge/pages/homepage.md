@@ -19,13 +19,19 @@ The homepage's job differs by archetype — design the RIGHT job, not "a hero."
 6. **Discovery** (games, streaming, social): curated shelves — the homepage
    is a table of contents for desire.
 
-## Universal homepage structure (adapt ratios, keep order)
+## Candidate information layers (select and reorder from the model)
+
+These are possible responsibilities, not a universal sequence. Include only
+what the homepage job and scope require; order by top task and content
+priority (`pages/README.md`). A product-surface homepage may begin and end
+with the tool. A routing homepage may need no hero or proof layer.
 
 1. Orientation (masthead: who/where am I, language/currency)
 2. Primary intent capture (search/task/CTA/hero)
 3. Proof or content (the meat: shelves, features, rivers)
 4. Secondary intents (links to deeper trees)
-5. Trust/footnote layer (footer: policies, contact, social)
+5. Required trust/footnote information (policies/contact; social only if in
+   scope)
 
 ## Observed patterns (corpus)
 

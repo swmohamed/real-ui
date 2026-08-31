@@ -16,7 +16,7 @@ and accessibility failure; highest ceiling of memorability.
 Brand differentiation, virality/shares, awards (Awwwards OBSERVED class),
 hardware/app conversions for XR products.
 
-## Information architecture
+## Candidate information-architecture patterns (not a product sitemap)
 - XR product sites: standard product IA (buy, specs, support) + immersive
   hero layer — do NOT sacrifice the conversion tree for the toy
 - Agency/experimental: single-page narratives with scene chapters;
@@ -30,7 +30,7 @@ hardware/app conversions for XR products.
 - Meta Quest OBSERVED: standard commerce IA under an immersive skin —
   discipline worth copying
 
-## Components that define the genre
+## Candidate components observed in the genre
 - Full-viewport canvas scenes (Three.js/WebGL/WebGPU) with DOM overlays
 - Scroll progress → scene state binding (scrollytelling with 3D sets)
 - Cursor/pointer feedback (custom cursors, magnetic buttons)
@@ -68,9 +68,9 @@ hardware/app conversions for XR products.
 - RTL scene choreography: scroll-narratives read right-to-left (sequence
   order flips), camera moves invert
 - Regional agencies/festivals produce award-tier Arabic immersive work —
-  reference via Deep Mode research
+  establish current references with targeted research
 
-## Conventions (follow)
+## Conventions to evaluate (adopt only when model-supported)
 Escape hatches, audio opt-in, loading narrative, perf-tier detection,
 fallback content parity, credits/contact outside the canvas, reduced-motion
 full-bypass to static.
@@ -86,9 +86,10 @@ full-bypass to static.
 ## Strong references
 Meta Quest (OBSERVED), Awwwards winners (OBSERVED index), active campaign
 sites by Active Theory/Resn/Unit9 class (INFERRED — temporal by nature;
-research live in Deep Mode), Igloo/Yugo Nakamura class (historical canon).
+research current examples when needed), Igloo/Yugo Nakamura class
+(historical canon).
 
-## Decision guidance
+## Contextual decision prompts
 Budget immersion against task: brand film moment (high), product conversion
 tree (standard UI), long-tail content (fast static). Never let the scene
 hold information hostage.

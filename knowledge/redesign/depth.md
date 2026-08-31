@@ -48,6 +48,25 @@ Ambiguity rule: request unclear + large product → state the assumed
 depth in one line and proceed (or ask ONE question if it changes the
 work fundamentally).
 
+## Recomposition powers (REDESIGN/FULL — use when justified)
+
+A genuine redesign may: merge old sections · split old sections ·
+remove presentation-only structures · introduce new groupings · change
+the navigation model · change component representation (grid ↔ feed ↔
+explorer ↔ search-first) · reorganize around user tasks · move
+personalization/persistent controls · change density, rhythm,
+silhouette, interaction zones, responsive architecture.
+
+**Familiar compositions are choices, not defaults.** "Hero →
+categories → cards", "split featured block → rows → grid" must be
+CHOSEN (justified by the model) or refused — never recreated because
+they are the genre's habit. Check each familiar silhouette against
+the product's actual priorities before reusing it.
+
+The composition is derived: product model + capability ledger
+(extraction.md) → IA → THEN silhouettes/dials (originality.md).
+Never: old section → improved section; old hero → cleaner hero.
+
 ## Structural before/after validation (REDESIGN/FULL)
 
 Style-blind diff — ignore colors, fonts, imagery, gradients, shadows,
@@ -61,6 +80,15 @@ actions · interaction zones · density · responsive behavior.
 diff shows nearly everything preserved, without strong product/UX
 justification per item, is a restyle — reclassify honestly (deliver
 it as REFRESH or go back to re-derivation).
+
+Two more hard gates share the fail-semantics (a FAIL returns work to
+re-derivation — validation must be able to CHANGE the output):
+- **Capability-loss test** (extraction.md): every old capability
+  lives in the result (preserved/transformed/merged/relocated/
+  justified-removal). Silent disappearance = FAIL → restore it.
+- **Scope-fidelity test** (extraction.md): every new element is
+  EXISTING/REQUESTED/SUPPORTING. Invented feature (e.g., an ad slot
+  no one asked for) = FAIL → remove; suggest separately if valuable.
 
 **Acceptance tests (run both):**
 1. **Reclothe test**: apply the OLD colors/typography/shadows to the
@@ -85,11 +113,15 @@ randomness — the same rule as redesign/workflow.md stage 4, aimed at depth.
 ## Pipeline wiring
 
 - redesign/workflow.md stage 0 = classify depth (this file) — before anything.
+- redesign/workflow.md stage 1.5 = product extraction (extraction.md) —
+  layers + capability ledger quarantine presentation before
+  re-derivation.
 - REDESIGN/FULL: stage 3.5 re-derives the model BEFORE verdicts.
-- Stage 8 QA includes this file's structural diff + acceptance tests.
+- Stage 8 QA includes this file's structural diff + extraction.md's
+  capability-loss + scope-fidelity gates (hard-fail semantics).
 - prioritization.md sequences whatever survives verdicts at any depth.
-- POLISH/REFRESH skip 3.5 (no re-derivation) — evolution defaults
-  (preservation.md) apply unchanged.
+- POLISH/REFRESH skip 1.5's quarantine + 3.5 (no re-derivation) —
+  evolution defaults (redesign/preservation.md) apply unchanged.
 
 Connects: redesign/workflow.md (pipeline) · redesign/preservation.md (what identity
 survives) · foundations/product-modeling.md (re-derivation engine) ·

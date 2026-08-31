@@ -45,7 +45,7 @@ For any studied product change, extract in this order:
 
 | Failure | Signature | Guard |
 |---|---|---|
-| Identity wipe | users say "where is X?" | preservation.md recognition tests |
+| Identity wipe | users say "where is X?" | redesign/preservation.md recognition tests |
 | Trend import | glassmorphism/gradient wave with no product reason | originality.md refused-list |
 | Scope cosplay | redesign adds marketplace/community visuals with no flows | diagnosis-first |
 | System debt | new screens on new tokens, old screens untouched | prioritization.md staged shippability |

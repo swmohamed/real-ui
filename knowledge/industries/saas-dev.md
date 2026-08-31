@@ -17,7 +17,7 @@ product-real visuals, not stock abstraction.
 Trial/demo starts, signups, PLG expansion, enterprise pipeline (demo CTA),
 documentation as SEO + trust surface.
 
-## Information architecture
+## Candidate information-architecture patterns (not a product sitemap)
 - Home = positioning + social proof + feature proof + CTA
 - Product/Features (per-module pages), Solutions (by role/industry),
   Pricing, Docs, Blog/Changelog, Customers, Security/Trust Center,
@@ -31,7 +31,7 @@ documentation as SEO + trust surface.
 - Docs get their own sidebar + search-first UX (docs search is the homepage).
 - Version/changelog links signal engineering health.
 
-## Components that define the genre
+## Candidate components observed in the genre
 - Code blocks with syntax highlighting + copy button + tabs (bash/js/python) —
   the genre's trust object #1
 - Terminal/IDE-styled demos; live interactive playgrounds
@@ -67,7 +67,8 @@ documentation as SEO + trust surface.
 
 ## Dashboard/app shell (productivity tools — Notion/Linear/Asana class)
 - Left icon rail (56px) + contextual panel + content; dense lists 32–40px rows
-- Keyboard-first: shortcuts everywhere, visible in tooltips
+- For expert/high-frequency tasks, provide scoped keyboard shortcuts and make
+  them discoverable without placing shortcut chrome everywhere
 - States matter more than styling: empty, loading skeletons, offline sync,
   permission-denied views
 - OBSERVED: Notion ships doc-like typography inside app; Linear keeps
@@ -82,7 +83,7 @@ documentation as SEO + trust surface.
 - Trust differs: WhatsApp contact, local payment logos (mada, Fawry, COD),
   local customer logos, Arabic testimonials with real names/photos
 
-## Conventions (follow)
+## Conventions to evaluate (adopt only when model-supported)
 Mega-menu + persistent CTA, code-with-copy, logo wall above fold, docs as
 first-class product, changelog, status link, pricing honesty (no "contact us"
 for core tiers), real screenshots > illustrations.
@@ -99,7 +100,7 @@ Stripe, Linear, Vercel, GitHub, Tailwind CSS, Supabase, Netlify, Cloudflare,
 Framer, Notion, Anthropic (editorial counterpoint), OpenAI (container-query
 adopter), GitLab, Salla + Zid (Arabic-first).
 
-## Decision guidance
+## Contextual decision prompts
 Default: Inter/geist-class grotesk, dark-or-light single accent, real product
 artifacts, 6–12px radii, generous but not empty spacing, code blocks that run.
 For MENA B2B: Arabic-first copy with bilingual fonts, WhatsApp CTAs, local

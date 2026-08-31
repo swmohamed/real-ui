@@ -11,7 +11,9 @@ different context. Never open a project with aesthetics; open it with
 classification.
 
 ## 2. Evidence over invention of facts
-When reasoning about real sites: OBSERVED / INFERRED / RECOMMENDED / UNCERTAIN.
+When reasoning about real sites: SOURCE-OBSERVED / RUNTIME-OBSERVED /
+RENDER-OBSERVED / INFERRED / RECOMMENDED / UNCERTAIN. Legacy OBSERVED labels
+mean source presence unless a runtime/render state is named.
 When designing: principles are reusable, pixels are not — never copy a site,
 combine patterns from multiple references into an original result.
 
@@ -60,10 +62,11 @@ written justification tied to brand/context.
 ## The design decision framework (used at runtime)
 
 For any decision, answer in order:
-1. **Classify** — industry, sub-industry, audience, intent, page type, language/region.
-2. **Retrieve** — load the matching industry file, page file, DNA, patterns.
-3. **Constrain** — content inventory, brand input, technical limits, a11y floor.
-4. **Synthesize** — pick a Visual DNA + adapt 2–4 reference patterns (never one).
-5. **Tokenize** — express decisions as a small scale system before styling anything.
-6. **Validate** — run the finish gate: anti-AI check, a11y check, RTL check,
+1. **Classify** — industry, product type, audience, intent, platform, language/region.
+2. **Model and scope** — entities, tasks, capabilities, content priority, screen contracts.
+3. **Retrieve** — load authority contracts before relevant page/industry catalogs.
+4. **Constrain** — brand, technical limits, a11y, performance, locale, platform.
+5. **Synthesize** — pick a Visual DNA + adapt 2–4 reference classes (never one layout).
+6. **Tokenize** — express decisions as a small scale system before styling anything.
+7. **Validate** — run scope/structure/state plus anti-AI, a11y, RTL,
    performance check, "does it feel like its industry?" check.

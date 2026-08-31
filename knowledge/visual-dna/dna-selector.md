@@ -1,7 +1,9 @@
 # DNA Selector — Choosing the Design Genome
 
-A deterministic path from context to DNA. Run this before any visual
-decision. Output: primary DNA (+optional secondary), then tokens inherit.
+A constrained selection aid—not a style generator. Run it only after the
+product model, scope ledger, content priorities, and brand inputs exist.
+Output: a primary DNA (+optional secondary), the evidence for the choice,
+and one rejected alternative; then tokens inherit.
 
 ## Step 1: Score the context
 
@@ -13,8 +15,10 @@ Rate 1–5 each:
 - **Speed-expectation** (task urgency)
 - **Sophistication-tier** (mass vs premium positioning)
 - **Region-register** (conservative-formal vs expressive-modern)
+- **Brand evidence** (existing assets/voice/equity vs greenfield freedom)
+- **Content character** (data, prose, media, transactions, mixed)
 
-## Step 2: Decision heuristics (tested shortcuts)
+## Step 2: Candidate heuristics (starting hypotheses)
 
 - Trust ≥4 & Density ≥4 → **Dense Data Instrument** or **Corporate Trust**
 - Trust ≥4 & Speed ≥4 → **Institutional Public**
@@ -22,12 +26,18 @@ Rate 1–5 each:
 - Emotion ≥4 & Playfulness ≥4 → **Playful Consumer** or **Gaming Energy**
 - Emotion ≤2 & Density ≤2 & Sophistication ≥3 → **Swiss Minimal**
 - Region-register conservative → shift toward Corporate/Institutional
-- Content = reading → **Editorial Serif** regardless of other scores
+- Reading-dominant content → evaluate **Editorial Serif**, subject to
+  brand, script, accessibility, and content-density evidence
 - Technical audience → **Futuristic Terminal** may claim secondary slot
 
-## Step 3: Industry default table (when in doubt, start here)
+## Step 3: Industry reference families (never defaults)
 
-| Industry | Default DNA | Alt |
+Use this table to widen the candidate set, never to decide it. A family is
+eligible only when the product model, content, brand, and interaction needs
+support it. Reject at least one plausible family with a reason. See
+`industries/README.md`.
+
+| Industry context | Families worth evaluating | Alternative |
 |---|---|---|
 | News quality / mass | Editorial Serif | Corporate (mass-sans press) |
 | SaaS/dev | Swiss Minimal | + Terminal secondary |
@@ -71,3 +81,8 @@ token sheet BEFORE screens (design-systems/tokens.md template).
 one dimension further (typography drama, density contrast, motion
 moment, or register) — never push via banned AI patterns
 (anti-patterns/ai-aesthetics.md).
+
+Also run the style-blind check: if removing color, typeface, radius, and
+imagery reveals the same hierarchy and section sequence as a genre template,
+return to product modeling and page composition. Visual DNA cannot rescue a
+generic structure.

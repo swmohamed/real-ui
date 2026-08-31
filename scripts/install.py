@@ -25,31 +25,62 @@ KNOWN = [
     ".augment/skills", ".codewhale/skills", ".vscode/skills",
 ]
 
+def normalized_relative(path):
+    return os.path.normpath(path).replace("\\", "/")
+
+
+def remove_path(path):
+    """Remove one validated staging/backup path without traversing junctions."""
+    if os.path.islink(path):
+        os.unlink(path)
+    elif hasattr(os.path, "isjunction") and os.path.isjunction(path):
+        os.rmdir(path)
+    elif os.path.isdir(path):
+        shutil.rmtree(path)
+    elif os.path.exists(path):
+        os.remove(path)
+
 
 def detect():
-    found = [d for d in KNOWN if os.path.isdir(os.path.join(HOME, d))]
+    found = [normalized_relative(d) for d in KNOWN if os.path.isdir(os.path.join(HOME, d))]
     # opportunistic scan for other agents following the same convention
     for entry in os.listdir(HOME):
         cand = os.path.join(HOME, entry, "skills")
         if entry.startswith(".") and os.path.isdir(cand) and cand not in [
             os.path.join(HOME, d) for d in KNOWN
         ]:
-            found.append(os.path.join(entry, "skills"))
+            found.append(normalized_relative(os.path.relpath(cand, HOME)))
     return sorted(set(found))
 
 
 def install(targets):
     ok = []
     for rel in targets:
-        dest = os.path.join(HOME, rel, SKILL_NAME)
+        dest = os.path.abspath(os.path.join(HOME, rel, SKILL_NAME))
+        skills_root = os.path.abspath(os.path.join(HOME, rel))
+        if os.path.commonpath([dest, skills_root]) != skills_root or os.path.basename(dest) != SKILL_NAME:
+            print(f"FAIL       ~/{rel}/{SKILL_NAME}: unsafe destination")
+            continue
+        stage = dest + ".installing"
+        backup = dest + ".previous"
         try:
-            if os.path.isdir(dest):
-                shutil.rmtree(dest)
-            shutil.copytree(SRC, dest,
+            for stale in (stage, backup):
+                remove_path(stale)
+            shutil.copytree(SRC, stage,
                              ignore=shutil.ignore_patterns("__pycache__", ".git"))
+            if os.path.isdir(dest):
+                os.replace(dest, backup)
+            try:
+                os.replace(stage, dest)
+            except Exception:
+                if os.path.isdir(backup) and not os.path.exists(dest):
+                    os.replace(backup, dest)
+                raise
+            remove_path(backup)
             ok.append(rel)
             print(f"INSTALLED  ~/{rel}/{SKILL_NAME}")
         except Exception as e:
+            remove_path(stage)
             print(f"FAIL       ~/{rel}/{SKILL_NAME}: {e}")
     return ok
 
@@ -79,4 +110,5 @@ if __name__ == "__main__":
 
     installed = install(targets)
     print(f"\nInstalled to {len(installed)} locations. Verifying...")
-    sys.exit(0 if verify() else 1)
+    all_installed = len(installed) == len(targets)
+    sys.exit(0 if all_installed and verify() else 1)

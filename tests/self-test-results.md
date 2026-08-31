@@ -1,4 +1,9 @@
-# Self-Test Results — 10 Industry Scenarios (executed 2025)
+# Archived Manual Trace — 10 Industry Scenarios (2025)
+
+Classification: historical reasoned output, not an executable agent, browser,
+runtime, or render test and not a current pass. The exact tokens/structures
+below predate product-model, scope, and page-authority contracts; they remain
+examples only and must be re-earned in any new run.
 
 Each scenario was run through the full workflow (CLASSIFY → RETRIEVE →
 SYNTHESIZE → TOKENIZE) using the knowledge base. Purpose: verify that
@@ -145,4 +150,4 @@ cites real evidence, and that no generic AI patterns survive.
 → **All 6 axes differ across scenarios; no two token sheets match.**
 Each scenario cites ≥2 reference classes with OBSERVED/INFERRED labels.
 No banned AI patterns used. RTL gates passed for scenarios 1, 2, 5, 7,
-8, 10. **SELF-TEST: PASS.**
+8, 10. **HISTORICAL MANUAL TRACE ONLY — CURRENT STATUS UNVERIFIED.**

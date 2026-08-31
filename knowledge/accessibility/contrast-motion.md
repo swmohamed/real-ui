@@ -35,15 +35,15 @@ legend, required fields (asterisk/label, not color alone).
 ## WCAG 2.2 criteria — official text recovered (W3C GitHub,
 understanding/22, 2026-08) `[PLATFORM RULE]`
 
-| Criterion | Rule (distilled from official Understanding docs) |
+| Criterion / level | Rule (distilled from official Understanding docs) |
 |---|---|
-| 2.4.11 Focus Not Obscured (Min) | focused item stays at least partially visible under sticky headers/footers — "keep the focused item visible" |
-| 2.4.13 Focus Appearance | keyboard focus indicator of sufficient size AND contrast — small appearance changes are invisible to many (incl. older users) |
-| 2.5.7 Dragging Movements | dragging actions need a non-drag alternative (single-click/tap path) unless dragging is essential |
-| 2.5.8 Target Size (Min) | pointer targets ≥ 24×24 CSS px, OR sufficient spacing/inline exception/equivalent control (44×44 is the AAA-level 2.5.5) |
-| 3.2.6 Consistent Help | help access (human contact/FAQ…) in the SAME place across pages |
-| 3.3.7 Redundant Entry | don't re-ask info already given in the same process (autofill/persist) |
-| 3.3.8 Accessible Auth (Min) | login without cognitive function tests (no memorized password/transcription puzzles) unless essential or alternatives exist |
+| 2.4.11 Focus Not Obscured (Minimum), AA | focused item stays at least partially visible under sticky headers/footers |
+| 2.4.13 Focus Appearance, AAA | focus indicator meets the criterion's area and 3:1 change-of-contrast requirements; treat this as an enhanced target, not an AA claim |
+| 2.5.7 Dragging Movements, AA | dragging actions need a non-drag alternative (single-click/tap path) unless dragging is essential |
+| 2.5.8 Target Size (Minimum), AA | pointer targets ≥24×24 CSS px, or an allowed spacing/equivalent/inline/user-agent/essential exception; 2.5.5 Target Size (Enhanced), AAA uses 44×44 CSS px with exceptions |
+| 3.2.6 Consistent Help, A | help access (human contact/FAQ…) appears in a consistent relative order when repeated across pages |
+| 3.3.7 Redundant Entry, A | don't re-ask info already given in the same process unless an exception applies (autofill/persist) |
+| 3.3.8 Accessible Authentication (Minimum), AA | authentication avoids cognitive-function tests unless an allowed assistance/alternative/object-recognition/personal-content exception applies |
 
 ## Beyond minimums (design quality floor)
 

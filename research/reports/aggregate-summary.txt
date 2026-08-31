@@ -1,125 +1,34 @@
 corpus: 145 sites with CSS evidence
 
-== BREAKPOINT FREQUENCY (media-query width, count of sites using) ==
-    319px  20
-    320px  206
-    350px  10
-    375px  71
-    399px  44
-    400px  39
-    450px  10
-    479px  27
-    480px  255
-    481px  49
-    500px  37
-    530px  13
-    540px  26
-    544px  25
-    550px  10
-    566px  12
-    575px  41
-    576px  273
-    599px  272
-    600px  825
-    601px  8
-    603px  79
-    604px  8
-    639px  15
-    640px  230
-    641px  628
-    650px  102
-    657px  22
-    671px  16
-    672px  64
-    700px  14
-    720px  17
-    721px  30
-    734px  49
-    740px  44
-    751px  14
-    760px  72
-    767px  796
-    768px  2641
-    769px  109
-    770px  12
-    771px  26
-    800px  28
-    810px  8
-    819px  99
-    820px  145
-    833px  156
-    834px  21
-    840px  96
-    841px  67
-    850px  10
-    880px  24
-    889px  9
-    890px  22
-    900px  227
-    901px  10
-    940px  20
-    959px  41
-    960px  403
-    961px  22
-    976px  13
-    990px  22
-    991px  172
-    992px  522
-   1000px  154
-   1007px  87
-   1008px  38
-   1023px  277
-   1024px  1317
-   1025px  128
-   1040px  20
-   1041px  31
-   1055px  16
-   1056px  52
-   1079px  23
-   1080px  66
-   1090px  18
-   1091px  9
-   1100px  153
-   1119px  17
-   1120px  85
-   1130px  17
-   1136px  70
-   1150px  8
-   1175px  9
-   1179px  10
-   1180px  63
-   1199px  55
-   1200px  448
-   1210px  14
-   1211px  14
-   1270px  8
-   1279px  340
-   1280px  641
-   1281px  16
-   1300px  23
-   1312px  20
-   1320px  16
-   1321px  20
-   1400px  194
-   1422px  22
-   1439px  102
-   1440px  462
-   1441px  46
-   1450px  13
-   1470px  14
-   1536px  30
-   1540px  17
-   1541px  16
-   1584px  21
-   1600px  130
-   1680px  33
-   1700px  17
-   1870px  16
-   1871px  20
-   1910px  29
-   1919px  14
-   1920px  355
-   1921px  8
+== BREAKPOINT PREVALENCE (sites where width is retained in extracted evidence) ==
+    320px  21
+    375px  13
+    479px  9
+    480px  32
+    575px  9
+    576px  19
+    599px  10
+    600px  34
+    640px  32
+    767px  54
+    768px  91
+    769px  11
+    960px  12
+    991px  24
+    992px  25
+   1023px  27
+   1024px  63
+   1025px  13
+   1100px  8
+   1199px  17
+   1200px  46
+   1279px  13
+   1280px  41
+   1300px  11
+   1440px  32
+   1536px  11
+   1600px  14
+   1920px  20
 
 == PRIMARY FONT FAMILIES (sites) ==
    24  sans-serif
@@ -208,7 +117,7 @@ corpus: 145 sites with CSS evidence
   backdrop_filter           52  (35%)
   position_sticky           72  (49%)
 
-== FRAMEWORK HINTS ==
+== STORED FRAMEWORK HINTS (heuristic source signals, not adoption rates) ==
    90  tailwind
    64  gtm
    46  font-awesome
@@ -245,7 +154,7 @@ corpus: 145 sites with CSS evidence
    3  Dubai
    3  Open Sans
   RTL CSS techniques: {'css :dir/[dir=rtl] rules': 21, ':lang(ar) rules': 2}
-  RTL breakpoints: [(768, 543), (1280, 311), (1279, 283), (767, 244), (1024, 220), (900, 211), (600, 128), (820, 121), (819, 99), (1023, 85)]
+  RTL breakpoints: [(768, 20), (767, 13), (1200, 13), (1024, 9), (992, 9), (600, 8), (1440, 8), (1280, 7), (1023, 6), (320, 6)]
 
 == MAX-WIDTH VALUES ==
   1280px   12

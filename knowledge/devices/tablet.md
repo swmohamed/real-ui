@@ -22,15 +22,17 @@ window class with canonical multi-pane layouts.
   automates the switch `[OBSERVED]`.
 - iPadOS: sidebar + content (+detail) split; tab bar may remain;
   toolbar grows actions.
-- Web tablets: enough width for visible nav instead of hamburger
-  (corpus: hamburger persistence on ≥1024px is a smell).
+- Web tablets: expose useful navigation when labels and content fit; a drawer
+  at a wide width is a smell only when it hides frequent destinations without
+  a content/interaction reason.
 
 ## Density & layout
 
 - Density ceiling rises: more info per viewport, larger tables/grids
   acceptable, multi-column content.
 - Grids: 2–4 columns of cards vs phone 1–2.
-- Touch targets stay ≥44/48dp — pointer precision doesn't change.
+- Touch hit areas stay generous (Apple 44pt general guidance; Android 48dp
+  recommendation); adding pointer support does not remove touch needs.
 - Split keyboard / floating input zones exist; forms can be two-column
   at ≥ 900 width.
 

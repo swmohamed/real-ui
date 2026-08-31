@@ -6,12 +6,24 @@ supplementary, never required.
 
 ## Evidence labels (mandatory)
 
-Every research claim must carry one label:
+Every research claim must carry an evidence-mode label and an interpretation
+label when appropriate:
 
-- **OBSERVED** — directly extracted from fetched HTML/CSS/JS/headers of the site.
+- **SOURCE-OBSERVED** — directly extracted from fetched HTML/CSS/JS/headers.
+  This proves source presence only: a media query, hidden node, or selector may
+  be unused on the sampled route.
+- **RUNTIME-OBSERVED** — exercised in a browser/app and observed in a named
+  state, viewport, input mode, and route.
+- **RENDER-OBSERVED** — visually inspected from a named screenshot/render at
+  a stated viewport/state.
 - **INFERRED** — reasoned from observed artifacts + known conventions; not directly measured.
 - **RECOMMENDED** — our design guidance; not a claim about the site.
 - **UNCERTAIN** — plausible but unverifiable (e.g., CDN served different markup).
+
+Legacy `OBSERVED` labels mean SOURCE-OBSERVED unless the claim explicitly
+records runtime/render evidence. Never infer actual visibility, order,
+interaction success, animation quality, or performance from source presence
+alone.
 
 Never say "I analyzed their CSS" unless CSS was actually fetched and read.
 Never invent breakpoints, tokens, fonts, or behavior. If a site is inaccessible,
@@ -30,7 +42,8 @@ record it as inaccessible.
    - Icon classes (`fa-`, `material-icons`, `lucide-`, `octicon-`, custom `icon-*`)
    - Framework fingerprints: `__NEXT_DATA__`, `wp-block`, Tailwind class grammar,
      Bootstrap grid classes, `data-v-` hashes, Webflow classes
-2. **Linked CSS** (fetch the 2–4 largest same-origin stylesheets)
+2. **Linked CSS** (fetch up to three first-party stylesheets in document
+   order, within caps, plus inline style blocks; record the fetched URLs)
    - `@font-face` blocks: family, weights, variable axes, `font-display`
    - `font-family` stacks: brand font → fallback chain (the chain encodes intent)
    - Media queries: min/max-width distribution → the real breakpoint system
@@ -54,10 +67,14 @@ record it as inaccessible.
 1. Fetch → record status. Blocked = "inaccessible", not a gap to invent over.
 2. Extract skeleton metrics (tag counts, headings, links).
 3. Extract CSS metrics (typography, tokens, breakpoints, states).
-4. Infer UX architecture: map components → jobs (orientation, search, selection,
+4. Infer possible UX architecture: map source components → likely jobs
+   (orientation, search, selection,
    detail, conversion, retention).
-5. Compare against industry baseline in `knowledge/industries/`.
-6. Distill to patterns/principles with labels. Store the reusable form:
+5. If rendered/runtime access exists, verify high-impact inferences at named
+   widths and states; otherwise label them INFERRED/UNVERIFIED.
+6. Compare against the product model first, then the industry evidence catalog
+   under `knowledge/industries/README.md`.
+7. Distill to patterns/principles with labels. Store the reusable form:
 
    WEAK: "Site X uses 12px-radius cards."
    STRONG: "Consumer game-discovery surfaces use moderate radii (12–16px) to
@@ -69,9 +86,9 @@ record it as inaccessible.
 |---|---|
 | Is it dark or light? | theme-color, body background, color pairs near `#0/1/2…` vs `#f/ff…` |
 | Dense or airy? | padding/margin values, font-size distribution, link count per nav |
-| Mobile strategy? | breakpoint count, hidden/shown patterns, separate m. domain |
+| Mobile strategy candidate? | breakpoint presence, hidden/shown selectors, separate m. domain; runtime needed to confirm |
 | Is there a design system? | token namespaces, `var(--…)` density, utility framework |
-| Conversion priority? | sticky elements, CTA words, form placement above fold |
+| Conversion priority candidate? | sticky selectors, CTA words, source order; render/runtime needed to confirm visibility/above-fold position |
 | RTL quality? | logical properties vs `[dir=rtl]` overrides vs nothing |
 | Motion language? | transition/animation counts, keyframe names, transform usage |
 

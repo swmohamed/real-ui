@@ -3,8 +3,9 @@
 ## Color system construction
 
 ### Building the scales
-1. Pick brand hue(s) → generate 50–950 ramp (11 steps) with perceptually
-   even lightness (OKLCH makes this trivial; HSL acceptable)
+1. Pick evidenced brand hue(s) → create only the primitive steps needed by
+   semantic roles and states; 50–950 names are optional. Prefer a perceptual
+   color space and verify real rendered pairs
 2. Build neutral ramp tinted toward brand (hue-matched grays)
 3. Assign semantic roles (see tokens.md); the assignments are the system —
    the ramps are just inventory
@@ -22,17 +23,17 @@
   OBSERVED)
 
 ### Theme strategy
-- Light default + dark via class strategy (`.dark` on html — Tailwind
-  convention OBSERVED across corpus) or `prefers-color-scheme` +
-  manual override (respect stored choice)
+- Choose light, dark, or system-following initial mode from product context;
+  when both exist, support system preference plus an explicit stored override
 - Multiple brands: swap primitive values only; semantic layer untouched
 
 ## Typography system construction
 
 ### Scale design (evidence-based)
-- UI scale (corpus): 12, 13, 14, 15, 16, 18, 20, 24, 30, 36, 48, 60 —
-  modular ~1.25 ratio with pragmatic clamps
-- Display scale (marketing): extend to 64–96 via clamp(36px, 5vw, 72px)
+- Common corpus values can seed a compact scale (12/14/16/18/20/24/32 are
+  frequent), but choose steps from content hierarchy and selected typeface
+- Display sizes use a bounded responsive range verified against real copy;
+  no fixed 64–96 extension is required
 - Line-height tokens: 1.1–1.2 display / 1.4–1.5 UI / 1.6–1.7 body /
   1.8–2.0 Arabic body
 - Letter-spacing: -0.01 to -0.02em at display sizes; 0 body; +0.02–0.1em
@@ -42,14 +43,15 @@
 - `font-display: swap` (or optional/size-adjust with metric-compatible
   fallbacks to prevent swap-flash — modern standard: `ascent-override`
   tuned fallbacks, Inter-fallback class OBSERVED in Next.js corpus sites)
-- Subset: latin + arabic subsets separately; preload the 1–2 weights
-  actually used above fold (woff2, subset, ≤40KB each realistic)
+- Subset scripts carefully and preload only critical faces/weights; set a
+  project font budget measured from the actual files rather than a universal
+  per-file number
 - Variable fonts where multi-weight (1 file many weights) — OBSERVED
   adoption (Airbnb Cereal VF, sohne-var, Inter Var)
 
 ### Pairing slots
-- **Single-family system**: one grotesk + weights (product UIs — Inter
-  class; safest default)
+- **Single-family system**: one suitable brand/system family + weights when a
+  unified product UI hierarchy benefits from it
 - **Display+text system**: distinctive display (brand voice) + quiet text
   (reading) — SaaS marketing, editorial
 - **Serif-body system**: editorial identity (news/quality press)

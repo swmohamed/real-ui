@@ -6,7 +6,7 @@ Grounded in corpus measurements (see `research/observed-findings.md` §5).
 
 | Role | Observed range | Recommendation |
 |---|---|---|
-| Content container (marketing) | 1024–1280px | 1200 default; 1280 for media-dense |
+| Content container (marketing) | 1024–1280px candidates | choose from content measure, media needs, and viewport testing |
 | Wide container (dashboards, catalogs) | up to 1440–1600 | 1440, cap inner density |
 | Text measure (articles, forms) | 600–800px | 68–75ch max |
 | Sidebar + content | 240–320px sidebar | 280px; collapses <1024 |
@@ -42,14 +42,18 @@ payoff (multi-column dashboards, epic heroes).
 
 ## Responsive transformation rules (desktop → mobile)
 
-Mandated rethink, not shrink:
-- **Navigation**: horizontal links → hamburger/sheet at 768 (utility-first
-  sites keep 2–3 top actions visible). Search collapses to icon + expandable
-  field; on search-first sites (travel, real estate) search stays expanded.
-- **Cards**: 4-col → 2-col → 1-col with wider media ratio (16:9 → 4:3);
-  hide metadata that duplicates the title on phone.
-- **Tables**: → stacked cards with label:value pairs, or horizontal scroll
-  with sticky first column (financial data keeps tables).
+Recompose, do not merely shrink. The following are candidate transformations;
+their trigger widths come from content stress, not the numbers shown by a
+framework:
+- **Navigation**: keep the highest-frequency destinations/actions visible;
+  move lower-priority hierarchy into a sheet/drawer only when the labels no
+  longer fit. Search stays expanded when it is a top task.
+- **Browse grids**: reduce columns as the minimum useful item width is
+  breached; change media ratio only when the content still reads correctly.
+- **Tables**: preserve tables when cross-row/column comparison matters, using
+  column priority, horizontal scrolling, sticky identifiers, or disclosure.
+  Transform to labeled rows/cards only when each record can be understood
+  independently and comparison is secondary.
 - **Filters**: sidebar → bottom sheet with "Show N results" CTA (e-commerce
   standard, OBSERVED on marketplace class).
 - **Heroes**: split hero → stacked with media after text; sticky CTA bar

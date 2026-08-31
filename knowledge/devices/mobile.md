@@ -8,15 +8,18 @@ must feel native — never a website squeezed into a phone.
 - **Thumb zone**: bottom of screen = easiest reach. Primary actions
   bottom-anchored (bottom nav, thumb-reach CTAs, FABs). Top corners =
   worst zone (large phones) — nothing critical there.
-- **Touch targets ≥44pt (iOS) / 48dp (Android)** `[PLATFORM RULE]`;
-  visual size may be smaller with hit slop; adjacent targets need gaps.
+- **Touch hit regions:** Apple HIG generally recommends at least 44×44pt
+  (its accessibility guidance documents 44×44pt default and 28×28pt
+  minimum); Android recommends at least 48×48dp. Visual size may be smaller
+  with hit slop; adjacent targets need safe gaps `[PLATFORM GUIDANCE]`.
 - One-hand use: navigation + primary actions within thumb arc;
   two-hand patterns (keyboards, carousels) acceptable for input tasks.
 
 ## Structural rules
 
-- Navigation depth ≤5 screens; visible way back always (platform back
-  + in-app trail); titles persist.
+- Minimize steps for top tasks and keep a visible, predictable way back
+  (system/platform back + in-app orientation). No universal screen-depth
+  number substitutes for task testing.
 - Bottom nav (3–5) for top-level modes; tabs for sibling content;
   sheets for focused tasks; full-screen for immersive only.
 - Content scrolls; chrome (header/nav) stable or purposefully reactive

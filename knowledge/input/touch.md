@@ -5,18 +5,22 @@ forgiving gestures.
 
 ## Targets & spacing
 
-- ≥44pt (iOS) / 48dp (Android) hit areas `[PLATFORM RULE]`; visual
-  smaller is fine (hit slop); gaps between targets prevent mis-taps.
+- Prefer ≥44×44pt hit regions on Apple platforms (HIG guidance; Apple
+  accessibility documentation distinguishes 44×44pt default from 28×28pt
+  minimum) and ≥48×48dp on Android. Visual bounds may be smaller with hit
+  slop; gaps between targets prevent mis-taps `[PLATFORM GUIDANCE]`.
 - WCAG 2.2 adds a 24×24 CSS px minimum target-size criterion with
-  exceptions (inline links, equivalents) `[PLATFORM RULE - WCAG 2.2,
-  page blocked from network — standard text]`.
+  exceptions (spacing, inline links, equivalent control, user-agent sizing,
+  essential presentation) `[PLATFORM RULE — WCAG 2.2 official Understanding
+  page checked 2026-08]`.
 - Thumb ergonomics (devices/mobile.md): primary actions low; deadly
   corners = top-left/right (large phones).
 
 ## Press states & feedback
 
-- Design 4 states minimum: default / pressed / disabled / focused
-  (RN Pressable ships exactly these `[OBSERVED]`).
+- Design applicable default / pressed / disabled / focused states. React
+  Native Pressable's current `style` callback directly supplies `pressed`;
+  other states come from callbacks or surrounding component state.
 - Instant visual response on press (<100ms feel); ripple/Material or
   scale/opacity — pick per platform dialect.
 - Long-press = power gesture (context menus, multi-select) — always
@@ -41,6 +45,6 @@ with handles), pinch (zoom media/maps), double-tap (like/zoom).
 
 ## Touch QA
 
-[ ] all targets ≥44/48 [ ] states designed [ ] gestures have button
+[ ] platform target guidance and WCAG web floor checked [ ] states designed [ ] gestures have button
 twins [ ] edge-gesture collisions checked [ ] keyboards correct per
 field [ ] press feedback instant

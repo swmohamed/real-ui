@@ -1,9 +1,10 @@
 # Color Foundations — How Real Palettes Are Built
 
-## The four-role palette model
+## A four-role palette model
 
-Every real site's palette resolves to four roles (OBSERVED across token
-systems — Stripe `--hds-`, Coinbase `--cds-`, Kooora `--fco-`):
+Use these semantic roles as a compact starting model. Named token systems in
+the corpus support role-based palettes, but not every site has exactly four
+groups and the role names are RECOMMENDED rather than observed universals:
 
 1. **Canvas** — page background(s): 1 light + optional 1 dark.
 2. **Ink** — text ramp: 3–4 grays (primary 87–100% ink, secondary 60–70%,
@@ -16,30 +17,34 @@ systems — Stripe `--hds-`, Coinbase `--cds-`, Kooora `--fco-`):
 - **Finance/banking:** institutional blues (#012169 PayPal, Chase/HSBC navy
   family), high contrast, semantic states everywhere; one warm accent for
   marketing moments only. Gradients = subtle 2-stop, never rainbow.
-- **News:** paper whites + ink blacks + **exactly one signal red** (BBC, TED
-  #EB0028, Sky News Arabia, CNN). Section color-coding on leaders (Guardian
-  section pinks/blues) is a secondary system, applied to section labels only.
+- **News samples:** paper/ink contrast with restrained signal or section
+  colors. Several brands use red, while others use broader section systems;
+  brand evidence decides the hue and count.
 - **Gaming/browser-gaming:** saturated accent on dark or candy-light canvas
   (Poki theme-color #83ffe7 mint on white; CrazyGames #212233 navy + vivid
   accents; Steam #171a21 near-black). Accents carry energy: mint, lime,
   magenta, cyan.
-- **Government/health:** 2–3 colors total. gov.uk GDS blue #1d70b8, NHS blue
-  family, UAE portal flag-green + gold accents. Zero decoration color.
+- **Government/health samples:** compact, high-contrast palettes (gov.uk GDS
+  blue, NHS blue family, UAE portal flag colors). Decoration must not compete
+  with task or safety information.
 - **Entertainment/streaming:** dark navy/charcoal canvases with poster art as
   the real color source; UI stays neutral so thumbnails pop (Disney+, Shahid).
-- **Luxury/auto:** near-monochrome + one metallic/champagne accent;
-  full-bleed photography IS the palette (Porsche, Rolex class).
-- **MENA mainstream:** deeper saturated primaries than Western equivalents —
-  stc violet/purple, Emirates NBD green, Al Rajhi deep blue, Aqarmap cyan —
-  with generous white space still expected in Gulf premium segment.
+- **Luxury/auto samples:** near-monochrome systems sometimes let photography
+  carry most color and use a restrained accent; this is a positioning option,
+  not a category requirement.
+- **MENA corpus examples:** several sampled brands use saturated primaries
+  (stc violet, Emirates NBD green, Al Rajhi blue, Aqarmap cyan). Treat these as
+  individual brand evidence, not a regional default; derive saturation from
+  supplied brand assets and market research.
 
 ## Building ramps (tokens)
 
-- Build 50–950 ramps (11 steps) per hue; use ~5 steps in practice.
-- Neutral ramps should tint toward the brand hue slightly (warm-gray with
-  warm brands) — the difference between "designed" and "default gray".
-- Dark mode is not inverted light mode: dark canvases 8–12% lightness, ink
-  becomes off-white (not #fff), brand hue lightened 1–2 steps for contrast,
+- Build only the primitive steps the semantic roles/states need; numeric
+  50–950 naming is one convention, not the system itself.
+- Test neutral ramps both truly neutral and brand-tinted; choose from brand,
+  legibility, and adjacent-surface needs rather than a “designed” look rule.
+- Dark mode is not an automatic inversion: tune canvas, text, brand, and
+  semantic pairs for contrast and glare; often brand hues need adjustment and
   shadows replaced by surface lightness steps + hairline borders.
 - Pair every dark surface with border `rgba(255,255,255,.06–.12)` — real dark
   systems separate surfaces with lines, not shadows (OBSERVED Discord/Steam class).
@@ -47,9 +52,10 @@ systems — Stripe `--hds-`, Coinbase `--cds-`, Kooora `--fco-`):
 ## Contrast & states (non-negotiable)
 
 - Body text ≥ 4.5:1, large text ≥ 3:1, UI components/icons ≥ 3:1 (WCAG AA).
-- Interactive states must differ by more than hue: hover (darken 8%),
-  active (darken 12% or inset), focus (visible ring), disabled (40% ink +
-  no shadow + `cursor: not-allowed`), selected (fill + check icon).
+- Interactive states must remain distinguishable: use perceptible
+  surface/border/shape changes, a visible focus indicator, honest disabled
+  semantics, and persistent selected treatment. Verify contrast instead of
+  relying on fixed darkening/opacity percentages.
 - Link styling in body copy: always distinguishable by more than color
   (underline on hover minimum, persistent underline in dense text).
 
@@ -57,7 +63,7 @@ systems — Stripe `--hds-`, Coinbase `--cds-`, Kooora `--fco-`):
 
 Gradients are legal when: brand systems genuinely use them (Stripe's camille
 sweep), poster scrims (entertainment), subtle depth in finance CTAs.
-Illegal by default when: purple→blue hero washes, gradient buttons in gov/health,
+Avoid by default when: purple→blue hero washes, gradient buttons in gov/health,
 gradient text everywhere, gradients as compensation for weak typography.
 Volume matters: Stripe ships ~3 gradient declarations; Disney+ ships 230 —
 because its gradients ARE scrims behind content. Match your sector's ratio.

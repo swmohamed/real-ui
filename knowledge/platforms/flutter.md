@@ -1,7 +1,8 @@
 # Platform DNA: Flutter (Dart)
 
-Sources: docs.flutter.dev fetched 2025-08 `[OBSERVED]` — adaptive-
-responsive, layout, material, web pages; plus DESIGN PRINCIPLE notes.
+Sources: current docs.flutter.dev adaptive/responsive, platform adaptations,
+SafeArea/MediaQuery, and Material migration pages checked 2026-08
+`[SOURCE-OBSERVED]`; plus DESIGN PRINCIPLE notes.
 
 ## Adaptive vs responsive — Flutter's own distinction `[OBSERVED]`
 
@@ -29,8 +30,9 @@ systems are fully legitimate (brands do it) via ThemeData.
 
 - ColorScheme (seed-generated `fromSeed` is a START, not a brand —
   override brand roles deliberately) `[OBSERVED context]`.
-- TextTheme: map to your type scale; respect user text scaling
-  (MediaQuery.textScaleFactor; never disable globally) `[DESIGN PRINCIPLE]`.
+- TextTheme: map to your type scale; respect nonlinear user text scaling via
+  current `TextScaler`/`MediaQuery.textScalerOf(context)` APIs; never disable
+  it globally `[IMPLEMENTATION GUIDANCE]`.
 - Component themes normalize radius/elevation — one system, no one-offs
   (same rule as design-systems/tokens.md).
 

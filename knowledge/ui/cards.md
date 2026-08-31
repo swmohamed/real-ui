@@ -1,9 +1,10 @@
 # UI: Cards — Anatomy, Variants, Behavior
 
-The card is the web's universal content container. Its craft is in the
-ratio, the internals hierarchy, and the interaction boundary.
+Cards are useful for bounded, browsable units, especially media-forward or
+independently actionable content. They are not a universal container; first
+run the representation decision in `foundations/product-modeling.md`.
 
-## Card anatomy (universal)
+## Card anatomy (when a card is the chosen representation)
 
 ```
 [Media] → ratio per vertical (1:1 product, 4:3 editorial, 16:9 media/games,
@@ -52,7 +53,8 @@ ratio, the internals hierarchy, and the interaction boundary.
 
 ## Interaction states
 
-- Static cards: no hover (feeds) except cursor pointer
+- Static cards: no hover treatment and default cursor; pointer cursor only
+  when the card or an explicit control is interactive
 - Interactive: hover elevation/subtle scale, active press (scale .99),
   selected state (border/ring) for pickers
 - Hover-reveal actions (quick-add, save heart) must remain keyboard/touch

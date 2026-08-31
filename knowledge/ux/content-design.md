@@ -79,11 +79,13 @@ the Arabic CTA is a real verb form, not a transliteration.
 
 ## Bilingual notes (with rtl/*)
 
-- Design at the LONGER language: Arabic UI copy runs ~15–25% longer
-  than English (localization/i18n.md expansion table); buttons and
-  nav labels sized for both.
-- Same info architecture across languages; different lengths, never
-  different structures. Numerals policy per market (Western vs
+- Design with real copy in every target language. When translations are not
+  yet available, use the synthetic expansion budgets in localization/i18n.md
+  to stress-test buttons and navigation, then replace them with real strings.
+- Preserve the same capability and task coverage across languages; content
+  order, grouping, examples, and emphasis may adapt when language research or
+  local mental models justify it. Do not silently remove capabilities.
+  Numerals policy per market (Western vs
   Arabic-Indic — rtl/global-vs-arabic.md).
 
 ## Anti-patterns

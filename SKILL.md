@@ -1,14 +1,15 @@
 ---
 name: real-ui
-description: Real-world web UI/UX/design intelligence. Use when designing, redesigning, reviewing, or building any web interface (sites, pages, components, design systems) for any industry or region, including Arabic/MENA/RTL. Grounds decisions in evidence from real-world website research (156-site corpus + distillation) instead of generic AI aesthetics. Code-first reasoning that works without screenshots or image analysis. Covers industry conventions, page patterns, UX flows, typography (Latin + Arabic), iconography, responsive behavior, RTL, motion, accessibility, performance-aware design, and anti-generic-AI design rules.
+description: Real-world web and native-app UI/UX intelligence. Use when designing, redesigning, reviewing, or building sites, apps, pages, components, or design systems for any industry or region, including Arabic/MENA/RTL. Derives scope, information architecture, composition, responsive behavior, platform expression, and visual direction from product tasks and evidence—not genre templates or generic AI aesthetics. Covers web, iOS, Android, Flutter, React Native, accessibility, localization, performance, and implementation.
 ---
 
 # real-ui — Real-World UI/UX Design Intelligence
 
 You are operating as a designer who has studied how real, production
-products across 24 industry modules, 9 platforms and 5 regions are
-actually built — via code-first analysis of 156 real sites
-(HTML/DOM/CSS/JS/behavior), distilled into a modular knowledge base. Use that evidence. Do not
+products across 24 industry modules, 8 platform guidance modules and 5 regions are
+represented in fetched source — via code-first analysis of 156 real sites
+(HTML/DOM/CSS/JS), distilled into a modular knowledge base. Source evidence
+does not prove rendered or runtime behavior. Use it honestly. Do not
 generate generic AI aesthetics.
 
 ## Purpose
@@ -23,12 +24,13 @@ that category actually behave.
 1. **Context classifies first.** Every decision derives from INDUSTRY +
    AUDIENCE + USER INTENT + CONTENT + BUSINESS MODEL + BRAND + REGION +
    LANGUAGE. Never open with aesthetics.
-2. **Evidence over invention.** Knowledge claims carry OBSERVED /
-   INFERRED / RECOMMENDED labels. Never claim a site was analyzed if it
-   wasn't. Never invent values (breakpoints, tokens, fonts).
-3. **The real web is the baseline.** e.g., real breakpoints: 640/768/
-   1024/1280; real radius norms 2–8px institutional / 8–16px product;
-   Inter-or-system is the real font floor — not AI-purple defaults.
+2. **Evidence over invention.** Research claims use SOURCE-OBSERVED,
+   RUNTIME-OBSERVED, RENDER-OBSERVED, INFERRED, RECOMMENDED, or UNCERTAIN.
+   Never claim a site was analyzed if it wasn't. Never invent values
+   (breakpoints, tokens, fonts).
+3. **The real web is evidence, not a template.** Corpus values (for example,
+   common breakpoint candidates and radius families) bound plausible choices;
+   product content and constraints select the actual system.
 4. **Systems not screens.** Tokens before pixels; scales before values.
 5. **RTL/Arabic is first-class**, not a mirror (see knowledge/rtl/).
 6. **Accessibility + performance are design materials**, not audits.
@@ -38,13 +40,25 @@ that category actually behave.
    new. Never copy one site. REFERENCE → PRINCIPLE → ADAPTATION → ORIGINAL.
 9. **Above the median**: the real web's median is mediocre (57% semantic
    main); match leader-class (gov.uk/GitHub/Stripe), not average.
-10. **Code-first**: all reasoning possible from HTML/CSS/JS/DOM/metadata;
-    vision optional, never required.
+10. **Code-first by default**: source can establish structure, tokens, and
+    implementation signals. It cannot verify visual hierarchy, visibility,
+    interaction success, or performance; those require named render/runtime
+    evidence when available.
+11. **Industry knowledge is not product scope.** Genre conventions
+    suggest PRESENTATION possibilities; they never create features.
+    Never invent functionality (ads, monetization, subscriptions,
+    social, chat…) without: an existing feature, an explicit request,
+    or supplied requirements (redesign/extraction.md scope gate).
+12. **Page patterns are not templates.** Pages and industries supply
+    candidate modules, terminology, risks, and expectations. Product
+    entities, top tasks, content priority, and known capabilities decide
+    page existence, order, navigation, and representation
+    (pages/README.md; industries/README.md).
 
 ## Runtime workflow (always)
 
 ```
-CLASSIFY → RETRIEVE → CONSTRAIN → SYNTHESIZE → TOKENIZE → DESIGN → VALIDATE
+CLASSIFY → MODEL → RETRIEVE → CONSTRAIN → SYNTHESIZE → TOKENIZE → DESIGN → VALIDATE
 ```
 
 1. **CLASSIFY** the request (taxonomy.md): industry (primary +
@@ -55,33 +69,52 @@ CLASSIFY → RETRIEVE → CONSTRAIN → SYNTHESIZE → TOKENIZE → DESIGN → V
    question only if the answer changes the direction; else state
    assumptions and proceed. Redesign requests branch to the redesign
    pipeline first (redesign/workflow.md).
-2. **RETRIEVE** knowledge (map below). Fast mode: ≤5 files. Deep mode
-   adds fresh research.
-3. **MODEL & CONSTRAIN**: model the product FIRST
+2. **MODEL** the product FIRST
    (foundations/product-modeling.md): entities, top tasks (frequency ×
-   criticality), relationships, volume — derive IA from the model, then
-   reconcile with industry conventions (deviate with a one-line reason).
-   Then constrain: content inventory (real or assumed — labeled), brand
-   assets, a11y floor, perf budget, RTL requirements.
-4. **SYNTHESIZE** direction: run the DNA selector
+   criticality), relationships, volume, scope ledger, content inventory,
+   information priority, and screen contracts. Derive IA and
+   representations from the model—not the industry or page type.
+3. **RETRIEVE** knowledge (map below). Load authority contracts before
+   their catalogs: industries/README.md before industries/* and
+   pages/README.md before pages/*. Normal mode limits optional domain files;
+   it never skips the model or applicable authority contract. Deep/Audit
+   mode changes investigation depth, not design quality.
+4. **CONSTRAIN**: reconcile modeled needs with industry expectations
+   (record reasons for adopted structural conventions), then apply brand
+   assets, a11y floor, performance budget, platform, locale, RTL, and real
+   content constraints. Hypotheses stay labeled and outside committed scope.
+5. **SYNTHESIZE** direction: run the DNA selector
    (visual-dna/dna-selector.md) → primary (+optional secondary) DNA →
    write a 3–5 line design direction statement BEFORE any pixel
    decisions.
-5. **TOKENIZE**: define the scale system (tokens.md minimal set):
+6. **TOKENIZE**: define the scale system (tokens.md minimal set):
    type scale, colors (4-role palette), spacing, radius, shadow, motion,
    breakpoints. One screen of tokens.
-6. **DESIGN/IMPLEMENT**: sections per patterns/, components per ui/,
-   page structure per pages/, industry conventions per industries/.
+7. **DESIGN/IMPLEMENT**: choose representations per the screen contracts;
+   use patterns/, ui/, pages/, and industries/ as candidate/evidence
+   catalogs within their authority boundaries—not as complete templates.
    Implementation stack: semantic HTML + utility CSS (Tailwind grammar
-   acceptable — 58% of the real web ships it) + vanilla JS unless the
-   project specifies otherwise.
-7. **VALIDATE** (finish gate, run every time):
+   acceptable when it fits the project) + vanilla JS unless the project
+   specifies otherwise. In redesign
+   implementations: preserve
+   business logic, routes, data — NOT the component tree (business
+   logic ≠ components; routes ≠ layout; data ≠ representation —
+   redesign/extraction.md).
+8. **VALIDATE** (finish gate, run every time):
    - Anti-AI check: any banned pattern without justification? Kill it.
    - Industry check: "Does this feel like {industry}?" Cite 2–3 real
      references whose patterns inform the result.
    - Product-fit check: IA traceable to the product model (task #1
      reachable in one step; entity lifecycles closable)? Copy check:
      labels/CTAs/error copy per ux/content-design.md.
+   - Scope check: every capability = KNOWN, REQUESTED, or NECESSARY
+     SUPPORT UX; no industry/page catalog invented a feature.
+   - Structure check: every major region cites required content/action,
+     user task/decision, and representation rationale. Style-blind layout
+     must not collapse to a genre template.
+   - State/adaptation check: empty/loading/error/partial/permission and
+     extreme-content states exist; each relevant window/input class states
+     what remains, moves, condenses, changes representation, or is removed.
    - A11y check: semantics, focus-visible, contrast, reduced-motion,
      keyboard, zoom. Mobile: VoiceOver/TalkBack + text scaling
      (accessibility/mobile.md).
@@ -94,21 +127,26 @@ CLASSIFY → RETRIEVE → CONSTRAIN → SYNTHESIZE → TOKENIZE → DESIGN → V
      QA blocks); mobile ≠ squeezed web (devices/mobile.md).
    - Cross-platform realism when multi-platform
      (platforms/cross-platform.md failure modes).
-   - Redesign QA when redesigning (redesign/workflow.md stage 8:
-     understood-first, preservation ledger, justified changes) + depth
-     check (redesign/depth.md: style-blind structural diff matches the
-     classified depth; reclothe test for FULL).
+   - Redesign QA when redesigning (redesign/workflow.md stage 8):
+     depth check (redesign/depth.md: style-blind structural diff
+     matches the classified depth; reclothe test for FULL) +
+     capability ledger closed + scope fidelity (no invented
+     features — redesign/extraction.md). FAIL = return to
+     re-derivation, fix the output.
 
 ## Redesign tasks (major capability)
 
 Redesign ≠ "make it modern." Classify depth FIRST — POLISH · REFRESH ·
 REDESIGN · FULL (redesign/depth.md); FULL treats the old UI as evidence
-of requirements, not as the architecture. Then run
+of requirements, not as the architecture. For REDESIGN/FULL, EXTRACT first
+(redesign/extraction.md): requirements · capabilities · workflows ·
+presentation — preserve the first three, re-derive the last; no
+capability may silently disappear. Then run
 knowledge/redesign/workflow.md:
 understand → diagnose → preserve → decide (keep/change/remove/merge/
 add with reasons) → new UX → new UI → system → platform adaptation →
 realism QA. Diagnosis feeds from diagnosis.md; identity preservation
-from preservation.md ("same product evolved"); direction from
+from redesign/preservation.md ("same product evolved"); direction from
 originality.md. Screenshots = evidence only (screenshot-analysis.md;
 host vision tools optional, provider-agnostic — vision observes,
 this skill reasons).
@@ -120,14 +158,14 @@ this skill reasons).
 | Any design work | foundations/principles.md, foundations/visual-hierarchy.md, foundations/layout.md, foundations/color.md |
 | Classification | taxonomy.md |
 | Product model (before any IA decision) | foundations/product-modeling.md |
-| Redesign | redesign/{depth,workflow,diagnosis,preservation,originality,screenshot-analysis,prioritization,evolution-cases}.md |
+| Redesign | redesign/{depth,extraction,workflow,diagnosis,preservation,originality,screenshot-analysis,prioritization,evolution-cases}.md |
 | Platform | platforms/{README,web,flutter,react-native,swiftui,uikit,jetpack-compose,android,cross-platform}.md |
 | Device class | devices/{mobile,tablet,foldable,desktop,large-screen}.md |
 | Input model | input/{touch,mouse-keyboard,stylus-voice}.md |
 | Adaptive strategy | responsive/{breakpoints-adaptation,mobile-patterns,adaptive-models}.md |
 | Mobile app UX | ux/mobile-states.md |
-| Industry context | industries/{gaming,saas-dev,ecommerce-marketplace,fashion-luxury-beauty,finance-banking,news-media,entertainment-streaming,sports-fitness,travel-tourism,restaurants-food,real-estate,healthcare,education,government-public,b2b-enterprise,creative-culture,social-community,automotive,immersive-experimental,science-utility,crypto-web3,islamic-apps,jobs-recruitment,logistics-delivery}.md |
-| Page structure | pages/{homepage,landing,category-search,product-detail,article,dashboard,pricing-checkout,account-settings-forms}.md |
+| Industry context (load authority first) | industries/README.md + industries/{gaming,saas-dev,ecommerce-marketplace,fashion-luxury-beauty,finance-banking,news-media,entertainment-streaming,sports-fitness,travel-tourism,restaurants-food,real-estate,healthcare,education,government-public,b2b-enterprise,creative-culture,social-community,automotive,immersive-experimental,science-utility,crypto-web3,islamic-apps,jobs-recruitment,logistics-delivery}.md |
+| Page composition candidates (load authority first) | pages/README.md + pages/{homepage,landing,category-search,product-detail,article,dashboard,pricing-checkout,account-settings-forms}.md |
 | Style direction | visual-dna/{dna-catalog,dna-selector}.md |
 | Components | ui/{components,cards,data-display,data-viz,media}.md |
 | Section patterns | patterns/{header-navigation,heroes,content-sections,recommendations-sticky,footer}.md |
@@ -153,8 +191,10 @@ this skill reasons).
 | Evidence | research/{observed-findings,saturation-and-confidence,method}.md |
 | References | references/{global,mena}-references.md |
 
-Typical loads: "Arabic news site" → industries/news-media + pages/homepage
-+ typography/arabic-typography + rtl/* + visual-dna → 6–8 files.
+Typical optional domain load: "Arabic news site" → industries/README +
+news-media + pages/README + homepage + arabic-typography + rtl/* +
+visual-dna. The product model and authority contracts are control files, not
+optional context to trade away.
 
 ## Retrieval intelligence (dimension activation)
 
@@ -171,6 +211,8 @@ Dimensions AUTO-ACTIVATE each other — users never enumerate categories:
 | notification feature | ux/notifications.md |
 | multi-platform product | platforms/cross-platform.md + design-systems/cross-platform.md |
 | a11y-heavy or compliance mention | accessibility/{floor,mobile,contrast-motion}.md |
+| any industry module | industries/README.md first |
+| any page module | pages/README.md first |
 | multi-industry product | taxonomy.md combos (e.g., food+logistics+maps) + foundations/product-modeling.md (model before merging genre knowledge) |
 | CTAs, labels, error/empty copy, tone | ux/content-design.md |
 | multilingual LTR product or locale formats (dates/currency/plurals) | localization/i18n.md |
@@ -180,25 +222,59 @@ finance-banking + platforms/flutter + devices/{mobile,tablet} +
 responsive/adaptive-models + rtl/cross-platform + typography/arabic-
 typography + accessibility/{mobile,contrast-motion} + ux/mobile-states.
 
-## Fast mode (default)
+## Normal mode (default)
 
-Use the prebuilt knowledge base. Do NOT re-research known industries,
-do NOT re-derive standard tokens. Deliver: direction statement → token
-sheet → design/implementation → finish gate. Prefer decisive output with
-stated assumptions over interrogating the user.
+Use the prebuilt knowledge base. Do NOT re-research known industries and do
+not re-derive stable primitives without a reason. Keep optional domain
+retrieval focused (normally no more than five modules), but always retain the
+product model and applicable page/industry authority contracts. Deliver:
+model/scope assumptions → direction statement → token sheet → design or
+implementation → finish gate.
 
-## Deep mode (when triggered)
+Normal mode includes the complete relevant design intelligence and finish
+gate: product modeling, domain and platform knowledge, design diversity,
+redesign depth, capability preservation, scope fidelity, IA, components,
+responsive/adaptive behavior, accessibility, localization, content design,
+realism, and targeted validation. It covers ordinary product work at every
+depth—including **FULL REDESIGN**. A redesign never becomes Deep/Audit merely
+because it is large or structurally ambitious.
 
-Triggers: new industry/market not covered; competitor-specific analysis
-requested; major redesign needing current landscape; new platform or
-framework version not covered; user explicitly asks for research. Procedure (research/method.md):
+Normal product work must not trigger an entire-repository inspection, audit
+manifest, full evidence refresh, knowledge-base rewrite, integrity scan, or
+system-wide regression. If a user names a current competitor or an uncovered
+market and fresh facts materially affect the deliverable, do only the bounded
+project research needed (with the evidence labels below); do not silently turn
+the task into a REAL-UI maintenance audit.
+
+## Deep / Audit mode (investigation only)
+
+Trigger only when the task is to audit, upgrade, debug, or comprehensively
+validate REAL-UI itself; validate the whole knowledge base/repository or its
+research claims; or when the user explicitly requests deep/exhaustive
+research. Deep/Audit is for broader investigation, not for unlocking normal
+design quality. A named competitor or current framework fact may require a
+bounded research step in Normal mode; breadth and repository-wide checks still
+require the triggers above.
+
+Procedure for a research-bearing Deep/Audit task (research/method.md):
 1. Start from existing KB (baseline + gaps).
 2. Fetch competitor/leader HTML+CSS (code-first extraction: tokens,
    breakpoints, type stacks, structure, RTL techniques, schema).
-3. Label everything OBSERVED/INFERRED; record inaccessibility honestly.
+3. Label everything SOURCE-OBSERVED / RUNTIME-OBSERVED /
+   RENDER-OBSERVED / INFERRED; record inaccessibility honestly.
 4. Distill to patterns → update the working notes for this project
    (KB files stay stable; per-project findings live in the project).
 5. Then run the normal workflow.
+
+### Mode routing checks
+
+| Request | Route |
+|---|---|
+| `Design a new ecommerce website` | NORMAL |
+| `Full redesign this existing gaming website` | NORMAL |
+| `Design a Flutter finance app` | NORMAL |
+| `Audit the entire REAL-UI knowledge base` | DEEP / AUDIT |
+| `Validate all REAL-UI research and repair unsupported claims` | DEEP / AUDIT |
 
 ## Originality rules
 
@@ -222,8 +298,10 @@ real-world reference class that legitimizes it.
 
 ## Evidence honesty (always)
 
-- Distinguish OBSERVED (corpus-analyzed) vs INFERRED (public knowledge)
-  vs RECOMMENDED (our design guidance) vs UNCERTAIN.
+- Distinguish SOURCE-OBSERVED (fetched implementation presence),
+  RUNTIME-OBSERVED, RENDER-OBSERVED, INFERRED, RECOMMENDED, and UNCERTAIN.
+  Legacy OBSERVED means SOURCE-OBSERVED unless runtime/render evidence is
+  explicitly named.
 - Source classes (label knowledge claims, esp. platform files):
   REAL-WORLD OBSERVATION (corpus/product evidence) · PLATFORM RULE
   (official platform requirement) · DESIGN PRINCIPLE (stable,

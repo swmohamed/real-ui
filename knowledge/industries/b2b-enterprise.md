@@ -18,7 +18,7 @@ depth signals competence; case studies + whitepapers are the currency.
 Qualified leads (forms, gated content), brand authority, recruiting,
 investor confidence (public companies).
 
-## Information architecture
+## Candidate information-architecture patterns (not a product sitemap)
 - Home: positioning statement + proof (clients/logos, numbers) + flagship
   insight (report/POV) + solutions overview + CTA (Talk to us)
 - Solutions by industry × function matrices; services pages with depth
@@ -34,7 +34,7 @@ investor confidence (public companies).
 - IBM OBSERVED: Carbon design system maturity — enterprise DS as brand
 - Consulting OBSERVED (Deloitte): dense global/office/language switchers
 
-## Components that define the genre
+## Candidate components observed in the genre
 - Statement heroes (typographic, one POV, zero stock chaos)
 - Logo walls + quantified proof bars ("$X B advised, 40 countries")
 - Case study cards with client + metric + sector chips
@@ -76,7 +76,7 @@ investor confidence (public companies).
   often EN) — site should manage register shifts gracefully
 - Government-tender visibility (procurement pages) — regional B2B channel
 
-## Conventions (follow)
+## Conventions to evaluate (adopt only when model-supported)
 Statement typography, proof bars with real numbers, case studies with
 metrics, gated research with fair exchange, office/global footers,
 leadership pages, newsletter hubs, investor sections.
@@ -92,7 +92,7 @@ leadership pages, newsletter hubs, investor sections.
 IBM (Carbon OBSERVED class), Salesforce, HubSpot, Deloitte, Maersk, Shell,
 GE, Verizon, FedEx, Uber (B2B side), stc (AR OBSERVED), Unifonic (AR OBSERVED).
 
-## Decision guidance
+## Contextual decision prompts
 Pick register by audience age/sector: classic-corporate for legacy
 industries, system-modern for tech-adjacent. Either way: proof density,
 statement typography, disciplined forms, real photography. MENA adds

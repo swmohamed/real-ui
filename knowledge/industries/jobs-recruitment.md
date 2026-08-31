@@ -4,6 +4,11 @@ Evidence: v2 fetch 2025-08 `[OBSERVED]` — bayt.com (MENA leader),
 wuzzuf.net (Egypt leader). Complements social-community.md (profiles/
 communities) and saas-dev.md (ATS/enterprise tooling).
 
+Apply `industries/README.md`. Distinguish a public job board, candidate
+tracker, employer ATS, recruitment agency site, and community product. Search,
+profiles, alerts, easy-apply, employer tooling, subscriptions, and status
+tracking all require scope evidence.
+
 ## Observed design languages
 
 - Bayt: Roboto + **Vazirmatn** (Arabic-capable Latin font — bilingual
@@ -13,11 +18,11 @@ communities) and saas-dev.md (ATS/enterprise tooling).
   Bootstrap-class breakpoint spread (575/576, 991/992, 1159/1160) —
   utility-first, dense mobile bp set.
 
-## DNA rules
+## Conditional domain patterns and questions
 
-1. **Search-first homepage**: keyword + location is THE hero (not
-   marketing hero) `[OBSERVED - both leaders]`; browse-by-category/
-   company tiles secondary; popular-search chips.
+1. **For broad public job boards**, keyword + location was prominent in both
+   sampled products' source. Do not transfer a search-first homepage to an
+   ATS, agency, or narrow campaign site without a matching top task.
 2. Job card = structured data contract: title, company (logo),
    location, salary band if available, posted-date freshness, easy-
    apply/featured badges `[OBSERVED - bayt card anatomy]`. Salary
@@ -25,7 +30,7 @@ communities) and saas-dev.md (ATS/enterprise tooling).
    regulation-adjacent habit) `[INFERRED - corpus pattern]`.
 3. Two-pane results on desktop (list ↔ detail), stacked + sheet/detail
    push on mobile (responsive/adaptive-models.md).
-4. Filters = facets: experience level, career level, company, remote,
+4. Where real data exposes them, filters may include experience level, career level, company, remote,
    salary, date-posted; filter chips visible + count badges; saved
    searches + alerts (email/push) are retention features, design them
    as first-class.
@@ -39,7 +44,7 @@ communities) and saas-dev.md (ATS/enterprise tooling).
    reviews), scam-reporting affordance; MENA: company size + nationality
    hiring notes handled respectfully per market norms.
 
-## Two-sided reality
+## Possible two-sided model (only when the product serves both)
 
 Job-seeker side (above) + employer side (post job, applicant pipeline
 = kanban-ish table, candidate search) — enterprise-density UI
@@ -48,11 +53,10 @@ Job-seeker side (above) + employer side (post job, applicant pipeline
 ## MENA specifics
 
 AR/EN full bilingual parity (bayt serves both fully `[OBSERVED]`);
-CV language toggle; currency+salary period (monthly is MENA default —
-annual is Western default; respect it); GCC-specific: nationality/
-visa status fields exist in some markets (design neutrally, only where
-legally conventional); Ramadan hiring-season spikes (design for
-seasonal campaigns).
+CV language toggle and salary-period formatting follow supplied market data
+and locale policy—do not assume monthly/annual defaults. Nationality or visa
+fields are sensitive and appear only when necessary, lawful, and explicitly
+required. Seasonal campaigns require actual content and business scope.
 
 ## Don't
 

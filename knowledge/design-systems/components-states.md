@@ -31,10 +31,11 @@ real design systems scale to 100s of components without bloat
 
 ## Composition rules (page-level coherence)
 
-- Components compose into sections; sections into templates; templates
-  per page type (see pages/*). Define page **templates** in the system
-  (marketing-2-col, dashboard-3-col, article-reading) — prevents
-  per-page reinvention
+- Components compose into reusable regions and layout primitives. Define
+  constraints (content width, split ratios, density, media placement), not
+  page-type section sequences. Assemble pages from their screen contracts and
+  `pages/README.md`; recurring compositions may be promoted only after real
+  repetition proves them
 - Density variants: comfortable (default) / compact (data tools) — a
   system-level dial, not per-component hacks
 - RTL: variants must be direction-tested; directional icons variant

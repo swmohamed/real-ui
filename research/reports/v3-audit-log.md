@@ -1,4 +1,10 @@
-# V3 Audit & Upgrade Log (complete audit, research, improvement, validation)
+# V3 Audit & Upgrade Log (historical, superseded)
+
+This is a prior change record, not evidence of the current repository's
+completeness or runtime behavior. Its Markdown “behavioral” results were
+manual reasoned traces, and its file counts/sync status are historical. The
+independent V4 audit re-verifies claims and supersedes current-status
+conclusions without deleting this provenance.
 
 Method per the V3 program: INSPECT → registry → prioritize → validate
 existing → research only real gaps → implement → test → regression.

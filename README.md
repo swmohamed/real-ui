@@ -17,30 +17,33 @@ any industry or region, including Arabic/MENA/RTL — this skill makes it
 behave like a senior product designer instead of a template assembler:
 
 - **Classifies the task** (industry × platform × device × audience × language)
+- **Models the product before the page** (entities, top tasks, content priority,
+  scope, and screen contracts) so industry patterns cannot invent features
 - **Retrieves only relevant knowledge** across dimensions automatically
 - **Constrains with anti-AI-design rules** (banned-by-default list:
   purple gradients, glassmorphism-everywhere, bento-everything, glow borders…)
 - **Synthesizes an original direction** before any pixel decision
 - **Validates** with realism, industry, platform, a11y, RTL and
   anti-generic QA gates
-- **Redesigns like a professional**: understand → diagnose → prioritize →
-  preserve → change selectively → design → validate → **iterate**
+- **Redesigns at the requested depth**: a full redesign preserves capabilities,
+  data, routes, workflows, business logic, and required content while
+  re-deriving IA, hierarchy, navigation, composition, and components
 
 ## What's inside
 
 | Module | Coverage |
 |---|---|
-| `knowledge/` | **115 files**: 25-dimension audit coverage · 24 industries · 9 platforms (web, Flutter, React Native, SwiftUI, UIKit, Jetpack Compose, Android, cross-platform) · devices (phone/tablet/foldable/desktop/TV) · input models · redesign intelligence (8 files — incl. depth classification) · forms & validation · notifications · states · data-viz · dark-mode theming · implementation realism · typography (Latin + Arabic) · RTL cross-platform · accessibility (WCAG 2.2 official criteria) · visual DNA catalog · anti-patterns |
-| `research/` | Live code-first research pipeline (Python tools) + evidence logs. Built on a **156-site corpus** (~31MB production CSS analyzed) + **39 MENA/RTL sites**, refreshed with 2026 fetches: Apple DocC/WWDC, Android/Material official repos, React Native official source, MDN, W3C GitHub, NN/g, and real product evidence (quran.com, Kraken, Coinbase, Bayt, Wuzzuf, flynas, Bosta…) |
-| `tests/` | Self-tests, quality gates, behavioral + adversarial test suites (V1 → V2.2) |
+| `knowledge/` | **119 files** across 25 directories: 24 industry modules plus an authority contract · 8 platform guidance modules plus a router (web, Flutter, React Native, SwiftUI, UIKit, Jetpack Compose, Android, cross-platform) · devices (phone/tablet/foldable/desktop/TV) · input models · redesign intelligence (9 files) · product/scope/content modeling · page-composition authority · forms, notifications, states, data-viz, theming, implementation, typography (Latin + Arabic), localization, RTL, accessibility, visual DNA, and anti-patterns |
+| `research/` | Reproducible code-first research pipeline (Python tools) + evidence logs. Built on a **156-site corpus** (~31MB fetched production CSS) + **39 MENA/RTL sites**, with additional 2026 official-platform and product-source research. Source extraction is not runtime or render evidence. |
+| `tests/` | Executable Python invariants for routing, evidence aggregation, scope/template/accessibility/platform contracts; Markdown scenario suites are explicitly classified as reasoned specifications, not runtime/render tests |
 
 ### Evidence honesty (the core discipline)
 
-Every claim carries a source class: **OBSERVED** (corpus/product evidence) ·
-**PLATFORM RULE** (official docs) · **APPLE OFFICIAL** · **DESIGN PRINCIPLE**
-(stable convention) · **RECOMMENDED**. Nothing is called "analyzed" unless
-it was actually fetched; blocked sources are logged honestly in the
-research logs, never fabricated.
+Research claims distinguish **SOURCE-OBSERVED**, **RUNTIME-OBSERVED**,
+**RENDER-OBSERVED**, **INFERRED**, **RECOMMENDED**, and **UNCERTAIN** evidence.
+Guidance also distinguishes official platform rules from design principles and
+implementation recommendations. Nothing is called analyzed unless it was
+actually inspected; blocked sources are logged honestly, never fabricated.
 
 ---
 
@@ -49,7 +52,7 @@ research logs, never fabricated.
 ### One-liner (skills CLI — recommended)
 
 ```bash
-npx skills add SwMohamed/real-ui
+npx skills add swmohamed/real-ui
 ```
 
 Works with the standard agent-skills CLI (skills.sh): installs into the
@@ -61,7 +64,7 @@ and more). Local pre-publish testing works too:
 ### Zero-Node alternative (installs to EVERY agent on the machine)
 
 ```bash
-git clone https://github.com/SwMohamed/real-ui.git
+git clone https://github.com/swmohamed/real-ui.git
 cd real-ui
 python scripts/install.py
 ```
@@ -116,11 +119,14 @@ startup, Arabic-first RTL, 5 pages"
 "Review my Flutter app's UI for iPad + accessibility"
 ```
 
-- **Fast mode (default)**: uses the prebuilt knowledge base — fast, no
-  research.
-- **Deep mode**: triggered by new industries, major redesigns, or
-  explicit research requests — fetches fresh evidence with the included
-  pipeline, labeled honestly.
+- **Normal mode (default)**: uses the complete relevant design intelligence,
+  including product modeling, accessibility, responsive/adaptive behavior,
+  localization, platform guidance, targeted validation, and every redesign
+  depth. A full redesign is normal use; it does not require Deep/Audit mode.
+- **Deep / Audit mode**: reserved for auditing or upgrading REAL-UI itself,
+  repository/knowledge/evidence-wide validation, architecture debugging, or
+  explicitly requested deep research. It changes investigation breadth, not
+  the quality available to normal design work.
 
 Works without screenshots or vision (code-first: HTML/CSS/JS/DOM evidence),
 and composes with your host's vision tools when present.
@@ -130,12 +136,12 @@ and composes with your host's vision tools when present.
 ```
 real-ui/
 ├── SKILL.md                 # orchestrator (workflow + retrieval map)
-├── knowledge/               # 112 modular knowledge files (18 domains)
+├── knowledge/               # 119 modular knowledge files (25 directories)
 ├── research/
 │   ├── README.md            # how to run/refresh the research pipeline
 │   ├── tools/               # fetch_analyze, aggregate, verify + installer deps
-│   └── reports/             # evidence & research logs (V1→V2.2)
-├── tests/                   # quality gates, behavioral & adversarial tests
+│   └── reports/             # evidence & independent audit logs (V1→V4)
+├── tests/                   # executable invariants + reasoned scenario specs
 ├── scripts/install.py       # install-everywhere + verify
 ├── LICENSE                  # MIT
 └── README.md
@@ -147,10 +153,17 @@ real-ui/
 python research/tools/verify_install.py   # integrity + sync + YAML safety
 ```
 
-Behavioral/adversarial suites (reasoned scenarios: gaming redesign, Arabic
-ecommerce, Flutter food delivery, iOS+Android productivity, crypto,
-logistics, Islamic apps + Hijri, foldables, a11y-heavy, cross-platform
-design systems, dashboards, dark mode) live in `tests/`.
+Executable repository checks:
+
+```bash
+python -m unittest discover -s tests -p "test_*.py" -v
+```
+
+The Markdown suites in `tests/` are reasoned scenario specifications (gaming
+redesign, Arabic ecommerce, Flutter food delivery, cross-platform products,
+accessibility, dashboards, and more). They guide manual or future agent-harness
+runs but are not evidence that an agent, browser, native app, or render was
+executed.
 
 ## License
 

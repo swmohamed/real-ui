@@ -1,7 +1,8 @@
-# V3 Behavioral Tests (product modeling · variation · content design · cards · i18n)
+# V3 Reasoned Specification Scenarios (product modeling · variation · content design · cards · i18n)
 
-Method: reason each scenario through the CURRENT skill files and record
-what the workflow would produce. PASS = the required behavior is forced
+Method: manually reason each scenario through the skill files and record
+what the workflow would be expected to produce. This is not executable agent,
+runtime, or render validation. PASS = a prior trace found the behavior forced
 by an explicit instruction (not merely plausible). Each test names the
 files that must fire.
 
@@ -76,7 +77,7 @@ runs RTL + a11y + perf checks as before.
 originality.md output contract now includes DIALS line; preservation
 ledger unaffected.
 
-## Results (this run, reasoned through current files)
+## Historical manual trace record (re-run required after material changes)
 
 - T1 PASS — MODEL step (SKILL.md step 3) forces entities→IA order;
   product-fit gate enforces task-#1 path.

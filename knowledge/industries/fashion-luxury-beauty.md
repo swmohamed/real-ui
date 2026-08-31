@@ -16,7 +16,7 @@ beauty adds education + shade/ingredient complexity. Imagery > words.
 Full-price sell-through, brand heat (drops, editorial), loyalty/app installs,
 returns containment (fit info).
 
-## Information architecture
+## Candidate information-architecture patterns (not a product sitemap)
 - Fashion utility: Home (gender split entry) → categories → PLP (grid) → PDP
   (gallery, size selector, fit notes) → bag/checkout. Editorial lookbooks
   interleave shelves.
@@ -32,7 +32,7 @@ returns containment (fit info).
 - Luxury: minimal text nav (5–7 links), typography-led; hamburger tolerated
 - Beauty: shop-by-concern/category + education nav
 
-## Components that define the genre
+## Candidate components observed in the genre
 - **Editorial hero** (full-bleed campaign, thin caption, single CTA or none)
 - PLP: 3:4 imagery, dense hover-swap (alternate shot), quick-add sizes popover
 - PDP gallery: stacked large images (luxury) or thumbnails+zoom (utility);
@@ -40,7 +40,8 @@ returns containment (fit info).
 - Lookbook spreads, shop-the-look hotspots
 - Beauty: shade swatch strips, before/after sliders, ingredient tables,
   routine builders
-- Wishlist hearts everywhere; "recently viewed"
+- If wishlist/recent-history capabilities exist, keep their controls and
+  states consistent without visually repeating them indiscriminately
 
 ## Visual characteristics (OBSERVED + well-documented class knowledge)
 - Utility fashion: sans (Helvetica Now on Nike OBSERVED), 0–8px radius, dense
@@ -69,11 +70,11 @@ returns containment (fit info).
 - Fashion Arabic IA: gender split "نسائي / رجالي / أطفال" mirrors EN
 - Photography direction respects regional modesty norms on mass retail
 - Luxury keeps brand-global identity + Arabic overlays (Ounass ar OBSERVED
-  404 — verify live in Deep Mode); Namshi (INFERRED) = regional fashion-first
+  404 — verify with targeted live research when needed); Namshi (INFERRED) = regional fashion-first
   reference with bilingual UX
 - Sizes stay Latin (XS/S/M) even in Arabic UI — sizing systems are global
 
-## Conventions (follow)
+## Conventions to evaluate (adopt only when model-supported)
 Gender/category entry, hover-swap, size-selector with stock states, editorial
 interleaving, wishlist, lookbook hotspots, delivery/returns reassurance near
 price, price in local currency with correct formatting (AED/SAR/EGP).
@@ -88,9 +89,10 @@ price, price in local currency with correct formatting (AED/SAR/EGP).
 ## Strong references
 Nike, Zara (INFERRED), ASOS (INFERRED), Glossier, Sephora (INFERRED),
 Ounass, Namshi, Mr Porter (INFERRED), Rolex (INFERRED — blocked), Chanel/LV
-(class knowledge, verify in Deep Mode), Arabic: Ounass/Namshi class.
+(class knowledge; verify with targeted current research), Arabic:
+Ounass/Namshi class.
 
-## Decision guidance
+## Contextual decision prompts
 Ask: utility or aspiration? Utility → density + speed + filters. Aspiration →
 whitespace + serif display + restraint. Never blend: promo badges on luxury
 or empty poetry on utility both fail.

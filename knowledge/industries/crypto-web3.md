@@ -4,6 +4,11 @@ Evidence: v2 product fetch 2025-08 `[OBSERVED]` — kraken.com, coinbase.com,
 bitoasis.net (MENA), rain.bh (MENA→global). Complements finance-banking.md
 (read it first: trust bars, numbers discipline).
 
+Apply `industries/README.md`: distinguish an exchange, wallet, market-data
+tool, protocol site, custody product, and marketing site before adopting any
+pattern below. This catalog never creates trading, KYC, wallet, account,
+security, or payment capabilities.
+
 ## Observed design languages
 
 - Kraken: IBM Plex Sans + **custom Kraken Plex Mono** (dedicated mono
@@ -16,30 +21,28 @@ bitoasis.net (MENA), rain.bh (MENA→global). Complements finance-banking.md
 - Rain: editorial-luxury take — Suisse Intl + serif headlines
   (Tiempos) `[OBSERVED]` — proof crypto ≠ one aesthetic.
 
-## DNA rules
+## Conditional domain patterns and questions
 
 1. **Numbers are the interface**: tabular numerals / dedicated mono
    family for prices, P&L, hashes (Kraken's custom mono `[OBSERVED]`);
    consistent decimals; red/green never sole signal (accessibility/
    contrast-motion.md).
-2. Dark canvas is the genre default (v1 corpus: crypto = terminal-dark
-   family `[OBSERVED]`) but light-mode = trust for onboarding/finance-
-   lite products (Coinbase started light) — match audience risk
-   appetite.
-3. Live data everywhere: mini sparklines in lists, price flash states
+2. Dark canvases appear in the sampled genre, but are not a default. Choose
+   mode from brand, audience, task, environment, and accessibility evidence.
+3. When live market data is a KNOWN capability: mini sparklines in lists, price flash states
    (not full-page reloads), websocket-real feel (no stale tickers).
-4. Trust ladder UX: educational tiering (learn→earn), transparent
+4. For regulated transactional products, trust may require transparent
    fees BEFORE confirm, license/regulatory badges per region (MENA:
    VARA/CBB/Bahrain badges `[OBSERVED - rain/bitoasis footers]`),
    status/transparency pages.
-5. Security UX as product: 2FA/MFA flows designed (not bolted on),
+5. If accounts/custody exist, security UX may include 2FA/MFA flows,
    withdrawal address whitelisting, session/device lists — these are
    RETENTION surfaces, not settings backwaters.
-6. Wallet patterns: seed-phrase onboarding with copy friction done
+6. If a self-custody wallet exists: seed-phrase onboarding with copy friction done
    RIGHT (verify-a-word tests), gas/fee explainers per action, pending
    states with explorer links.
 
-## Key flows (design deep)
+## Candidate flows by product subtype (scope required)
 
 - Trade pair view: orderbook depth + chart + order entry — desktop =
    multi-panel (devices/desktop.md), mobile = tabbed/chart-first.
@@ -54,10 +57,10 @@ bitoasis.net (MENA), rain.bh (MENA→global). Complements finance-banking.md
 ## MENA specifics
 
 Bilingual AR/EN with financial-terminology care (محفظة/محفظة رقمية);
-Arabic numerals choice per locale (rtl/cross-platform.md); Ramadan
-period trading promos; local payment rails (Fawry, KNET, mada) shown
-in deposit flows; regulatory trust = region-specific badges, not
-generic "regulated" claims.
+Arabic numerals choice per locale (rtl/cross-platform.md). Seasonal campaigns,
+local payment rails (Fawry, KNET, mada), and regulatory badges appear only
+when the product, processor, jurisdiction, and supplied evidence support them;
+never fabricate a payment method, promotion, or authorization.
 
 ## Don't
 

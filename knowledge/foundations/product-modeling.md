@@ -7,7 +7,7 @@ generic healthcare homepage because "healthcare sites look like that").
 
 Label: RECOMMENDED method (design reasoning, not corpus observation).
 
-## The model (write it down before IA — 5–10 lines is enough)
+## The model (write it down before IA)
 
 | Element | Question | Design consequence |
 |---|---|---|
@@ -18,6 +18,38 @@ Label: RECOMMENDED method (design reasoning, not corpus observation).
 | Entity lifecycle | What states does the main entity pass through? (draft→sent→paid) | Lifecycle = status column, filters, empty/error states, notifications |
 | Volume | How many items typical? 10 or 10,000? | 10 = single screen; 10k = search + facets + pagination |
 | Audience & register | Who + how expert? | Expert→density+shortcuts; consumer→guided+airy |
+
+## Scope ledger (all design work, not only redesigns)
+
+Before selecting pages or components, classify every proposed capability:
+
+- **KNOWN** — present in supplied requirements, code, routes, data, or an
+  existing product.
+- **REQUESTED** — explicitly requested by the user.
+- **NECESSARY SUPPORT UX** — the smallest interaction needed to make a
+  KNOWN/REQUESTED capability complete, safe, or accessible.
+- **HYPOTHESIS** — plausible but unconfirmed; ask, label as conceptual, or
+  leave out.
+- **OUT OF SCOPE** — unsupported or rejected; do not design it.
+
+Industry and page-pattern files are not evidence of scope. Accounts, ads,
+payments, subscriptions, recommendations, chat, social features, reviews,
+maps, and notifications need their own scope evidence.
+
+## Content model and information priority
+
+Inventory real content before choosing its container. Mark assumptions.
+
+| Content item/type | Source | Audience need | Decision/task supported | Frequency/urgency | Risk if missed | Constraints |
+|---|---|---|---|---|---|---|
+
+Rank major items with a small, explicit model rather than aesthetic instinct:
+
+`priority = task importance + frequency + urgency + decision risk`
+
+The exact arithmetic is unimportant; the relative order is. Content without
+a traceable task, decision, legal need, or known product purpose does not earn
+screen space.
 
 ## Deriving IA from the model
 
@@ -36,6 +68,28 @@ Label: RECOMMENDED method (design reasoning, not corpus observation).
    fits the model, use it (it carries user expectations); where it
    doesn't, deviate with a one-line reason. Write the reason down.
 
+## Deriving representation and composition
+
+Choose representations from content shape and task verb, not page genre:
+
+| Need | Candidate representation |
+|---|---|
+| compare many entities across stable attributes | table/data grid |
+| browse a small media-forward set | cards/shelves |
+| scan simple homogeneous records | list rows |
+| monitor time/state changes | timeline, queue, chart + source table |
+| complete a focused sequence | form/step flow |
+| understand a hierarchy or relationship | tree, grouped list, diagram |
+| read a narrative | prose sections with restrained supporting media |
+
+Write a screen contract before layout:
+
+`screen job -> primary user -> top task -> required content/actions -> priority -> representation -> states`
+
+Then use `pages/README.md` and individual page files as candidate-module
+catalogs. Their listed order has no authority. Use `industries/README.md`
+before any industry module.
+
 ## Product-fit test (finish gate input)
 
 - Name the top task → is it reachable in one step from the entry screen?
@@ -44,6 +98,8 @@ Label: RECOMMENDED method (design reasoning, not corpus observation).
   progress → done/failed → resolved)?
 - Would a user of THIS product recognize their job in the structure —
   or a generic version of the industry?
+- Can every capability pass the scope ledger? Can every major region cite
+  its task/content priority and explain why its representation fits?
 
 ## Worked micro-example
 

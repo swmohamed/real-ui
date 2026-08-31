@@ -18,7 +18,7 @@ Qualified leads to agents (portal model: Bayut/PropertyFinder class),
 listing packages (sellers), developer sales (new projects), iBuying/finance
 attach (US model).
 
-## Information architecture
+## Candidate information-architecture patterns (not a product sitemap)
 - Home: search hero (location autocomplete + type + price) + quick links
   (Buy/Rent/New projects/Commercial) + popular areas + featured listings +
   agent finder
@@ -37,7 +37,7 @@ attach (US model).
 - Aqarmap OBSERVED (Egypt): Tailwind+daisyUI tokens, valuation-CTA tools
   (احسب قيمة عقارك) — tool-led funnels for sellers
 
-## Components that define the genre
+## Candidate components observed in the genre
 - Search bar with location autocomplete (areas, compounds, metro stations)
 - Listing card: photo carousel, price prominent, type chip, beds/baths/area
   icons row, location line, agency logo, "verified" badge
@@ -78,7 +78,7 @@ attach (US model).
 - District names in Arabic with English secondary; sqm not sqft in EG/SA
   portals (regional units vary — verify per market)
 
-## Conventions (follow)
+## Conventions to evaluate (adopt only when model-supported)
 Search-first hero, map+list duality, icon-fact bars, verified badges,
 agent cards with fast-contact, alerts/shortlists, area guides, honest
 price display (total vs per-m² both shown).
@@ -95,7 +95,7 @@ Bayut (EN/AR), PropertyFinder (AR OBSERVED), Aqarmap (AR OBSERVED),
 Zillow (OBSERVED `--sbsa-` tokens), Rightmove (INFERRED), Emaar/Aldar
 (luxury dev class).
 
-## Decision guidance
+## Contextual decision prompts
 Portals: search-utility with map duality + trust badges + alerts. Developer
 luxury: cinematic story + payment plans + register-interest funnels. MENA:
 bilingual IA, WhatsApp CTAs, offplan tables, compound taxonomies.
