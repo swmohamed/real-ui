@@ -36,7 +36,6 @@ behave like a senior product designer instead of a template assembler:
 | `knowledge/` | **120 files** across 25 directories: 24 industry modules plus an authority contract · 8 platform guidance modules plus a router (web, Flutter, React Native, SwiftUI, UIKit, Jetpack Compose, Android, cross-platform) · devices (phone/tablet/foldable/desktop/TV) · input models · redesign intelligence (10 files) · product/scope/content modeling · page-composition authority · forms, notifications, states, data-viz, theming, implementation, typography (Latin + Arabic), localization, RTL, accessibility, visual DNA, and anti-patterns |
 | `research/` | Reproducible code-first research pipeline (Python tools) + evidence logs. Built on a **156-site corpus** (~31MB fetched production CSS) + **39 MENA/RTL sites**, with additional 2026 official-platform and product-source research. Source extraction is not runtime or render evidence. |
 | `tests/` | Executable Python invariants for routing, evidence aggregation, scope/template/accessibility/platform contracts, plus behavioral tests that reject cosmetic-only FULL redesign plans and unauthorized scope |
-| `showcase/` | Browser-rendered evidence: 8 product-specific greenfield interfaces and 4 FULL redesign before/after cases, each at 1440×900 and 390×844 with DOM and axe records |
 
 ### Evidence honesty (the core discipline)
 
@@ -45,21 +44,6 @@ Research claims distinguish **SOURCE-OBSERVED**, **RUNTIME-OBSERVED**,
 Guidance also distinguishes official platform rules from design principles and
 implementation recommendations. Nothing is called analyzed unless it was
 actually inspected; blocked sources are logged honestly, never fabricated.
-
-## Rendered proof
-
-The [rendered showcase](showcase/README.md) exercises REAL-UI as a behavioral
-system rather than presenting screenshots as decoration. FULL redesign cases
-must pass an executable plan contract before UI code and a render contract
-after same-viewport browser captures.
-
-| Gaming FULL redesign | Editorial greenfield | Ecommerce greenfield |
-|---|---|---|
-| ![Session-first gaming redesign](showcase/redesign/gaming/after-desktop.png) | ![Evidence-led editorial investigation](showcase/greenfield/editorial/desktop.png) | ![Made-to-order furniture configurator](showcase/greenfield/ecommerce/desktop.png) |
-
-These are product-specific fixtures, not reusable layout templates. The
-[validation report](research/reports/v5-rendered-validation.md) states exactly
-what the browser evidence proves and what still needs production testing.
 
 ---
 
@@ -157,10 +141,8 @@ real-ui/
 │   ├── README.md            # how to run/refresh the research pipeline
 │   ├── tools/               # fetch_analyze, aggregate, verify + installer deps
 │   └── reports/             # evidence & independent audit logs (V1→V5)
-├── showcase/                # 32 verified desktop/mobile browser renders
 ├── scripts/
 │   ├── install.py           # install-everywhere + verify
-│   ├── render_showcase.py   # isolated browser render/a11y harness
 │   └── validate_redesign.py # FULL redesign PLAN + RENDER gate
 ├── tests/                   # executable invariants + reasoned scenario specs
 ├── LICENSE                  # MIT
@@ -177,18 +159,13 @@ Executable repository checks:
 
 ```bash
 python -m unittest discover -s tests -p "test_*.py" -v
-
-# Reproduce browser evidence and the gaming FULL redesign gate
-python scripts/render_showcase.py
-python scripts/validate_redesign.py showcase/redesign/gaming/case.json --phase render
 ```
 
 The Markdown suites in `tests/` are reasoned scenario specifications (gaming
 redesign, Arabic ecommerce, Flutter food delivery, cross-platform products,
 accessibility, dashboards, and more). They guide manual or future agent-harness
-runs. Separately, the named fixtures in `showcase/` are real Chromium render
-evidence; they do not imply that every future agent run, native app, browser,
-or production backend was executed.
+runs and do not imply that every future agent run, native app, browser, or
+production backend was executed.
 
 ## License
 
