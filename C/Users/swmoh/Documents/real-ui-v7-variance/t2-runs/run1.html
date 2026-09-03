@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bay Street Pharmacy — prescriptions delivered</title>
+<style>
+  :root{--ink:#1f2a2e;--soft:#5b6b70;--line:#dbe4e2;--panel:#f0f5f3;--teal:#0d6e63;--teal-deep:#0a544c;--warn:#a83232;--focus:#0057d8}
+  *{box-sizing:border-box}
+  body{margin:0;font:16px/1.6 "Segoe UI",Roboto,sans-serif;color:var(--ink)}
+  a{color:var(--teal-deep)}
+  :focus-visible{outline:3px solid var(--focus);outline-offset:2px}
+  .wrap{max-width:960px;margin:0 auto;padding:0 20px}
+  header{border-bottom:4px solid var(--teal);background:#fff}
+  .mast{display:flex;align-items:center;gap:12px;padding:14px 0;flex-wrap:wrap}
+  .cross{width:40px;height:40px;background:var(--teal);color:#fff;border-radius:8px;display:grid;place-items:center;font-size:20px;font-weight:800}
+  .id b{display:block;font-size:17px}
+  .id span{font-size:13px;color:var(--soft)}
+  .mast nav{margin-left:auto;font-size:14.5px}
+  .mast nav a{margin-left:14px}
+  .hero{display:grid;grid-template-columns:1.1fr 1fr;gap:28px;padding:36px 0 26px;align-items:start}
+  h1{font-size:28px;line-height:1.25;margin:0 0 8px}
+  .lead{color:var(--soft);margin:0 0 20px}
+  .refill{background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:18px}
+  .refill h2{font-size:16px;margin:0 0 4px}
+  .refill p{margin:0 0 12px;font-size:14px;color:var(--soft)}
+  .field{margin-bottom:10px}
+  .field label{display:block;font-weight:600;font-size:14px;margin-bottom:4px}
+  .field input{width:100%;font:inherit;padding:9px 12px;border:2px solid #6d7a72;border-radius:6px}
+  button{font:inherit;font-weight:700;background:var(--teal);color:#fff;border:0;border-radius:6px;padding:10px 20px;cursor:pointer}
+  .next-day{margin:22px 0 0;border-left:5px solid var(--teal);background:var(--panel);padding:12px 16px;border-radius:6px}
+  .next-day b{display:block}
+  .next-day span{font-size:13.5px;color:var(--soft)}
+  .tasks{padding:28px 0 6px}
+  .tasks h2{font-size:19px;margin:0 0 14px}
+  .task-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+  .task{border:1px solid var(--line);border-radius:8px;padding:14px}
+  .task h3{font-size:15px;margin:0 0 6px}
+  .task h3 a{text-decoration:none;color:var(--ink)}
+  .task p{margin:0;font-size:13.5px;color:var(--soft)}
+  .ask{background:var(--panel);border-block:1px solid var(--line);padding:26px 0;margin:26px 0}
+  .ask h2{font-size:19px;margin:0 0 4px}
+  .ask p{margin:0 0 0;color:var(--soft)}
+  .ask .who{margin-top:10px;font-size:14px}
+  .ask .who b{color:var(--teal-deep)}
+  footer{border-top:4px solid var(--teal)}
+  .foot{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;padding:16px 0;font-size:13.5px;color:var(--soft)}
+  @media(max-width:800px){.hero{grid-template-columns:1fr}.task-grid{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<header><div class="wrap mast">
+  <div class="cross" aria-hidden="true">✚</div>
+  <div class="id"><b>Bay Street Pharmacy</b><span>Open 8:00–21:00, seven days</span></div>
+  <nav aria-label="Site"><a href="#refill">Refills</a><a href="#shop">Shop</a><a href="#ask">Ask us</a><a href="#delivery">Delivery</a></nav>
+</div></header>
+<main class="wrap">
+  <section class="hero" aria-labelledby="h">
+    <div>
+      <h1 id="h">Your prescription, delivered the same day</h1>
+      <p class="lead">Independent pharmacy on Bay Street since 2011. We fill NHS and private prescriptions, answer questions honestly, and deliver within 5 km for free.</p>
+      <div class="next-day">
+        <b>Order by 15:00, get it today</b>
+        <span>Free within 5 km · $3 beyond · signature required for controlled items</span>
+      </div>
+    </div>
+    <form class="refill" id="refill" aria-labelledby="rf">
+      <h2 id="rf">Request a refill</h2>
+      <p>No account needed. We confirm by text within 30 minutes during opening hours.</p>
+      <div class="field"><label for="name">Your name</label><input id="name" name="name" autocomplete="name" required></div>
+      <div class="field"><label for="rx">Prescription or medication name</label><input id="rx" name="rx" placeholder="e.g. atorvastatin 20 mg" required></div>
+      <div class="field"><label for="phone">Mobile for confirmation</label><input id="phone" name="phone" type="tel" autocomplete="tel" required></div>
+      <button type="submit">Send refill request</button>
+    </form>
+  </section>
+  <section class="tasks" aria-labelledby="t">
+    <h2 id="t">What we do</h2>
+    <div class="task-grid">
+      <div class="task"><h3><a href="#new">New &amp; transferred prescriptions</a></h3><p>Bring it in, or have your GP send it electronically. Transfers take one working day.</p></div>
+      <div class="task"><h3><a href="#shop">Everyday essentials</a></h3><p>Vitamins, first aid, baby care, and the things you forgot you needed until 20:00.</p></div>
+      <div class="task"><h3><a href="#review">Medication review</a></h3><p>Book 20 minutes with our pharmacist, free, especially if you take five or more items.</p></div>
+    </div>
+  </section>
+  <section class="ask" id="ask" aria-labelledby="ask-h">
+    <h2 id="ask-h">Ask a pharmacist, not a search engine</h2>
+    <p>Questions about doses, interactions, or whether you actually need to see a doctor: call or walk in. No appointment, no minimum purchase.</p>
+    <p class="who"><b>Rosa Ike, lead pharmacist</b> and team · 555-0127 · in person until 21:00 daily</p>
+  </section>
+</main>
+<footer><div class="wrap foot">
+  <span>Bay Street Pharmacy, 77 Bay Street · 555-0127</span>
+  <span><a href="#privacy">Privacy</a> · <a href="#terms">Prescription terms</a> · <a href="#access">Accessibility</a></span>
+</div></footer>
+</body>
+</html>
