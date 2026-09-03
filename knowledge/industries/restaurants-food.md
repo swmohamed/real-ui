@@ -115,3 +115,6 @@ WHY: who cooks and who chooses splits the surface (marketplace = discovery
 + logistics; chains = brand + nearest store; kits = plan commitment).
 WHEN NOT: chain-brand chrome (promo tiles, app gates) on fine dining is
 register damage; kit-plan funnels on a marketplace break discovery.
+
+## Strict-audit additions (v7.2, SOURCE-OBSERVED 2026-09-03)
+- Delivery-discovery platforms (talabat GCC, openrice Asia, swiggy/zomato India observed): search+geo is the hero; cuisine filters before offers; restaurant cards carry ETA + rating + fee lines (decision trio). MENA/Asia variants add Arabic/RTL and COD prominence. Discovery-table surfaces (openrice) add editorial reviews the pure-delivery ones omit.

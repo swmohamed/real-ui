@@ -94,3 +94,7 @@ targeted current research when the reference matters).
 Calm blue/green system, humanist type, big readable body, structured
 clinical schemas, search+A–Z, real photography, elevated a11y floor. Design
 for the most anxious user in the room.
+
+## Strict-audit additions (v7.2, SOURCE-OBSERVED 2026-09-03)
+- Telehealth product pages (teladoc-style, livi UK, ada symptom-checker, shezlong MENA): lead with the visit flow (who you'll see, when, coverage) not services prose; symptom-checkers (ada) front-load a single conversational entry — one input, progressive disclosure, medical-disclaimer visible from step one.
+- Drug-cost/pharmacy comparison (goodrx observed): price-first cards per pharmacy, coupon-first CTAs — a payer-transparent model unlike provider sites (honest cost surface = trust).

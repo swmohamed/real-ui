@@ -112,3 +112,8 @@ luxury vs clinical ingredient brands vs lookbook high-street). MENA adds
 occasion-led IA (Ramadan/modest lines as first-class categories).
 WHEN NOT: clinical restraint on trend-led brands reads cold; editorial
 luxury on ingredient brands reads evasive.
+
+## Strict-audit additions (v7.2, SOURCE-OBSERVED 2026-09-03)
+- Modest-fashion commerce (modanisa observed): category-first nav (modest wear is the taxonomy, not a filter), model-imagery policies differ from western fast-fashion — evidence that imagery register is a product decision, not a style default.
+- Beauty DTC (glossier, mac observed): tutorial/editorial content interleaved with SKUs (usage-first cards) vs. pure catalog grids; shade/variant selectors are the primary interaction after PDP entry.
+- Resale luxury (vestiaire observed, see ecommerce): condition language ("very good/never worn") is a first-class taxonomy.

@@ -103,3 +103,7 @@ Default: white canvas, search-center header, deal shelves with honest
 urgency, 1:1 product images, facet filters, sticky mobile buy bar, 4–8px
 radius, bright but systematized promo colors. Luxury/fashion exceptions in
 `fashion-luxury-beauty.md`.
+
+## Strict-audit additions (v7.2, SOURCE-OBSERVED 2026-09-03)
+- Resale/secondary marketplaces (stockx-style, vestiaire-collective, poshmark, vinted, goat): the catalog IS inventory with condition/verification states — product cards carry condition grades, "verified/authenticity" trust flags, and sold-price history (source-observed: mercadolibre/aliexpress structured listing grids vs resale's condition-first cards). WHEN resale trust is the buyer's core question: surface verification above price. WHEN NOT: standard retail (condition UI is noise).
+- Regional marketplace gravity (SOURCE-OBSERVED: noon UAE, jumia Nigeria, mercadolibre LatAm, alibaba B2B): language+COD prominence (jumia) vs card-first (mercadolibre); B2B marketplaces lead with RFQ/quantity-tier structure, not cart UI.

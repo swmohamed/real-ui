@@ -101,3 +101,7 @@ For a browser-gaming portal default: light candy canvas OR dark store canvas
 (audience-dependent), 16px-radius tiles, 2-col mobile/6-col desktop grid,
 hover-play overlay, tag chips, instant search, zero-friction play. Deviate
 only with a stated audience reason (e.g., horror-games vertical → dark).
+
+## Strict-audit additions (v7.2, SOURCE-OBSERVED 2026-09-03)
+- Console/platform portals (playstation, nintendo, blizzard observed): hero = newest flagship game as full-bleed media; store nav (deals/new/genres) is secondary chrome; heavy motion-forward art direction by design (entertainment context) — contrast with browser-game portals (poki, crazygames, kongregate, gamejolt observed): instant-play grid, thumbnails-first, zero splash pages, because the product promise is "playing in 5 seconds".
+- WHEN portal: platform has catalog gravity. WHEN instant-grid: time-to-play is the conversion metric. Both observed to coexist in category — never average them into one template.
