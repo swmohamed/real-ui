@@ -107,3 +107,17 @@ blocked).
 Decide the loop (check-in? contribute? lurk?) and design the action bar +
 notifications around it. Neutral canvas + community accents, density over
 decoration, moderation UI as first-class, RTL-thread-native for Arabic.
+
+## Corpus observations (v7.1 growth: 8+ products SOURCE-OBSERVED 2026-09-03)
+
+Observed families: microblogs/federated (mastodon.social, bsky, threads:
+feed-first, timeline DNA) - interest communities (letterboxd, trakt,
+last.fm, fandom: OBJECT-centered - the film/show/artist page is the social
+object; community forms around artifacts) - reading communities (goodreads:
+catalog+shelves) - messaging (signal, telegram: protocol-first marketing)
+- event communities (meetup, eventbrite: discovery rails).
+WHY: the social OBJECT decides structure. Feed products optimize the
+stream; object-communities optimize the artifact page + personal
+collection (letterboxd diary/shelves). WHEN NOT: feed DNA on an
+object-community hides the collections; artifact-page density on a
+microblog kills the stream.

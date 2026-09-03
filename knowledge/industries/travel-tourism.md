@@ -129,3 +129,17 @@ Intent traffic (ads/direct): search-first, dense results, trust chips.
 Inspiration traffic (social/brand): destination shelves + editorial. Both
 share: photography warmth, price honesty, cancellation clarity. MENA adds
 BNPL, bilingual IA, and religious-travel verticals.
+
+## Corpus observations (v7.1 growth: 9+ products SOURCE-OBSERVED 2026-09-03)
+
+Observed families: OTAs/search (wego, cleartrip, almosafer:
+search-widget-first, bilingual MENA variants) - rail/multimodal
+(thetrainline, omio: origin-destination + times, journey-results DNA) -
+accommodation niche (hostelworld: budget-social register) - inspiration
+(lonelyplanet: editorial destination content, guides-as-content) - route
+planning (rome2rio: A-to-B query machine).
+WHY: the query shape defines the surface (dates+place vs A-to-B time vs
+browse-inspiration). Editorial travel content follows magazine DNA, not
+booking DNA. WHEN NOT: inspiration imagery walls on a rail-search product
+hide the timetable; booking widgets on editorial guides interrupt reading.
+MENA OTAs prove search-first survives bilingual + RTL.

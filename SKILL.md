@@ -145,6 +145,10 @@ CLASSIFY → ESTABLISH EVIDENCE → MODEL → RETRIEVE → CONSTRAIN → SYNTHES
    - A11y check: semantics, focus-visible, contrast, reduced-motion,
      keyboard, zoom. Mobile: VoiceOver/TalkBack + text scaling
      (accessibility/mobile.md).
+   - Craft check: typography scale discipline, spacing rhythm, radius
+     register, color restraint, separation hierarchy, motion budget per
+     foundations/modern-craft.md — plus no generic-polish default without
+     product-model justification.
    - RTL check (when Arabic): full gate in rtl/implementation.md;
      non-web also rtl/cross-platform.md.
    - Perf check: apply platform/project metrics (web may include
@@ -193,6 +197,7 @@ skill root for `foundations/`, `ux/`, `platforms/`, or other mapped folders.
 | Need | File(s) |
 |---|---|
 | Any design work | foundations/principles.md, foundations/visual-hierarchy.md, foundations/layout.md, foundations/color.md |
+| Craft execution quality (typography/spacing/geometry/surfaces/motion discipline) | foundations/modern-craft.md |
 | Classification | taxonomy.md |
 | People, current journey, research questions, outcomes, success evidence | foundations/experience-evidence.md |
 | Product model (before any IA decision) | foundations/product-modeling.md |

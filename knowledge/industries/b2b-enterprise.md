@@ -97,3 +97,17 @@ Pick register by audience age/sector: classic-corporate for legacy
 industries, system-modern for tech-adjacent. Either way: proof density,
 statement typography, disciplined forms, real photography. MENA adds
 bilingual enterprise depth + telecom-style consumer portals.
+
+## Corpus observations (v7.1 growth: 7+ products SOURCE-OBSERVED 2026-09-03)
+
+Observed families: ops/observability (grafana, pagerduty: product-led,
+docs+demo led) - data platforms (snowflake: solution/industry marketing
+trees) - identity/security (okta: trust + compliance first) - work
+management suites (smartsheet, workday, servicenow: suite breadth
+marketing, mega-navs) - dev-collab (atlassian: product family hub).
+WHY: enterprise purchase cycle surfaces = solution maps, compliance
+proof, and demo gates - not consumer CTAs. Suite breadth produces
+mega-navigation (observed across workday/servicenow) - legitimate when
+the catalog genuinely spans functions. WHEN NOT: consumer-grade
+single-CTA landing on a suite product hides the catalog; suite mega-navs
+on a single-purpose tool fake breadth.

@@ -100,3 +100,18 @@ OSN+ (AR/EN), Netflix (INFERRED — blocked), MBC.net, Crunchyroll class.
 Default: dark canvas, scrim-backed hero, 16:9 rows 8–16px radius, minimal
 chrome, one brand accent, hover previews on desktop, TV-focusable controls.
 Let artwork carry color; UI earns invisibility.
+
+## Corpus observations (v7.1 growth: 7+ products SOURCE-OBSERVED 2026-09-03)
+
+Family split: video/series platforms (crunchyroll, viki, shahid RTL:
+poster shelves + continue-watching rails; RTL full mirror on shahid) -
+audio/music (deezer, tidal, bandcamp, mixcloud, soundcloud: player-first
+or artist/label-first - bandcamp is a MUSIC STORE, not a feed: buy buttons
+and artist pages dominate) - audiobooks (audible: membership framing) -
+regional streamers (osn, starzplay: package/plan-led because subscription
+bundles ARE the product).
+WHY: media type decides the rail (poster rails vs player surfaces vs
+plan grids). Monetization decides the front door (subscription walls vs
+marketplace purchases vs ad feeds). WHEN NOT: bandcamp-style ownership
+store framing on a subscription streamer confuses the business model;
+plan-first packaging on a music discovery product buries the product.

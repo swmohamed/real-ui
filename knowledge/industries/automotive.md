@@ -94,3 +94,18 @@ Toyota (OBSERVED), Porsche (OBSERVED), BMW (INFERRED — blocked), Tesla
 Luxury tier: cinema + precision chrome (0–4px, proprietary type).
 Mainstream tier: family-friendly shelves (16px-class cards) + pragmatic
 tools. Both: configurator excellence, spec honesty, dealer conversion.
+
+## Corpus observations (v7.1 growth: 10+ products SOURCE-OBSERVED 2026-09-03)
+
+Two deliberately opposite poles confirmed (plus marketplaces):
+
+| Family (n) | Observed shape | Why it differs | When / when NOT |
+|---|---|---|---|
+| Luxury/performance OEMs (porsche, lamborghini, ferrari, maserati, koenigsegg) | cinematic full-bleed, 1–4px or 16–28px radius poles, proprietary type | desire sells; the car is the hero image | emotional brands; NOT volume brands |
+| Volume/EV OEMs (polestar, byd, nio, hyundai, volvo) | configurator-led, planet/data-forward, cleaner grid systems | buyers compare specs + values | rational purchase journeys |
+| Marketplaces (mobile.de, autoscout24, hatla2ee, contactcars, yallamotor) | search/filter-first dense classifieds; RTL for MENA | inventory scanning, price comparison | listings products; NEVER copy OEM cinematic onto them |
+
+WHY: purchase emotion (desire vs comparison) decides media-vs-data. The
+corpus radius bimodality is real and intentional. MENA marketplaces
+(hatla2ee/contactcars RTL) run the same search-first DNA as European ones —
+regional adaptation lives in language/RTL, not in different IA.

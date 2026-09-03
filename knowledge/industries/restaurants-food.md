@@ -101,3 +101,17 @@ Starbucks, Chipotle, Elmenus (AR/EN), HungerStation (AR), Talabat
 Brand: appetite-led photography, story sections, menu-as-content, reserve/
 order CTAs persistent. Platform: utility density, option-group rigor,
 tracking transparency. Both: speed, clarity, honest pricing, RTL-native for MENA.
+
+## Corpus observations (v7.1 growth: 8+ products SOURCE-OBSERVED 2026-09-03)
+
+Observed families: delivery marketplaces (careem food, talabat-class:
+address-first + cuisine rails) - meal-kit subscriptions (hellofresh,
+gousto: plan-choice funnels, recipe-as-content) - brand chains (kfc,
+starbucks, dunkin, pizzahut, papajohns: menu-brand sites with store
+locators + app CTAs) - local fine-dining (dishoom: story-led single-site
+register) - food-waste mission (toogoodtogo: purpose-first, map-led) -
+Egyptian discovery (elmenus) + Saudi delivery (jahez RTL).
+WHY: who cooks and who chooses splits the surface (marketplace = discovery
++ logistics; chains = brand + nearest store; kits = plan commitment).
+WHEN NOT: chain-brand chrome (promo tiles, app gates) on fine dining is
+register damage; kit-plan funnels on a marketplace break discovery.

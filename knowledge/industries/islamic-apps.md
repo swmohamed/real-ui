@@ -62,3 +62,21 @@ dua/adhkar collections are separate capabilities, not genre defaults.
 Establish imagery/ornament policy with the specific community,
 scholarly/brand guidance, and audience research; do not impose one religious
 interpretation as a universal UI rule.
+
+## Corpus observations (v7.1 growth: 12 products SOURCE-OBSERVED 2026-09-03)
+
+Subtype splits the whole interface — model first, "Islamic app" never:
+
+| Family (n) | Observed shape | Why it differs | When to use / when NOT |
+|---|---|---|---|
+| Mushaf readers (quran.com, tanzil, KSU-Quran) | search + reading surface, account optional, next.js-class polish | top task = find ayah & read long-form; scripture typography is sacred content class | reading products; NOT for prayer utilities |
+| Prayer utilities (islamicfinder, islamicfinder-class, mawaqit) | location-first widget as the page; minimal nav (0–5 h2) | glance task, multiple times daily, one answer | time-glance products; NOT content products |
+| Adhkar/counter apps (azkar) | near-empty marketing shell (0 forms) | the app IS the product; web is distribution | companion apps; NOT portals |
+| Scholarly/content portals (dorar 4 forms/15 inputs, islamweb, altafsir) | dense RTL content DB, scholarly search, committee/credibility sections | audience = researchers/imams; authority = the product | scholarship; NOT consumer utilities |
+| Regional RTL portals (almosaly) | full RTL nav, blog + services | MENA consumer app distribution | regional apps; NOT global-ummah latin-first products |
+
+WHY they differ: task cadence (5×/day glance vs deep reading), audience
+(lay users vs scholars), script policy (Arabic-first vs bilingual).
+TRADEOFF: global products gain reach with Latin-first UI but lose Arabic
+typographic quality; regional products invert it. Content accuracy trust
+(sources credited) appears in every observed family — non-negotiable.

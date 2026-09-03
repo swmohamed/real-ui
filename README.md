@@ -38,7 +38,7 @@ behave like a senior product designer instead of a template assembler:
 
 | Module | Coverage |
 |---|---|
-| `knowledge/` | **126 files** across 25 directories: 24 industry modules plus an authority contract · 9 platform guidance modules plus a router (web, Flutter, React Native, SwiftUI, UIKit, Jetpack Compose, Android, native desktop, cross-platform) · devices (phone/tablet/foldable/desktop/TV) · input models · redesign intelligence (10 files) · experience evidence and product/scope/content modeling · interaction control · AI/automation control · collaboration/concurrency · long-running operations/recovery · page-composition authority · forms, notifications, states, data-viz, theming, implementation, typography (Latin + Arabic), localization, RTL, accessibility, visual direction, and anti-patterns |
+| `knowledge/` | **127 files** across 25 directories: 24 industry modules plus an authority contract · 9 platform guidance modules plus a router (web, Flutter, React Native, SwiftUI, UIKit, Jetpack Compose, Android, native desktop, cross-platform) · devices (phone/tablet/foldable/desktop/TV) · input models · redesign intelligence (10 files) · modern craft execution discipline · experience evidence and product/scope/content modeling · interaction control · AI/automation control · collaboration/concurrency · long-running operations/recovery · page-composition authority · forms, notifications, states, data-viz, theming, implementation, typography (Latin + Arabic), localization, RTL, accessibility, visual direction, and anti-patterns |
 | `research/` | Reproducible code-first research pipeline (Python tools) + evidence logs. Built on a **156-site corpus** (~31MB fetched production CSS) + **39 MENA/RTL sites**, with additional 2026 official-platform and first-party product-documentation research. Source extraction and documented behavior are not runtime or render evidence. |
 | `tests/` | Executable Python invariants for routing, evidence aggregation, scope/template/accessibility/platform contracts, plus behavioral tests that reject cosmetic-only FULL redesign plans and unauthorized scope |
 
@@ -140,7 +140,7 @@ and composes with your host's vision tools when present.
 ```
 real-ui/
 ├── SKILL.md                 # orchestrator (workflow + retrieval map)
-├── knowledge/               # 126 modular knowledge files (25 directories)
+├── knowledge/               # 127 modular knowledge files (25 directories)
 ├── research/
 │   ├── README.md            # how to run/refresh the research pipeline
 │   ├── tools/               # fetch_analyze, aggregate, verify + installer deps

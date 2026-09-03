@@ -93,3 +93,17 @@ research current examples when needed), Igloo/Yugo Nakamura class
 Budget immersion against task: brand film moment (high), product conversion
 tree (standard UI), long-tail content (fast static). Never let the scene
 hold information hostage.
+
+## Corpus observations (v7.1 growth: 7+ products SOURCE-OBSERVED 2026-09-03)
+
+Observed families: data-essay studios (pudding.cool, informationisbeautiful,
+flowingdata: scroll-narrative + chart essays) - explorable explanations
+(setosa, distill.pub: interactive widgets teaching one idea) - playful
+toys (neal.fun: single-purpose experiences) - spatial toys (radio.garden,
+window-swap: one canvas, one interaction) - viz platforms (observable:
+notebook paradigm).
+WHY: narrative duty (essay) vs single-idea exploration (widget) vs toy
+(one mechanic). The unit of design is the EXPERIENCE, not the page.
+WHEN NOT: nav/page-pattern thinking on toys breaks them (they need one
+canvas); essay scrolltelling on a utility hides the tool. Load-time
+honesty matters: these are heavy pages; state loading.

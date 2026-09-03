@@ -136,3 +136,33 @@ or content shape, it is not yet a reusable principle.
 Research a category until new references stop yielding new patterns — then stop.
 Classify findings: HIGH CONFIDENCE (seen in 3+ diverse leaders), MEDIUM (1–2
 sites or one region), EXPERIMENTAL (single outlier, possibly trend-driven).
+
+## Permanent development rule: cumulative evidence growth (v7.1)
+
+This section binds every FUTURE REAL-UI upgrade, not only the current one.
+
+1. **The corpus grows cumulatively.** Never reset it, never replace strong
+   existing sources without cause. Each upgrade inspects the evidence
+   ledger (`research/reports/evidence-ledger.md`), identifies missing
+   PERSPECTIVES (not just missing counts), and adds genuinely useful
+   real-product references.
+2. **20+ diverse references per supported category is the minimum floor,
+   never the finish line.** A category is not "done" at 20; upgrades keep
+   expanding audience/model/region/platform diversity where it adds
+   decision value.
+3. **Diversity beats volume.** A new reference earns its place by adding a
+   perspective the corpus lacks (different business model, density,
+   register, region, platform, trust level), not by inflating the count.
+   Duplicates are forbidden in the ledger.
+4. **Learn why, store conditions.** New observations must extract
+   WHAT differs / WHY / WHEN appropriate / WHEN NOT / tradeoffs — never
+   "category X uses Y". Studied products must never become templates.
+5. **Honesty ledger discipline.** Only SOURCE-OBSERVED (fetched),
+   DOC-OBSERVED (first-party docs read), or RUNTIME/RENDER-OBSERVED
+   references count. Names catalogued without inspection are labeled
+   CATALOGED and never counted toward the floor.
+6. **Normal users never re-perform this research.** Corpus growth is
+   development-time work. User-time retrieval reads stored knowledge;
+   external research only when the user asks, facts are time-sensitive,
+   or the product is genuinely outside stored coverage (SKILL.md Normal
+   mode contract).

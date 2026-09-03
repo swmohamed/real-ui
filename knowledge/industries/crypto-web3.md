@@ -67,3 +67,19 @@ never fabricate a payment method, promotion, or authorization.
 Generic fintech-blue template · hidden fees · fake scarcity pressure
 (countdown timers on non-expiring offers) · meme-coin energy in
 serious-tier UI · rainbow gradients hiding data density.
+
+## Corpus observations (v7.1 growth: 13 products SOURCE-OBSERVED 2026-09-03)
+
+| Family (n) | Observed shape | Why it differs | When / when NOT |
+|---|---|---|---|
+| Data terminals (coingecko, defillama) | dense sortable tables; defillama nav = Dashboards/Metrics/Tools/Chains | users monitor positions/TVL; scanning is the job | analytics; NOT onboarding surfaces |
+| Explorers (etherscan: 3 forms/22 inputs; blockscout) | query machines: search boxes everywhere, hash/tx/address lookups | deep-link + exact-lookup traffic dominates | explorers; never style as marketing |
+| Wallets (metamask, phantom, rainbow) | feature marketing (10 h2) or near-empty one-liner; download CTA is the page | conversion = install; product lives in extension | wallet landing; NOT trading surfaces |
+| Exchanges (kraken, gemini, kucoin, bitoasis) | trust-first: regulation, security, tiers | money custody demands credibility before features | trading; NOT wallets/data |
+| MENA regulated (rain.bh RTL, coinmENA, bitoasis) | bilingual/regional compliance framing | local licensing is the differentiator | regional exchanges |
+
+WHY: consequence + audience. A trader's terminal optimizes density; a
+first-time buyer needs trust and guidance; an engineer using an explorer
+needs query speed. There is no unified "crypto aesthetic" in the corpus —
+families share almost nothing structurally. Never import exchange trust
+chrome onto a data terminal or vice versa.

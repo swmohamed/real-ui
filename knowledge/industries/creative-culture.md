@@ -100,3 +100,17 @@ Cargo (OBSERVED), 500px (OBSERVED), Flickr (OBSERVED), Behance/Dribbble
 Define the expression budget: institution (10% risk), event (30%),
 portfolio (50%), art piece (70%+). Spend it on typography + layout, keep
 the usability floor intact. Never spend the whole budget on motion.
+
+## Corpus observations (v7.1 growth: 10+ products SOURCE-OBSERVED 2026-09-03)
+
+Observed families: stock/photo marketplaces (unsplash, pexels: search+grid,
+license-first) - artist portfolio communities (artstation, deviantart:
+artwork grids + profile surfaces) - museums (tate, moma: exhibition and
+editorial DNA, visit-info hierarchy) - art market (artsy: gallery/listing
+hybrid) - lyrics/knowledge (genius: annotation UI) - events discovery
+(songkick, bandsintown: artist-tracking tools).
+WHY: license model vs exhibition model vs market model. Museums answer
+"visit + what is on"; marketplaces answer "find + license"; communities
+answer "show my work". WHEN NOT: e-commerce grid density on museums
+flattens editorial hierarchy; museum whitespace on stock grids wastes
+scan throughput.

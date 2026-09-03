@@ -99,3 +99,17 @@ Zillow (OBSERVED `--sbsa-` tokens), Rightmove (INFERRED), Emaar/Aldar
 Portals: search-utility with map duality + trust badges + alerts. Developer
 luxury: cinematic story + payment plans + register-interest funnels. MENA:
 bilingual IA, WhatsApp CTAs, offplan tables, compound taxonomies.
+
+## Corpus observations (v7.1 growth: 6+ products SOURCE-OBSERVED 2026-09-03)
+
+| Family (n) | Observed shape | Why it differs | When / when NOT |
+|---|---|---|---|
+| Consumer portals (rightmove, zoopla, realtor, apartments.com, idealista) | search-first + map+list split; dense results (funda, hemnet same DNA) | buyers scan dozens of properties spatially | consumer listings; NOT agent tools |
+| MENA portals (bayut, propertyfinder, aqarmap, bezaat) | bilingual, developer-projects as first-class entities alongside resale | off-plan/new-build market dominance | MENA; NOT Western resale DNA |
+| Rental/landlord rails (openrent) | owner-tenant direct flows, no middleman framing | disintermediation is the value prop | challenger products |
+| Data/analytics (airdna) | dashboards, market reports | investor audience | B2B analytics |
+
+WHY: search+map is not a genre habit — it is the task (spatial filtering).
+MENA portals elevate PROJECTS because supply is new-build-led: a product-
+model difference, not a style one. NEVER import portal density into
+landlord tools or vice versa.

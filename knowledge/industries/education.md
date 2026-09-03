@@ -100,3 +100,17 @@ Learner-motivation products: friendly bright systems, progress mechanics,
 player excellence. Institutional: heraldic serif trust, dense accurate
 tables. Arabic: Kufi energy or Naskh readability depending on audience age,
 instructor-led trust, local payments.
+
+## Corpus observations (v7.1 growth: 8+ products SOURCE-OBSERVED 2026-09-03)
+
+Observed family split: MOOC catalogues (edx, futurelearn, alison:
+course-card shelves + enrollment funnels) - skill apps (memrise, babbel,
+busuu: streak/habit framing, playful register) - coding-learning platforms
+(freecodecamp, codecademy: curriculum-as-IA, project paths) - teacher/class
+tools (classdojo, quizizz: audience = educator, classroom workflows) -
+Arabic MOOC (edraak: full RTL course platform, same catalogue DNA).
+WHY they differ: buyer vs learner split (parents/employers pay, learners
+work), habit products vs course products (daily loop vs cohort journey),
+and self-paced vs classroom. WHEN NOT: never apply streak-gamified app
+framing to executive/university programs (V7 case b5) - cohort formality
+is the register. edraak proves catalogue IA survives RTL fully.

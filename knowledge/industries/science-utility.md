@@ -91,3 +91,19 @@ Wikipedia (INFERRED — blocked; model is public knowledge).
 Instrument discipline: neutral chrome, data as hero, interaction = state
 control (sort/filter/layer), typography for scanning numbers. Decoration
 budget near zero; memorability comes from data clarity and speed.
+
+## Corpus observations (v7.1 growth: 11 products SOURCE-OBSERVED 2026-09-03)
+
+| Family (n) | Observed shape | Why it differs | When / when NOT |
+|---|---|---|---|
+| Query engines (arxiv, pubmed) | one search box + advanced filters; results ARE the site | expert exact-lookup behavior | scholarly search; NOT consumer tools |
+| Calculator/utility grids (calculator.net, rapidtables, symbolab) | tool-first, near-zero chrome, dense link grids, ad-supported plainness | user wants the tool instantly; speed+SEO beat polish | utilitarian tools; do NOT "modernize" into hero sections |
+| Computational engine (wolframalpha) | THE single query input as the entire page | one job, one box | compute products |
+| Map-canvas (windy) | full-viewport interactive canvas, controls overlay | spatial data IS the interface | geo products |
+| Agencies (nasa, esa, noaa, usgs) | mission news + data portals; heavy content + topic trees | public communication + data duty | agencies; NOT pure tools |
+| Open data/APIs (open-meteo) | docs + pricing + playground | developer buyers | API products |
+
+WHY: intent span. Utility users have 10-second jobs; researchers run long
+query sessions; agencies publish. A hero section on calculator.net would be
+active harm; a bare box on NOAA would hide the mission. Plainness is a
+legitimate professional register here (generic-polish list applies).

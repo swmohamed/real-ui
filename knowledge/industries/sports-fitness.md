@@ -96,3 +96,16 @@ Speed-first utility or media-first editorial — decide by audience. Utility:
 dense, tabular, live-updating, team colors. Media: video tiles + editorial
 cards + tribal color energy. Arabic football portals: date-bar navigation,
 RTL tables, Kooora-class token maturity.
+
+## Corpus observations (v7.1 growth: 10+ products SOURCE-OBSERVED 2026-09-03)
+
+Observed families: live-scores terminals (sofascore, flashscore, fotmob:
+dense tables, live tickers, minimal chrome - scanning machines) - media
+brands (skysports, goal: news-led shelves) - training/companion apps
+(myfitnesspal, peloton, whoop, garmin: habit+data products, dashboard DNA)
+- equipment/retail crossover (decathlon) - Arabic fitness (ayhaga RTL).
+WHY: live data changes everything - score terminals are closer to trading
+terminals than to media sites (density, refresh, glanceability). Companion
+apps are health dashboards (progress rings, plans). WHEN NOT: media-shelf
+layouts on live-score products slow the glance task; marketing-polish on
+training data products hides the metrics.

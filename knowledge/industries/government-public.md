@@ -96,3 +96,21 @@ Kiva (nonprofit donation UX OBSERVED).
 Adopt GDS-class discipline: content design, task verbs, one-thing-per-page,
 maximum contrast, bilingual/RTL parity. Add national identity through
 controlled brand elements (emblem, one color), never through decoration.
+
+## Corpus observations (v7.1 growth: 11 additional products SOURCE-OBSERVED 2026-09-03)
+
+Government is NOT one pattern — four observed families:
+
+| Family (n) | Observed shape | Why it differs | When / when NOT |
+|---|---|---|---|
+| Service portals (usa.gov, canada.ca, singapore.gov.sg, gov.ie) | task/topic-first: search + topic grids + "all services" entry (10 h2) | residents complete tasks; routing is the job | citizen service; NOT country branding |
+| National portals (suomi.fi: 4-audience nav — citizen/business/authorities) | audience-split navigation | obligations differ by actor | multi-actor states |
+| Country brands (germany.de, australia.gov.au) | editorial news/politics/life/culture; magazine rhythm | audience = world, not residents | soft-power communication; NOT service delivery |
+| Service gateways (jordan.gov.jo RTL, hukoomi Qatar, bahrain.bh) | RTL service directories with deep transaction trees; heavy form entry points | digital-government transactions per ministry | MENA gateways; bilingual parity legally required |
+
+WHY: the reader defines the surface (resident task vs international
+audience vs transaction citizen). WHEN NOT: never apply country-brand
+editorial rhythm to a service portal (routing degrades); never apply task
+grid sparseness to a transaction gateway (users need entry density).
+The GDS discipline in the corpus remains the service-portal reference;
+national-brand sites legitimately break it.

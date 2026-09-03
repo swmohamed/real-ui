@@ -69,3 +69,18 @@ regional defaults to invent.
 Marketing-site cosplay on the tracking page · spinners where a
 timeline should be · jargon dumps · map-only tracking · dead links to
 "contact support" as exception handling.
+
+## Corpus observations (v7.1 growth: 11+ products SOURCE-OBSERVED 2026-09-03)
+
+| Family (n) | Observed shape | Why it differs | When / when NOT |
+|---|---|---|---|
+| Consumer tracking hubs (17track, parcelsapp, aftership) | tracking widget is the hero; product marketing + API tiers below (9–10 h2) | anonymous visitor's #1 job: paste a number | multi-carrier tracking; NOT carrier sites |
+| Carrier mega-sites (fedex, dpd, bring, postnl, aramex) | track + ship + support + business split; heavy nav | brand covers the full journey; enterprises AND consumers | carriers; NOT pure trackers |
+| Freight/B2B platforms (maersk, flexport, freightos) | enterprise-lead surfaces, quote flows (freightos 14 inputs) | sales cycle, not self-serve clicks | B2B freight; NOT parcel UX |
+| Developer APIs (easypost, shippo) | docs/pricing-first, code samples prominent | buyer = engineers | API products; NOT consumer surfaces |
+| Regional last-mile (instabox, bosta, naqel, mylerz) | lean consumer pickup/delivery flows, local language | doorstep trust in-market | regional ops; NOT global platforms |
+
+WHY: the payer splits the family (consumer time / shipper money /
+developer integration / enterprise contract). Tracking-first surfaces must
+survive with ZERO browsing intent — a number in, a status out. B2B freight
+inverts everything: quote forms, relationship, sales assist.

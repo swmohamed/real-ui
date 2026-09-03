@@ -75,6 +75,30 @@ Generic structure is more damaging than generic decoration:
 - **They're indistinguishable**: if the client can't tell their site from
   a competitor's generated one, the design added zero value.
 
+
+## The generic-polish list (v7.1: "modern" defaults that read as AI)
+
+Equally dangerous as the classic banned list, because these pass casual
+review: they LOOK clean. They are still template gravity when unearned.
+
+- Uniform 12–16px radius on everything regardless of register
+- One 600-weight sans everywhere + zero display/type voice (the "clean
+  SaaS" default)
+- Everything-on-8 spacing with no section-level rhythm jumps
+- Shadow-on-every-card elevation noise
+- A single soft drop-shadow value reused for controls and overlays
+- Centered-max-width-text-sections stack (hero → 3 features → CTA band)
+- Illustration-style empty states used as decoration on data products
+- Subtle gray-on-gray surfaces with no semantic layering reason
+- "Premium" = extra whitespace + bigger headings, applied uniformly
+- Inter + one blue + one purple accent as an unconsidered default stack
+  (fine when chosen, telling when never questioned)
+
+Detection question per item: "Did the product model demand this, or did
+the habit?" Execution discipline (foundations/modern-craft.md) is the
+positive counterpart: modern comes from coherent scale/rhythm/geometry
+decisions, not from applying this decade's polish defaults.
+
 ## The justification bar (when a banned pattern may pass)
 
 A banned pattern is usable ONLY when you can write this sentence with a

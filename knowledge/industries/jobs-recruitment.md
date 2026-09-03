@@ -63,3 +63,18 @@ required. Seasonal campaigns require actual content and business scope.
 Marketing-heavy home hiding search · fake "X jobs available" urgency ·
 dark patterns in recurring subscription for seekers (pay-to-apply =
 trust poison) · ghost-status black holes.
+
+## Corpus observations (v7.1 growth: 11 products SOURCE-OBSERVED 2026-09-03)
+
+| Family (n) | Observed shape | Why it differs | When / when NOT |
+|---|---|---|---|
+| Candidate marketplaces (otta, remoteok, weworkremotely) | search/filter-first or curated rails; otta = "Explore jobs" nav; remoteok near-bare list | users scan many listings fast | volume job discovery; NOT employer products |
+| ATS boards (greenhouse, lever) | B2B SaaS register: Sign in/Demo/Pricing; the public board is a sub-surface of employer software | buyer = employer; candidates arrive by link | hiring-software contexts; never style candidate marketplaces like this |
+| Regional/bilingual (wuzzuf EN, forasna RTL) | bilingual portals, CV-upload entry, career advice sections | MENA job seeking is CV+agency-flavored | regional; NOT global remote boards |
+| Public-service (usajobs) | account-centric: profile, documents, saved searches, notifications | application lifecycle = the product | government hiring; NOT casual discovery |
+| Career ecosystems (reed UK) | jobs + courses + advice in one nav | monetize the whole career journey, not placements | when the business model spans LTV |
+
+WHY: who pays decides the surface (candidates pay with time → speed;
+employers pay money → ATS features). WHEN NOT to copy any family onto
+another: an ATS-styled consumer board reads corporate; a marketplace-styled
+ATS undersells employer tools.

@@ -96,3 +96,19 @@ Ounass/Namshi class.
 Ask: utility or aspiration? Utility → density + speed + filters. Aspiration →
 whitespace + serif display + restraint. Never blend: promo badges on luxury
 or empty poetry on utility both fail.
+
+## Corpus observations (v7.1 growth: 11+ products SOURCE-OBSERVED 2026-09-03)
+
+Observed families: DTC beauty brands (glossier, fentybeauty, rarebeauty:
+product-story led, quiz/personalization entries) - ingredient-science
+registers (theordinary/deciem: clinical, typographic restraint) - luxury
+multi-brand retail (mytheresa, farfetch, ssense: editorial + dense
+catalog) - high-street global (zara: lookbook DNA, seasonal imagery) -
+MENA fashion commerce (namshi, levelshoes: bilingual, occasion-led
+categories) - founder-identity brands (hudabeauty) - ethics/transparent
+(everlane) - scando-minimal (cos).
+WHY: price-positioning + identity decide density and imagery (editorial
+luxury vs clinical ingredient brands vs lookbook high-street). MENA adds
+occasion-led IA (Ramadan/modest lines as first-class categories).
+WHEN NOT: clinical restraint on trend-led brands reads cold; editorial
+luxury on ingredient brands reads evasive.
