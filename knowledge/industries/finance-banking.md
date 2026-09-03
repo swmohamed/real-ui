@@ -107,3 +107,19 @@ Pick the register: institutional (legacy bank) vs fintech-warm (Monzo/Wise)
 vs terminal-dark (crypto). All three share: tokenized numerals, honest fee
 surfaces, calm interaction, error-kindness. MENA adds regulator/Islamic
 trust marks + RTL-mirrored everything.
+
+## Corpus observations (v7.2 knowledge integration, SOURCE-OBSERVED 2026-09-03)
+
+Fetched remittance / neobank / business-bank / MENA-payments products showed
+that "finance site" is not one IA. Corridor, plan, and suite are different jobs.
+
+| Family | Observed shape | WHY | WHEN | WHEN NOT | TRADEOFF |
+|---|---|---|---|---|---|
+| Remittance corridors (remitly Personal/Business + Help; worldremit converter + app; westernunion Send/Receive/Track/Find locations, Egypt-localized; paysend infrastructure framing) | from/to/amount (or send/receive/track) as the page; help and locations as utilities | the job is moving a sum along a corridor, not opening an account | money-transfer products | consumer banks and spend platforms | rate/fee honesty in the widget beats brand hero; a plan-comparison nav hides the corridor |
+| Consumer neobank (n26: Standard/Smart/Go/Metal + Business plan tree, 10 h2) | plan comparison is the public IA | conversion is picking a tier | consumer banking with packaged plans | remittance or SME spend | feature matrices read commercial; corridor widgets on a bank hide deposits/cards |
+| Business banking / spend (mercury: Checking, Loans, Treasury, Credit, Spend, demo dashboard; tide: company registration + secretary + virtual office; brex: Customers/Pricing/demo) | suite of money-ops products + demo/sign-in | buyer is a company; the product is operating spend | startups/SME finance | consumer remittance | demo-gated dashboards are legitimate; consumer get-the-app CTAs undersell ops |
+| MENA payments (fawry corporate: Company/About/What we do; valu Egypt: Personal product tree U/ShopIT/Flip/Sha2labaz/Cards) | corporate-group site vs BNPL product family | Fawry-class is a payments network; Valu-class is consumer credit SKUs | match the legal entity | importing Revolut-warm onto a bill-payment grid | Arabic-first bill grids (existing Fawry observation) stay valid for consumer pay; they are the wrong chrome for a corporate IR site |
+
+ALTERNATIVES: corridor widget, plan matrix, spend-suite mega-nav, bill-category
+grid. Pick from who sends money and whether the product is a transfer, an
+account, or a network.

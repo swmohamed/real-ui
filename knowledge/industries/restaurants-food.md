@@ -118,3 +118,11 @@ register damage; kit-plan funnels on a marketplace break discovery.
 
 ## Strict-audit additions (v7.2, SOURCE-OBSERVED 2026-09-03)
 - Delivery-discovery platforms (talabat GCC, openrice Asia, swiggy/zomato India observed): search+geo is the hero; cuisine filters before offers; restaurant cards carry ETA + rating + fee lines (decision trio). MENA/Asia variants add Arabic/RTL and COD prominence. Discovery-table surfaces (openrice) add editorial reviews the pure-delivery ones omit.
+
+WHY the delivery decision-trio (ETA + rating + fee) sits on the card: the
+choice is which kitchen arrives, at what cost, how fast - not brand story.
+WHEN: marketplace discovery. WHEN NOT: a single restaurant site (trio is
+platform chrome; the menu and hours are the objects). TRADEOFF: fee honesty
+on the card reduces checkout shock and can make a kitchen look expensive
+early - that is the correct trust move. Editorial-review tables (openrice-class)
+are an alternative when the job is choosing a place to go, not a courier.

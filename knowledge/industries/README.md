@@ -20,6 +20,12 @@ OBSERVED / INFERRED / RECOMMENDED labels.
 
 ## Authority boundary
 
+Family splits inside a module are DIFFERENCE evidence, not a default
+layout. When a module lists multiple families (resale vs retail, remittance
+vs consumer bank, console-portal vs instant-play grid, league-org vs
+score-terminal, metasearch vs OTA, creation-suite vs library), match the
+family to THIS product model. Never average families into one template.
+
 Industry knowledge may inform:
 
 - vocabulary, user expectations, trust and compliance pressure;

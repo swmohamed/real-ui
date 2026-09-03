@@ -117,3 +117,15 @@ luxury on ingredient brands reads evasive.
 - Modest-fashion commerce (modanisa observed): category-first nav (modest wear is the taxonomy, not a filter), model-imagery policies differ from western fast-fashion — evidence that imagery register is a product decision, not a style default.
 - Beauty DTC (glossier, mac observed): tutorial/editorial content interleaved with SKUs (usage-first cards) vs. pure catalog grids; shade/variant selectors are the primary interaction after PDP entry.
 - Resale luxury (vestiaire observed, see ecommerce): condition language ("very good/never worn") is a first-class taxonomy.
+
+WHY modest-fashion (modanisa) differs from high-street: the taxonomy IS the
+product (modest wear as categories, not a filter). WHEN the audience shops by
+coverage/occasion, put those categories in primary nav. WHEN NOT: adding a
+modest chip on a trend lookbook treats identity as a filter. TRADEOFF:
+model-imagery policy is a product/ethics decision; copying western full-body
+campaigns can be off-register even if photographically premium.
+
+WHY beauty DTC interleaves tutorials with SKUs: usage is the decision object
+(shade, routine). WHEN NOT: tutorial-first on a SKU-dense marketplace hides
+price/availability. TRADEOFF: shade selectors after PDP entry add a step that
+prevents wrong-item returns; skipping them speeds browse and raises returns.

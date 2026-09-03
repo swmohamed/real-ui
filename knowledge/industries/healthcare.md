@@ -96,5 +96,19 @@ clinical schemas, search+A–Z, real photography, elevated a11y floor. Design
 for the most anxious user in the room.
 
 ## Strict-audit additions (v7.2, SOURCE-OBSERVED 2026-09-03)
-- Telehealth product pages (teladoc-style, livi UK, ada symptom-checker, shezlong MENA): lead with the visit flow (who you'll see, when, coverage) not services prose; symptom-checkers (ada) front-load a single conversational entry — one input, progressive disclosure, medical-disclaimer visible from step one.
-- Drug-cost/pharmacy comparison (goodrx observed): price-first cards per pharmacy, coupon-first CTAs — a payer-transparent model unlike provider sites (honest cost surface = trust).
+
+Healthcare is multiple product families. A calm clinical homepage is not the
+default.
+
+| Family | Observed shape | WHY | WHEN | WHEN NOT | TRADEOFF |
+|---|---|---|---|---|---|
+| Visit-flow telehealth (teladoc, livi) | who / when / coverage before services prose; sparse h2 on livi, denser product tree on teladoc | the job is starting a visit, not browsing a hospital | booked or on-demand care | encyclopedia or pharmacy-price products | coverage honesty slows marketing copy; hiding it destroys trust |
+| Symptom-checker (ada: Medical library + App, 2 h2) | one conversational entry, progressive disclosure, disclaimer from step one | users arrive with a question, not a department | self-triage utilities | replacing a clinician directory or visit booking | a checker without an exit to real care is a liability |
+| Therapist/directory (psychologytoday: Find a Therapist / Psychiatrists / Treatment Centers; 4 forms) | search-first directory, filters as the product | matching a person is the conversion | find-a-provider | visit-flow telehealth (directory chrome hides booking) | editorial articles (psychologytoday) support trust but must not bury search |
+| Drug-cost comparison (goodrx: Prescription savings + pharmacy search) | price-first cards per pharmacy, coupon CTA | payer-transparent cost is the trust object | cash-pay / coupon pharmacy | provider or insurer homepages | showing a coupon as "the price" without pharmacy name is a trust fail |
+| Condition encyclopedia (verywellhealth A-Z, everydayhealth, drugs.com) | topic IA, body-copy first | reading is the job | editorial health publishers | transactional care products | dense medical prose needs larger type, not marketing cards |
+| MENA care (seha hospitals: 5 forms/12 inputs; shezlong teletherapy shell) | appointment/contact-heavy hospital vs thin teletherapy marketing | regional products split clinical-ops vs app-distribution | match the actual job | importing US telehealth chrome onto a hospital locator | bilingual/RTL is a product decision, not a skin |
+
+ALTERNATIVES: if the product is both encyclopedia AND booking, keep search as
+the persistent object and treat articles as support — do not average into a
+services-card grid.

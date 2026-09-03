@@ -114,3 +114,14 @@ editorial rhythm to a service portal (routing degrades); never apply task
 grid sparseness to a transaction gateway (users need entry density).
 The GDS discipline in the corpus remains the service-portal reference;
 national-brand sites legitimately break it.
+
+## Strict-audit additions (v7.2 knowledge integration, SOURCE-OBSERVED 2026-09-03)
+
+| Family | Observed shape | WHY | WHEN | WHEN NOT | TRADEOFF |
+|---|---|---|---|---|---|
+| Government communications / PR (gov-jp: media-by-channel nav — TV, radio, ads, audio CD, braille/large-print) | channel and format as IA, including accessible publications | the job is explaining policy to the public, not completing a transaction | gov publicity offices | service portals and tax gateways | task-grid sparseness on a comms site hides the campaign library; magazine country-brand chrome on a tax gateway hides the form |
+| Service portals confirmed (govt.nz welcome; india.gov.in national portal, 10 h2 + table) | resident routing, high heading count | same family as usa.gov/canada.ca | citizen service | PR/media offices | |
+
+ALTERNATIVES: if a government site both explains and transacts, keep
+services as the persistent object and treat campaigns as a desk — do not
+average into a lifestyle magazine. poland.gov remained fetch-failed.

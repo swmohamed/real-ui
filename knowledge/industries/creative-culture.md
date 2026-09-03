@@ -114,3 +114,15 @@ WHY: license model vs exhibition model vs market model. Museums answer
 answer "show my work". WHEN NOT: e-commerce grid density on museums
 flattens editorial hierarchy; museum whitespace on stock grids wastes
 scan throughput.
+
+## Strict-audit additions (v7.2 knowledge integration, SOURCE-OBSERVED 2026-09-03)
+
+| Family | Observed shape | WHY | WHEN | WHEN NOT | TRADEOFF |
+|---|---|---|---|---|---|
+| Creation suites (canva: Sheets / Docs / Whiteboards / Presentations / Photo Editor / Videos / Print) | artifact-type catalog as IA | the product is making files, not viewing art | multi-format editors | museums, stock grids, or portfolio communities | tool-type nav on a museum hides exhibitions; exhibition chrome on an editor hides the blank canvas |
+| Digital publishing (issuu: Read / Flipbooks / Embed / Statistics / Teams) | publication as hosted object + share/embed | the artifact is a document others open | flipbook / magazine hosts | image stock or design-community grids | embed/stats surfaces are the product for publishers; they are chrome on a gallery |
+| Digital libraries (archive.org borrowable texts/movies/music; gutenberg free eBooks, 2 forms / 7 inputs) | search + borrow/download, almost no marketing | access and preservation are the job | public-domain / library products | creation tools or portfolio social | marketplace license CTAs on a library lie about the collection; library density on Canva-class tools hides templates |
+
+HONESTY: figma-community and dribbble fetches returned empty titles this
+wave — do not invent community-grid IA from those shells. Existing
+artstation/deviantart observations still cover artist communities.

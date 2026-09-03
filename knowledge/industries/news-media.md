@@ -104,3 +104,16 @@ Default: light canvas, serif-headline system for quality positioning or
 all-sans for mass/speed positioning, 2–6px radius, dense but rhythm-ed
 river, live capability, honest timestamps. Differentiate via typography and
 grid rhythm, not decoration.
+
+## Corpus observations (v7.2 knowledge integration, SOURCE-OBSERVED 2026-09-03)
+
+| Family | Observed shape | WHY | WHEN | WHEN NOT | TRADEOFF |
+|---|---|---|---|---|---|
+| Wire/hub (apnews: World + conflict hubs + Espanol; geography as IA) | hub nav, sparse heading shell | the product is a feed of dispatches | wire services | magazine features or GCC lifestyle | feature-well chrome on a wire slows scanning |
+| Mass Arabic dailies (youm7 RTL: home / breaking / politics / incidents; ahram Arabic title) | section-first RTL IA | local readers navigate by desk | mass dailies | English GCC papers or wires | Latin-first chrome on youm7-class products is a register error |
+| GCC English (thenational: News/UAE/Gulf/MENA/US/UK/Europe/Asia, 21 inputs) | geography + search weight | audience is bilingual professional | regional English papers | mass Arabic section desks | lifestyle chrome on a news spine hides desks |
+| Video-broadcaster (euronews: skip-links to nav/main/search/footer, VOD framing) | a11y skip + video-on-demand | the object is video packages | TV-origin outlets | print rivers | skip-link discipline is earned; it is not a visual style |
+
+HONESTY: dw returned an empty title/shell this wave - supporting mention only,
+not a counted template. Do not invent a Deutsche-Welle layout from a failed
+extract.

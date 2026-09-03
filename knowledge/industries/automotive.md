@@ -109,3 +109,17 @@ WHY: purchase emotion (desire vs comparison) decides media-vs-data. The
 corpus radius bimodality is real and intentional. MENA marketplaces
 (hatla2ee/contactcars RTL) run the same search-first DNA as European ones —
 regional adaptation lives in language/RTL, not in different IA.
+
+## Strict-audit additions (v7.2 knowledge integration, SOURCE-OBSERVED 2026-09-03)
+
+Wave 9 added corporate/group sites that the v7.1 luxury-vs-volume OEM split
+does not cover. The legal entity decides the surface.
+
+| Family | Observed shape | WHY | WHEN | WHEN NOT | TRADEOFF |
+|---|---|---|---|---|---|
+| Group / corporate (renault: Renault Group / Presse; tata motors manufacturer framing; maruti suzuki India corporate) | press, group, commercial-vehicle, investor chrome | the audience is press, investors, and fleet — not a car shopper | holding / IR / manufacturer group sites | consumer model catalogs | cinematic model heroes on a group site hide filings; IR chrome on a shopper site hides the configurator |
+| Consumer OEM catalog (skoda: Models / eMobility / Fleet / Services; rivian: Demo drive) | lineup + mobility/services + a test-drive entry | the job is choosing or trying a vehicle | brand shopper sites | classifieds or group IR | demo-drive as a primary nav item is earned when the product is scarce/experiential; it is noise on a volume classifieds portal |
+
+ALTERNATIVES: group IR, consumer lineup, marketplace search. Pick from who
+is buying (investor, retail shopper, used-car hunter), not from "automotive".
+Tesla remained fetch-blocked this wave — supporting mention only.

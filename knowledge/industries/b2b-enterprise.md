@@ -111,3 +111,18 @@ mega-navigation (observed across workday/servicenow) - legitimate when
 the catalog genuinely spans functions. WHEN NOT: consumer-grade
 single-CTA landing on a suite product hides the catalog; suite mega-navs
 on a single-purpose tool fake breadth.
+
+## Strict-audit additions (v7.2 knowledge integration, SOURCE-OBSERVED 2026-09-03)
+
+Wave 9 added a GTM / product-analytics cluster that the v7.1 suite/observability
+families do not cover. These are still B2B, but the buyer and the artifact differ.
+
+| Family | Observed shape | WHY | WHEN | WHEN NOT | TRADEOFF |
+|---|---|---|---|---|---|
+| Revenue/sales engagement (gong Pricing/demo; outreach Why/vs-competition; apollo Outbound/Inbound/Data/AI; clay Product/Pricing/demo) | problem-tree nav + demo/pricing/login | buyer is a revenue team; the artifact is pipeline/calls/data | sales-ops tools | IT observability or HR suites | competitor-comparison pages are legitimate here; they read desperate on a data warehouse |
+| Product analytics (amplitude Product Analytics + agents; mixpanel Pricing/Get Started Free; pendo Start for free / Get a Demo) | product-led free-start + demo | buyer is a product team; the artifact is event data | product intelligence | sales engagement (free-start on Gong-class can underplay enterprise procurement) | self-serve onboarding vs demo-gate: pick from sales motion, not aesthetics |
+| Lifecycle CRM / forms (klaviyo email/SMS/CDP tree; activecampaign Marketing Automation; typeform Platform/AI/Flows) | channel or flow catalog | the product is a system of campaigns or forms | marketing ops | sales-call intelligence | mega-nav is earned when the catalog is real; fake breadth copies Workday poorly |
+
+WHEN NOT to reuse v7.1 families: Workday/ServiceNow mega-navs on a single-purpose
+analytics tool fake a suite; Grafana docs-led density on a sales-engagement
+marketer landing hides ROI proof.

@@ -107,3 +107,15 @@ WHY: narrative duty (essay) vs single-idea exploration (widget) vs toy
 WHEN NOT: nav/page-pattern thinking on toys breaks them (they need one
 canvas); essay scrolltelling on a utility hides the tool. Load-time
 honesty matters: these are heavy pages; state loading.
+
+## Strict-audit additions (v7.2 knowledge integration, SOURCE-OBSERVED 2026-09-03)
+
+| Family | Observed shape | WHY | WHEN | WHEN NOT | TRADEOFF |
+|---|---|---|---|---|---|
+| Studio portfolios (unit9: Films/Digital/Games/VR/AR/Experiential; activetheory title-only shell) | work-index, not a product UI | the artifact is the reel | production studios | tools or toys | page-pattern nav (Pricing, Blog, Login) on a studio kills the reel |
+| Viz authoring (flourish: visualization / stories / examples / industries; rawgraphs About/News) | product + examples + use-cases | the job is making a graphic | authoring tools | one-off essays | essay scrolltelling on an authoring tool hides the editor |
+| Live earth/weather canvas (earth.nullschool: one h1, 1 input, 1 table; ventusky: forecast/radar/wind, 1 form/1 input) | one canvas, almost no page nav | the map IS the product | live environmental viewers | marketing sites or essay studios | putting a hero+cards around the canvas breaks the instrument |
+
+WHEN NOT: do not average studio / authoring / live-canvas / explorable-essay
+(v7.1 pudding/setosa/neal.fun) into an immersive template. seeingtheory
+returned a coming-soon shell - do not treat it as a live explorable.

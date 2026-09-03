@@ -143,3 +143,16 @@ browse-inspiration). Editorial travel content follows magazine DNA, not
 booking DNA. WHEN NOT: inspiration imagery walls on a rail-search product
 hide the timetable; booking widgets on editorial guides interrupt reading.
 MENA OTAs prove search-first survives bilingual + RTL.
+
+## Strict-audit additions (v7.2 knowledge integration, SOURCE-OBSERVED 2026-09-03)
+
+V7.1 grouped OTAs and search together. Wave 9 splits them by whether the
+product books or only compares.
+
+| Family | Observed shape | WHY | WHEN | WHEN NOT | TRADEOFF |
+|---|---|---|---|---|---|
+| Metasearch (momondo cheap-flights compare, 3 inputs; kayak Search Flights / Hotels / Car Hire, skip-to-content, en-ae locale) | query widget is the page; skip-link into the form | conversion is a comparison, then an exit to a booker | compare products | owned-inventory OTAs | package-holiday chrome on metasearch fakes inventory the product does not hold |
+| OTA / packager (opodo cheap flights + hotels + packages; edreams flights / hotels / vacation packages / cars; trip.com deals; ixigo flights / trains / hotels / buses, 10 h2 + 3 tables) | multi-modal bookable catalog | the product takes the booking (and often trains/buses, not only flights) | inventory-holding bookers | pure compare or editorial guides | compare-only honesty on an OTA undersells checkout; inspiration walls still hide the widget |
+
+WHEN NOT: do not average kayak-class compare with ixigo-class book. expedia /
+rehlat / goibibo remained fetch-failed this wave.

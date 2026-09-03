@@ -109,3 +109,15 @@ terminals than to media sites (density, refresh, glanceability). Companion
 apps are health dashboards (progress rings, plans). WHEN NOT: media-shelf
 layouts on live-score products slow the glance task; marketing-polish on
 training data products hides the metrics.
+
+## Strict-audit additions (v7.2 knowledge integration, SOURCE-OBSERVED 2026-09-03)
+
+Official league/org sites are neither score terminals nor sports media.
+
+| Family | Observed shape | WHY | WHEN | WHEN NOT | TRADEOFF |
+|---|---|---|---|---|---|
+| League / sanctioning body (nba: Tickets / schedule / League Pass / key dates; formula1: Schedule / Results / Standings / Drivers / Teams; ufc: Events / Tickets / VIP / Road to UFC) | calendar + tickets + standings as first-class nav | the product is the season and access to it | official org sites | live-score apps or news brands | ticket/VIP chrome on a score terminal hides the live table; terminal density on an org site hides how to attend |
+
+WHEN NOT: do not average sofascore-class scanners with NBA/F1/UFC org
+sites. FIFA returned an empty title this wave — supporting mention only.
+Olympics/ATP remained fetch-blocked.

@@ -103,5 +103,12 @@ hover-play overlay, tag chips, instant search, zero-friction play. Deviate
 only with a stated audience reason (e.g., horror-games vertical → dark).
 
 ## Strict-audit additions (v7.2, SOURCE-OBSERVED 2026-09-03)
-- Console/platform portals (playstation, nintendo, blizzard observed): hero = newest flagship game as full-bleed media; store nav (deals/new/genres) is secondary chrome; heavy motion-forward art direction by design (entertainment context) — contrast with browser-game portals (poki, crazygames, kongregate, gamejolt observed): instant-play grid, thumbnails-first, zero splash pages, because the product promise is "playing in 5 seconds".
-- WHEN portal: platform has catalog gravity. WHEN instant-grid: time-to-play is the conversion metric. Both observed to coexist in category — never average them into one template.
+
+| Family | Observed shape | WHY | WHEN | WHEN NOT | TRADEOFF |
+|---|---|---|---|---|---|
+| Instant-play portals (poki, crazygames, kongregate, gamejolt) | genre/hot/new nav, thumbnail grids, "Play now" as the page; poki 3 h2, crazygames genre chips | conversion is time-to-play | browser/HTML5 catalogs | franchise or console storefronts | density wins; cinematic heroes delay the promise |
+| Publisher/console portals (blizzard 10 h2; nintendo region selector; playstation-class) | flagship as full-bleed media; store chrome secondary; region/platform gates | catalog gravity + franchise art IS the product | owned catalogs, console ecosystems | instant-play grids (splash pages violate the 5-second promise) | motion-forward art is legitimate entertainment; SaaS-card chrome is not |
+| Title/franchise sites (dota2, valorant; valorant served ar-ae) | thin cinematic shells, language/region negotiation | the game is the product; web is launch + news | single-title marketing | multi-game portals | localizing UI chrome while keeping Latin titles needs dir=auto per title |
+
+Never average these families. A "gaming website" prompt still requires
+modeling: play-now vs catalog vs franchise.

@@ -105,5 +105,14 @@ radius, bright but systematized promo colors. Luxury/fashion exceptions in
 `fashion-luxury-beauty.md`.
 
 ## Strict-audit additions (v7.2, SOURCE-OBSERVED 2026-09-03)
-- Resale/secondary marketplaces (stockx-style, vestiaire-collective, poshmark, vinted, goat): the catalog IS inventory with condition/verification states — product cards carry condition grades, "verified/authenticity" trust flags, and sold-price history (source-observed: mercadolibre/aliexpress structured listing grids vs resale's condition-first cards). WHEN resale trust is the buyer's core question: surface verification above price. WHEN NOT: standard retail (condition UI is noise).
-- Regional marketplace gravity (SOURCE-OBSERVED: noon UAE, jumia Nigeria, mercadolibre LatAm, alibaba B2B): language+COD prominence (jumia) vs card-first (mercadolibre); B2B marketplaces lead with RFQ/quantity-tier structure, not cart UI.
+
+| Family | Observed shape | WHY | WHEN | WHEN NOT | TRADEOFF |
+|---|---|---|---|---|---|
+| Authenticated resale (goat: Shop 315,299 + sneakers taxonomy; vestiaire: buy & sell designer) | condition / authenticity / last-sale as first-class card fields | the inventory is unique units, not SKUs | secondary markets where trust is the buy | new-goods retail (condition UI is noise) | verification above price slows browsing; price-above-condition hides fraud risk |
+| Peer resale feeds (poshmark Feed; vinted sell-and-buy) | feed or sell-entry as home, not a brand lookbook | supply is user-generated; discovery is social or search | C2C clothing | authenticated sneaker/luxury vaults | feed DNA on a vault catalog hides size/condition filters |
+| Regional retail marketplaces (jumia Nigeria; aliexpress AR locale) | search + category + local payment/COD gravity | local payment and language are conversion, not chrome | mass retail in-market | luxury editorial or B2B RFQ | COD/local-method prominence clutters US-card checkouts |
+| B2B wholesale (alibaba: Manufacturers / Suppliers, not cart) | RFQ, MOQ, factory identity | the unit is a quote, not a cart line | wholesale | consumer cart-checkout | cart UI on RFQ products fakes a consumer journey |
+| Country gateway (mercadolibre home = country picker) | choose-market before catalog | legal/catalog/payment stacks are per country | multi-country brands | single-market shops | a global catalog with one checkout lies about shipping/tax |
+
+ALTERNATIVES: authenticated vault vs peer feed vs wholesale RFQ vs retail
+search. Pick from the inventory model, not from "marketplace".

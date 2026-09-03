@@ -113,3 +113,13 @@ WHY: search+map is not a genre habit — it is the task (spatial filtering).
 MENA portals elevate PROJECTS because supply is new-build-led: a product-
 model difference, not a style one. NEVER import portal density into
 landlord tools or vice versa.
+
+## Strict-audit additions (v7.2 knowledge integration, SOURCE-OBSERVED 2026-09-03)
+
+| Family | Observed shape | WHY | WHEN | WHEN NOT | TRADEOFF |
+|---|---|---|---|---|---|
+| Franchise / broker brand (remax: sale + rent + values + agents + advice) | network and advice beside listings | the brand sells representation, not only inventory | broker networks | pure listing portals | agent-advice chrome on a classifieds portal hides filters; portal density on a boutique brokerage hides the agent |
+| Intent-split portals (zap imoveis: rent vs sale as repeated taxonomy, 22 inputs; propertypro.ng: Buy / Flats / House / Lands / Commercial, 4 forms / 12 inputs) | tenure and property-type as primary nav | the first decision is rent-or-buy (and land vs built) | markets where those intents do not share a result set | luxury-developer story sites | mixing rent and sale in one undivided grid forces users to filter a job they already know |
+
+HONESTY: century21 returned a loading shell — do not invent franchise IA
+from it. lamudi remained fetch-failed.

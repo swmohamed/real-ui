@@ -121,3 +121,15 @@ stream; object-communities optimize the artifact page + personal
 collection (letterboxd diary/shelves). WHEN NOT: feed DNA on an
 object-community hides the collections; artifact-page density on a
 microblog kills the stream.
+
+## Strict-audit additions (v7.2 knowledge integration, SOURCE-OBSERVED 2026-09-03)
+
+| Family | Observed shape | WHY | WHEN | WHEN NOT | TRADEOFF |
+|---|---|---|---|---|---|
+| Messenger / super-app marketing (line; wechat Chats/Calls/Life Services; viber Download/Features/Communities/Security/Business) | download + features; web is distribution | the product lives in the native app | chat super-apps | web-native communities (reddit-class) | putting a feed on a messenger homepage fakes a product that is not on the web |
+| Live community (twitch: thin SPA shell) | web is a player/discovery app, often JS-empty to static fetch | live video + chat is the object | livestream platforms | text forums | static marketing chrome on a live product is a fetch artifact - do not over-read |
+| Forum/feed (reddit: thin SPA, 1 form / 4 inputs) | the logged-out web is a teaser; the product is communities | object = thread + subreddit | link aggregators / forums | messenger download pages | SPA shells prove little about in-app IA |
+
+HONESTY: several social fetches returned thin shells. Treat those as
+distribution pages, not as proof of in-app IA. The v7.1 object-vs-feed split
+still holds for web-native communities (letterboxd vs mastodon).
