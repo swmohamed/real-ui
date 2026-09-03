@@ -91,4 +91,4 @@ ghosts, no orphans). Do not weaken tests to land a change.
 Use the pull request template. Keep the change reviewable: one problem, the
 evidence for it, and the routing/test follow-through.
 
-Security issues are not pull requests. See [SECURITY.md](SECURITY.md).
+Security issues are not pull requests. See [SECURITY.md](../SECURITY.md).

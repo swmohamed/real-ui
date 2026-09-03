@@ -177,7 +177,7 @@ Issues and pull requests are welcome. Please read:
 
 - [Contributing](.github/CONTRIBUTING.md)
 - [Code of Conduct](.github/CODE_OF_CONDUCT.md)
-- [Security policy](.github/SECURITY.md)
+- [Security policy](SECURITY.md)
 
 ## License
 
