@@ -126,3 +126,26 @@ scan throughput.
 HONESTY: figma-community and dribbble fetches returned empty titles this
 wave — do not invent community-grid IA from those shells. Existing
 artstation/deviantart observations still cover artist communities.
+
+## Corpus observations (v7.3 diversity, SOURCE-OBSERVED 2026-09-03)
+
+| Family | Observed shape | WHY | WHEN | WHEN NOT | TRADEOFF |
+|---|---|---|---|---|---|
+| Artist communities (pixiv, 10 forms / 37 inputs) | login/upload gravity, dense inputs | supply is user artwork; the page is a studio door | illustration communities | museums or Canva editors | exhibition whitespace on pixiv hides upload; Canva tool-type nav on pixiv hides the feed |
+| Regional writing hosts (tistory ko, 7 h2; note.com ja tsukuru/tsunagaru/todokeru) | create + connect as the promise | publishing is the product, in-market language | indie writing platforms | stock photo grids | |
+
+## Corpus observations (v7.4 rejected events category, SOURCE-OBSERVED 2026-09-03)
+
+Ticketing was researched as a candidate category (wave 17: 17 fetch-ok,
+below the 20 floor) and already lived here as an events family. Ticketmaster
+is not a museum lineup and not Luma.
+
+| Family | Observed shape | WHY | WHEN | WHEN NOT | TRADEOFF |
+|---|---|---|---|---|---|
+| Primary ticketing (ticketmaster Highlights/Popular Near You; ticketmaster-uk/mx locale twins; dice-fm Browse events / Get the app; shotgun music events; fever city experiences; webook thin; computicket Events/Travel/Flights) | search + city + event cards, often app-led | the SKU is a dated seat | promoters/primary sellers | museum Visit/Exhibitions IA or a conference tool | MoMA exhibition whitespace on Ticketmaster hides inventory; Hayya visa chrome on a club night hides the lineup |
+| Resale / secondary (stubhub; viagogo; ticketswap verifying shell) | buy/sell existing tickets | inventory is peer listings | secondary markets | official box offices | |
+| Creator event tools (luma Delightful events; pretix ticketing software; sympla Criar evento / Meus eventos) | create + sell as the product | the buyer is an organizer | conference/club tools | stadium primary sellers | |
+| Access / visa-adjacent (hayya Start Your Qatar Experience / e-visa) | credential for entry, not a seat map | the object is permission to attend a destination | event-gated travel | concert search | |
+
+Kickstarter (crowdfunding, researched under nonprofit) is closer to a
+creation campaign than a civic donate portal — campaign grid, not GDS.

@@ -46,3 +46,20 @@ changes representation, or is removed. “Stack everything” is not a plan.
 Files here supply modules and failure modes. They must not supply a complete
 section sequence. Two products with different tasks, content, volume, or
 brand should not converge merely because both use the same page type.
+
+## Interface family is a different axis
+
+A page type (dashboard, article, checkout) is not an interface family
+(work-queue, reference-docs, temporal-workspace, spatial-canvas,
+asset-library, conversation-space).
+If the job is processing arriving items, reading a topic tree, placing
+work in time, inspecting a spatial artifact, keeping named files, or
+talking in a thread/mailbox, load `interface-families/README.md` after
+the product model. Do not route those jobs to a dashboard or article
+template because the words look close.
+
+A course, academy, or lesson surface is still an **education family +
+platform** decision (`industries/education.md`), not a new page template
+and not a seventh interface family. Do not add a universal lesson-player
+page type. Host/guest and driver/rider are role-surface decisions
+(`ux/roles-surfaces.md`), not page types.

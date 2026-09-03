@@ -121,3 +121,11 @@ Official league/org sites are neither score terminals nor sports media.
 WHEN NOT: do not average sofascore-class scanners with NBA/F1/UFC org
 sites. FIFA returned an empty title this wave — supporting mention only.
 Olympics/ATP remained fetch-blocked.
+
+## Corpus observations (v7.3 diversity, SOURCE-OBSERVED 2026-09-03)
+
+| Family | Observed shape | WHY | WHEN | WHEN NOT | TRADEOFF |
+|---|---|---|---|---|---|
+| Cricket terminals (cricbuzz Live Score / Schedule / Stats) | the same glance job as football terminals, different sport object | live numbers still win | cricket audiences | training dashboards | |
+| Regional sports broadcasters (supersport TV Guide / Scores / Win) | guide + scores, not a league ticket shop | the product is the channel | pay-TV sports | F1/NBA org calendars | ticket/VIP chrome on SuperSport hides the guide |
+| Confederation sites (conmebol official, 3 forms / 10 inputs) | org + competition, Spanish/Portuguese gravity | the body runs the tournaments | confederations | live-score apps | |

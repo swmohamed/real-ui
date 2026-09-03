@@ -78,7 +78,10 @@ costs (community health).
 - Family/tribal community conventions: formal honorifics in UI copy,
   moderation transparency norms (Islamic etiquette rules surfaced in UI)
 - WhatsApp/Telegram group culture — community web products compete with
-  groups; offer structure groups lack (search, archive, threads)
+  groups; offer structure groups lack (search, archive, threads).
+  Dedicated messengers, team channels, and mailboxes are a different
+  workspace (`interface-families/conversation-space.md`). A public feed
+  is not Slack.
 - Jobs (regional): Wuzzuf/Bayt class (INFERRED) — CV-building funnels,
   WhatsApp apply paths, salary-bands normalization per market
 
@@ -133,3 +136,25 @@ microblog kills the stream.
 HONESTY: several social fetches returned thin shells. Treat those as
 distribution pages, not as proof of in-app IA. The v7.1 object-vs-feed split
 still holds for web-native communities (letterboxd vs mastodon).
+
+## Corpus observations (v7.3 diversity, SOURCE-OBSERVED 2026-09-03)
+
+| Family | Observed shape | WHY | WHEN | WHEN NOT | TRADEOFF |
+|---|---|---|---|---|---|
+| Regional forums (nairaland Forum, 2 forms / 4 inputs / 3 tables) | thread list, dense tables | the object is the topic thread in a national conversation | text forums | messenger download pages | a LINE download page on Nairaland hides the threads |
+| Platform-group marketing (kakao culture/group/history/AI/services, ko; naver-blog 41 inputs) | corp or blog-host chrome | web is identity + hosting; the social product is elsewhere | super-app vendors, blog hosts | web-native object-communities | |
+
+## Corpus observations (v7.4 rejected dating category, SOURCE-OBSERVED 2026-09-03)
+
+Dating was researched as a candidate category (wave 20: 15 fetch-ok, below
+floor). Most pages are app-download shells. Store as a social family, not
+a module. Matrimony is not Tinder.
+
+| Family | Observed shape | WHY | WHEN | WHEN NOT | TRADEOFF |
+|---|---|---|---|---|---|
+| App-first dating (tinder empty nav; bumble Get the app; hinge designed to be deleted; happn/grindr/zoosk/pof shells) | download CTA is the page | the product lives in the native app | swipe/chat apps | web-native forums | putting a Reddit feed on Tinder fakes a web product |
+| Matrimony / marriage intent (shaadi Choose Your Forever; muzz Where Muslims meet + privacy/selfie verification) | profile + intent + family/faith constraints | the job is a serious match, often with verification | marriage platforms | casual swipe shells | |
+
+WHEN NOT: do not invent a swipe deck from a marketing homepage. Safety,
+blocking, and reporting require scope evidence — never copy them in because
+the category is "dating".

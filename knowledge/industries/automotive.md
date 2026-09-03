@@ -123,3 +123,10 @@ does not cover. The legal entity decides the surface.
 ALTERNATIVES: group IR, consumer lineup, marketplace search. Pick from who
 is buying (investor, retail shopper, used-car hunter), not from "automotive".
 Tesla remained fetch-blocked this wave — supporting mention only.
+
+## Corpus observations (v7.3 diversity, SOURCE-OBSERVED 2026-09-03)
+
+| Family | Observed shape | WHY | WHEN | WHEN NOT | TRADEOFF |
+|---|---|---|---|---|---|
+| In-market OEM homes (toyota.jp ja, 7 h2; honda global corporate) | language-first manufacturer home or group corporate | domestic shoppers vs global IR are different sites | match the legal site | copying Porsche cinema onto toyota.jp without the JP lineup | |
+| LatAm classifieds (webmotors new/used cars and motos, catalog 0km) | 0km vs used vs moto as IA | those stocks do not share a result set | BR classifieds | OEM group IR | |

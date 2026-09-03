@@ -116,3 +116,14 @@ radius, bright but systematized promo colors. Luxury/fashion exceptions in
 
 ALTERNATIVES: authenticated vault vs peer feed vs wholesale RFQ vs retail
 search. Pick from the inventory model, not from "marketplace".
+Seller tools and shopper catalogs often need two surfaces
+(`ux/roles-surfaces.md`); Vinted "Sell and buy" still does not justify
+one chrome for both jobs.
+
+## Corpus observations (v7.3 diversity, SOURCE-OBSERVED 2026-09-03)
+
+| Family | Observed shape | WHY | WHEN | WHEN NOT | TRADEOFF |
+|---|---|---|---|---|---|
+| Regional mass retail (konga Nigeria genuine electronics; lazada Singapore price + free shipping; trendyol tr-TR) | search + category + local-language retail | in-market catalog and shipping promises | national retail | authenticated vaults or B2B RFQ | |
+
+Shopee returned an almost empty shell this wave — count it, do not invent a live-commerce IA from it.

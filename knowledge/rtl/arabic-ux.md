@@ -18,6 +18,16 @@ mirroring. Grounded in observed regional products + market conventions.
 - **Numerals policy**: Western digits dominate prices/data/scores in the
   observed corpus; Arabic-Indic (٠-٩) in Egypt-consumer contexts and
   formal government content; be consistent within a product
+- **Learning / certificates**: bilingual name lines when employers need
+  both; keep course codes, code samples, and equations LTR; do not invent
+  certificates. Arabic open platforms (Rwaq RTL catalog) still need the
+  same numeral/date policy as the rest of the product
+  (`industries/education.md`).
+- **Filenames, extensions, Message-IDs, and code** in Drive/chat products
+  stay LTR inside RTL chrome. Zoho Mail served Arabic marketing this wave;
+  Dubizzle Egypt classifieds were `lang=ar dir=rtl`. Flip chrome, not the
+  object names (`interface-families/conversation-space.md`,
+  `ux/roles-surfaces.md`).
 
 ## Numbers, dates, currency
 

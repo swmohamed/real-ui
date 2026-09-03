@@ -20,9 +20,9 @@ REPORTS = os.path.join(ROOT, "research", "reports")
 TAG2CAT = {
  'news':'news-media','news-print':'news-media','news-tv':'news-media','tech-media':'news-media','magazine':'news-media','finance-media':'news-media','tv-media':'news-media','events-media':'news-media',
  'gaming-media':'entertainment-streaming','streaming':'entertainment-streaming','streaming-live':'entertainment-streaming','music':'entertainment-streaming','video':'entertainment-streaming','edtech-video':'education',
- 'banking':'finance-banking','fintech':'finance-banking','crypto':'crypto-web3','insurance':'finance-banking','investment':'finance-banking','neobank':'finance-banking','nonprofit-finance':'finance-banking',
+ 'banking':'finance-banking','fintech':'finance-banking','crypto':'crypto-web3','insurance':'insurance','candidate-insurance':'insurance','investment':'finance-banking','neobank':'finance-banking','nonprofit-finance':'finance-banking',
  'dev-platform':'saas-dev','dev-tool':'saas-dev','dev-infra':'saas-dev','ai-product':'saas-dev','design-tool':'saas-dev','saas-payments':'saas-dev','saas-productivity':'saas-dev','productivity-saas':'saas-dev','marketing-saas':'saas-dev','productivity':'saas-dev','ecommerce-saas':'saas-dev','saas-b2b':'b2b-enterprise','enterprise-saas':'b2b-enterprise','enterprise-b2b':'b2b-enterprise','consulting':'b2b-enterprise','manufacturing':'b2b-enterprise',
- 'edtech':'education','government':'government-public','telecom':'government-public','tourism-government':'government-public','energy':'science-utility','utility-weather':'science-utility','science':'science-utility','science-publishing':'science-utility','nonprofit':'government-public','nonprofit-global':'government-public','health-global':'healthcare','healthcare-public':'healthcare','pharmacy-retail':'healthcare',
+ 'edtech':'education','government':'government-public','telecom':'telecom','candidate-telecom':'telecom','tourism-government':'government-public','energy':'science-utility','utility-weather':'science-utility','science':'science-utility','science-publishing':'science-utility','nonprofit':'government-public','nonprofit-global':'government-public','health-global':'healthcare','healthcare-public':'healthcare','pharmacy-retail':'healthcare','candidate-homeservices':'local-services',
  'real-estate':'real-estate','travel-booking':'travel-tourism','travel-marketplace':'travel-tourism','travel-search':'travel-tourism','budget-airline':'travel-tourism','transportation':'travel-tourism','restaurants':'restaurants-food','food-delivery':'restaurants-food','restaurants-discovery':'restaurants-food','logistics':'logistics-delivery',
  'browser-gaming':'gaming','indie-gaming':'gaming','gaming-store':'gaming',
  'marketplace':'ecommerce-marketplace','retail-electronics':'ecommerce-marketplace','ecommerce-tech':'ecommerce-marketplace','home-retail':'ecommerce-marketplace','toys-commerce':'ecommerce-marketplace','fashion-sport':'fashion-luxury-beauty','beauty':'fashion-luxury-beauty','fragrance-retail':'fashion-luxury-beauty',
@@ -31,13 +31,58 @@ TAG2CAT = {
  'social-community':'social-community','community-forum':'social-community','professional-social':'social-community','social-discovery':'social-community',
  'automotive':'automotive','automotive-luxury':'automotive','jobs':'jobs-recruitment','vr':'immersive-experimental',
 }
-ORDER = ["news-media","ecommerce-marketplace","saas-dev","finance-banking","education","healthcare","government-public","entertainment-streaming","gaming","sports-fitness","travel-tourism","restaurants-food","fashion-luxury-beauty","real-estate","b2b-enterprise","social-community","creative-culture","science-utility","automotive","logistics-delivery","crypto-web3","jobs-recruitment","islamic-apps","immersive-experimental"]
+ORDER = ["news-media","ecommerce-marketplace","saas-dev","finance-banking","education","healthcare","government-public","entertainment-streaming","gaming","sports-fitness","travel-tourism","restaurants-food","fashion-luxury-beauty","real-estate","b2b-enterprise","social-community","creative-culture","science-utility","automotive","logistics-delivery","crypto-web3","jobs-recruitment","islamic-apps","immersive-experimental","insurance","telecom","local-services"]
 
 def to_cat(tag):
+    # iface-* research tags are workspace-family evidence, not industries.
+    # education-mobile = Play/App Store listings of native apps (v7.6);
+    # they are mobile-corpus evidence, not extra industry homepage rows.
+    if tag and (str(tag).startswith('iface-') or tag in (
+            'education-mobile', 'education-surface',
+            'dual-role', 'dual-role-surface', 'compare-job', 'v77-mobile')):
+        return None
     return TAG2CAT.get(tag, tag if tag in ORDER else None)
 
 def norm(n):
     return re.sub(r'[^a-z0-9]', '', n.lower())
+
+# Contaminated fetch-ok pages that are not the named product.
+SKIP = {'kaodim', 'acloudguru-web', 'udemy-web', 'doroob-retry', 'openclassrooms-paths', 'brilliant-web'}
+
+# Name-level refile after rejected candidate-* tags are left unmapped.
+# Only products with an explicit family home are counted; the rest stay out.
+_NAME_CAT_RAW = {
+    'porch': 'insurance',
+    'lii-cornell': 'government-public', 'courtlistener': 'government-public',
+    'bailii': 'government-public', 'legislation-uk': 'government-public',
+    'justice-uk': 'government-public', 'kenyalaw': 'government-public',
+    'moj-sa': 'government-public', 'adala-ma': 'government-public',
+    'wipo': 'government-public', 'uspto': 'government-public',
+    'epo': 'government-public', 'icj': 'government-public',
+    'lawsoc-uk': 'government-public', 'hayya': 'government-public',
+    'farmers-gov': 'government-public',
+    'mycase': 'saas-dev', 'smokeball': 'saas-dev', 'filevine': 'saas-dev',
+    'rocketlawyer': 'saas-dev', 'legalzoom': 'saas-dev',
+    'vakilsearch': 'saas-dev', 'vlex': 'saas-dev', 'lexisnexis': 'saas-dev',
+    'turbotax': 'saas-dev', 'taxact': 'saas-dev', 'xero': 'saas-dev',
+    'freshbooks': 'saas-dev', 'waveapps': 'saas-dev', 'zoho-books': 'saas-dev',
+    'kickstarter': 'creative-culture', 'ticketmaster': 'creative-culture',
+    'shaadi': 'social-community', 'muzz': 'social-community',
+    'match': 'social-community', 'badoo': 'social-community',
+    'octopus-energy': 'science-utility', 'edf-energy': 'science-utility',
+    'britishgas': 'science-utility', 'origin-energy': 'science-utility',
+    'pge': 'science-utility', 'coned': 'science-utility',
+    'cemig': 'science-utility', 'ovoenergy': 'science-utility',
+    'eonnext': 'science-utility', 'simplyenergy': 'science-utility',
+    'mercury-nz': 'science-utility', 'genesis-nz': 'science-utility',
+    'kplc': 'science-utility', 'enel-br': 'science-utility',
+    'enel': 'b2b-enterprise', 'engie': 'b2b-enterprise',
+    'eskom': 'b2b-enterprise', 'tata-power': 'b2b-enterprise',
+    'tokyo-gas': 'b2b-enterprise', 'cropin': 'b2b-enterprise',
+    'climate-fieldview': 'b2b-enterprise',
+    'crehana-web': 'b2b-enterprise',
+}
+NAME_CAT = {norm(k): v for k, v in _NAME_CAT_RAW.items()}
 
 def obs_summary(it):
     ev = it.get('evidence') or it.get('html') or {}
@@ -60,10 +105,12 @@ def load_products():
     """name -> {cat, url, final, wave_or_v2, summary} for fetch-retained products only."""
     products = {}
     def add(it, src):
-        cat = to_cat(it.get('industry',''))
-        if not cat or it.get('status') != 'ok': return
+        if it.get('status') != 'ok': return
         k = norm(it.get('name',''))
-        if not k: return
+        if not k or k in SKIP: return
+        # Name remap first: rejected candidate-* tags are unmapped in TAG2CAT.
+        cat = NAME_CAT.get(k) or to_cat(it.get('industry',''))
+        if not cat: return
         if k not in products:  # dedupe across v2/waves by name
             products[k] = {
                 'name': it['name'], 'cat': cat, 'url': it.get('url',''),

@@ -38,6 +38,8 @@ def fingerprint(root):
     for dirpath, dirs, files in os.walk(root):
         dirs[:] = [d for d in dirs if d not in ('__pycache__', '.git')]
         for f in sorted(files):
+            if f in ('nul', 'NUL'):
+                continue
             p = os.path.join(dirpath, f)
             rel = os.path.relpath(p, root).replace(os.sep, '/')
             with open(p, 'rb') as handle:

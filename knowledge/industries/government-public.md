@@ -1,5 +1,8 @@
 # Industry: Government, Legal, Public Sector, Nonprofit
 
+V7.4: consumer telecom shops → telecom.md. Legal research and donation
+platforms remain families here; they did not earn separate categories.
+
 ## Characteristics
 Service delivery, not persuasion. Users are captive (they MUST complete
 tasks: renew, pay, apply) so design debt becomes civic harm. The reference
@@ -125,3 +128,27 @@ national-brand sites legitimately break it.
 ALTERNATIVES: if a government site both explains and transacts, keep
 services as the persistent object and treat campaigns as a desk — do not
 average into a lifestyle magazine. poland.gov remained fetch-failed.
+
+## Corpus observations (v7.3 diversity, SOURCE-OBSERVED 2026-09-03)
+
+| Family | Observed shape | WHY | WHEN | WHEN NOT | TRADEOFF |
+|---|---|---|---|---|---|
+| Citizen-engagement platforms (mygov.in Platform for Citizen Engagement, 10 h2 / 3 forms) | participate/consult, not pay-a-fine | the job is talking to government, not completing a statutory task | engagement portals | tax/license gateways | task-grid sparseness on MyGov hides campaigns; magazine country-brand on a fine-payment gateway hides the form |
+| Multi-audience service homes (gov.za Residents / Business / Foreign Nationals / Online Services; gov.br skip-links to content/menu/search/map; gov.sg) | actor split + skip-link discipline | obligations differ by resident vs foreigner vs firm | national service portals | PR/media offices | |
+
+## Corpus observations (v7.4 rejected-category families, SOURCE-OBSERVED 2026-09-03)
+
+Legal and nonprofit were researched as candidate categories (waves 14, 18)
+and rejected: they are not one design space. Store the splits here.
+Consumer telco shops moved to `telecom.md`.
+
+| Family | Observed shape | WHY | WHEN | WHEN NOT | TRADEOFF |
+|---|---|---|---|---|---|
+| Law as public text (lii-cornell Welcome to LII; legislation.gov.uk Search Legislation; kenyalaw Case Law / Laws of Kenya; moj-sa RTL e-services; adala-ma البوابة القانونية; uspto America's Innovation Agency; epo Patent knowledge; wipo; icj; courtlistener search) | search/browse statutes, cases, or filings | the object is an authoritative document, not a quote or a donate CTA | official/legal-info portals | law-firm SaaS or consumer LLC wizards | GDS task-grids on LII hide the corpus; LegalZoom chrome on legislation.gov.uk hides the Act |
+| Humanitarian / donation orgs (unhcr Donate + language; oxfam campaigns; msf Where we work; save-the-children MATCH ALERT; islamic-relief / ksrelief / qcharity RTL zakat; gofundme / justgiving / donorschoose / globalgiving / givedirectly; amnesty / hrw; habitat; wfp; brac; human-appeal 133 inputs) | appeal + impact + give, sometimes crisis-first | the job is sending money or taking action, not completing a statutory form | charities and crowdfunding | license/tax gateways or consumer insurance | gov.uk one-thing-per-page on a crisis appeal hides urgency; a donate mega-CTA on a passport form is civic harm |
+| Professional-body comms (lawsoc-uk Find a Solicitor / campaigns) | membership + public legal help | the visitor is a solicitor or a citizen finding one | bar/law societies | court-filing portals | |
+
+ALTERNATIVES: civic task grid, statute search, donate/appeal, professional body.
+Practice-management (MyCase/Smokeball/Filevine) and consumer legal docs
+(LegalZoom/Rocket Lawyer) live in `saas-dev.md`. Do not create a "legal"
+category that averages those with MOJ portals.

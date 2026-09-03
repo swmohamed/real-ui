@@ -112,3 +112,9 @@ only with a stated audience reason (e.g., horror-games vertical → dark).
 
 Never average these families. A "gaming website" prompt still requires
 modeling: play-now vs catalog vs franchise.
+
+## Corpus observations (v7.3 diversity, SOURCE-OBSERVED 2026-09-03)
+
+Garena and Nexon returned thin publisher shells. They confirm SEA/KR
+publisher presence; do not invent a store IA from empty nav. Instant-play
+vs console-portal vs franchise still holds.

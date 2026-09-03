@@ -80,3 +80,14 @@ WHY they differ: task cadence (5×/day glance vs deep reading), audience
 TRADEOFF: global products gain reach with Latin-first UI but lose Arabic
 typographic quality; regional products invert it. Content accuracy trust
 (sources credited) appears in every observed family — non-negotiable.
+
+## Corpus observations (v7.3 diversity, SOURCE-OBSERVED 2026-09-03)
+
+| Family | Observed shape | WHY | WHEN | WHEN NOT | TRADEOFF |
+|---|---|---|---|---|---|
+| Q&A scholarship (islamqa Category tree / Essential Answers / Knowledge files) | fatwa database, account + tree | the object is a ruled answer with a category | Q&A sites | prayer-time widgets | a glance countdown on islamqa hides the tree |
+| English-first Muslim portals (islamicity Quran / Hadith / Prayer / ChatILM; quranexplorer Recite & Listen, 26 inputs) | several scripture tools on one home | diaspora users want a bundle in English | global-English portals | a regional Arabic prayer utility | |
+| Halal travel (halaltrip Plan your Halal Travel Holiday, 7 inputs) | trip planner with halal constraints | dietary/prayer constraints change the inventory | faith-aware travel | a prayer-times utility | |
+
+V7.4: Takaful (Salama, Etiqa, Sukoon) is Sharia insurance — `insurance.md`,
+not a prayer or Quran product. Do not put a mushaf reader on a quote form.

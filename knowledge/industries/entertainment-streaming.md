@@ -115,3 +115,12 @@ plan grids). Monetization decides the front door (subscription walls vs
 marketplace purchases vs ad feeds). WHEN NOT: bandcamp-style ownership
 store framing on a subscription streamer confuses the business model;
 plan-first packaging on a music discovery product buries the product.
+
+## Corpus observations (v7.3 diversity, SOURCE-OBSERVED 2026-09-03)
+
+| Family | Observed shape | WHY | WHEN | WHEN NOT | TRADEOFF |
+|---|---|---|---|---|---|
+| Comics / manhwa platforms (webtoons Read Comics, Manga & Manhwa, 6 h2) | vertical-scroll episodes, not poster rails | the object is a chapter, not a season tile | webtoon stores | Netflix-class video rails | poster shelves on WEBTOON hide the episode |
+| Regional video communities (bilibili zh; nicovideo) | upload + watch culture, local language | community video is not a licensed streamer | in-market video communities | subscription streamers | |
+
+Hotstar-in returned a thin shell — do not invent a sports-bundle IA from it.

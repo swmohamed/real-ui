@@ -129,3 +129,11 @@ WHY beauty DTC interleaves tutorials with SKUs: usage is the decision object
 (shade, routine). WHEN NOT: tutorial-first on a SKU-dense marketplace hides
 price/availability. TRADEOFF: shade selectors after PDP entry add a step that
 prevents wrong-item returns; skipping them speeds browse and raises returns.
+
+## Corpus observations (v7.3 diversity, SOURCE-OBSERVED 2026-09-03)
+
+Musinsa (KR street fashion, 1 h2) and Shein (global fast fashion, thin shell)
+add a mass-fashion pole. WHEN the catalog is trend-speed, density and
+category speed beat editorial luxury. WHEN NOT: modest-fashion taxonomy-first
+nav (modanisa) or clinical ingredient brands. TRADEOFF: Shein-class density
+on a maison site is register damage; maison whitespace on Musinsa hides SKUs.

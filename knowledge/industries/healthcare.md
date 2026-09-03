@@ -112,3 +112,13 @@ default.
 ALTERNATIVES: if the product is both encyclopedia AND booking, keep search as
 the persistent object and treat articles as support — do not average into a
 services-card grid.
+
+## Corpus observations (v7.3 diversity, SOURCE-OBSERVED 2026-09-03)
+
+| Family | Observed shape | WHY | WHEN | WHEN NOT | TRADEOFF |
+|---|---|---|---|---|---|
+| Care + pharmacy + lab bundles (apollo247 Online Doctor + Book Lab Tests; halodoc Beli Obat / Tanya Dokter / Cek Lab, ID) | three entry verbs on one home | users in these markets mix consult, meds, and diagnostics in one session | bundled care apps | a US encyclopedia or a coupon-price index | a GoodRx price grid on Halodoc hides the doctor; a hospital visit-flow on a pharmacy bundle hides SKUs |
+| Public encyclopedia (medlineplus NLM; webmd condition A-Z nav) | topic IA, institution or publisher | reading and triage language, not booking | health publishers | transactional bundles | |
+| Health conglomerate (cvshealth: Aetna / Caremark / Pharmacy / Investors) | brand-family nav | several legal entities share a group site | holding / IR + consumer entry | a single clinic | |
+
+Netmeds returned a thin pharmacy shell — do not invent a catalogue from it.

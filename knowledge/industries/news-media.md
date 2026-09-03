@@ -117,3 +117,15 @@ grid rhythm, not decoration.
 HONESTY: dw returned an empty title/shell this wave - supporting mention only,
 not a counted template. Do not invent a Deutsche-Welle layout from a failed
 extract.
+
+## Corpus observations (v7.3 diversity, SOURCE-OBSERVED 2026-09-03)
+
+| Family | Observed shape | WHY | WHEN | WHEN NOT | TRADEOFF |
+|---|---|---|---|---|---|
+| National search-portals (naver ko, 14 inputs; also yandex/baidu in science-utility) | search box + service grid, not a story river | the homepage is an OS for the web in that market | portal nations | a newspaper or a wire | feature-well chrome on Naver hides the query; portal tiles on youm7 hide desks |
+| City-desk dailies (timesofindia: mumbai/delhi/bengaluru/Hyderabad in nav, 12 inputs) | city is a first-class section | readers arrive by metro, not by world desk | mega-city papers | wires or GCC English geography spines | |
+| Multi-country Spanish (infobae: Argentina / US / Colombia / Espana / Mexico / Peru) | edition picker as IA | legal and newsrooms are per country | regional Spanish networks | a single-city daily | |
+| Mix portals (globo.com noticias + esportes + entretenimento) | several media objects on one domain | the brand is a media house, not a desk | conglomerate homes | a specialist wire | |
+
+Do not classify a search portal as "news layout" because the industry tag
+is news-media. Model the object: query vs story.

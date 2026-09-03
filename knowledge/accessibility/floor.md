@@ -66,6 +66,10 @@ focus-visible 55%) — match the leaders.
   separation remain safe
 - Zoom allowed (never maximum-scale=1 — OBSERVED violation on 17/156 corpus
   the anti-checklist)
+- WCAG 2.2 AA that change structure (full table in contrast-motion.md):
+  2.4.11 focused item not fully covered by sticky chrome; 2.5.7 drag needs a
+  non-drag path; 3.2.6 help in a consistent order; 3.3.7 do not re-ask info
+  already given; 3.3.8 auth without a cognitive puzzle when avoidable.
 
 ## Motion & vestibular
 
@@ -91,6 +95,11 @@ focus-visible 55%) — match the leaders.
   skip-link text localized; screen readers announce Arabic properly with
   lang="ar" set; mixed-language content tagged (lang on spans) for
   correct voice synthesis
+- Learning media: captions and transcripts when lessons are audio/video;
+  keyboard-operable playback when a player exists; quiz status not
+  color-only; progress has text/semantics, not only rings
+  (`industries/education.md`). Mixed Arabic/English technical lessons
+  (code, equations, course codes) keep Latin/math LTR inside RTL chrome.
 
 ## Testing ritual (ship gate)
 

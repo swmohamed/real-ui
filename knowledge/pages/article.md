@@ -68,3 +68,5 @@ furniture.
 - Social buttons above the headline
 - Removing timestamps (breaks trust for update-sensitive readers)
 - Sticky elements covering >15% of mobile viewport while reading
+- Treating a versioned docs tree or help center as a newspaper article
+  (v7.5 → `interface-families/reference-docs.md`).

@@ -83,3 +83,9 @@ first-time buyer needs trust and guidance; an engineer using an explorer
 needs query speed. There is no unified "crypto aesthetic" in the corpus —
 families share almost nothing structurally. Never import exchange trust
 chrome onto a data terminal or vice versa.
+
+## Corpus observations (v7.3 diversity, SOURCE-OBSERVED 2026-09-03)
+
+| Family | Observed shape | WHY | WHEN | WHEN NOT | TRADEOFF |
+|---|---|---|---|---|---|
+| Regional exchanges (mercadobitcoin Quem somos / Seguranca / Ouvidoria, pt; wazirx India exchange; upbit ko shell) | local trust + ombudsman language | licensing and complaint paths are the differentiator | in-market exchanges | a DeFi terminal or a wallet landing | defillama density on Mercado Bitcoin hides ouvidoria |

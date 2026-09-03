@@ -126,3 +126,16 @@ platform chrome; the menu and hours are the objects). TRADEOFF: fee honesty
 on the card reduces checkout shock and can make a kitchen look expensive
 early - that is the correct trust move. Editorial-review tables (openrice-class)
 are an alternative when the job is choosing a place to go, not a courier.
+
+## Corpus observations (v7.3 diversity, SOURCE-OBSERVED 2026-09-03)
+
+| Family | Observed shape | WHY | WHEN | WHEN NOT | TRADEOFF |
+|---|---|---|---|---|---|
+| Super-app food rails (gofood 24h Gojek; grab consumer food as one job among many) | food is a tab, not a restaurant brand site | the user already opened the app for a ride or a pay | bundled super-apps | a single kitchen's menu site | decision-trio cards still belong on the food tab; they do not belong as the whole super-app home |
+| Grocery + restaurant hybrids (rappi Mexico food + super; mr-d-food Restaurants / Pick n Pay / Shops; foodpanda Food & Grocery SG) | two inventories, one address | the same drop-off serves meals and SKUs | markets where courier density supports both | fine-dining reservation products | grocery aisle IA on a chef-led restaurant is register damage |
+| Courier marketplace (uber-eats: restaurant / deliver / ride / business account) | multi-sided CTAs on the public page | three actors share the same brand | platform marketplaces | owned-fleet restaurant chains | |
+
+WHEN NOT: do not average a super-app food tab with Dishoom-class story dining.
+
+V7.4: booking a cleaner, tradesperson, or salon slot is `local-services.md`,
+not a restaurant marketplace. There is no menu; the inventory is labor.

@@ -69,3 +69,15 @@ subscription terms; obstruction-to-cancel; disguised ads; fake activity
   detection is easy) → real names/roles/photos or none
 - **No way to reach a human** → abandonment at problem moments →
   visible contact paths (WhatsApp for MENA)
+- **Generic course UI as a default** (giant education hero, identical
+  card grids, identical LMS dashboards, universal sidebar, purple/blue
+  gradients, progress rings on every product, identical lesson players,
+  identical mobile card stacks, unearned streaks) → reads as a template,
+  not the current learning product → match family + platform in
+  `industries/education.md`
+- **One chrome for two jobs** (guest tools on a host home, rider map as
+  the driver app, seller inventory on a shopper grid) → write two models
+  or two apps (`ux/roles-surfaces.md`)
+- **Inbox chrome on a file library or Drive chrome on a messenger** →
+  match the primary object (`interface-families/` asset-library vs
+  conversation-space vs work-queue)

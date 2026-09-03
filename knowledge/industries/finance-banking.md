@@ -1,6 +1,9 @@
 # Industry: Finance, Banking, Fintech, Insurance, Investment, Crypto
 
 V2 depth: dedicated crypto/web3/wallet/trading UX → crypto-web3.md.
+V7.4: consumer/takaful/aggregator insurance UX → insurance.md. Keep
+banking, remittance, neobank, and payments families here. Do not design
+an insurer as a bank dashboard.
 
 ## Characteristics
 Trust-first products handling money. Users split into: consumers choosing a
@@ -123,3 +126,24 @@ that "finance site" is not one IA. Corridor, plan, and suite are different jobs.
 ALTERNATIVES: corridor widget, plan matrix, spend-suite mega-nav, bill-category
 grid. Pick from who sends money and whether the product is a transfer, an
 account, or a network.
+
+## Corpus observations (v7.3 diversity, SOURCE-OBSERVED 2026-09-03)
+
+Mobile-money and national UPI/wallet super-apps are not neobanks.
+
+| Family | Observed shape | WHY | WHEN | WHEN NOT | TRADEOFF |
+|---|---|---|---|---|---|
+| Mobile money / agent networks (mpesa: About / Legal / Journey, 6 forms / 20 inputs; wave Personal/Business) | education + legal + agent-trust, not a plan matrix | the product is a cash-in/cash-out network; the web explains and onboards | MNO wallets, agent cash-out | consumer neobanks (n26-class plans) | a Metal/Go plan tree on M-PESA hides agent and legal; a corridor widget on a wallet hides bills/airtime |
+| National payment super-apps (paytm: Flights / Bus / Trains beside UPI; gcash #1 Finance Super App Services/Partners; touchngo) | pay + recharge + travel in one nav | high-frequency bill/QR pay expands into adjacent trips | wallet-first markets | remittance corridors or SME spend-suites | travel tabs on a bank homepage fake a super-app |
+| African payment processors (paystack Why/Success Rates/Demo For Entrepreneurs/Corporates; flutterwave business possibilities) | docs + success-rate proof + demo | buyer is a merchant integrating payments | processor marketing | consumer wallets | |
+| Regional neobank (nubank pt-BR) | sparse Portuguese consumer home | local-language consumer bank, not a US fintech clone | in-market consumer credit | English-only plan matrices in BR/ID | |
+
+ALTERNATIVES: agent-network explainer, QR/UPI super-app, processor demo,
+consumer neobank. Pick from cash-in method and who holds the balance.
+
+## Corpus observations (v7.4 category split, SOURCE-OBSERVED 2026-09-03)
+
+Consumer quote / takaful / aggregator insurance is now `insurance.md`.
+Do not keep designing an insurer as a bank. AXA/Prudential-class group IR
+that was fetched as `insurance` moves with that module; remittance,
+neobank, and payments stay here.

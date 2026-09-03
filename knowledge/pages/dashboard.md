@@ -78,3 +78,5 @@ rail, or instrument styling; derive the workspace from the product model.
 - Modal-per-action (prefer inline/drawer flows)
 - Hiding loading/error states (the trust killer of tools)
 - Auto-logout without draft save
+- Using this page as a work-queue, docs tree, calendar, or canvas
+  template (v7.5). Those jobs load `interface-families/*`, not KPI chrome.

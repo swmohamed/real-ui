@@ -79,3 +79,20 @@ dashboards)
 - Sparklines without axis context (no scale = no meaning)
 - Card-stacking every mobile row until comparison, selection, and column
   relationships disappear
+
+## Comparison (a task, not a page type)
+
+Label: DESIGN PRINCIPLE + SOURCE-OBSERVED 2026-09-03 (wave 35, 16/22
+fetch-ok — below a new-family floor; stored here instead).
+
+Kayak/Trivago compare offers across sellers. GSMArena/RTINGS/DXOMARK/
+PassMark compare specs. Diffchecker compares two texts. CanIUse compares
+browser support. Policybazaar compares insurance plans. Versus claims
+"compare everything."
+
+WHY a matrix or aligned table: the decision is difference across stable
+attributes. WHEN NOT: a shopping grid (browse), a single PDP, or a
+metasearch that is actually a booking form. Do not invent a comparison
+family, a "compare template," or fake scores. One recommended pick is
+allowed only when the product actually ranks (Wirecutter); Kayak shows
+many fares.

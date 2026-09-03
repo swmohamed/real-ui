@@ -38,6 +38,17 @@ behavior in each state BEFORE polish. Extends ux/states.md (web states).
   conflicts surface honestly (payment ≠ optimistic).
 - Haptics as state feedback (success/error ticks) — subtle, not
   arcade.
+- Learning-specific interruptions: restore playback position, current
+  card, or live-class join; queued downloads must show progress and not
+  fake completeness; camera/mic for scan or speech asks in context with
+  a non-camera path (`industries/education.md`). Offline is common on
+  LMS and catalog apps and rare on live-only tutor calls.
+- Dual-role products: rider and driver (Uber vs Uber Driver listings),
+  guest and host, shopper and seller often ship as **separate apps**,
+  not a mode switch. Camera, GPS, and background location belong to the
+  role that captures or navigates (`ux/roles-surfaces.md`). Files and
+  chat listings claim offline, camera, backup, and calls — those are
+  store claims, not in-app layout.
 
 ## State matrix exercise (do it per screen)
 

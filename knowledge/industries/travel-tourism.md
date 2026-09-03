@@ -155,4 +155,20 @@ product books or only compares.
 | OTA / packager (opodo cheap flights + hotels + packages; edreams flights / hotels / vacation packages / cars; trip.com deals; ixigo flights / trains / hotels / buses, 10 h2 + 3 tables) | multi-modal bookable catalog | the product takes the booking (and often trains/buses, not only flights) | inventory-holding bookers | pure compare or editorial guides | compare-only honesty on an OTA undersells checkout; inspiration walls still hide the widget |
 
 WHEN NOT: do not average kayak-class compare with ixigo-class book. expedia /
-rehlat / goibibo remained fetch-failed this wave.
+rehlat / goibibo remained fetch-failed this wave. Guest vs host (Airbnb home
+vs `/host/homes`) is two surfaces, not a metasearch vs OTA split
+(`ux/roles-surfaces.md`). Compare stays a task (`ui/data-display.md`).
+
+## Corpus observations (v7.3 diversity, SOURCE-OBSERVED 2026-09-03)
+
+Wave 11/12 added super-apps and transit instruments that the OTA/metasearch
+split does not cover.
+
+| Family | Observed shape | WHY | WHEN | WHEN NOT | TRADEOFF |
+|---|---|---|---|---|---|
+| Super-apps (grab: Consumer / Driver / Merchant / Enterprise; gojek Super App, 5 h2) | one home, several jobs (ride, food, pay, merchant) | urban frequency: the same user switches jobs in a day | bundled everyday mobility | a flights-only OTA or a city rail operator | putting package-holiday chrome on a super-app hides the switcher; a super-app grid on an airline hides PNR |
+| Transit / MaaS (citymapper Ultimate Transport App, 6 h2; moovit: Accessibility Features + Web App + Long Distance Tickets) | the map/itinerary IS the product; accessibility is a claimed surface | the job is getting there now, on live networks | city transit | hotel metasearch | inspiration photography on a journey planner hides the next departure |
+| Regional OTA (traveloka Cheap Flights, Hotels, Activities, 10 h2 / 3 inputs) | activities sit beside flights/hotels | SEA leisure often books experiences in the same session | experience-heavy OTAs | pure compare | |
+
+HONESTY: jakartamrt and agoda returned thin shells this wave — count as
+products, do not invent station-map IA from empty nav.

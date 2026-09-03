@@ -4,6 +4,9 @@ Evidence: v2 fetch 2025-08 `[OBSERVED]` — bayt.com (MENA leader),
 wuzzuf.net (Egypt leader). Complements social-community.md (profiles/
 communities) and saas-dev.md (ATS/enterprise tooling).
 
+V7.4: booking a cleaner or tradesperson is local-services.md, not a job
+board. Distinguish employment from a one-off local task.
+
 Apply `industries/README.md`. Distinguish a public job board, candidate
 tracker, employer ATS, recruitment agency site, and community product. Search,
 profiles, alerts, easy-apply, employer tooling, subscriptions, and status
@@ -78,3 +81,9 @@ WHY: who pays decides the surface (candidates pay with time → speed;
 employers pay money → ATS features). WHEN NOT to copy any family onto
 another: an ATS-styled consumer board reads corporate; a marketplace-styled
 ATS undersells employer tools.
+
+## Corpus observations (v7.3 diversity, SOURCE-OBSERVED 2026-09-03)
+
+| Family | Observed shape | WHY | WHEN | WHEN NOT | TRADEOFF |
+|---|---|---|---|---|---|
+| Career + learning hybrids (jobberman Job Vacancies / AI Career Tool / My Learning; internshala Jobs + Hire Candidates) | jobs and courses/tools in one nav | the board monetizes the whole path, not only the listing | regional career ecosystems | ATS employer-login products | |

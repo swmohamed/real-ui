@@ -123,3 +123,10 @@ landlord tools or vice versa.
 
 HONESTY: century21 returned a loading shell — do not invent franchise IA
 from it. lamudi remained fetch-failed.
+
+## Corpus observations (v7.3 diversity, SOURCE-OBSERVED 2026-09-03)
+
+| Family | Observed shape | WHY | WHEN | WHEN NOT | TRADEOFF |
+|---|---|---|---|---|---|
+| African listing portals (property24 Buy / Repossessions / Auctions / On Show; privateproperty-za Farms / Bank Assisted) | distressed and agricultural stock as first-class nav | those tenures are normal inventory, not edge filters | markets with bank-assisted and farm stock | a NYC rental map | burying repossessions behind "more" hides a real buyer job |
+| General classifieds (olx-br skip-links + Plano Profissional + Meus Anuncios) | ads for many verticals, professional-seller plans | the object is the ad, not only housing | classifieds networks | specialist property portals | portal map-split on OLX fakes a property-only product |

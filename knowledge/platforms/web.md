@@ -39,6 +39,10 @@ back (history), tabs, text selection, printing, deep-linking everything.
 - Desktop pages earn MORE information per viewport than mobile —
   squeezing mobile layouts up to desktop (giant touch cards) is a
   platform mismatch (redesign/diagnosis.md).
+- Learning web vs mobile: comparison, packets, applications, and L&D
+  admin earn desktop density; continue/download/live/scan earn the
+  phone. Do not stack a catalog homepage and call it the app
+  (`industries/education.md` mobile vs web).
 
 ## Web-specific states
 

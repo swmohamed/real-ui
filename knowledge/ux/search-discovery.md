@@ -49,6 +49,17 @@ state on reload, filters never require page 1 reset unless results shrink.
 - Most real products serve BOTH: search bar (known) + shelves (discovery);
   don't force one paradigm
 
+Learning products are not one discovery shape. A skill library may be
+search + trending shelves; a private academy may be path/career nav; a
+tutor product is a people index; open courseware is a packet/explorer; a
+classroom LMS is a class list / join code; a habit app is a next-action
+queue. Cards are one option (`industries/education.md`). Do not default
+a course-card grid because the industry is education.
+
+File libraries search names, types, and people. Messengers search
+threads and messages. Comparison products search then align attributes
+(`ui/data-display.md`). Do not give all three a product-card grid.
+
 ## Personalization honesty
 
 - "Recommended for you" rows only when data justifies the label;

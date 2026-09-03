@@ -67,7 +67,7 @@ def install(targets):
             for stale in (stage, backup):
                 remove_path(stale)
             shutil.copytree(SRC, stage,
-                             ignore=shutil.ignore_patterns("__pycache__", ".git"))
+                             ignore=shutil.ignore_patterns("__pycache__", ".git", "nul", "NUL"))
             if os.path.isdir(dest):
                 os.replace(dest, backup)
             try:

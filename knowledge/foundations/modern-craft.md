@@ -3,8 +3,9 @@
 What makes an interface read as contemporary and production-ready is not a
 style. It is the discipline of small decisions executed coherently. This
 file turns corpus evidence (knowledge/research/observed-findings.md, 156-site
-corpus + growth waves) into decision logic for craft-level choices. It
-never selects a look; product axes (visual-dna/dna-selector.md) do that.
+corpus + growth waves including v7.3 Africa/LatAm/Asia diversity) into
+decision logic for craft-level choices. It never selects a look; product
+axes (visual-dna/dna-selector.md) do that.
 
 Label: DESIGN PRINCIPLE + REAL-WORLD OBSERVATION, per item as noted.
 
@@ -127,6 +128,49 @@ lives in one or two signature moments, not everywhere.
   idles/loops unless it is the product's single expressive moment.
   prefers-reduced-motion always respected (accessibility/floor.md).
 - WHEN NOT: institutional/legal/ops contexts — near-static is correct.
+
+## Composition register (v7.3 diversity, SOURCE-OBSERVED 2026-09-03)
+
+Density, chrome, and imagery role follow the product family, not the
+industry tag. These are craft decisions; they still do not pick a look.
+
+- **Search portal vs newspaper**: a portal home (Naver / Yandex / Baidu
+  class) is a query box + service grid; a newspaper is a story river +
+  desks. Feature-well editorial chrome on a portal hides the query;
+  portal tiles on a daily hide desks. Portals may be denser; newspapers
+  need typographic hierarchy first.
+- **Super-app vs single-job**: Grab/Gojek-class homes are job switchers
+  (consumer / driver / merchant / enterprise). A single-job product
+  (airline PNR, one kitchen, one rail operator) must not wear a super-app
+  grid. Package-holiday chrome on a super-app hides the switcher.
+- **Locale-first serving is a product decision**: Shopify `ar-EG` RTL and
+  Zoho Arabic homepages are locale products, not skins. WHEN NOT: do not
+  drop Inter + blue + purple onto a regional suite because it is SaaS
+  (anti-patterns/ai-aesthetics.md generic-polish list).
+- **Imagery ABSENT stays correct** for civic, utility, and data products
+  (gov.za / gov.br service portals, national posts, Our World in Data).
+  Super-app marketing photography does not transfer onto civic forms.
+- **Quote vs shop vs civic vs task-booking**: a motor quote, a prepaid
+  SIM shop, a license portal, and a cleaner booking are different
+  composition jobs (v7.4). Do not share one density or chrome language
+  across them because they are all "forms".
+- **Queue vs docs vs calendar vs canvas vs files vs conversation** (v7.5–v7.7):
+  a helpdesk inbox, an MDN tree, a Teamup grid, a Flightradar map, a
+  Drive library, and a Signal thread are different composition jobs.
+  Marketing-site polish on an operator queue is unearned; enterprise-console
+  density on a Wikipedia article is unearned; three-pane mail chrome on
+  Threema is unearned; DAM rights language on a family Drive is unearned.
+  Do not share one chrome language because all six are "tools".
+- **Two-sided roles** (v7.7): guest Airbnb is not host Airbnb; Uber Rider
+  is not Uber Driver. Shared brand is not shared layout.
+- **Learning families** (v7.6): a course marketplace, a private academy,
+  a bootcamp, an exam-prep live school, a tutor index, a corporate LMS,
+  a habit language app, and open courseware are different composition
+  jobs. Do not share one density, hero, card grid, progress ring, or
+  lesson-player chrome because all are "education". Habit streaks stay
+  on daily-practice products; exam names stay on exam-prep; people
+  search stays on tutoring; material packets stay on courseware.
+  Vendor LMS marketing pages are not student apps.
 
 ## The "production-ready" checklist (craft gate)
 

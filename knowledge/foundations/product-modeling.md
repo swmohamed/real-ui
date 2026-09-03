@@ -89,6 +89,9 @@ Choose representations from content shape and task verb, not page genre:
 | Need | Candidate representation |
 |---|---|
 | compare many entities across stable attributes | table/data grid |
+| compare offers or specs side by side | aligned matrix + one recommended pick only when evidence exists |
+| keep, send, or govern named files | folder/list/grid of objects + permission, not a canvas |
+| talk to a person, channel, or mailbox | conversation list + thread; unread is not a ticket stage |
 | browse a small media-forward set | cards/shelves |
 | scan simple homogeneous records | list rows |
 | compare values or distributions | chart plus accessible source table |
@@ -113,7 +116,12 @@ Write a screen contract before layout:
 
 Then use `pages/README.md` and individual page files as candidate-module
 catalogs. Their listed order has no authority. Use `industries/README.md`
-before any industry module.
+before any industry module. If the workspace job is a queue, a docs
+tree, a time grid, a spatial canvas, a file library, or a conversation,
+also load `interface-families/README.md` and the matching family — never a
+universal professional-tool layout. If two actor classes have incompatible
+jobs, load `ux/roles-surfaces.md` and write two models when the evidence
+requires it.
 
 ## Product-fit test (finish gate input)
 

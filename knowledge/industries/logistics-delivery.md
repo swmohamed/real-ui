@@ -84,3 +84,12 @@ WHY: the payer splits the family (consumer time / shipper money /
 developer integration / enterprise contract). Tracking-first surfaces must
 survive with ZERO browsing intent — a number in, a status out. B2B freight
 inverts everything: quote forms, relationship, sales assist.
+
+## Corpus observations (v7.3 diversity, SOURCE-OBSERVED 2026-09-03)
+
+| Family | Observed shape | WHY | WHEN | WHEN NOT | TRADEOFF |
+|---|---|---|---|---|---|
+| National posts (correios Enviar / Receber / Comprar / Logistica / Atendimento, 3 forms / 15 inputs) | send, receive, and shop under one public brand | the post office is a counter + a shop | national postal operators | multi-carrier tracking hubs | a 17track paste-box on Correios hides counter services |
+| Regional last-mile ecom (jtexpress Track / Merchant login / Locate points) | merchant + consumer track | last-mile brands serve shops first | SEA ecom couriers | freight quote tools | |
+
+Ninjavan returned a thin shell — do not invent a network map from it.

@@ -36,8 +36,7 @@ claims.
   call, payment plan (offplan MENA), similar listings
 - **Hotel/property**: room-type cards each with own rate selector +
   cancellation policy per rate, sub-score summary
-- **Course**: syllabus accordion with locked previews, instructor panel,
-  reviews, enroll CTA + price toggle (audit/certificate)
+- **Course / learning offer**: match the education family before picking regions. A marketplace course may need instructor + ratings + syllabus + price; a bootcamp needs outcomes, dates, and application; open courseware needs the materials packet (syllabus/calendar/videos/notes); a tutor profile needs the person, availability, and languages. A syllabus accordion is one candidate, not the default.
 - **Restaurant item (dialog-page hybrid)**: photo, options groups with
   required indicators, quantity, notes field, add-to-cart with total
 - **Article/event/movie detail**: poster/hero, key facts (date/venue/

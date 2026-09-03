@@ -128,6 +128,8 @@ access, not only the setting being edited.
 - Direct edit, suggestion, and approval rendered identically.
 - A single Owner/Editor/Viewer model for products whose structure and data have
   different risk.
+- Treating a messenger or mailbox as document co-edit, or comments-on-a-file as
+  Slack (`interface-families/conversation-space.md`).
 - Activity feeds with every event but no filter, delta, or next action.
 - Restoring history destructively or hiding versions created after restore.
 - AI/automation changes attributed to the nearest human collaborator.

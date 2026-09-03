@@ -4,6 +4,9 @@ Industry modules are evidence catalogs, not product specifications. They
 describe recurring terminology, trust expectations, risks, and candidate
 patterns seen in a genre. They do **not** decide this product's features,
 information architecture, page order, navigation model, or visual DNA.
+Workspace shape (queue, docs tree, calendar, canvas, file library,
+conversation) lives on a different axis — `interface-families/README.md`.
+Two-sided roles live in `ux/roles-surfaces.md`.
 
 Label: RECOMMENDED retrieval discipline. Individual claims retain their own
 OBSERVED / INFERRED / RECOMMENDED labels.
@@ -23,8 +26,14 @@ OBSERVED / INFERRED / RECOMMENDED labels.
 Family splits inside a module are DIFFERENCE evidence, not a default
 layout. When a module lists multiple families (resale vs retail, remittance
 vs consumer bank, console-portal vs instant-play grid, league-org vs
-score-terminal, metasearch vs OTA, creation-suite vs library), match the
-family to THIS product model. Never average families into one template.
+score-terminal, metasearch vs OTA, creation-suite vs library, super-app vs
+single-job, mobile-money vs neobank, search-portal vs
+newspaper, quote vs aggregator vs takaful, consumer-telco shop vs group IR,
+task-marketplace vs slot-booking vs field-SaaS, exam-prep vs MOOC vs
+course-marketplace vs academy vs bootcamp vs corporate-LMS vs tutoring vs
+cohort vs instructor-owned vs open-courseware vs language-habit vs
+practice/assessment vs classroom-LMS vs certification), match the family to THIS
+product model. Never average families into one template.
 
 Industry knowledge may inform:
 

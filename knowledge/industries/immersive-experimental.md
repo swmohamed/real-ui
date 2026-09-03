@@ -119,3 +119,10 @@ honesty matters: these are heavy pages; state loading.
 WHEN NOT: do not average studio / authoring / live-canvas / explorable-essay
 (v7.1 pudding/setosa/neal.fun) into an immersive template. seeingtheory
 returned a coming-soon shell - do not treat it as a live explorable.
+
+## Corpus observations (v7.3 diversity, SOURCE-OBSERVED 2026-09-03)
+
+| Family | Observed shape | WHY | WHEN | WHEN NOT | TRADEOFF |
+|---|---|---|---|---|---|
+| Public-data essays (ourworldindata Data / Latest; gapminder Resources / About, 10 h2) | chart + explanation, donate/resources chrome | the job is understanding a dataset, not making one | public-data education | Flourish authoring or unit9 reels | an editor chrome on OWID hides the essay; a reel index on Gapminder hides the chart |
+| Story-map hosts (storymaps-esri ArcGIS StoryMaps) | narrative on a map | geography is the spine | place-based stories | live weather canvases | |

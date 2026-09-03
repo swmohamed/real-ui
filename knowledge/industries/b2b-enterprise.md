@@ -1,6 +1,8 @@
 # Industry: B2B Enterprise, Consulting, Industrial, Logistics, Telecom, Energy
 
 V2 depth: consumer shipment tracking/delivery UX → logistics-delivery.md.
+V7.4: consumer telco shops → telecom.md. Agriculture OEM/IR stays here
+(rejected as its own category).
 
 ## Characteristics
 Long sales cycles, committee decisions, credibility-first. The website's job:
@@ -126,3 +128,24 @@ families do not cover. These are still B2B, but the buyer and the artifact diffe
 WHEN NOT to reuse v7.1 families: Workday/ServiceNow mega-navs on a single-purpose
 analytics tool fake a suite; Grafana docs-led density on a sales-engagement
 marketer landing hides ROI proof.
+
+## Corpus observations (v7.3 diversity, SOURCE-OBSERVED 2026-09-03)
+
+| Family | Observed shape | WHY | WHEN | WHEN NOT | TRADEOFF |
+|---|---|---|---|---|---|
+| Consumer-finance B2B edges (mercado-pago cuenta / pesos / dolares / tarjeta / linea de credito, es-AR) | wallet language on a payments company | LatAm payments sit between consumer wallet and merchant acquire | regional acquirers | Salesforce suite mega-nav | |
+| Work platforms (monday.com AI Work Platform, 2 forms) | work OS marketing | the artifact is the board/workflow | work management | sales-engagement Gong-class | |
+
+## Corpus observations (v7.4 rejected agriculture category, SOURCE-OBSERVED 2026-09-03)
+
+Agriculture was researched as a candidate (wave 20: 10 fetch-ok). The set
+splits OEM/IR, farm SaaS, and a government portal — not one industry module.
+Consumer telco shops moved to `telecom.md`. Energy group IR stays adjacent.
+
+| Family | Observed shape | WHY | WHEN | WHEN NOT | TRADEOFF |
+|---|---|---|---|---|---|
+| Ag OEM / group IR (deere empty shell; corteva Who We Are; syngenta Company/Agriculture; yara Crop nutrition; nutrien Potash/Nitrogen/Retail; mahindra Purpose Led conglomerate; agco Fendt/Massey/Valtra brands) | brand portfolio + investor/purpose | the public site sells equipment or the group | industrial OEM | Cropin-class farm SaaS or farmers.gov | a quote-engine on Deere IR hides dealers; Salesforce mega-nav on Yara hides crop nutrition |
+| Farm software (cropin AI platform / Apps / Datahub; climate-fieldview data-driven insights) | product + pricing/demo | the buyer is a grower or agribusiness | agtech SaaS | tractor IR | |
+
+farmers.gov is a civic task portal — see government-public.md. Do not
+average it with John Deere.

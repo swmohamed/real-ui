@@ -6,7 +6,7 @@ description: Real-world web and native-app UI/UX intelligence. Use when designin
 # real-ui — Real-World UI/UX Design Intelligence
 
 You are operating as a designer who has studied how real, production
-products across 24 industry modules, 9 platform guidance modules and 5 regions are
+products across 27 industry modules, 9 platform guidance modules, and regions including MENA, Africa, Latin America, Asia, Europe, and GCC are
 represented in fetched source — via code-first analysis of a growing
 real-product corpus (original 156-site batch plus subsequent SOURCE-OBSERVED
 growth waves), distilled into a modular knowledge base. Source evidence
@@ -208,12 +208,13 @@ skill root for `foundations/`, `ux/`, `platforms/`, or other mapped folders.
 | Input model | input/{touch,mouse-keyboard,stylus-voice}.md |
 | Adaptive strategy | responsive/{breakpoints-adaptation,mobile-patterns,adaptive-models}.md |
 | Mobile app UX | ux/mobile-states.md |
-| Industry context (load authority first) | industries/README.md + industries/{gaming,saas-dev,ecommerce-marketplace,fashion-luxury-beauty,finance-banking,news-media,entertainment-streaming,sports-fitness,travel-tourism,restaurants-food,real-estate,healthcare,education,government-public,b2b-enterprise,creative-culture,social-community,automotive,immersive-experimental,science-utility,crypto-web3,islamic-apps,jobs-recruitment,logistics-delivery}.md |
+| Industry context (load authority first) | industries/README.md + industries/{gaming,saas-dev,ecommerce-marketplace,fashion-luxury-beauty,finance-banking,news-media,entertainment-streaming,sports-fitness,travel-tourism,restaurants-food,real-estate,healthcare,education,government-public,b2b-enterprise,creative-culture,social-community,automotive,immersive-experimental,science-utility,crypto-web3,islamic-apps,jobs-recruitment,logistics-delivery,insurance,telecom,local-services}.md |
 | Page composition candidates (load authority first) | pages/README.md + pages/{homepage,landing,category-search,product-detail,article,dashboard,pricing-checkout,account-settings-forms}.md |
+| Interface family / workspace shape (load authority first) | interface-families/README.md + interface-families/{work-queue,reference-docs,temporal-workspace,spatial-canvas,asset-library,conversation-space}.md |
 | Visual direction (derivation first; vocabulary optional) | visual-dna/{dna-selector,dna-catalog}.md |
 | Components | ui/{components,cards,data-display,data-viz,media}.md |
 | Section patterns | patterns/{header-navigation,heroes,content-sections,recommendations-sticky,footer}.md |
-| UX flows | ux/{navigation,search-discovery,states,trust-conversion,onboarding,mobile-states}.md |
+| UX flows | ux/{navigation,search-discovery,states,trust-conversion,onboarding,mobile-states,roles-surfaces}.md |
 | Forms & validation | ux/forms-validation.md |
 | Copy, labels & CTAs | ux/content-design.md |
 | i18n beyond RTL (multilingual LTR, locale formats) | localization/i18n.md |
@@ -267,6 +268,15 @@ Dimensions AUTO-ACTIVATE each other — users never enumerate categories:
 | a11y-heavy or compliance mention | accessibility/{floor,mobile,contrast-motion}.md |
 | any industry module | industries/README.md first |
 | any page module | pages/README.md first |
+| inbox, ticket, helpdesk, triage, on-call, pipeline, moderation queue | interface-families/README.md + interface-families/work-queue.md (not a dashboard template) |
+| docs, reference, handbook, wiki, knowledge base, API reference | interface-families/README.md + interface-families/reference-docs.md (not pages/article.md by default) |
+| calendar, schedule, availability, booking link, meeting poll, planner | interface-families/README.md + interface-families/temporal-workspace.md (not local-services by default) |
+| canvas, whiteboard, diagram, photo editor, live map, chart canvas, CAD | interface-families/README.md + interface-families/spatial-canvas.md (not a KPI dashboard) |
+| files, Drive, DAM, transfer, photo library, asset review | interface-families/README.md + interface-families/asset-library.md (not a canvas; not a wiki) |
+| chat, messenger, Slack, Discord, mailbox, email product | interface-families/README.md + interface-families/conversation-space.md (not a ticket queue; not a public feed) |
+| host/guest, driver/rider, seller/buyer, creator/audience, merchant/customer | ux/roles-surfaces.md (two models when jobs diverge; not an admin template) |
+| any interface-family module | interface-families/README.md first |
+| academy, course platform, bootcamp, corporate LMS, exam-prep, course marketplace, tutoring, instructor-owned academy, certification, MOOC | industries/README.md + industries/education.md (match family + user + learning model + platform; never one course template) |
 | multi-industry product | taxonomy.md combos (e.g., food+logistics+maps) + foundations/product-modeling.md (model before merging genre knowledge) |
 | CTAs, labels, error/empty copy, tone | ux/content-design.md |
 | multilingual LTR product or locale formats (dates/currency/plurals) | localization/i18n.md |

@@ -55,6 +55,11 @@ accessibility docs checked 2026-08
   multi-select; snackbar (+ action) for undo — undo-over-confirm is
   the Android idiom `[DESIGN PRINCIPLE]`.
 - FAB = single primary action of the screen; not decoration.
+- Learning apps: the primary object is often Continue, Join live, Scan,
+  or Speak — not a shrunk web catalog. Offline/download is a first-class
+  state when the listing/product promises it (`industries/education.md`).
+  Do not port a desktop syllabus rail onto compact width unless the
+  current lesson needs a supporting pane (list-detail on 600dp+).
 
 ## RTL on Android `[PLATFORM RULE]`
 

@@ -107,3 +107,33 @@ WHY: intent span. Utility users have 10-second jobs; researchers run long
 query sessions; agencies publish. A hero section on calculator.net would be
 active harm; a bare box on NOAA would hide the mission. Plainness is a
 legitimate professional register here (generic-polish list applies).
+
+## Corpus observations (v7.3 diversity, SOURCE-OBSERVED 2026-09-03)
+
+| Family | Observed shape | WHY | WHEN | WHEN NOT | TRADEOFF |
+|---|---|---|---|---|---|
+| National search (yandex Images/Video/Maps/Translate/Weather/Mail; baidu) | multi-service query home | the homepage is infrastructure | portal markets | a calculator or a journal | Wolfram-style query chrome on Baidu is the wrong density story — these are OS-like portals |
+| Research indexes (jstor; semanticscholar AI-Powered Research Tool) | search + paper identity | the object is a paper | scholarly search | public weather canvases | |
+
+V7.5: a live weather/flight map is a spatial-canvas job
+(`interface-families/spatial-canvas.md`). A language or product handbook
+is `interface-families/reference-docs.md`. Neither is a NASA mission tree.
+
+## Corpus observations (v7.4 rejected energy category, SOURCE-OBSERVED 2026-09-03)
+
+Retail energy was researched as a candidate category (waves 16+21). After
+stripping group IR, honest product-true count sat near the floor but the
+jobs split: switch/quote vs outage/account vs listed-group IR. Energy is
+not a new industry module. Keep retail utility here; group IR belongs in
+b2b-enterprise.
+
+| Family | Observed shape | WHY | WHEN | WHEN NOT | TRADEOFF |
+|---|---|---|---|---|---|
+| Retail switch / tariff (octopus-energy cheaper/green tariffs; edf Lock in your energy prices; britishgas Flash Sale + quote; ovoenergy Get a quote; eonnext tariffs; origin-energy electricity/gas/internet; simplyenergy / mercury-nz / genesis-nz) | quote or tariff as the home | the household is switching supplier | contestable retail markets | weather instruments or Enel-class IR | a NASA mission tree on Octopus hides the tariff; IR chrome on a quote hides unit rates |
+| Account / outage utilities (coned Pay Bill / Outages / Start-Stop; pge Climate Credit + languages; kplc Customer service / Report Crime; cemig SERVIÇOS; enel-br Esta sem energia) | bill + outage + move-in as first jobs | the visitor already has supply | incumbent utilities | green-tariff challengers or weather maps | |
+| Group energy IR (enel Group; engie transition; eskom Holdings; tata-power Investor hub; tokyo-gas personal/corporate split) | results, transition, investors | public site serves capital markets / policy | listed groups | household switch | |
+
+Hydro-Quebec returned a geo-block page; octopus-us was an empty shell.
+Retail/account fetch-ok products are filed here; group IR is filed under
+b2b-enterprise; geo-blocked or empty shells stay uncounted. Do not invent
+a smart-meter dashboard from any of them.

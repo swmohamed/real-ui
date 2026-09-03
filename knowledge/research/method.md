@@ -177,3 +177,69 @@ This section binds every FUTURE REAL-UI upgrade, not only the current one.
    external research only when the user asks, facts are time-sensitive,
    or the product is genuinely outside stored coverage (SKILL.md Normal
    mode contract).
+7. **Every future upgrade audits coverage on more than industry.**
+   Inspect and improve, when the evidence warrants it: (1) real-product
+   evidence, (2) category coverage, (3) product-type coverage,
+   (4) interface-family coverage, (5) workflow/interaction coverage,
+   (6) regional/platform diversity, (7) remaining UI/UX blind spots.
+   Grow broader and deeper. Do not reset. Do not stop at a count.
+   Do not add a type from a list — prove a gap, then research it.
+
+## v7.3 application (diversity waves, SOURCE-OBSERVED 2026-09-03)
+
+Waves 11–12 applied the rule above: they did not reset the corpus, and they
+did not add more of the same US/EU/MENA leaders. They added Africa, LatAm,
+and East/South/SE Asia products plus missing models (super-app, mobile
+money, exam-prep, search portal, care+pharmacy+lab, national posts,
+cricket terminals, webtoon platforms, regional SaaS suites). Thin fetch-ok
+shells still count as products; they do not authorize invented IA. Family
+conditions live in the industry modules. 20+ remains the floor, not the
+finish line.
+
+## v7.4 application (category expansion, SOURCE-OBSERVED 2026-09-03)
+
+Waves 13–21 researched candidate spaces before any new module existed.
+A category entered REAL-UI only after 20+ fetch-retained products AND a
+distinct jobs/IA/risk split versus existing modules. Insurance, telecom,
+and local-services passed. Legal, energy, events, nonprofit, dating,
+agriculture, and accounting were studied and rejected as categories;
+useful families were stored in the existing modules they actually match.
+Normal users still retrieve stored knowledge; they do not re-fetch 20
+products.
+
+## v7.5 application (interface families, SOURCE-OBSERVED 2026-09-03)
+
+Waves 22–25 researched workspace shapes that cut across industries.
+Four families earned modules after a gap test against existing pages,
+UX, and industry files: work-queue, reference-docs, temporal-workspace,
+spatial-canvas. Dashboard, admin, CRM, CMS, IDE, email, and file-manager
+were studied as candidates and rejected as new families because existing
+knowledge already covered them, or the public evidence was only a
+marketing shell. `iface-*` fetch tags are not industry tags and do not
+enter the industry floor. Normal users retrieve the stored families;
+they do not re-fetch 20 products.
+
+## v7.6 application (course / academy / training, SOURCE-OBSERVED 2026-09-03)
+
+Waves 26–30 studied real course/academy/training products on **web and
+mobile** without creating a course template. Education knowledge already
+existed; the gap was family depth, learning-journey decision logic, and
+mobile vs web as stored WHY/WHEN/WHEN-NOT — not a 28th industry.
+Play listings count as mobile-corpus evidence (`education-mobile`); they
+do not enter the industry homepage floor. Catalog/course-detail fetches
+(`education-surface`) are extra surfaces of the same products, not extra
+floor rows. Normal users retrieve `industries/education.md`; they do not
+re-fetch 20 apps and 20 sites. Future upgrades inspect this corpus and
+add products when they introduce a new learning model, platform behavior,
+region, business model, or accessibility pattern. 20+ remains a floor.
+
+## v7.7 application (asset library, conversation, dual-role, SOURCE-OBSERVED 2026-09-03)
+
+Waves 31–36 audited remaining workspace and role gaps. File/DAM and
+conversation/mail earned interface-family modules after a V7.5 reject
+was retested with 20+ fetch-ok products. Dual-role surfaces earned a UX
+file, not an industry. Comparison stayed a task (16/22, below family
+floor). `iface-*`, `dual-role*`, `compare-job`, and `v77-mobile` tags do
+not enter the industry floor. Public HTML is mostly marketing; Play
+listings are store copy. Normal users retrieve stored families; they do
+not re-fetch this corpus.

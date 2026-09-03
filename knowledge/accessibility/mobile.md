@@ -71,3 +71,7 @@ an allowed exception; switch-access order stays logical
 [ ] Dynamic Type to max tested [ ] VoiceOver pass on key flows
 [ ] TalkBack pass on key flows [ ] announcements deliberate
 [ ] decorative images silent [ ] inputs with labels
+
+Learning apps: expose captions/transcripts for lesson audio/video; do not
+announce every XP tick; camera/mic features need labeled controls and a
+non-camera path (`industries/education.md`).

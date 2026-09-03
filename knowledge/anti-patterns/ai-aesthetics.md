@@ -92,7 +92,9 @@ review: they LOOK clean. They are still template gravity when unearned.
 - Subtle gray-on-gray surfaces with no semantic layering reason
 - "Premium" = extra whitespace + bigger headings, applied uniformly
 - Inter + one blue + one purple accent as an unconsidered default stack
-  (fine when chosen, telling when never questioned)
+  (fine when chosen, telling when never questioned). WHEN NOT: regional
+  suites and locale-first products (Zoho / Lark / Shopify ar-EG class) do
+  not inherit that stack by being SaaS.
 
 Detection question per item: "Did the product model demand this, or did
 the habit?" Execution discipline (foundations/modern-craft.md) is the
