@@ -16,7 +16,7 @@ online; the emotional purchase (car as identity) meets heavy spec data.
 Configurator completions, test-drive bookings, dealer leads, brand film
 engagement, owner-retention (service).
 
-## Information architecture
+## Candidate information-architecture patterns (not a product sitemap)
 - Brand home: cinematic hero (current campaign) → model lineup strip →
   story sections → finder CTA
 - Model hub: gallery (exterior/interior 360°s), specs, trims, configurator
@@ -33,7 +33,7 @@ engagement, owner-retention (service).
 - Porsche OBSERVED: Porsche Next type, model-grid menus, minimal chrome —
   luxury register
 
-## Components that define the genre
+## Candidate components observed in the genre
 - 360°/turntable viewer with hotspots
 - Option swatches (paint chips with real finish names — GT Silver Metallic)
 - Spec comparison tables (dimension/range/performance — legit tables!)
@@ -66,13 +66,14 @@ engagement, owner-retention (service).
 
 ## Arabic/MENA considerations
 - Gulf = flagship auto market: full AR sites with configurators (verify
-  current OEM AR implementations in Deep Mode — corpus blocked region OEMs)
+  current OEM AR implementations with targeted research when needed — corpus
+  blocked region OEMs)
 - Spec tables RTL; numerals Western (units km); fuel/efficiency per GSO
   standards; heat-related options (ventilated seats) marketing emphasis
 - Test-drive/dealer flows via WhatsApp common
 - Finance: lease calc with local banks/BNPL integration display
 
-## Conventions (follow)
+## Conventions to evaluate (adopt only when model-supported)
 Cinematic hero + lineup strip, spec-table honesty, configurator state
 machine discipline, shareable builds, dealer locator always reachable,
 chaptered video, condensed numeric tables.
@@ -89,7 +90,7 @@ Toyota (OBSERVED), Porsche (OBSERVED), BMW (INFERRED — blocked), Tesla
 (INFERRED — blocked), Mercedes/Audi class (INFERRED), Lucid/Rivian EV class
 (INFERRED).
 
-## Decision guidance
+## Contextual decision prompts
 Luxury tier: cinema + precision chrome (0–4px, proprietary type).
 Mainstream tier: family-friendly shelves (16px-class cards) + pragmatic
 tools. Both: configurator excellence, spec honesty, dealer conversion.

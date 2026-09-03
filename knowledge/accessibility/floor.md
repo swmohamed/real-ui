@@ -11,8 +11,11 @@ focus-visible 55%) — match the leaders.
 
 - Landmarks every page: `<header> <nav> <main> <footer>` (+aside);
   ONE `<main>`; skip-link to it as first tab stop
-- Heading hierarchy: ONE h1 (corpus mean 1.0 — real discipline), h2
-  sections, h3 subs; never skip levels for visual size (style instead)
+- Headings communicate document structure and support in-page navigation.
+  Use a clear top-level heading and nested ranks that reflect sections;
+  avoid confusing upward gaps where possible, while recognizing that closing
+  a subsection can legitimately return from a deeper rank. WCAG does not
+  require exactly one `h1`; do not present a corpus tendency as conformance
 - Native elements first: button (not div onClick), a with href (not
   JS-span), label+input pairs, fieldset/legend for groups, table for
   data
@@ -21,33 +24,46 @@ focus-visible 55%) — match the leaders.
 ## Keyboard (the power-user contract)
 
 - Tab order = visual/logical order; no positive tabindex
-- Everything clickable: focusable; visible focus (`:focus-visible` ring
-  2px offset 2px) — outline: none without replacement = violation
+- Everything operable: focusable where the native control/widget pattern
+  requires it, with a clearly visible `:focus-visible` indicator on every
+  surface. A 2px ring may be a useful system token, but WCAG conformance is
+  about visibility and the applicable criterion—not one prescribed style
 - Skip links; Esc closes overlays; focus returns to trigger; modals trap
   focus; arrow-keys in menus/tabs/carousels; Enter/Space activate
 - No keyboard traps (including cookie banners with hidden focuses)
 - Custom widgets follow WAI-ARIA patterns (combobox, disclosure, tabs) —
-  use the APG recipes verbatim
+  start from the applicable APG pattern, then verify its roles, states,
+  keyboard behavior, focus movement, and fit for this context. APG examples
+  are reference implementations, not text to copy blindly
 
 ## Forms
 
 - Label EVERY field (visible, above); placeholder = example only
-- Errors: text + icon near field, aria-describedby, error summary on
-  submit with anchors; aria-live polite for async results
+- Errors: text + icon near field, `aria-describedby`, and an error summary on
+  submit when the flow benefits. Announce asynchronous changes with the least
+  intrusive live-region behavior that makes them perceivable; do not put all
+  changing content in `aria-live`
 - Required marked in label/aria-required; instructions BEFORE fields
   (screen readers read ahead); timeouts warn + extendable
 
 ## Color & contrast
 
-- 4.5:1 body text / 3:1 large text + UI components (WCAG AA floor;
-  AAA 7:1 for long reading)
+- Apply the relevant WCAG contrast criteria: 4.5:1 normal text, 3:1 large
+  text, and 3:1 for the visual information required to identify UI components
+  and states at AA. Enhanced contrast is a contextual target, not an AA rule
 - Never color-only meaning (errors, statuses, links in text)
 - Text over images: scrims + worst-frame verification; no text-in-image
   for content
 
-## Touch & target
+## Pointer and touch targets
 
-- 44×44px minimum (WCAG 2.2), 48–56 primary; spacing ≥8px between targets
+- Web WCAG 2.2 AA (2.5.8): target is at least 24×24 CSS px, or passes an
+  allowed spacing/equivalent/inline/user-agent/essential exception. This is
+  the conformance minimum, not the preferred product target
+- Prefer approximately 44×44 CSS px for frequent touch controls; platform
+  guidance may be stronger (Apple generally recommends a 44×44pt hit region;
+  Android recommends 48×48dp). Visual bounds may be smaller when hit area and
+  separation remain safe
 - Zoom allowed (never maximum-scale=1 — OBSERVED violation on 17/156 corpus
   the anti-checklist)
 
@@ -81,6 +97,9 @@ focus-visible 55%) — match the leaders.
 1. Keyboard-only pass (tab/enter/esc/arrows)
 2. VoiceOver or NVDA pass on key flows
 3. Contrast audit (automated + manual on brand pairs)
-4. 200% zoom check (reflow, no horizontal scroll)
-5. Reduced-motion check
-6. axe/Lighthouse — zero criticals, issues triaged not ignored
+4. Resize text to 200% (WCAG 1.4.4) without lost content/functionality
+5. Reflow at a 320 CSS px viewport equivalent (commonly 1280px at 400%
+   browser zoom): no two-dimensional scrolling except content that genuinely
+   requires it, such as maps or data tables (WCAG 1.4.10)
+6. Reduced-motion check
+7. axe/Lighthouse — zero criticals, issues triaged not ignored

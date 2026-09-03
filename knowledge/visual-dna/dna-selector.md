@@ -1,73 +1,98 @@
-# DNA Selector — Choosing the Design Genome
+# Visual Direction Derivation (independent, not a style selector)
 
-A deterministic path from context to DNA. Run this before any visual
-decision. Output: primary DNA (+optional secondary), then tokens inherit.
+Run after experience evidence, product model, content inventory, brand inputs,
+platform, and accessibility constraints. Output is a product-specific visual
+contract—not a named style family.
 
-## Step 1: Score the context
+## 1. Write the visual job
 
-Rate 1–5 each:
-- **Trust-pressure** (money/health/legal at stake)
-- **Emotion-goal** (feel something > accomplish something)
-- **Density** (content volume per view)
-- **Playfulness-fit** (audience tolerance for fun)
-- **Speed-expectation** (task urgency)
-- **Sophistication-tier** (mass vs premium positioning)
-- **Region-register** (conservative-formal vs expressive-modern)
+Complete these lines using evidence:
 
-## Step 2: Decision heuristics (tested shortcuts)
+- The interface must help **[people]** do/understand **[outcome]** in
+  **[context and consequence]**.
+- It should feel **[2–3 precise attributes]**, proven by **[behaviors and
+  content treatment]**, not decorative adjectives alone.
+- It must preserve or establish **[recognition assets/identity signals]**.
+- It must never imply **[wrong trust, price, speed, playfulness, authority, or
+  product category]**.
 
-- Trust ≥4 & Density ≥4 → **Dense Data Instrument** or **Corporate Trust**
-- Trust ≥4 & Speed ≥4 → **Institutional Public**
-- Emotion ≥4 & Sophistication ≥4 → **Premium Restraint** or **Cinematic**
-- Emotion ≥4 & Playfulness ≥4 → **Playful Consumer** or **Gaming Energy**
-- Emotion ≤2 & Density ≤2 & Sophistication ≥3 → **Swiss Minimal**
-- Region-register conservative → shift toward Corporate/Institutional
-- Content = reading → **Editorial Serif** regardless of other scores
-- Technical audience → **Futuristic Terminal** may claim secondary slot
+If brand evidence is missing, label the identity direction ASSUMED and keep it
+reversible. An industry label or competitor palette is not brand evidence.
 
-## Step 3: Industry default table (when in doubt, start here)
+## 2. Set independent decision axes
 
-| Industry | Default DNA | Alt |
-|---|---|---|
-| News quality / mass | Editorial Serif | Corporate (mass-sans press) |
-| SaaS/dev | Swiss Minimal | + Terminal secondary |
-| Fintech consumer | Soft Humanist-warm | Corporate Trust |
-| Banking institutional | Corporate Trust | Instrument (ops) |
-| Crypto | Terminal | Brutalist |
-| Gov/health | Institutional Public | Warm Humanist |
-| Mass ecommerce | Commerce Utility | Playful (kids) |
-| Luxury fashion | Premium Restraint | Editorial |
-| Browser gaming | Playful Consumer | Gaming Energy |
-| Core gaming | Gaming Energy | Terminal (esports) |
-| Travel booking | Commerce Utility (search-first) | Cinematic (destination) |
-| Tourism boards | Cinematic | Editorial |
-| Sports media | Gaming Energy-lite / Instrument | Corporate |
-| Museums/culture | Editorial / Swiss | Cinematic (exhibitions) |
-| Automotive | Cinematic | Premium Restraint |
-| Portfolios | Swiss / Brutalist | Editorial |
-| B2B enterprise | Corporate Trust | Swiss (tech-adjacent) |
-| Restaurants | Cinematic-lite (appetite) | Playful (fast casual) |
+Choose a position and reason for each applicable axis. Do not collapse these
+into a preset:
 
-## Step 4: Arabic/MENA DNA adjustments
+| Axis | Tensions to resolve |
+|---|---|
+| Information density | glanceable ↔ comparative/operational; stable ↔ live |
+| Hierarchy | singular focal point ↔ coordinated multi-signal workspace |
+| Spatial organization | linear narrative ↔ grid ↔ pane/canvas/temporal/spatial model |
+| Rhythm | continuous reading ↔ modular scanning ↔ repeated operational cadence |
+| Typographic voice | neutral ↔ humanist ↔ editorial ↔ technical; script coverage and metrics first |
+| Color behavior | restrained identity ↔ sectional/systematic color; semantic colors remain unambiguous |
+| Geometry | precise/compact ↔ soft/approachable; shape follows control, content, and brand |
+| Surface and depth | flat separation ↔ layered workspaces ↔ media immersion; elevation must explain hierarchy |
+| Imagery/data role | absent ↔ evidence/product content ↔ editorial narrative; never stock filler |
+| Motion | near-static ↔ productive state feedback ↔ expressive brand moment; consequence and reduced motion constrain it |
+| Content register | direct/institutional ↔ conversational ↔ specialist; localization is authored, not translated decoration |
+| Platform expression | web/native conventions, input, windowing, material, and accessibility settings |
 
-- Default Arabic typography: sans UI (Tajawal/Almarai class); Editorial
-  → Naskh body + sans heads; Futuristic → Kufi display acceptable;
-  Playful → rounded Arabic families (Baloo-class)
-- Gulf premium leans Cinematic+Premium (VisitSaudi-class OBSERVED);
-  Egypt mass leans Commerce Utility density; institutional Gulf adopts
-  Dubai-font familiarity
-- Family/community products: warmer photography register than Western
-  equivalents; honorifics in copy design (longer buttons)
+The combination must be coherent, but independent axes may intentionally
+contrast—for example, high data density with a warm human voice.
 
-## Step 5: Express through tokens (never vibes)
+## 3. Derive composition before styling
 
-DNA manifests as: radius scale choice, type pairing, accent count,
-shadow tiers, motion budget, density dial, imagery treatment. Write the
-token sheet BEFORE screens (design-systems/tokens.md template).
+Translate screen contracts into key lines, regions, measure, reading/scan
+order, persistent controls, and responsive transformations. Remove color,
+typeface, radius, and imagery. If the composition still looks like a generic
+landing page, sidebar dashboard, or mobile card stack, return to the product
+model. Styling cannot rescue borrowed information architecture.
 
-## Step 6: Run the differentiation check
+## 4. Use references without becoming them
 
-"Could this output be any competitor in the category?" If yes → push
-one dimension further (typography drama, density contrast, motion
-moment, or register) — never push via banned AI patterns
-(anti-patterns/ai-aesthetics.md).
+Study multiple products for the decision at hand, preferably across product
+types or industries. Record:
+
+`reference evidence → principle → why it applies here → adaptation → deliberate difference`
+
+No single product, design system, named style, or industry decides the
+direction. Reject at least one superficially plausible reference and say why.
+`dna-catalog.md` is optional descriptive vocabulary after the direction exists;
+it is never a routing table or token recipe.
+
+## 5. Express the contract through a system
+
+Define typography roles, content measure, grid/key lines, density modes,
+color roles, geometry, surface hierarchy, imagery/data treatment, motion
+budget, and adaptive/platform behavior. Numeric values are candidates to test
+against real content, target strings, input, zoom, and named viewports—not
+proof of quality.
+
+## 6. Differentiation and falsification
+
+Ask:
+
+- Which decision could belong only to this product, and what evidence caused it?
+- Could another product in the same industry need the opposite axis position?
+- Could the same product type in another industry retain the structure but
+  require a different trust, content, or platform expression?
+- Does any visual drama obscure source, state, price, consequence, or action?
+- Does the design still work in monochrome, reduced motion, long localized
+  content, narrow/wide windows, and high/forced contrast where applicable?
+
+If the answer reveals category cosplay or decorative differentiation, rederive.
+
+## Required output
+
+1. visual job and identity evidence;
+2. applicable axis decisions with reasons;
+3. style-blind composition rationale;
+4. multi-reference principle/adaptation/difference trace;
+5. rejected direction and reason;
+6. token/system implications and stress tests.
+
+Connects: foundations/{experience-evidence,product-modeling,layout,visual-hierarchy}.md ·
+redesign/originality.md · anti-patterns/ai-aesthetics.md ·
+design-systems/tokens.md.

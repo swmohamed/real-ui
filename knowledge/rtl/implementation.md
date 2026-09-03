@@ -35,7 +35,7 @@ arrows unmirrored) — encode the checklist below.
 | Shadows | symmetric or flip offset-side |
 | Gradients/scrim | mostly direction-neutral; angled brand gradients flip |
 | Range sliders | min at start (right) — native with dir |
-| Charts | axes stay LTR by convention; labels RTL (pick + document) |
+| Charts | direction follows data meaning, domain convention, scale, and user expectation; labels and mixed values stay bidi-safe—pick and document |
 | Video controls | unchanged (timeline semantics) |
 | Maps | unchanged (geography) |
 
@@ -66,7 +66,7 @@ arrows unmirrored) — encode the checklist below.
 - [ ] Mixed-direction fields (phone, card, email) dir="ltr"
 - [ ] Line-height/type tested with Arabic strings (diacritics don't clip)
 - [ ] Sticky/absolute elements positioned with logical insets
-- [ ] Toasts/sheets enter from start edge
+- [ ] Toast/sheet placement and motion follow platform, reach, obstruction, and semantic direction—not automatic mirroring
 - [ ] Filter/slider/math axes sensible; charts policy documented
 - [ ] Font loaded includes Arabic subset with real bold
 - [ ] Error/validation messages localize correctly (bidi-safe)

@@ -1,8 +1,9 @@
 # research/ — Audit Trail
 
 This directory contains the evidence base for the real-ui skill. The
-knowledge in `knowledge/` is distilled from this research; nothing in the
-knowledge base claims analysis that isn't backed here.
+knowledge in `knowledge/` is distilled from this research plus cited official
+platform/standards sources. Source extraction is not render/runtime evidence;
+see `knowledge/research/method.md` for the evidence-mode contract.
 
 ## Contents
 
@@ -11,13 +12,18 @@ knowledge base claims analysis that isn't backed here.
 - `tools/retry_curl.py` — curl-based retry for bot-blocked hosts
 - `tools/aggregate.py` — cross-corpus aggregation (the source of
   observed-findings.md §1–11)
-- `tools/industry_signals.py` — per-industry DNA signal profiles +
+- `tools/industry_signals.py` — per-industry source-signal profiles +
   flagship deep dives
 - `raw/*.json` — site batches attempted (17 batches, 200+ entries with
   URL variants)
 - `reports/*.json` — per-site extraction reports (the raw evidence)
 - `reports/aggregate-summary.txt` — corpus-wide statistics
 - `reports/industry-signals.txt` — per-industry aggregates + deep dives
+- `reports/v6-evidence-driven-expansion.md` — V6 AI/collaboration/operations
+  evidence, limits, integration, and validation
+- `reports/v7-complete-design-intelligence-expansion.md` — V7 full-discipline
+  gap matrix, authoritative sources, 18-product comparison, repairs, rejections,
+  and validation
 
 ## Corpus summary (2025 run)
 
@@ -27,7 +33,9 @@ knowledge base claims analysis that isn't backed here.
 - Blocked/inaccessible hosts recorded honestly (see
   knowledge/research/saturation-and-confidence.md for the list)
 
-## Reproducing / extending (Deep Mode)
+## Reproducing / extending the evidence base (Deep / Audit mode)
+
+Run these from the `research/` directory:
 
 ```
 python tools/fetch_analyze.py raw/<batch>.json reports/<batch>.json   # urllib path
@@ -35,5 +43,6 @@ python tools/retry_curl.py raw/<batch>.json reports/<batch>.json      # curl pat
 python tools/aggregate.py                                             # refresh corpus stats
 ```
 
-Label new findings OBSERVED/INFERRED; respect robots/blocks; never
+Label new findings SOURCE-OBSERVED/RUNTIME-OBSERVED/RENDER-OBSERVED/
+DOC-OBSERVED/INFERRED; respect robots/blocks; never
 re-publish site content — extract patterns only.

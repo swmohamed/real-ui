@@ -1,46 +1,63 @@
-# Cross-Platform Products (one product, native everywhere)
+# Cross-Platform Products (shared meaning, native expression)
 
-Rule: **CONSISTENT BRAND + NATIVE EXPERIENCE** — never pixel-identical
-clones, never one generic design everywhere.
+Aim for recognizable product continuity and platform-appropriate behavior,
+not pixel identity or a fixed “web/iOS/Android” mapping table.
 
-## Shared product language (must be identical)
+## Share the product contract
 
-Color roles · type ramp (families may vary slightly per platform for
-text rendering, hierarchy must match) · spacing scale · radius family ·
-elevation philosophy · iconography style · motion personality ·
-component SEMANTICS (a "card" means the same thing everywhere) · brand
-voice/microcopy · information architecture (same tasks, same order).
+Keep entities, terminology, capability, permission, authority, provenance,
+state meanings, outcome, and brand roles coherent. Task coverage should not
+silently disappear, but priority, grouping, navigation, density, and command
+placement may differ by device context and platform convention.
 
-## Platform-specific expression (must be native)
+Token names and semantic roles can be shared. Literal typography metrics,
+control dimensions, materials, shadows, motion, window chrome, and component
+APIs may need platform mappings. “Card,” “sheet,” or “back” must not be assumed
+to mean the same implementation everywhere.
 
-| Concern | Web | iOS | Android |
-|---|---|---|---|
-| Primary nav | header nav / sidebar | tab bar (2–5) | bottom nav / drawer / rail |
-| Secondary screen | route/page | sheet or push | sheet or destination |
-| Back | browser back | nav-back chevron+swipe | system back (gesture/button) |
-| Row actions | visible controls | swipe actions | long-press/checkbox + snackbar undo |
-| Primary action | button in flow | nav-bar trailing button / FAB-no | FAB or bar button |
-| Feedback | toasts/alerts | alert/sheet | snackbar/banners |
-| Hover | designed (web.md) | none (pointer on iPadOS exists — progressive) | none (desktop-Android: progressive) |
-| Keyboard | shortcuts expected | hardware rare | hardware rare |
-| Density | high ceiling | low-medium | low-medium (+large screens higher) |
+## Derive each platform expression
 
-## Decision procedure
+For every major task/component record:
 
-1. Define the product's semantic components + tokens ONCE
-   (design-systems/cross-platform.md).
-2. Map each component to native idioms per platform (table above +
-   platforms/*).
-3. Where idioms conflict with brand irreconcilably → brand wins for
-   look, platform wins for behavior (users can't unlearn system back,
-   but they can accept a brand-colored FAB).
-4. Test the "traveler test": a user switching phone OS should feel
-   "same product, local accent" — not "different product" nor
-   "clearly an Android app on my iPhone."
+`shared meaning → web expression → iOS/iPadOS expression → Android expression → Windows/macOS expression → reason`
 
-## Failure modes to catch in QA (tests/v2-quality-gate.md)
+Evaluate:
 
-- Web page squeezed into phone · Android UI on iOS (back chevron
-  misuse, Material shadows on iOS) · iOS UI on Android (center modals
-  everywhere, no back support) · desktop squeezed into mobile · one
-  generic design everywhere · brand drift (two products, same team).
+- navigation hierarchy, browser/system back, deep links, tabs/windows/scenes;
+- command frequency, selection, menus/toolbars/context, keyboard/hover/touch/pen;
+- platform control behavior, safe/system areas, permissions, share/file flows;
+- compact/expanded/resizable window adaptation and multi-window continuity;
+- accessibility settings, screen readers, text scaling, contrast, motion, input;
+- offline/sync/background/notification behavior and state restoration.
+
+Use the applicable official platform file; platform components are candidates,
+not mandatory branding. A bottom bar, rail, FAB, sheet, sidebar, or menu exists
+only when hierarchy and native behavior support it.
+
+## Continuity versus divergence
+
+Continuity comes from product vocabulary, capabilities, data/status semantics,
+content register, identity signals, and recovery—not identical coordinates.
+Divergence is healthy when it follows native windowing, command, input, back,
+permission, or accessibility behavior. Record any capability difference as
+intentional product scope, not an unnoticed porting loss.
+
+## Traveler test
+
+A person switching platforms should recognize the product, find equivalent
+outcomes, understand shared state, and trust status/source meanings. They
+should not need to unlearn their operating system. Test real task paths rather
+than comparing screenshots alone.
+
+## Failure modes
+
+- web squeezed into phone or desktop web relabeled as a native app;
+- Android controls/back on Apple or Apple chrome on Android without a reason;
+- identical navigation at incompatible window/input classes;
+- shortcuts, hover, gestures, or context menus as the only capability path;
+- tokens shared literally until text, targets, or native controls break;
+- brand drift so large that status/action semantics feel like another product;
+- scope loss hidden behind “platform simplification.”
+
+Connects: platforms/{README,desktop-native}.md ·
+design-systems/cross-platform.md · devices/* · accessibility/mobile.md.

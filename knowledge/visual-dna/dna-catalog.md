@@ -1,117 +1,59 @@
-# Visual DNA Catalog — 14 Style Genomes
+# Visual Lineage Vocabulary (optional reference, never a preset)
 
-Each DNA = a coherent design personality derived from real-world reference
-classes. Use `dna-selector.md` to choose; never blend more than two.
+This file names recurring visual lineages so teams can discuss references
+precisely. It does not map industries to styles, select a direction, authorize
+features, prescribe tokens, or imply that named products share one system.
+Use it only after `dna-selector.md` has produced independent axis decisions.
 
-Format: Signature · Typography · Color · Geometry/radius · Density &
-spacing · Imagery · Motion · UX posture · Industries · Avoid when ·
-Reference class.
+## How to use it safely
 
-## 1. Editorial Serif
-Serif display + body, paper canvas, rules/hairlines, near-zero radius,
-typographic hierarchy as the whole design. Calm authority.
-- Motion: minimal (fades). UX: reading-first, measured columns.
-- Industries: news, publishing, law, luxury heritage, academia.
-- Avoid: consumer utilities, gaming, kids.
-- Refs: NYT, Guardian, NatGeo, quality regional press.
+- Name the exact property being studied: typographic contrast, rule-based
+  separation, command density, image scale, motion timing—not “make it X.”
+- Compare at least two materially different products before extracting a
+  principle. Cross-industry evidence helps separate function from fashion.
+- Verify that the property fits this product’s content, identity, platform,
+  audience, consequence, and locale.
+- Translate the property into a decision axis and make a deliberate
+  difference. Never copy section order, component shell, palette, typeface,
+  radius set, illustration language, or motion choreography.
+- Record lineage conflicts. A reference can be useful for one property and
+  wrong for the overall register.
 
-## 2. Swiss Minimal
-Grid-obsessed, grotesk type, generous whitespace, one accent max,
-photography structured by grid. Objectivity as aesthetics.
-- Refs: Vercel/Linear class, museum modern (MoMA), design studios.
-- Industries: SaaS, portfolios, architecture, high-end B2B.
-- Avoid: mass entertainment, dense commerce.
+## Descriptive lineages
 
-## 3. Premium Restraint (Luxury)
-Near-monochrome + metallic accent, cinematic photography, hairline
-buttons, serif-or-spaced display. Scarcity as layout.
-- Refs: Rolex-class, Ounass-class, Porsche.
-- Industries: luxury retail, jewelry, hotels, automotive premium.
-- Avoid: budget commerce, utility products.
+| Lineage | Observable properties to investigate | Common failure when imitated |
+|---|---|---|
+| Editorial | typographic hierarchy, measure, rules, sequencing, caption/source treatment | importing newspaper structure where the task is transactional |
+| Grid rationalist | explicit key lines, restrained palette, aligned rhythm, modular scale | empty “minimalism” with weak content priority |
+| Premium restraint | selective imagery, controlled scarcity, material detail, quiet motion | hiding price, action, accessibility, or utility to appear exclusive |
+| Institutional service | plain language, high-salience focus and links, explicit eligibility/status, low decorative load | treating clarity as a visual costume while the service journey stays fragmented |
+| Operational instrument | comparison, persistent status, compact commands, tabular/temporal/spatial representations | making every professional product dense or dark |
+| Commerce utility | strong retrieval, availability/price evidence, option comparison, transaction continuity | copying promo density or marketplace chrome into a different business model |
+| Humanist service | legible type, calm color, real-world language and support cues | equating warmth with oversized rounded cards |
+| Playful character | authored illustration/character, responsive motion, expressive sound/haptics, reward cadence | adding mascots, pills, and candy color without audience or brand permission |
+| Cinematic narrative | media-led chapters, scrims, pacing, spatial transitions | obscuring task completion or shipping expensive motion as identity |
+| Technical/terminal | structured data, monospaced accents, command feedback, precise state | green-on-black cosplay unrelated to actual technical work |
+| Exposed/brutalist | visible structure, forceful type, borders, deliberate tension | accidental harshness, poor readability, or anti-usability as personality |
+| Soft atmospheric | muted surfaces, subtle depth, quiet transitions | generic generated calm, low contrast, and control ambiguity |
 
-## 4. Corporate Trust
-Institutional blues, dense utility nav, tables/rules, 0–6px radius,
-photography of real operations. Reliability over delight.
-- Refs: banks (HSBC-class), Deloitte, telcos, airlines legacy.
-- Industries: finance, insurance, enterprise, logistics.
-- Avoid: creative portfolios, kids' products.
+These lineages are neither mutually exclusive nor “legal combinations.” A
+product may share properties with several or none. Coherence comes from the
+visual job and axis reasoning, not a blend ratio.
 
-## 5. Playful Consumer
-Rounded geometry (16px+), saturated candy accents, chunky weights,
-illustration/mascots, pills everywhere. Approachability as strategy.
-- Refs: Duolingo, Poki, kids' portals, Headspace class.
-- Industries: casual gaming, kids' education, consumer health apps.
-- Avoid: banking dashboards, government, luxury.
+## Rejection signals
 
-## 6. Gaming Energy
-Dark-or-candy canvas, saturated accents, poster-scaled art, Torus/Nunito
-chunk, 12–16px tiles, hover-play. Arousal + zero friction.
-- Refs: Poki, CrazyGames, Steam, esports.
-- Industries: games, esports, energy drinks, streaming-adjacent.
-- Avoid: health, law, government.
+Reject a reference influence when it:
 
-## 7. Futuristic Terminal
-Dark canvas, mono accents, data-dense grids, scanline/grid textures,
-green/cyan on near-black. Engineering credibility.
-- Refs: dev tools, crypto terminals (Coinbase dark), observability
-  products, GitHub dark.
-- Industries: dev platforms, crypto, cybersecurity, AI infra.
-- Avoid: family retail, healthcare (trust register mismatch).
+- exists mainly because the competitor or industry uses it;
+- introduces a feature, content type, business model, or trust claim;
+- breaks the target script, accessibility setting, input, performance budget,
+  or platform convention;
+- survives only as palette/radius/gradient resemblance;
+- makes the output recognizable as the reference rather than this product.
 
-## 8. Institutional Public (GDS)
-Plain language, task-first, blue links, yellow focus, zero chrome,
-system fonts allowed. Civic dignity through clarity.
-- Refs: gov.uk, NHS, USAGov, u.ae.
-- Industries: government, public services, nonprofits, healthcare.
-- Avoid: entertainment, fashion.
+## Evidence note
 
-## 9. Commerce Utility
-White canvas, search-masthead, dense grids, promo system (yellow/red
-price tags), 4–8px radius. Throughput machines.
-- Refs: Amazon, Jumia, IKEA, Argos class.
-- Industries: mass retail, marketplaces, grocery.
-- Avoid: luxury, portfolios.
-
-## 10. Warm Humanist
-Humanist sans (Frutiger-class), soft blues/greens, real people
-photography, accessible sizing. Care as design.
-- Refs: NHS, Mayo-class health, nonprofit donation flows, edtech care.
-- Industries: healthcare, education, public-good, HR platforms.
-- Avoid: esports, crypto, luxury.
-
-## 11. Cinematic Immersive
-Full-bleed media chapters, scroll-storytelling, scrims, letterboxed
-captions, motion choreography. Emotion journeys.
-- Refs: automotive campaigns, tourism boards (VisitSaudi-class), game
-  marketing, award sites.
-- Industries: travel destinations, automotive, entertainment launches.
-- Avoid: task utilities (banking ops, gov services).
-
-## 12. Dense Data Instrument
-Tables/charts-first, tabular numerals, neutral chrome, 32–48px rows,
-keyboard-first. Instruments not brochures.
-- Refs: Bloomberg-class terminals, Kooora scores, dashboards, sports
-  stats pages.
-- Industries: fintech tools, analytics, sports data, logistics ops.
-- Avoid: consumer marketing pages.
-
-## 13. Brutalist System
-Exposed grids, mono+grotesk mix, harsh contrast, borders over shadows,
-deliberate awkwardness. Anti-polish statement.
-- Refs: IBM Carbon lineage, crypto-native brands, experimental studios.
-- Industries: dev infra, avant-garde brands, design conferences.
-- Avoid: conservative finance, government, mass elderly audiences.
-
-## 14. Soft Neumorphic-lite (careful)
-Soft shadows, muted pastels, large radius, airy spacing. Contemporary
-calm. USE SPARINGLY (closest to AI-slop when generic).
-- Refs: modern fintech onboarding (Monzo-class warmth), wellness apps.
-- Industries: consumer fintech, wellness, SaaS consumer tiers.
-- Avoid: data density, dark data products, and NEVER default to it.
-
-## Combination legality
-- Editorial × Corporate (institutional press) ✓
-- Swiss × Terminal (dev tool) ✓
-- Playful × Commerce (kids' retail) ✓
-- Luxury × Gaming ✗ · GDS × Cinematic ✗ (register war)
-- Max two parents; one dominant (70/30), expressed via tokens not vibes.
+Product names may appear in project research reports as attributed evidence.
+This vocabulary intentionally avoids making a permanent competitor list the
+skill’s runtime authority; current products change, and their visible surface
+does not prove internal behavior.

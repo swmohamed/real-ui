@@ -1,9 +1,10 @@
 # Platform DNA: SwiftUI (Apple platforms)
 
-Source labels: `APPLE OFFICIAL` (recovered 2026-08 via Apple's DocC
-JSON docs API + WWDC transcripts — see research/reports/v2.1-
-research-log.md Apple section) · `DESIGN PRINCIPLE` (stable conventions
-without an official page). Never conflate the two.
+Source labels: `APPLE OFFICIAL` (Apple DocC, WWDC transcripts, and current HIG
+pages checked 2026-08; see research/reports/v2.1-research-log.md for the older
+recovery pass and the latest independent audit log for current URLs) ·
+`DESIGN PRINCIPLE` (stable conventions without an official page). Never
+conflate the two.
 
 ## Apple DNA in one paragraph
 

@@ -19,7 +19,7 @@ is managed through design: calm, precise, evidenced.
 Account/card opens, deposits (fintech), policy quotes (insurance), AUM
 (investment), cross-sell (cards → loans → insurance).
 
-## Information architecture
+## Candidate information-architecture patterns (not a product sitemap)
 - Public: Home (value prop + trust) → Products (accounts/cards/loans) →
   Rates/Fees → Security → About/Regulation → Help/FAQ
 - Insurance adds: quote wizard (multi-step form) + claims flow
@@ -36,7 +36,7 @@ Account/card opens, deposits (fintech), policy quotes (insurance), AUM
   home!), promo sliders, rates widgets; Al Rajhi ships DaisyUI-class tokens
   (`--rounded-btn`, `--rounded-box` OBSERVED) + heavy Tailwind
 
-## Components that define the genre
+## Candidate components observed in the genre
 - Rate/fee tables and calculators (savings, mortgage, FX) — the honest-object
 - Card visualizers (card art rotating on hover)
 - Trust strips: regulator logos, deposit-protection scheme, security badges
@@ -84,10 +84,11 @@ Account/card opens, deposits (fintech), policy quotes (insurance), AUM
   grids by category (كهرباء، مياه، إنترنت) — utility-bill IA is MENA-specific
 - STCPay/Neo-class (INFERRED): app-store-first funnels
 
-## Conventions (follow)
+## Conventions to evaluate (adopt only when model-supported)
 Persistent login CTA, rates/fees visible not "contact us", calculator
 objects, regulator/protection trust strip, wizard forms with resume,
-dashboard previews on marketing pages, tabular numerals everywhere.
+product previews on marketing pages only when real/supplied; use tabular
+numerals where aligned numeric comparison benefits from them.
 
 ## Overused/anti-patterns
 - Rocket-ship growth gradients + casual tone on a bank (trust mismatch)
@@ -101,7 +102,7 @@ Monzo, Wise, Revolut, PayPal (ar-EG geo-localized OBSERVED), Coinbase,
 Binance, Vanguard, HSBC, Emirates NBD (AR), Al Rajhi (AR), STC Pay (INFERRED),
 Fawry (AR), AXA, Prudential, Mubasher (AR finance media hybrid).
 
-## Decision guidance
+## Contextual decision prompts
 Pick the register: institutional (legacy bank) vs fintech-warm (Monzo/Wise)
 vs terminal-dark (crypto). All three share: tokenized numerals, honest fee
 surfaces, calm interaction, error-kindness. MENA adds regulator/Islamic

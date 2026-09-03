@@ -9,32 +9,38 @@ below mixes OBSERVED (where marked) + corpus patterns + stable
 conventions. Complements restaurants-food.md (food delivery) and
 ecommerce-marketplace.md (shipping steps of checkout).
 
-## DNA rules
+Apply `industries/README.md`. Distinguish public tracking, consumer shipping,
+merchant operations, courier tooling, and a marketing site. Tracking, maps,
+notifications, proof capture, addresses, COD, quoting, pickup, and driver
+location are separate capabilities that require scope evidence.
 
-1. **Tracking number is the hero**: AWB/waybill search = homepage's
+## Conditional domain patterns and questions
+
+1. **On a public tracking surface**, AWB/waybill search may be the
    primary function (like jobs' keyword search) — big, single-field,
    paste-friendly; sample-number hint; recent-track memory.
-2. **Timeline = the core component**: vertical milestone timeline
+2. **When milestone event data exists**, a timeline is a strong candidate
    (Booked → Picked up → In transit hub(s) → Out for delivery →
    Delivered) with timestamps + location names; current step animated/
    highlighted; future steps ghosted but visible (progress honesty —
    ux/states.md).
-3. Map view = second citizen (driver pin, ETA), never replaces the
+3. A map may supplement—but should not replace—an accessible textual status
+   history when live location is in scope; it is not required
    timeline (timeline works offline/poor network — mobile-states.md).
 4. Status vocabulary human-first: "Arrived at Dubai hub" not
    "DEP-SCN-045 COMPLETED"; exception states (customs hold, address
    issue) with ACTION (what do I do now) — exceptions are the real UX
    test of a logistics product.
-5. Notifications cadence: milestone events (not every scan); quiet
+5. If notifications exist, cadence may follow milestone events (not every scan); quiet
    hours; delivery-day granularity (window picker where supported).
-6. Proof of delivery: signature/photo/time-stamp receipt — success
+6. If proof of delivery exists: signature/photo/time-stamp receipt — success
    state = shareable artifact (ux/trust-conversion.md).
-7. Address UX (MENA-critical): pin-drop + landmark text + what3words-
+7. If address capture is in scope, MENA contexts may need pin-drop + landmark text + what3words-
    style helpers; "villa/apartment/office" selectors; saved addresses
    with labels; Arabic address entry (number-street patterns differ
    from Western) `[DESIGN PRINCIPLE - MENA]`.
 
-## Two-sided reality
+## Possible multi-surface model (only when supplied)
 
 Consumer tracking (above) + business shipping (quote → pickup booking
 → bulk print labels → invoices) — b2b-enterprise density for the shipper
@@ -52,12 +58,11 @@ third surface: route list, proof capture (camera states), offline-first
 
 ## MENA specifics
 
-COD (cash on delivery) as first-class payment everywhere (return-flow
-UX matters — COD refusal rates shape flows); bilingual AR/EN tracking
-pages (public URLs — share across languages); customs/RC (return
-certificate) states for cross-border GCC; WhatsApp/SMS-first
-notification habits over email; Ramadan/Eid peak-season load patterns
-(quick-edit + SLA honesty under stress).
+When COD is supported, its return/refusal flow needs explicit states. Public
+bilingual tracking URLs can preserve locale when shared. Customs/return
+certificate states, WhatsApp/SMS channels, and Ramadan/Eid peak handling are
+conditional on route, market, product operations, and supplied evidence—not
+regional defaults to invent.
 
 ## Don't
 

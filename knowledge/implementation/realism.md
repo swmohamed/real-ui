@@ -40,6 +40,13 @@ empty (first-action affordance) · error (retry + input preserved) ·
 partial (gap honesty) · success (data) · offline variant where mobile
 (mobile-states.md matrix — fill the cells BEFORE polish).
 
+For durable work, also model queued · running · waiting for input · canceling ·
+partial success · failed · canceled · superseded, with real operation identity
+and implemented recovery (`ux/operations-recovery.md`). For shared artifacts,
+model syncing · stale · conflict · permission change · offline edits · history
+(`ux/collaboration-concurrency.md`). For AI-assisted changes, keep source/data
+scope and suggestion/draft/committed state explicit (`ux/ai-automation.md`).
+
 ## Performance-aware design budget (performance-aware-design.md)
 
 - Effects ledger: every blur/shadow/animation pays frames — prefer
@@ -67,6 +74,7 @@ ledger rows for the chosen stack) → QA checklist. If any row is
 
 ## QA
 
-[ ] every dynamic region has 4–6 states [ ] extreme-content tests
+[ ] every dynamic region has applicable states (not only happy path)
+[ ] durable/shared/AI state contracts applied where present [ ] extreme-content tests
 [ ] window-class boundaries [ ] per-stack ledger acknowledged
 [ ] effects budgeted [ ] a11y semantics named [ ] handoff rows filled

@@ -2,11 +2,17 @@
 
 ## The navigation decision tree
 
-1. How many top-level destinations? **≤5** = tabs/pills; **6–9** = bar +
-   More; **10+** = mega-menu or rail; **apps with sections** = left rail
-2. Is content hierarchical trees (news, gov, retail) or flat tools (SaaS)?
-   Trees → dropdowns/mega-menus; tools → persistent rails
-3. Mobile-first? Bottom tabs (≤5) + hamburger for the long tail
+1. Identify destinations from entities and top tasks; do not invent or merge
+   them to fit a preferred component.
+2. Evaluate task frequency, hierarchy depth, scope switching, label length,
+   available width, platform convention, input method, and role/permission.
+   Destination count is a constraint, not a component selector.
+3. Choose among persistent bars/rails, tabs, drawers, menus, breadcrumbs,
+   search, and in-context links by the jobs they serve. Test the chosen set
+   with real labels, restricted roles, localization, text scaling, and window
+   classes.
+4. On adaptive products, preserve destination identity and user orientation
+   when the container changes; a phone pattern is not a desktop rule shrunk.
 
 ## Header patterns (real-world canon)
 
@@ -16,9 +22,10 @@
   center when search-dominant (marketplaces)
 - **Sticky behavior**: full sticky (SaaS 56% observed), sticky-on-scroll-up
   (content sites), transparent-over-hero → solid on scroll (entertainment)
-- **Mega-menu discipline**: max 3 columns of grouped links + one featured
-  promo with image; 20+ items per column = fail; open on click (not hover)
-  with hover-intent bridging; full-width overlay with Esc/overlay close
+- **Mega-menu discipline**: group by user-recognizable concepts, keep scanning
+  load bounded, and include promotional material only when it does not obscure
+  navigation. Opening and closing must work for pointer, keyboard, and touch;
+  support Escape, focus return, and hover-intent where hover is additive.
 - **Announcement bar** above header (promo/maintenance): dismissible,
   max-height one line, never stacks 3 banners (the enterprise-site disease)
 
@@ -26,8 +33,9 @@
 
 - Hamburger from left/start (drawer with sections + accordion sub-trees)
   OR bottom tabs — not both hiding the same links
-- Bottom tab bar: 4–5 items, icon+label, active state clear, safe-area
-  inset; the thumb zone owns it
+- Bottom tab bar: use for a small, stable set of frequent peer destinations
+  that fit with localized labels; icon+label, clear active state, safe-area
+  inset, and platform-appropriate touch targets
 - Section switchers as horizontal scroll chips (news sections, categories)
 - "Back" must work: history-aware UIs, ←→ arrows in RTL
 
@@ -50,7 +58,9 @@
 ## Wayfinding quality bar
 
 - Current location always visible (active nav state, breadcrumbs, page h1)
-- Maximum 3 clicks to any primary task (gov/retail standard)
+- Primary tasks have short, predictable, and testable paths; evaluate task
+  completion, disorientation, and recovery rather than enforcing a universal
+  click count
 - URLs readable by humans (/women/dresses/red, /ar/قسم/… transliterated
   or translated — pick translated for SEO)
 
@@ -70,3 +80,5 @@
 - Nav that changes position between pages (cognitive reorientation cost)
 - 3 stacked promo bars + cookie banner + chat bubble = death by chrome
   (common enterprise MENA portal failure — OBSERVED density on several)
+- Navigation selected from destination count alone, without real labels,
+  hierarchy, role, input, localization, or window-class testing

@@ -19,7 +19,7 @@ DAU/session loops, ad inventory (consumer social), subscriptions (creator
 economy — Patreon OBSERVED), marketplace fees (jobs/directories), moderation
 costs (community health).
 
-## Information architecture
+## Candidate information-architecture patterns (not a product sitemap)
 - Feed-first home + left rail (nav) + right rail (trending/suggested) — the
   Reddit/Discord-era three-column (collapses to tabs on mobile)
 - Community/topic pages with rules panel, pinned posts, join states
@@ -36,7 +36,7 @@ costs (community health).
 - Discord OBSERVED: server rail + channel rail + chat — triple-rail pattern
   (densest nav in mainstream web)
 
-## Components that define the genre
+## Candidate components observed in the genre
 - Feed cards: author (avatar+name+meta), body, action bar (vote/comment/
   share/save), media states (all formats)
 - Threaded comments with depth rails + collapse affordances
@@ -82,10 +82,11 @@ costs (community health).
 - Jobs (regional): Wuzzuf/Bayt class (INFERRED) — CV-building funnels,
   WhatsApp apply paths, salary-bands normalization per market
 
-## Conventions (follow)
+## Conventions to evaluate (adopt only when model-supported)
 Three-rail desktop/tabs mobile, vote+comment action bars, threaded collapse,
 avatars+roles visible, trending rails, composer low-friction, moderation
-states explicit, alerts everywhere.
+states explicit; alerts appear at the point of action only when moderation
+alerts are an in-scope capability.
 
 ## Overused/anti-patterns
 - Chronological-only feeds without personalization controls (and vice versa:
@@ -102,7 +103,7 @@ Reddit (OBSERVED), Discord (OBSERVED), Pinterest (OBSERVED), LinkedIn
 (OBSERVED), Eventbrite (events-directory hybrid OBSERVED), Quora (INFERRED —
 blocked).
 
-## Decision guidance
+## Contextual decision prompts
 Decide the loop (check-in? contribute? lurk?) and design the action bar +
 notifications around it. Neutral canvas + community accents, density over
 decoration, moderation UI as first-class, RTL-thread-native for Arabic.

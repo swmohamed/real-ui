@@ -1,14 +1,16 @@
-# Self-Test — 10 Industry Scenarios
+# Legacy Manual Scenario Prompts — 10 Industries
 
-Run each scenario through the Skill workflow mentally (or literally with
-an agent). The acceptance test: **outputs must NOT resemble each other**
-and each must satisfy its industry check. All reasoning is code-first —
-no screenshots required.
+These prompts predate the scope/page authority contracts. They remain useful
+as domain coverage prompts, but their token/layout suggestions are candidates,
+not expected answers. A current run must model the product, write the scope and
+content-priority ledgers, and justify every structural choice. Similar outputs
+are legitimate when product models are materially similar.
 
 ## How to run
-For each scenario: CLASSIFY → RETRIEVE (≤6 files) → direction statement →
-token sheet sketch → key structural decisions. Then compare across
-scenarios.
+For each scenario: CLASSIFY → MODEL/SCOPE → retrieve authority contracts plus
+relevant catalogs → direction statement → token sheet → structural rationale.
+Treat every “Must” below as a legacy hypothesis to accept or reject with
+evidence; it cannot create a feature or fixed layout.
 
 ## 1. Browser gaming portal (Arabic-first, kids skew)
 Must: gaming DNA, 16px tiles, hover-play, tag-chip browse, zero-friction
@@ -63,16 +65,16 @@ Must: GDS DNA, task grid (verb-first), search-first, zero decoration,
 full parity AR/EN, accessibility floor highest.
 Must NOT: cinematic hero, gradients, marketing tone.
 
-## Cross-scenario acceptance checks
-- [ ] No two scenarios share the same token sheet (radius/type/density/
-  accent all differ)
+## Current cross-scenario acceptance checks
+- [ ] Differences and similarities both trace to product/content/brand needs;
+  novelty is not forced
 - [ ] Each cites ≥2 real reference classes as evidence
 - [ ] Each passes the anti-AI banned list
 - [ ] Arabic scenarios pass the RTL gate (dir, mirroring rules, bidi
   fields, Arabic type with real line-heights)
 - [ ] Each states its one differentiation move
 
-## Recorded expectations (for regression)
-Token-sheet sketches per scenario should differ on ≥4 of 6 axes:
-canvas (light/dark/candy), radius mode (0–4/4–8/8–16/16+), type pairing,
-density (sparse/standard/dense/maximum), accent strategy, motion budget.
+## Archived variation heuristic (not a pass criterion)
+The old test expected token sketches to differ on ≥4 of 6 axes. Keep those
+axes—canvas, radius, type pairing, density, accent, motion—as comparison tools,
+but never distort a well-fitted product merely to make a matrix look varied.

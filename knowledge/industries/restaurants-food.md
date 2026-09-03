@@ -17,7 +17,7 @@ craving — it must dominate.
 Direct orders (chains dodge platform fees), platform commission volume,
 reservation covers, loyalty/repeat rate.
 
-## Information architecture
+## Candidate information-architecture patterns (not a product sitemap)
 - Brand site: Home (hero dish imagery + reserve/order CTAs) → Menu
   (categories with prices/photos) → Locations/Hours → About/Story →
   Reservations → Gift cards/Contact
@@ -33,7 +33,7 @@ reservation covers, loyalty/repeat rate.
   (Home/Search/Orders/Account)
 - Elmenus OBSERVED (discovery mode): menus-as-content browsing, photos-first
 
-## Components that define the genre
+## Candidate components observed in the genre
 - Menu lists with dotted-leader or clean rows: name, description, price,
   dietary chips (vegan/spicy 🔥), photo thumbnails optional
 - Restaurant cards: logo, cuisine tags, rating, ETA badge, delivery-fee
@@ -71,7 +71,8 @@ reservation covers, loyalty/repeat rate.
 ## Arabic/MENA considerations (OBSERVED)
 - Talabat/HungerStation class: full RTL, Arabic dish names + English
   secondary (or bilingual menus), cuisine icons localized
-- Payment: COD remains table stakes + cards + wallets (STC Pay, Fawry);
+- When payment is in scope, verify current market/user evidence for COD, cards,
+  wallets, fees, and refund expectations rather than treating one mix as fixed;
   delivery zones expressed by district names (حي النخيل) not postal codes
 - Ramadan mode: iftar/suhoor timing sections, family bundles — seasonal IA
   (design token themes again)
@@ -80,7 +81,7 @@ reservation covers, loyalty/repeat rate.
 - Nutritional/allergen disclosure maturity rising (Saudi SFDA rules) —
   structured data ready
 
-## Conventions (follow)
+## Conventions to evaluate (adopt only when model-supported)
 Menu above all (hours + location adjacent), open/closed states, item dialogs
 with option groups, ETA/fee clarity, live tracking, reorder, dietary chips,
 click-to-call on brand sites.
@@ -96,7 +97,7 @@ click-to-call on brand sites.
 Starbucks, Chipotle, Elmenus (AR/EN), HungerStation (AR), Talabat
 (INFERRED — blocked), McDonald's (INFERRED), OpenTable (INFERRED).
 
-## Decision guidance
+## Contextual decision prompts
 Brand: appetite-led photography, story sections, menu-as-content, reserve/
 order CTAs persistent. Platform: utility density, option-group rigor,
 tracking transparency. Both: speed, clarity, honest pricing, RTL-native for MENA.

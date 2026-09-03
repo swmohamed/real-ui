@@ -32,6 +32,38 @@ allowed only with written contextual justification.
 14. **Sparkle ✨ emoji / AI-star iconography** in marketing copy
 15. **Dark mode + purple + glow as "premium tech" default**
 
+## Structural AI-template tells
+
+Generic structure is more damaging than generic decoration:
+
+- **Chat as the whole product** when the task needs records, comparison,
+  spatial work, a durable artifact, or controlled execution
+- **Universal assistant side panel** copied into every domain regardless of
+  task frequency, available width, or artifact relationship
+- **Prompt → prose as information architecture**, replacing known entities,
+  workflows, status, source boundaries, and domain terminology
+- **Repeated card shells** for tables, sequences, bulk work, relationships,
+  settings, and narrative simply because cards are easy to generate
+- **AI as a brand treatment**, using sparkle labels or gradients while hiding
+  what the system knows, can change, and cannot guarantee
+- **Fake certainty and fake progress**: decorative confidence scores,
+  invented percentages, typing theater, or stages unrelated to real work
+- **Hidden provenance**: generated/retrieved/user-authored material looks the
+  same when origin, freshness, or accountability changes the decision
+- **Irreversible automation by default**: acting without scoped permission,
+  review, interruption, history, or recovery proportional to consequence
+- **Identical responsive stacking** on every product, with no preservation of
+  comparison, shared state, reading order, or platform-specific work
+- **Professional-sidebar dashboard as a genre shortcut**: logo rail + greeting +
+  four KPI cards + activity chart, even when the product is a schedule, editor,
+  queue, map, document, or investigative workflow
+- **Named-style roulette**: selecting “editorial,” “premium,” “playful,” or
+  “terminal” from the industry, then backfilling a product rationale
+- **Mobile = card stack + FAB + bottom sheet** regardless of comparison,
+  selection, reading, spatial context, or native platform behavior
+- **Identity reduced to logo/color/radius** while information architecture,
+  content voice, data representation, motion, and product behavior stay generic
+
 ## Why these fail (the reasoning, not just the rule)
 
 - **They're context-free**: no industry, audience, region, or content
@@ -55,10 +87,12 @@ game portal (register).
 
 ## Positive alternatives (what to do instead)
 
-- Derive identity from INDUSTRY DNA (see visual-dna/) + content shape +
-  one deliberate typographic decision
-- Use the evidence: 4–8px radius product norm, one accent, real product
-  artifacts, sector conventions
+- Derive identity from the product’s visual job and independent decision axes
+  (visual-dna/dna-selector.md), informed by content, behavior, brand evidence,
+  platform, and locale—not an industry style lookup
+- Use observed evidence as plausible bounds, never defaults: select radius,
+  accent, density, and real product artifacts from this product's content,
+  brand register, tasks, platform, and sector constraints
 - Earn distinctiveness through typography scale, grid rhythm, and
   content hierarchy — the things real design leadership actually uses
 - When in doubt: less decoration, more evidence (screenshots, numbers,

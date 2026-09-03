@@ -16,7 +16,7 @@ standard is GDS (gov.uk): content design + task-first forms + zero chrome.
 Task completion rates (measured publicly on GOV.UK), reduced call-center
 load, digital-adoption targets, transparency mandates, donation conversion.
 
-## Information architecture
+## Candidate information-architecture patterns (not a product sitemap)
 - Topic/task-based IA (not department mirrors!): "Renew a passport", not
   "Directorate of Travel Documents" — GDS's core insight
 - Home: search-first + popular tasks grid + alerts/notices strip
@@ -32,7 +32,7 @@ load, digital-adoption targets, transparency mandates, donation conversion.
 - Breadcrumb-heavy deep trees; footer with legal/privacy/accessibility
   statements (legally required in many jurisdictions)
 
-## Components that define the genre
+## Candidate components observed in the genre
 - Task cards/grid (icon + verb-first label: "Renew", "Apply", "Pay")
 - Step-by-step content pages with "What you'll need" boxes, time/cost facts
 - Forms: one-thing-per-page pattern (GDS), inline validation, save-progress
@@ -72,9 +72,10 @@ load, digital-adoption targets, transparency mandates, donation conversion.
   (respect formal protocol)
 - Service counters: branch locator + queue booking (EIDA/class services)
 - Umrah/Hajj, zakat calculators, labor-law services = region-specific task
-  verticals with dedicated portals (verify current landscape in Deep Mode)
+  verticals with dedicated portals (verify the current landscape with targeted
+  research when needed)
 
-## Conventions (follow)
+## Conventions to evaluate (adopt only when model-supported)
 Verb-first task IA, one-thing-per-page forms, search-first, bilingual
 parity, notice banners, reference numbers, print-friendly pages (government
 users print!), accessibility statements, zero marketing gloss.
@@ -91,7 +92,7 @@ gov.uk (OBSERVED — the global canon), USAGov, canada.ca, europa.eu
 (OBSERVED), u.ae (AR OBSERVED), VisitSaudi (AR OBSERVED), UN, Red Cross,
 Kiva (nonprofit donation UX OBSERVED).
 
-## Decision guidance
+## Contextual decision prompts
 Adopt GDS-class discipline: content design, task verbs, one-thing-per-page,
 maximum contrast, bilingual/RTL parity. Add national identity through
 controlled brand elements (emblem, one color), never through decoration.

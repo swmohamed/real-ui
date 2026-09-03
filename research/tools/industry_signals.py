@@ -1,11 +1,20 @@
 #!/usr/bin/env python3
 """Per-industry aggregated design signals + flagship site deep dives."""
-import json, glob, re, collections
+import collections
+import json
+from pathlib import Path
+import re
+
+REPORTS_DIR = Path(__file__).resolve().parents[1] / "reports"
 
 def load():
     sites = {}
-    for f in sorted(glob.glob("reports/*.json")):
-        for s in json.load(open(f, encoding="utf-8")):
+    for f in sorted(REPORTS_DIR.glob("*.json")):
+        with f.open(encoding="utf-8") as handle:
+            report = json.load(handle)
+        if not isinstance(report, list):
+            continue
+        for s in report:
             if s["status"] == "ok" and s.get("css"):
                 sites[s["name"]] = s
     return sites

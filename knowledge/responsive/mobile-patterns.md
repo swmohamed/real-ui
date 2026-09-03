@@ -1,58 +1,69 @@
-# Responsive: Mobile UX Patterns (the phone is the primary context)
+# Responsive Mobile Patterns (derive from task and window)
 
-Mobile traffic is the majority in MENA (70–90% in many verticals) and near-
-majority globally. Design phone-first as the real product, not a port.
+Mobile may be the primary context, a companion, or an occasional channel.
+Use project analytics/research when available; do not assert regional traffic
+shares or force phone-first solely from industry or geography.
 
-## The mobile page contracts
+## Phone constraints to model
 
-- Viewport height lies: use svh/dvh units (URL bar); 100vh traps content
-- Safe areas: notch + home-indicator insets on sticky elements
-- One-hand zone: primary actions bottom 60% of screen; destructive/
-  secondary top-right (hard to reach accidentally)
-- Thumb targets: 44px min, 48–56 preferred; 8px+ separation
+- dynamic viewport and browser/app chrome (`svh`/`dvh` where appropriate);
+- safe areas, cutouts, system gestures, and sticky-layer occlusion;
+- virtual keyboard, autofill, password managers, voice input, and zoom/text scaling;
+- reach, handedness, posture, motion, interruption, offline/poor network, and battery;
+- touch plus relevant screen-reader, switch, keyboard, pointer, and stylus input.
 
-## Canonical mobile patterns by job
+Use WCAG 2.2 AA 24×24 CSS px target-size rules correctly for web, then prefer
+larger platform/product targets for frequent touch actions. Apple and Android
+guidance are not interchangeable CSS standards.
 
-**Browse**: 2-col grids (commerce/games/media), swipe rails with peek,
-pull-to-refresh on feeds
-**Search**: sticky search field or persistent search tab; full-screen
-keyboard states with search-in-suggestions; recent/saved chips above pad
-**Decide**: sticky decision bar (price+CTA), image-first PDPs, specs in
-accordions, bottom-sheet comparisons
-**Convert**: single-column checkout, wallets above forms (Apple/Google Pay
-one-tap), numeric keyboards for OTPs (inputmode), autofill tokens
-**Navigate**: bottom tabs ≤5 + hamburger tree; section chips rails;
-breadcrumb → back button + page title
-**Consume**: article typography 17–18px, media full-bleed, sticky minimal
-chrome, reading progress thin
-**Operate** (dashboards): card-stacked KPIs, tables → card lists or
-scroll+sticky-col, quick-action FAB, offline states visible
+## Transform by job, not page genre
 
-## Mobile-specific UX mechanics
+| Job | Questions before choosing a pattern |
+|---|---|
+| Browse | What item minimum, media evidence, grouping, position memory, and comparison must survive? Grid, list, rail, map, or search-first are candidates. |
+| Search | Is search an entry mode, persistent command, or destination? How do suggestions, keyboard, history, filters, zero results, and privacy behave? |
+| Decide | Which evidence must remain adjacent: price, source, status, option, risk, availability, or comparison? A sticky action is valid only if it does not occlude content/focus. |
+| Convert | Which steps and fields are truly required? Support locale-aware input, autofill, wallets when in scope, error recovery, review, interruption, and return. |
+| Navigate | Choose bottom destinations, visible header, drawer, tabs, search-first, or contextual back/orientation from hierarchy, label fit, and platform. |
+| Consume | Set measure, type, media, source/caption, and chrome from content and script; preserve reading position and accessibility controls. |
+| Operate | Preserve comparison, selection, bulk scope, status, commands, and recovery. Do not automatically convert tables to disconnected cards or add a FAB. |
 
-- Bottom sheets: drag-handle, snap points (peek/half/full), scrim dismiss,
-  Esc-equivalent (back gesture) closes
-- Toasts above tab bars; snackbars with action ≤1
-- Keyboard: field focus scrolls into view (fixed headers must not cover
-  focused inputs — scroll-margin)
-- Form UX: correct inputmodes, autocomplete, single-column, inline
-  validation, submit button visible with keyboard open
-- Performance floor: LCP <2.5s on 4G, tap-responsive <100ms, no
-  layout jumps on image/font load
+## Sheets, gestures, and feedback
 
-## Mobile RTL specifics
+- Use a sheet when its modality, detents, background relationship, dismissal,
+  focus, keyboard, and back behavior match the platform/task. A sheet is not a
+  generic substitute for every secondary screen.
+- Swipe, drag, pull-to-refresh, long-press, and edge gestures are accelerators.
+  Provide visible/input-parity alternatives and avoid conflicts with system
+  navigation and assistive technology.
+- Place toast/snackbar/banner feedback where it stays associated with the
+  result and does not cover navigation, focus, keyboard, or critical status.
+- Keep focused fields and validation visible with the keyboard open; preserve
+  the draft through interruption, orientation, and class changes.
 
-- Swipe directions mirror (carousel next = swipe left→right gesture
-  pulls content rightward — native scroll handles automatically with
-  RTL containers)
-- Drawer opens from right/start; back-gesture still left-edge on iOS/
-  Android (system) — don't fight OS gestures
-- Numeric pads unaffected; Arabic text fields with LTR data fields
-  (card numbers) need dir="ltr" + inputmode
+## Performance and continuity
 
-## Anti-patterns
+Use current project performance targets and field/lab measurement; do not
+turn one web-vitals threshold into a universal native-mobile rule. Reserve
+space for media/type, prioritize critical content, acknowledge input promptly,
+and distinguish pending from complete. Re-entry from deep link, notification,
+background, or offline state must restore orientation and durable work.
 
-- Hover-dependent UI; tiny text links inline; interstitials before content
-- Sticky layers stacking >20% viewport (ad + chat + cookie + CTA bar)
-- Carousels without swipe; PDFs as mobile content
-- Auto-zoom on input focus (font-size <16px iOS triggers — set 16px+)
+## RTL and localization
+
+Direction comes from semantic flow and platform behavior, not blanket
+mirroring. Test mixed Arabic/Latin identifiers, numbers, search, system back,
+carousels, steppers, charts, maps, keyboard, sheets, long real strings, and
+font metrics. Keep LTR data bidi-isolated where required.
+
+## Finish gate
+
+- [ ] mobile priority is evidence-backed; desktop/tablet needs are not erased
+- [ ] transformations preserve task relationships, comparison, source, and state
+- [ ] keyboard/safe-area/sticky layers do not obscure focus or actions
+- [ ] gesture and hover accelerators have complete alternatives
+- [ ] offline, interruption, deep-link, long-content, text-scale, and RTL states survive
+- [ ] patterns are justified by task/platform, not a generic mobile recipe
+
+Connects: devices/mobile.md · ux/{mobile-states,interaction-control}.md ·
+responsive/{adaptive-models,breakpoints-adaptation}.md · accessibility/mobile.md.

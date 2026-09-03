@@ -16,7 +16,7 @@ expressive ≠ unusable. Distinctive typography and layout risk are the tools.
 Commissions/jobs (portfolios), ticket sales (museums/events), memberships/
 patronage, cultural authority, community engagement (creative platforms).
 
-## Information architecture
+## Candidate information-architecture patterns (not a product sitemap)
 - Portfolio: Home = work samples immediately → selected works → about/bio →
   contact; resume/press secondary. The portfolio rule: work above the fold,
   no "loading intros."
@@ -35,7 +35,7 @@ patronage, cultural authority, community engagement (creative platforms).
   temporal skin (the site re-skins per show — design for themability)
 - Event: countdown + ticket CTA sticky from first pixel
 
-## Components that define the genre
+## Candidate components observed in the genre
 - Full-bleed case-study heroes; project galleries with captions
 - Exhibition cards (image + dates + status: Now/Upcoming/Past)
 - Collection search + filters (artist, medium, era, on-view)
@@ -73,12 +73,13 @@ patronage, cultural authority, community engagement (creative platforms).
 - Arabic calligraphy + Kufi display as authentic identity (not "exotic"
   accent for Western brands) — work with type designers for custom Arabic
 - Cultural institutions: bilingual AR/EN with equal design quality in both
-  (Sharjah Art Foundation / Ithra class — INFERRED, verify in Deep Mode)
+  (Sharjah Art Foundation / Ithra class — INFERRED; verify with current
+  targeted research when the reference matters)
 - Galleries/events: Hijri+Gregorian dates side by side; RTL editorial layouts
   with Arabic-first typographic hierarchy
 - Dialect vs MSA: statements in MSA, marketing voice may carry dialect warmth
 
-## Conventions (follow)
+## Conventions to evaluate (adopt only when model-supported)
 Work-first portfolios, exhibition themability, visit-info clarity, honest
 tickets, lightbox keyboard support, custom type as identity, restrained
 chrome for image-first products.
@@ -95,7 +96,7 @@ MoMA (OBSERVED), Tate (OBSERVED), Awwwards (OBSERVED), CSSDA (OBSERVED),
 Cargo (OBSERVED), 500px (OBSERVED), Flickr (OBSERVED), Behance/Dribbble
 (OBSERVED platforms), TED (OBSERVED events hybrid), Eventbrite (OBSERVED).
 
-## Decision guidance
+## Contextual decision prompts
 Define the expression budget: institution (10% risk), event (30%),
 portfolio (50%), art piece (70%+). Spend it on typography + layout, keep
 the usability floor intact. Never spend the whole budget on motion.

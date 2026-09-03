@@ -8,13 +8,20 @@ dashboards)
   value — direction icons flip only for sequence semantics)
 - Columns: right-align numbers (tabular-nums), start-align text; units in
   header ("Price (SAR)") not repeated per cell
-- Rows: 40–48px desktop, 32 compact; zebra OR row borders (pick one);
-  hover highlights + reveals row actions (end-side)
-- Cell content: wrap long text with title attr; empty = "—" (never blank);
-  status cells = badge component
+- Rows: derive height and density from content, text scaling, input target,
+  scanning need, and platform. Hover may supplement but never own row actions.
+- Cell content: define wrap/truncate/expand behavior and expose the full value
+  through a keyboard-, touch-, and screen-reader-accessible path. Distinguish
+  missing, zero, not applicable, withheld, and unknown values; a dash is not a
+  universal substitute. Status may use text, icon, tone, or a badge according
+  to prominence and density—not badge decoration by default.
 - Responsive: horizontal scroll container with shadow affordances;
-  stacked cards transform for read-only tables; keep tables for comparison
-  (finance/sports never fully card-stack)
+  prioritize/pin columns or provide a focused detail view. Preserve aligned
+  comparison when that is the task; do not automatically transform every row
+  into a card or assume every table must remain visually unchanged.
+- Selection and batch actions keep counts, scope, permission, partial success,
+  and recovery visible. Route queued/bulk work to
+  `ux/operations-recovery.md`.
 
 ## Key-value lists / definition sets
 
@@ -29,8 +36,8 @@ dashboards)
   accessible text "increased 12%")
 - Big-number hero stats (impact pages): 32–56px tabular, captioned with
   date/source — undated stats erode credibility
-- Count-up animation: once, 600–1000ms, reduced-motion off — subtle, not
-  slot-machine
+- Count-up animation is optional and must not delay comprehension; respect
+  reduced motion and expose the final value immediately to assistive tech
 
 ## Timelines
 
@@ -70,3 +77,5 @@ dashboards)
 - Infinite columns requiring 4 swipes on mobile with no sticky anchor
 - Sorting that loses current page/filter context
 - Sparklines without axis context (no scale = no meaning)
+- Card-stacking every mobile row until comparison, selection, and column
+  relationships disappear

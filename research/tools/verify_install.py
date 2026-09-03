@@ -2,7 +2,10 @@
 """Verify real-ui skill installation across all agent skill directories."""
 import os, re, glob, hashlib, py_compile, sys
 
-SRC = os.environ.get('REAL_UI_SRC', r'C:/Users/swmoh/Documents/real-ui')
+SRC = os.environ.get(
+    'REAL_UI_SRC',
+    os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))),
+)
 
 # Auto-detect every agent skills directory on this machine that already
 # contains real-ui, plus the canonical 5 (kept explicit so a stray delete
@@ -15,7 +18,20 @@ _AGENT_SKILL_DIRS = [
     '.trae/skills', '.kilocode/skills', '.codebuddy/skills', '.warp/skills',
     '.augment/skills', '.codewhale/skills',
 ]
-DESTS = [os.path.join(HOME, d, 'real-ui').replace('\\', '/') for d in _AGENT_SKILL_DIRS]
+def installed_destinations():
+    destinations = {
+        os.path.abspath(os.path.join(HOME, d, 'real-ui'))
+        for d in _AGENT_SKILL_DIRS
+        if os.path.isdir(os.path.join(HOME, d))
+    }
+    for entry in os.listdir(HOME):
+        candidate = os.path.join(HOME, entry, 'skills', 'real-ui')
+        if entry.startswith('.') and os.path.isdir(candidate):
+            destinations.add(os.path.abspath(candidate))
+    return [path.replace('\\', '/') for path in sorted(destinations)]
+
+
+DESTS = installed_destinations()
 
 def fingerprint(root):
     fp = {}
@@ -24,7 +40,8 @@ def fingerprint(root):
         for f in sorted(files):
             p = os.path.join(dirpath, f)
             rel = os.path.relpath(p, root).replace(os.sep, '/')
-            fp[rel] = hashlib.md5(open(p, 'rb').read()).hexdigest()
+            with open(p, 'rb') as handle:
+                fp[rel] = hashlib.sha256(handle.read()).hexdigest()
     return fp
 
 src_fp = fingerprint(SRC)

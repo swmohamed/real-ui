@@ -2,7 +2,13 @@
 
 The decision page: everything that resolves "is this the one?"
 
-## Universal anatomy
+## Decision requirements and candidate regions
+
+Select regions from the actual decision model and content inventory. The
+order below is a checklist, not a template: a property, article, medicine,
+and game require different evidence, risks, actions, and priority. Omit
+unsupported ratings, reviews, commerce controls, recommendations, and trust
+claims.
 
 1. **Identity**: breadcrumb, title (h1), key meta (brand/author/studio/
    location), rating + count, share

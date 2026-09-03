@@ -17,7 +17,7 @@ highest of any sector.
 Subscriptions/membership (quality press), ad impressions (volume press),
 syndication, app installs.
 
-## Information architecture
+## Candidate information-architecture patterns (not a product sitemap)
 - Front page: masthead + edition/date/weather strip → lead story cluster
   (1 big + 4–6 secondary) → section rivers (World, Business, Sport…) →
   opinion → video → most-read rail
@@ -35,7 +35,7 @@ syndication, app installs.
 - Arabic portals OBSERVED: dense header link farms (Emirates NBD-style
   density applies: Youm7 460 links, stc 612) + top utility strips
 
-## Components that define the genre
+## Candidate components observed in the genre
 - Story cards: thumb + kicker (section label) + headline + timestamp; tight
   radius (2–6px OBSERVED across Guardian/NYT/BBC/Al-Masry Al-Youm)
 - **Live blog** module (entries with time chips)
@@ -82,7 +82,7 @@ syndication, app installs.
 - Trust markers: state vs independent branding matters visually (logos,
   "official" language) — reflect the outlet's positioning honestly
 
-## Conventions (follow)
+## Conventions to evaluate (adopt only when model-supported)
 Kicker+headline+time cards, serif/sans editorial pairing, most-read rails,
 live blogs with time chips, dual timestamps, section color labels, reading
 progress, related-by-topic not random.
@@ -99,7 +99,7 @@ BBC, The Guardian, NYT, The Verge, Wired, NatGeo, Medium, Substack,
 BBC Arabic, CNN Arabic, Sky News Arabia, Al-Masry Al-Youm, Youm7, RT Arabic
 (hybrid), Aitnews (tech niche AR OBSERVED).
 
-## Decision guidance
+## Contextual decision prompts
 Default: light canvas, serif-headline system for quality positioning or
 all-sans for mass/speed positioning, 2–6px radius, dense but rhythm-ed
 river, live capability, honest timestamps. Differentiate via typography and

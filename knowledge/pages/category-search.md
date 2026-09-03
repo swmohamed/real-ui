@@ -9,7 +9,7 @@ and **result-card scannability**.
 Purpose: browse a taxonomy with confidence ("show me everything in X, help
 me narrow").
 
-Structure:
+Candidate modules (select/order from the search/browse task and real data):
 - Breadcrumb (Home / Category / Sub) — orientation + SEO
 - H1 + result count + optional description paragraph (SEO, collapsible)
 - Filter rail (desktop left / mobile bottom sheet) + sort bar + view
@@ -42,8 +42,9 @@ Purpose: resolve a query. Differences from category:
   persist across pagination
 - Mobile: "Filters (3)" button opens sheet + sticky "Show 87 results" apply
   CTA (the marketplace standard, observed across ecommerce class)
-- Filters update via AJAX with skeletons, never full reloads; URL reflects
-  state (deep-linkable facets — SEO + shareability)
+- Preserve filter state in a shareable/deep-linkable URL where the platform
+  supports it. Client-side updates can improve continuity, but server
+  navigation is valid when it preserves state, focus, and performance
 
 ## Result card anatomy (by vertical)
 

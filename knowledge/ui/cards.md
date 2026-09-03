@@ -1,9 +1,10 @@
 # UI: Cards — Anatomy, Variants, Behavior
 
-The card is the web's universal content container. Its craft is in the
-ratio, the internals hierarchy, and the interaction boundary.
+Cards are useful for bounded, browsable units, especially media-forward or
+independently actionable content. They are not a universal container; first
+run the representation decision in `foundations/product-modeling.md`.
 
-## Card anatomy (universal)
+## Card anatomy (when a card is the chosen representation)
 
 ```
 [Media] → ratio per vertical (1:1 product, 4:3 editorial, 16:9 media/games,
@@ -52,7 +53,8 @@ ratio, the internals hierarchy, and the interaction boundary.
 
 ## Interaction states
 
-- Static cards: no hover (feeds) except cursor pointer
+- Static cards: no hover treatment and default cursor; pointer cursor only
+  when the card or an explicit control is interactive
 - Interactive: hover elevation/subtle scale, active press (scale .99),
   selected state (border/ring) for pickers
 - Hover-reveal actions (quick-add, save heart) must remain keyboard/touch
@@ -70,6 +72,31 @@ shadow: none→hover-tier only, or border-only systems (modern preference)
   corners; carousels scroll RTL with snap; price blocks keep currency
   label adjacent (ر.س ١٢٩ or 129 ر.س — pick regional convention per
   market: SAR usually follows the number: 129 ر.س)
+
+## When NOT to use a card (decision rule)
+
+Cards are one container among several — the default-card reflex is a
+template smell. Choose by content shape + task verb
+(foundations/product-modeling.md):
+
+| Content shape / task | Use instead of cards | Why |
+|---|---|---|
+| Dense, comparable, many attributes | Table / data grid (ui/data-display.md) | scanning, sorting, alignment beat chrome |
+| Homogeneous simple rows (settings, history, members) | List rows (leading + trailing slot) | cards add border noise ×N |
+| Relational / cross-referenced data | Table + facets or tree | relationships need structure, not tiles |
+| Definition pairs (label: value) | Description list / two-column form | no action = no card needed |
+| Sequential reading (article, steps) | Prose + section flow | cards break reading flow |
+| 2–4 big entities (accounts, projects) | Cards ARE right | browsable, media, comparable at glance |
+| Media-forward browsing (products, recipes, games) | Cards ARE right | image-led comparison |
+
+Card cost ledger: each card adds border+padding+shadow chrome, weakens
+scannability of aligned data, and multiplies on mobile (stack of
+one-item boxes). Rule of thumb: if users mainly READ/compare fields →
+no cards; if users mainly BROWSE/choose visually → cards.
+
+Dashboard special case: don't wrap every widget in a card — group by
+proximity + section headers; reserve card chrome for genuinely
+independent modules (pages/dashboard.md).
 
 ## Anti-patterns
 

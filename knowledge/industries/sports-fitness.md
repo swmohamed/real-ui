@@ -16,7 +16,7 @@ adds coaching/tracking products. Live-ness defines the experience class.
 Subscriptions (streaming rights, premium analysis), engagement/habits
 (fitness apps), betting-adjacent traffic (regulated markets), merch/tickets.
 
-## Information architecture
+## Candidate information-architecture patterns (not a product sitemap)
 - Scores-first home: live strip (ticker) → today's fixtures by league →
   top news → video → tables/standings widgets
 - League pages: fixtures/results/tables/stats tabs
@@ -33,7 +33,7 @@ Subscriptions (streaming rights, premium analysis), engagement/habits
   `fco-` design system with date-bar navigation (السبت 15 أغسطس OBSERVED as
   nav CTA) — date IS navigation in scores products
 
-## Components that define the genre
+## Candidate components observed in the genre
 - Live score cards/cards rows: crest + abbreviation + score + minute badge
   (red live dot)
 - League tables (POS/TEAM/P/W/D/L/GD/PTS) — the rare legitimate `<table>`
@@ -75,7 +75,7 @@ Subscriptions (streaming rights, premium analysis), engagement/habits
 - Live commentary feeds right-to-left with minute chips
   (الدقيقة ٩٠+٢ → Western digits common)
 
-## Conventions (follow)
+## Conventions to evaluate (adopt only when model-supported)
 Scores above the fold, live state visible (red dot + minute), league tables
 as real tables, condensed numerals, team-colored kickers, personalization
 strip, highlight tiles with duration badges.
@@ -91,7 +91,7 @@ strip, highlight tiles with duration badges.
 ESPN, NBA (Roboto Condensed OBSERVED), BBC Sport, beIN (AR), Kooora (AR),
 FilGoal (AR), YallaKora (AR), Strava, Olympics (INFERRED — blocked).
 
-## Decision guidance
+## Contextual decision prompts
 Speed-first utility or media-first editorial — decide by audience. Utility:
 dense, tabular, live-updating, team colors. Media: video tiles + editorial
 cards + tribal color energy. Arabic football portals: date-bar navigation,

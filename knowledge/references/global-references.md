@@ -12,7 +12,7 @@ Keep entries short — details live in industry files.
   Learn: dark minimalism without glow.
 - **Vercel/Netlify/Supabase/GitLab/Cloudflare/GitHub/Tailwind/Framer/
   Figma/Notion** — OBSERVED. The dev-platform canon (Swiss×Terminal
-  DNA family). GitHub: octicons, #1e2327 theme-color.
+  visual-reference vocabulary). GitHub: octicons, #1e2327 theme-color.
 - **OpenAI** — OBSERVED. Container queries early-adopter (27 blocks),
   Tailwind+FA mix. **Anthropic** — OBSERVED. Webflow-era warm editorial
   counter-trend, `--radius--*` tokens.

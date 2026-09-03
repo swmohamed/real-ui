@@ -5,20 +5,25 @@ must feel native — never a website squeezed into a phone.
 
 ## Physical ergonomics
 
-- **Thumb zone**: bottom of screen = easiest reach. Primary actions
-  bottom-anchored (bottom nav, thumb-reach CTAs, FABs). Top corners =
-  worst zone (large phones) — nothing critical there.
-- **Touch targets ≥44pt (iOS) / 48dp (Android)** `[PLATFORM RULE]`;
-  visual size may be smaller with hit slop; adjacent targets need gaps.
-- One-hand use: navigation + primary actions within thumb arc;
-  two-hand patterns (keyboards, carousels) acceptable for input tasks.
+- **Reach and posture**: lower regions are often easier one-handed, but grip,
+  handedness, device size, task, keyboard, assistive technology, and platform
+  chrome vary. Place frequent consequential actions where they remain visible,
+  safe, and reachable; bottom anchoring is one candidate, not a rule.
+- **Touch hit regions:** Apple HIG generally recommends at least 44×44pt
+  (its accessibility guidance documents 44×44pt default and 28×28pt
+  minimum); Android recommends at least 48×48dp. Visual size may be smaller
+  with hit slop; adjacent targets need safe gaps `[PLATFORM GUIDANCE]`.
+- Test one- and two-hand postures, switch access, screen readers, external
+  keyboard/pointer, and interrupted use where the audience needs them.
 
 ## Structural rules
 
-- Navigation depth ≤5 screens; visible way back always (platform back
-  + in-app trail); titles persist.
-- Bottom nav (3–5) for top-level modes; tabs for sibling content;
-  sheets for focused tasks; full-screen for immersive only.
+- Minimize steps for top tasks and keep a visible, predictable way back
+  (system/platform back + in-app orientation). No universal screen-depth
+  number substitutes for task testing.
+- Choose bottom destinations, tabs, visible header navigation, drawer, rail,
+  sheet, or full-screen task from hierarchy, count/label fit, window size, and
+  platform. No fixed destination count replaces testing.
 - Content scrolls; chrome (header/nav) stable or purposefully reactive
   (collapse-on-scroll with return affordance).
 - Avoid hover-dependent anything; large hit areas; gesture
@@ -36,15 +41,14 @@ state must restore) · offline & poor network · battery/haptics.
 
 ## Density & type
 
-Compact but not cramped: 16px body baseline common (corpus mobile
-patterns — responsive/mobile-patterns.md); fewer columns (1–2);
-truncate with intent; Arabic mobile type ≥ Latin (Arabic needs slightly
-larger sizes for equal legibility — typography/arabic-typography.md).
+Compact but not cramped: select type and columns from font/script metrics,
+content, touch targets, text scaling, and item minimums. Truncate only when
+the content contract and an accessible full-value path permit it.
 
 ## Mobile realism checks
 
-[ ] thumb-reach primary actions [ ] 44/48 targets [ ] keyboard flows
+[ ] reach/posture tested [ ] platform-preferred targets [ ] keyboard flows
 tested [ ] safe areas respected [ ] back works on every screen
 [ ] states designed (offline/loading/error/empty) [ ] deep-linkable
-screens survive cold start [ ] one-hand navigation possible
+screens survive cold start [ ] task survives relevant postures and inputs
 [ ] no web idioms (hover, tiny links, breadcrumbs-for-nav)

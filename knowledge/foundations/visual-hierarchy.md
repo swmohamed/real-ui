@@ -1,59 +1,70 @@
-# Visual Hierarchy — How Real Sites Direct Attention
+# Visual Hierarchy — allocate attention to decisions
 
-## The allocation model
+Hierarchy makes task, relationship, state, and consequence legible. It is not
+a mandatory single focal point or a stack of ever-larger headings.
 
-A screen has a finite attention budget. Real sites spend it in this order:
+## Build an attention model
 
-1. **Primary signal** (1 per view): the hero headline, the product name, the
-   search field, the checkout total. Biggest type or biggest surface.
-2. **Action layer** (1–3): the CTAs. Distinct by fill, not just color.
-3. **Scan layer**: section headings, card titles, prices. Built from weight
-   and size steps, not new colors.
-4. **Support layer**: metadata, timestamps, helper text. Muted color, smaller
-   size, but never below readable minimums.
-5. **Ambient layer**: backgrounds, textures, decoration. Must lose to everything.
+For each screen identify:
 
-## Size discipline (from corpus type scales)
+1. orientation: where am I, whose data/artifact, which state/version;
+2. primary outcome or coordinated work set;
+3. decisions and actions, ranked by frequency, consequence, and context;
+4. scan/comparison signals such as titles, price, status, freshness, source;
+5. supporting explanation, metadata, and recovery;
+6. ambient brand/material cues that must never obscure the above.
 
-- Real UI bodies live at 14–16px; support text 12–13px (61+68 sites declare
-  14px and 12px). Below 12px is anti-pattern territory.
-- Headline steps that read as "designed": ×1.25 ratio between adjacent levels
-  (16 → 20 → 25 → 31 → 39 → 49). Editorial/display can go ×1.33+ for drama.
-- One dramatic jump (h1 vs h2) beats five timid ones.
+A checkout may have one decisive action. An incident console may need several
+simultaneous signals. Hierarchy succeeds when users can explain priority and
+relationship—not when the screen has exactly one loud object.
 
-## Weight and color steps
+## Use multiple channels deliberately
 
-- Weight: 400 body / 500–600 emphasis / 700 headlines covers 90% of real UIs.
-  Reserve 800–900 for display marketing only (gaming, sports).
-- Neutral ramp discipline: real systems run 8–12 steps from ink to paper.
-  A hierarchy that needs a 13th gray is hiding a structural problem.
-- Accent budget: **one** accent + semantic colors (success/warn/danger).
-  News adds a single brand red for live/section identity (BBC, TED, Sky News
-  Arabia all OBSERVED using exactly one identity red).
+- **Position and grouping:** shared key lines and proximity expose
+  relationships before decoration.
+- **Scale and measure:** select a type scale from script, font metrics,
+  content length, platform, viewing distance, and hierarchy tests. Corpus
+  sizes are candidates, not universal roles.
+- **Weight and style:** use available font weights; avoid making every label a
+  bold pseudo-heading. Serif/sans/mono changes need semantic or identity reason.
+- **Contrast and color:** reserve semantic distinction; never rely on color
+  alone. Identity accents cannot erase status meaning.
+- **Space and density:** tune to comparison, touch, reading, expertise, and
+  urgency. Spacious is not premium by itself; dense is not professional by
+  itself.
+- **Imagery, data, and motion:** product content may lead when it carries the
+  decision. Decorative media stays subordinate. Motion explains change or
+  earns a bounded identity moment.
 
-## Position and flow
+Do not use named F/Z reading templates as an automatic layout rule. Script,
+content, alignment, task, and input shape scanning. RTL changes flow and some
+directional meaning, but not every graphic, chart, map, timeline, or media
+control; document the semantic direction.
 
-- F-pattern for text-dense pages (news articles), Z-pattern for sparse
-  marketing, grid-scan for card catalogs (games, products, streaming rows).
-- RTL flips the F and Z **and** the implied "forward" of progress — a stepper
-  moves right-to-left in Arabic (see `rtl/arabic-ux.md`).
-- Above-the-fold is 1 message + 1 action on marketing pages; on tools it's
-  the primary task surface (search field, dashboard first widget).
+## Hierarchy under stress
 
-## Density as hierarchy
+Verify with:
 
-- Card padding is a signal: 12–16px = dense functional grid (news, games
-  portal); 24–40px = premium browse (luxury, hotels).
-- Row height carries meaning in data UIs: 40–48px interactive rows, 32px
-  compact tables, 56px+ mobile touch rows.
-- Whitespace volume maps to price positioning (OBSERVED: Ounass/luxury class
-  vs Jumia density — same region, opposite whitespace).
+- monochrome/blur or squint test for gross allocation;
+- style-blind wireframe for structural originality;
+- long and short real strings across target scripts;
+- empty, typical, high-volume, stale, partial, error, permission, and selected states;
+- narrow/wide windows, 200% text, 320 CSS px reflow, high/forced contrast,
+  reduced motion, and relevant touch/pointer/keyboard input;
+- source/freshness/authority visible wherever trust changes a decision.
 
-## Common failure modes
+## Common failures
 
-- Two primary buttons on one view → demote one to secondary/ghost.
-- Decorative layer competing with content (gradient hero behind gradient
-  cards) → mute the ambient layer until it stops winning.
-- Everything bold → nothing bold. Emphasis by promotion, not proliferation.
-- Color used as the only differentiator (fails ~8% of males with color
-  vision deficiency) → pair color with icon/text/shape.
+- equal emphasis across unrelated actions → make priority or grouping explicit;
+- one giant metric or hero hiding the actual task → promote task evidence;
+- everything in cards with identical weight → choose representations and
+  sectional hierarchy from content relationships;
+- metadata made unreadable because it is “secondary” → reduce salience without
+  failing legibility or hiding consequence;
+- whitespace, color, or radius used to impersonate a category → return to the
+  visual job and product identity;
+- responsive stacking destroys comparison or source/action association →
+  recompose with a transformation ledger.
+
+Connects: foundations/{layout,color,product-modeling}.md ·
+visual-dna/dna-selector.md · accessibility/{floor,contrast-motion}.md.

@@ -1,27 +1,38 @@
 # UX: States — Loading, Empty, Error, Success, Offline
 
 V2.1: deep error craft + validation timing → ux/forms-validation.md;
-notification surfaces → ux/notifications.md.
+notification surfaces → ux/notifications.md; durable/background work →
+ux/operations-recovery.md.
 
 States are where amateurs ship blanks and professionals ship confidence.
 
 ## Loading
 
-- **Skeletons** that match final layout (same blocks, shimmer subtle) —
-  perceived speed + no layout shift; never spinners for page-level loads
-- **Inline spinners** only for actions <1s (buttons keep width — label +
-  spinner swap)
+- Use stale content, reserved space, skeleton, progress, or activity indicator
+  according to what is known and whether useful content already exists.
+  Skeletons must not fabricate structure or loop indefinitely; a page-level
+  indicator may be appropriate for a genuinely bounded transition.
+- **Inline activity indicators** for bounded local actions when progress is
+  unknown (buttons keep width and preserve an accessible label)
 - **Progressive loading**: render text instantly, media streams in with
   aspect-ratio placeholders (CLS = 0)
-- Long waits (>3s): percentage or steps ("Fetching rates…"), cancel affordance
-- Optimistic UI for likes/votes/cart — instant with rollback on failure
+- Long or background-safe work: expose a meaningful stage and durable status;
+  show percentage only when measured against real work. Offer cancel only when
+  cancellation is implemented and its side effects are clear.
+- Optimistic UI is a consequence/reversibility decision, not a feature-class
+  recipe; expose pending/rejection and restore or recover truthfully.
+
+Loading is not the whole operation lifecycle. Queued, waiting-for-input,
+partial, canceling, superseded, resumable, and rollback states belong in the
+operation model when applicable. Keep cancel, retry, undo, resume, restore,
+and rollback distinct; see `operations-recovery.md`.
 
 ## Empty states (the onboarding moment)
 
 Every empty state answers: what is this? why is it empty? what do I do now?
-- Illustration/photo (on-brand, not clip-art), one-line explanation, one
-  primary action ("Add your first invoice" / أضف أول فاتورة), secondary
-  link (import/learn)
+- Use only the explanation, action, sample, guidance, or illustration the empty
+  cause and next step need. Do not force an illustration, one-action hierarchy,
+  or “first item” onboarding into filtered, permission, or completed empties.
 - Contextual empties beat generic: empty search ≠ empty project ≠ first-run
 - Seed-content options where honest (sample project, demo data toggle)
 
@@ -69,3 +80,4 @@ Every empty state answers: what is this? why is it empty? what do I do now?
 - Alert() dialogs for system errors
 - Silent failures (user believes action succeeded)
 - Success pages that auto-redirect before reading
+- Invented percentages, fake stages, or a cancel control that only hides work

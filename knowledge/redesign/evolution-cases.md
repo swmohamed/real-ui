@@ -19,7 +19,7 @@ For any studied product change, extract in this order:
 3. PRINCIPLE — the transferable rule ("brand constants survive system
    overhauls"; "new business layers import their industry's UX bar —
    trust UX upgrades ride with monetization").
-4. APPLICATION — how it maps to THIS project (workflow.md stages).
+4. APPLICATION — how it maps to THIS project (redesign/workflow.md stages).
 
 ## Corpus-observed evolution signals (v1+v2 evidence)
 
@@ -45,7 +45,7 @@ For any studied product change, extract in this order:
 
 | Failure | Signature | Guard |
 |---|---|---|
-| Identity wipe | users say "where is X?" | preservation.md recognition tests |
+| Identity wipe | users say "where is X?" | redesign/preservation.md recognition tests |
 | Trend import | glassmorphism/gradient wave with no product reason | originality.md refused-list |
 | Scope cosplay | redesign adds marketplace/community visuals with no flows | diagnosis-first |
 | System debt | new screens on new tokens, old screens untouched | prioritization.md staged shippability |

@@ -12,7 +12,7 @@
 Decoration is not a reason. If deleting the motion changes no
 understanding, delete the motion.
 
-## Duration & easing standards (industry convergence)
+## Duration and easing candidates (test, do not standardize globally)
 
 | Interaction | Duration | Easing |
 |---|---|---|
@@ -21,15 +21,19 @@ understanding, delete the motion.
 | Large surfaces (drawer, modal, page) | 250–400ms | emphasize-decelerate (enter), accelerate (exit) |
 | Deliberate/hero moments | 400–700ms | custom choreography |
 
-- Enter faster than exit feels responsive; exits 50–75% of enter
-- Standard easings: `cubic-bezier(0.2, 0, 0, 1)` (material-emphasized),
-  ease-out for entrances; NEVER linear for UI (feels dead)
-- Staggered lists: 20–40ms per item, cap total ≤500ms
+- Duration follows distance, scale, complexity, continuity, input, platform,
+  and urgency. Exits are often shorter than entrances, but interruption and
+  comprehension can change that.
+- Easing expresses physical/semantic behavior. Linear motion is appropriate
+  for some continuous progress, timelines, or constant-rate movement; it is
+  usually poor for entering/leaving surfaces.
+- Stagger only when sequence communicates order and total delay does not block
+  comprehension or action. Never animate a long list item-by-item by default.
 
 ## Scroll-linked motion (the modern layer)
 
-- IntersectionObserver reveals: fade + 8–16px rise, once, 200–300ms —
-  the SaaS-corp standard (restraint reads professional)
+- Scroll reveals require a content/identity reason and a static equivalent;
+  “professional” is not a fade-and-rise recipe.
 - Parallax: depth accents only; disable on touch + reduced-motion
 - Scroll-driven animations (CSS scroll-timeline, 2024+): progress bars,
   reading indicators — native + cheap; progressive enhancement
@@ -44,36 +48,31 @@ cart badge bump (300ms), toast slide+fade, skeleton→content crossfade
 (150ms), tab indicator slide, list add/remove (layout animation FLIP),
 number counters (600ms once), focus rings (no animation — instant).
 
-## Motion systems (tokens)
+## Motion systems (illustrative token shape)
 
 ```
 --motion-fast: 120ms; --motion-base: 200ms; --motion-slow: 350ms;
 --motion-ease-out: cubic-bezier(0.2, 0, 0, 1);
 --motion-ease-in: cubic-bezier(0.4, 0, 1, 1);
 ```
-Keep ≤4 tokens + documented exceptions. Motion personality per DNA
-(calm utility = 2 tokens used sparsely; playful consumer = choreographed
-moments at key flows only).
+Keep a small semantic set with documented exceptions. Product identity and
+state meaning—not a named visual family—decide where productive or expressive
+motion earns cost.
 
 ## Reduced motion (mandatory accessibility)
 
-```css
-@media (prefers-reduced-motion: reduce) {
-  *, *::before, *::after {
-    animation-duration: 0.01ms !important;
-    transition-duration: 0.01ms !important;
-    scroll-behavior: auto !important;
-  }
-}
-```
-Plus: pause autoplay video/carousels, disable parallax, replace
-skeleton-shimmer with static. 40% of major sites ship this (OBSERVED) —
-the floor, not the ceiling.
+Use `prefers-reduced-motion` and platform equivalents to remove or replace
+vestibular/nonessential motion while preserving perceivable state changes.
+A global near-zero-duration override can break functional events or context;
+specify reduced behavior per motion role. Pause/stop controls follow applicable
+accessibility requirements; decorative parallax and shimmer should not be
+required for understanding.
 
 ## Performance rules
 
-- Animate ONLY transform + opacity (compositor); layout properties
-  (top/left/width/height) = jank
+- Prefer compositor-friendly properties when they produce the intended effect,
+  but profile the actual target. Layout animation is sometimes necessary for
+  continuity; constrain scope, avoid layout thrash, and test low-end devices.
 - `will-change` sparingly (hint, not paint-magic); contain: content on
   animated sections
 - Long chains >700ms total = perceived slowness; kill the middle steps
@@ -81,7 +80,8 @@ the floor, not the ceiling.
 
 ## RTL motion
 
-- Slides/sheets from start edge; tab indicators travel start→end
+- Directional motion follows semantic relationship, platform navigation, and
+  spatial origin. A sheet does not automatically enter from inline-start.
 - Transform-based flips (scaleX) for directional icons — instant, not
   animated rotation
 - Timeline scrub direction follows reading direction for narrative

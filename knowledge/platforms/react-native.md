@@ -1,7 +1,7 @@
 # Platform DNA: React Native
 
-Sources: react/react-native-website official docs source, fetched
-2025-08 `[OBSERVED]` (accessibility.md, intro-react-native-components.md,
+Sources: reactnative.dev official docs, checked 2026-08 `[OBSERVED]`
+(accessibility, core components,
 platform-specific-code.md, keyboard.md, keyboardavoidingview.md,
 pressable.md, optimizing-flatlist-configuration.md).
 
@@ -39,9 +39,13 @@ text styling is component-level, not document flow; think in boxes.
 
 ## Pressable & touch `[OBSERVED - pressable docs]`
 
-Pressable replaces Touchables; feedback states (pressed/hovered/
-focused/disabled) are built-in — design all four, not just pressed.
-Touch targets ≥44/48dp regardless of visual size (hitSlop extends).
+Pressable exposes press lifecycle callbacks and its `style` callback receives
+`{pressed}` in the current API. Hover callbacks are available where the
+platform supports hover. Focus and disabled presentation must be driven by
+the component's surrounding state/props rather than assumed to be members of
+the style callback. Design all applicable states and verify them on each
+target platform. `hitSlop` can extend the hit region without changing visual
+bounds.
 
 ## Lists & performance-aware UI `[OBSERVED - optimizing flatlist]`
 

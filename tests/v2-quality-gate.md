@@ -10,7 +10,7 @@ final-quality-gate.md (V1) and self-test.md (V1).
 |---|---|
 | V1 knowledge files present (72) | PASS — all 72 files intact (5 extended with pointer headers only, zero removals) |
 | V1 research evidence + tools | PASS — untouched; v2 additions in separate files |
-| V1 tests preserved | PASS — self-test.md, self-test-results.md, code-first-test.md, final-quality-gate.md intact |
+| V1 scenario intent preserved | PASS — self-test.md, code-first-test.md, and final-quality-gate.md remain; the outdated demo-like result trace was removed in V7 |
 | V1 industries intact (20) | PASS — extended refs only in 3 files |
 | SKILL.md frontmatter YAML-safe (no colon-space) | PASS — parser-verified |
 

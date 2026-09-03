@@ -1,9 +1,15 @@
 # Page Type: Landing Page (Campaign, Feature, PPC)
 
-A single-intent page: one audience, one promise, one action. Unlike the
-homepage, it must NOT route — it must convert or capture.
+A focused-intent page: one primary audience/promise and a clear next step.
+Unlike a broad homepage, it minimizes unrelated routing; organic feature or
+documentation-adjacent pages may retain useful global navigation.
 
-## Anatomy (the proven section order)
+## Candidate persuasion modules (no fixed section order)
+
+Start with message match, then order only the modules needed to resolve this
+audience's next question or objection. Evidence, mechanism, and risk may move
+earlier for high-trust or technical products; unsupported testimonials,
+logos, pricing, security claims, or integrations must not be invented.
 
 1. **Match block**: headline continues the ad/link promise (message match =
   #1 conversion factor), 1-line subhead, primary CTA + secondary (demo/
@@ -58,7 +64,8 @@ homepage, it must NOT route — it must convert or capture.
 
 ## Validation checklist
 
-- [ ] One intent, one primary CTA verb repeated ≤4 times
+- [ ] One primary intent and consistent CTA wording; repetition justified by
+      page length and decision points
 - [ ] Proof artifact (screenshot/demo) above the fold-2
 - [ ] Objection answers present (price/security/support)
 - [ ] No leaky nav on paid traffic

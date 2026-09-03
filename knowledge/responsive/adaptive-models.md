@@ -7,20 +7,28 @@ MODEL because device class or context changed.
 Flutter docs explicitly warn the two concepts "are often collapsed
 into a single term" — keep them separate `[OBSERVED - docs.flutter.dev]`.
 
-## Window size classes (the cross-platform ruler)
+## Window size classes (platform-specific rulers)
 
-| Class | Web (corpus-approx) | Android/M3 dp | Behavior |
-|---|---|---|---|
-| compact | <640 | <600 | phone: single column, bottom nav |
-| medium | 640–1023 | 600–839 | tablet portrait/foldable: rail/2-pane |
-| expanded | 1024–1279 | ≥840 | tablet/desktop: sidebar, list-detail |
-| large | ≥1280 | — | desktop+: rails+panels, full density |
+Do not merge web CSS breakpoints and Android window classes into one
+standard. They are different inputs that may produce similar adaptations.
 
-- Android/M3 official classes: 600 / 840 cutoffs, compact/medium/
-  expanded `[OBSERVED - developer.android.com; m3 cutoffs are the
-  documented standard]`.
-- Web spine from v1 corpus: 640/768/1024/1280 `[OBSERVED - 156-site
-  census]` — close enough to the mobile classes to unify reasoning.
+| Android width class (current official) | Width | Typical opportunities, not guarantees |
+|---|---:|---|
+| compact | <600dp | one pane; compact navigation |
+| medium | 600–839dp | rail or two-pane where content fits |
+| expanded | 840–1199dp | list-detail/supporting pane |
+| large | 1200–1599dp | multi-pane with wider supporting regions |
+| extra-large | ≥1600dp | desktop-scale multi-pane composition |
+
+Android also classifies height separately. Classes are dynamic window
+properties, not device labels; recalculate on resize, rotation, split-screen,
+and fold changes `[PLATFORM RULE — developer.android.com, checked 2026-08]`.
+
+Web breakpoint candidates come from content stress and project constraints.
+The corpus commonly contains widths around 640/768/1024/1280, but presence in
+CSS is not a platform rule and does not prove a query is active on a page
+`[SOURCE-OBSERVED — corrected site-prevalence aggregation]`.
+
 - Rule: classes are layout+nav INPUTS, decided by content needs —
   never "Tailwind gave me md:768 so I use 768" (foundations/layout.md).
 
@@ -30,6 +38,7 @@ into a single term" — keep them separate `[OBSERVED - docs.flutter.dev]`.
 compact  → bottom navigation (3–5) / drawer
 medium   → navigation RAIL (labeled icons)
 expanded → persistent sidebar / header nav with sections
+large / extra-large → persistent navigation plus additional content panes
 ```
 Android's NavigationSuiteScaffold implements exactly this switch
 `[OBSERVED]`; Flutter's canonical adaptive question is "bottom
@@ -52,10 +61,11 @@ push-navigation below.
 
 ## Testing adaptation honestly
 
-Test at class BOUNDARIES (599/600, 839/840, 1023/1024, 1279/1280) and
-across the four content conditions: empty · typical · extreme (long
-Arabic strings, 200% text) · loading. Foldable adds mid-use class
-switches (devices/foldable.md).
+For Android, test width-class boundaries 599/600, 839/840, 1199/1200,
+1599/1600dp and relevant height classes. For web, test immediately on both
+sides of each content-derived breakpoint. Across both, test empty · typical ·
+extreme (long localized strings, 200% text) · loading. Foldables add mid-use
+class switches (devices/foldable.md).
 
 ## QA
 

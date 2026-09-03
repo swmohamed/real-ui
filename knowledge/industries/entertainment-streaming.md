@@ -16,7 +16,7 @@ product, and the first screen must sell the emotional promise instantly.
 Subscriptions (SVOD), ad-supported viewing time (FAST/AVOD), ticketing
 (cinema/events variant), churn reduction (endless "new").
 
-## Information architecture
+## Candidate information-architecture patterns (not a product sitemap)
 - Home: hero banner (featured title, autoplaying muted) → "Continue
   watching" row → "Because you watched" → genre rows → top 10 with big
   numerals → coming soon
@@ -33,7 +33,7 @@ Subscriptions (SVOD), ad-supported viewing time (FAST/AVOD), ticketing
 - Profile switcher (kids/profiles) on entry
 - Arabic: Shahid OBSERVED with RTL nav + live TV section ("قنوات مباشرة")
 
-## Components that define the genre
+## Candidate components observed in the genre
 - Hero billboard with gradient scrim bottom→title stack→CTA row
   (Play + More info)
 - Landscape poster rows (16:9 cards, 8–16px radius OBSERVED Shahid 16px)
@@ -80,7 +80,7 @@ Subscriptions (SVOD), ad-supported viewing time (FAST/AVOD), ticketing
   design for themeable seasonal skins)
 - OSN+/MBC OBSERVED: bilingual nav toggles ع/EN
 
-## Conventions (follow)
+## Conventions to evaluate (adopt only when model-supported)
 Hero scrim, continue row first, genre rows with peeking cards, hover
 previews, progress bars, kids profiles, skip-intro, search-by-mood chips,
 minimal chrome.
@@ -96,7 +96,7 @@ minimal chrome.
 Disney+, Twitch, Spotify, YouTube (dual-creator ecosystem), Shahid (AR),
 OSN+ (AR/EN), Netflix (INFERRED — blocked), MBC.net, Crunchyroll class.
 
-## Decision guidance
+## Contextual decision prompts
 Default: dark canvas, scrim-backed hero, 16:9 rows 8–16px radius, minimal
 chrome, one brand accent, hover previews on desktop, TV-focusable controls.
 Let artwork carry color; UI earns invisibility.

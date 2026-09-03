@@ -14,23 +14,25 @@
 
 ## System selection rules
 
-1. **One system per product** (the cardinal rule). Mixing Lucide nav +
-   FA brands is acceptable ONLY for brand-logo glyphs
+1. Prefer a coherent icon language. Multiple sources can coexist when their
+   optical weight, geometry, platform/brand role, license, and states are
+   deliberately normalized; brand marks remain their own assets.
 2. Match icon stroke weight to text weight ecosystem: 2px-stroke icons
    pair with 400/500 text; heavier UI (700 headlines) tolerates filled
-3. Grid discipline: 16/20/24 sizes only; optical alignment beats
-   mechanical (triangles/shapes get nudged)
-4. Density: 16px icons in tables/rows, 20px in buttons, 24px nav,
-   32–48px feature illustrations — size = meaning tier
+3. Use a small size/grid system derived from font metrics, control targets,
+   viewing distance, platform, and density; optical alignment beats mechanical.
+4. Size and detail follow meaning, context, and target. Do not assign table,
+   button, navigation, and illustration sizes from a universal pixel recipe.
 5. Duotone/colored icons: reserved for marketing/empty states; UI icons
    single-color (currentColor) so states inherit
 
 ## Icon usage craft
 
-- Icons + labels for navigation/actions (usability default); icon-only
-  for universally-known actions (search, close, menu, cart) WITH
-  aria-labels
-- 8–16px gap icon↔label; align to text cap-height/x-height center
+- Prefer labels where recognition, consequence, audience, or localization
+  needs them. Icon-only controls require a strong learned/platform convention,
+  an accessible name, and discoverability; “cart” is not universal scope.
+- Set icon/label gap and optical alignment from the selected icon/font/control
+  metrics, then test across scripts and text scaling.
 - Color: icons inherit text color; status icons may take semantic color
   (+ text label — never color alone)
 - Don't re-illustrate: if a system lacks it, pick the closest semantic,
@@ -38,12 +40,10 @@
 
 ## Directional icons & RTL (the real rules)
 
-**Flip:** chevrons/arrows (next/prev, breadcrumbs, "learn more" arrows,
-carousel controls), progress/stepper connectors, tooltips carets,
-speech-bubble tails, list bullets with direction, share/send
-**Never flip:** media controls (play/pause/rewind — timeline semantics),
-clocks, logos/brand marks, charts/graph axes, checkmarks ✓, faces/bodies,
-numbers, globes (usually), shopping/cart/bag (usually symmetric anyway)
+**Evaluate semantic direction:** navigation/order arrows and spatial carets
+often flip; brand marks, numbers, and direction-neutral symbols usually do not.
+Media, timelines, charts, maps, share/send, body/hand illustrations, and domain
+symbols require product/platform/locale meaning—do not use one global list.
 **Mechanics:** CSS `[dir="rtl"] .icon-flip { transform: scaleX(-1); }`
 class on directional icons; or logical icon slots (start/end) where
 direction is implied by position; SVG `transform` attr for inline
@@ -64,4 +64,5 @@ direction is implied by position; SVG `transform` attr for inline
   labels ("Home 🏠" fine in nav; "Home 🏠" in a sentence = noise)
 - Unlabeled mystery icon buttons; emoji as UI icons (cross-platform
   rendering roulette — fine in content, not in buttons)
-- 12px icons (below legibility); filled+outline same glyph mixed randomly
+- icons too small/detailed for target conditions; filled+outline states mixed
+  without semantic or optical rationale

@@ -16,7 +16,7 @@ products (encyclopedias, docs) prize skimming + citations.
 Engagement/recency (weather apps), subscriptions (data products),
 institutional authority (science orgs), public-good mandates.
 
-## Information architecture
+## Candidate information-architecture patterns (not a product sitemap)
 - Utility: location-first home → current conditions → hourly strip →
   daily grid → maps/radar tabs → alerts
 - Science orgs: mission + missions/projects (NASA model: mission pages as
@@ -32,7 +32,7 @@ institutional authority (science orgs), public-good mandates.
 - Science: mission/project trees, media types (images/videos/audio)
 - Reference: search-first + category trees + interwiki/language links
 
-## Components that define the genre
+## Candidate components observed in the genre
 - Data tables with sortable headers + sticky first columns
 - Map layers with legends (radar/satellite/temperature)
 - Hourly/daily forecast strips (scroll-snap cards)
@@ -64,14 +64,14 @@ institutional authority (science orgs), public-good mandates.
 
 ## Arabic/MENA considerations
 - Prayer-time utilities: institutional-grade Arabic utilities (Umm al-Qura
-  calendar standard for KSA) — verify current references in Deep Mode
+  calendar standard for KSA) — verify current references with targeted research
 - Hijri/Gregorian dual calendars in all reference tools; Arabic month names
 - Arabic reference products: RTL infoboxes, Arabic transliteration + Latin
   scientific names side by side, Quranic-text display rules (specialized
   typography — never default fonts)
 - Units: metric standard regionally; °C, km, kg
 
-## Conventions (follow)
+## Conventions to evaluate (adopt only when model-supported)
 Answer above the fold, sortable/sticky tables, alert systems with severity
 hierarchy, deep-linkable states, citation/source prominence, tabular
 numerals, dual calendars for MENA.
@@ -87,7 +87,7 @@ numerals, dual calendars for MENA.
 NASA (OBSERVED), Nature (OBSERVED), weather.com (OBSERVED), UN (OBSERVED),
 Wikipedia (INFERRED — blocked; model is public knowledge).
 
-## Decision guidance
+## Contextual decision prompts
 Instrument discipline: neutral chrome, data as hero, interaction = state
 control (sort/filter/layer), typography for scanning numbers. Decoration
 budget near zero; memorability comes from data clarity and speed.

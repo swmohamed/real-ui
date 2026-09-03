@@ -9,11 +9,11 @@ cross-source conventions `[DESIGN PRINCIPLE]`.
 
 ## Chart-type selection (start from the QUESTION, not the data)
 
-| User question | Chart | Notes |
+| User question | Candidate representation | Notes |
 |---|---|---|
 | Trend over time? | line / area | time axis convention: LTR; RTL charts → rtl/cross-platform.md |
 | Compare categories? | bar | sort by value (not alphabet) unless order is semantic |
-| Part of whole? | sector/donut | ≤5 slices, rest grouped "other"; never exploded 3D |
+| Part of whole? | bar, stacked bar, sector/donut, or direct values | choose by category count, precision, labels, and comparison; decorative 3D distorts judgment |
 | Distribution? | histogram/rule marks | |
 | Correlation? | point (scatter) | density > prettiness |
 | Goal vs actual? | bar + rule (target line) | the classic combo |
@@ -26,27 +26,26 @@ same concepts.
 
 ## Chart-first vs table-first (product decision)
 
-Charts for shape/velocity/comparison at a glance; tables for exact
-values/comparison/audit. Finance/crypto norms: live table + sparkline
-hybrid (crypto-web3.md `[OBSERVED]`). Power users: chart + drill-in
-table pairing. Never chart 2 data points — show the two numbers.
+Charts can reveal shape/velocity/relationship; tables or direct values support
+exact comparison and audit. Pair or choose them from the decision and audience.
+Even two points may need a slope/context visualization; do not decide from
+count alone.
 
 ## Live & streaming data (crypto, logistics, ops)
 
 - Update the VALUE in place (flash state), never re-layout.
-- Throttle visual updates (per-tick re-render = seizure risk +
-  perf); 1s+ cadence, instant on cold load.
+- Throttle/coalesce visual updates to a cadence users can perceive and the
+  task requires; high-frequency source data does not require high-frequency
+  animation. Provide pause/freeze or aggregation when inspection needs it.
 - Timestamp the data ("as of 14:02") — freshness is a trust signal;
   stale-indicator state when feed dies (ux/states.md).
 - Pause/scrub affordance on hover/touch for inspection.
 
 ## Dashboard composition (pages/dashboard.md companion)
 
-- Top row: current-state headline metrics (value + delta + period) —
-  stat-row pattern (data-display.md).
-- One primary visualization per view-question; secondary charts
-  smaller; avoid grid-of-6-equal-charts (dashboard slop — every panel
-  fights, none answers).
+- Order metrics, exceptions, controls, and representations from the screen
+  contract. A top KPI row and one dominant chart are candidates, not dashboard
+  anatomy; coordinated monitoring may need several equal-status signals.
 - Filters global-to-page with visible effect count; time-range
   control adjacent to charts it affects.
 - Density is the point (devices/desktop.md) — but group: card ≈ one
@@ -65,11 +64,10 @@ table pairing. Never chart 2 data points — show the two numbers.
 
 ## RTL / Arabic specifics (rtl/cross-platform.md)
 
-- Mixed practice with a safe default: mirror horizontal BAR charts;
-  keep time-series LTR with localized labels UNLESS the product's
-  convention is RTL time flow — follow regional leaders and stay
-  CONSISTENT within one product `[DESIGN PRINCIPLE - test with Arabic
-  users]`.
+- Chart direction follows data meaning, domain convention, scale, platform,
+  and target-user expectation. Horizontal categories, time, order, geography,
+  and narrative can differ. Localize and bidi-isolate labels/values, document
+  the policy, and test with Arabic users rather than applying blanket mirroring.
 - Numbers on axes: Latin digits common in dashboards; Arabic-Indic
   variants per product policy — consistent everywhere.
 - Currency/units localized (rtl/arabic-ux.md); percent sign placement.
@@ -90,4 +88,4 @@ Every chart is a component with states: loading (skeleton), empty
 [ ] chart answers ONE question [ ] table alternative exists
 [ ] color + label encoding [ ] live-update flash not re-layout
 [ ] freshness/staleness states [ ] RTL/Arabic label widths tested
-[ ] chart widget has all four states [ ] sorted bars, ≤5 sectors
+[ ] chart widget has applicable states [ ] ordering/category count justified

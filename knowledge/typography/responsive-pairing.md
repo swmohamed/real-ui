@@ -2,36 +2,37 @@
 
 ## Responsive type rules
 
-- Body: 16px minimum everywhere (14px only for dense UI metadata);
-  articles 17–19 mobile
-- Display: fluid via clamp — `clamp(2rem, 1.2rem + 4vw, 4.5rem)` — with
-  min/max anchored to real design sizes
-- Step rhythm at breakpoints: shift 1–2 steps, not full rescale (mobile
-  h1 28–36px, desktop 48–72px product; editorial can exceed)
-- Line-height inverse-scales with size: display 1.1, body 1.6
+- Select body/support/display sizes from platform defaults, font/script
+  metrics, viewing distance, density, user settings, and real-content tests;
+  fixed pixel ranges are candidates, not roles.
+- Fluid type (`clamp`) is useful only when its min/preferred/max values and
+  wrapping behavior are tested at content-derived boundaries.
+- Type roles can shift nonlinearly across windows; preserve hierarchy and
+  measure rather than forcing every role down the same number of steps.
+- Line height usually changes with size and script, but each font/content role
+  needs diacritic, multiline, and text-scaling tests.
 - Optical sizes: variable fonts with `opsz` axis honor display vs text
   cuts (real display cuts are drawn tighter)
 
 ## Hierarchy across viewports
 
-- The ratio between h1 and body should INCREASE on mobile (fewer px, same
-  hierarchy drama via weight/spacing)
-- Kickers/eyebrows shrink-out on mobile if space-constrained (or stay —
-  they're 1 line)
+- Preserve meaningful hierarchy with the available channels; mobile does not
+  require a larger heading/body ratio.
+- Remove or defer kickers/eyebrows only when their content is redundant; space
+  pressure alone does not erase source, status, or category meaning.
 
 ## Bilingual responsive reality (AR+EN products)
 
 - Arabic runs larger + taller line-height → vertical rhythm tokens must
   accommodate BOTH scripts (define spacing in the system for the larger
   script; Latin reuses)
-- clamp() values tested against Arabic string lengths: Arabic headlines
-  are often 15–25% shorter character-wise but wrap differently — real QA
-  with Arabic strings, not English + "it'll probably wrap fine"
+- Test responsive values against real Arabic and Latin strings. Character
+  counts do not predict width, wrap, diacritics, or vertical metrics.
 - RTL line-clamp works; -webkit-line-clamp direction-safe
 
 ## Pairing checklist (any project)
 
-- [ ] Two families max (+mono if technical)
+- [ ] Every family/weight has a role and performance/license/script rationale
 - [ ] Both scripts chosen deliberately (if bilingual)
 - [ ] Weights: only what's loaded
 - [ ] One type scale documented (all sizes = scale steps)

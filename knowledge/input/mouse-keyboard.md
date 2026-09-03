@@ -8,8 +8,10 @@ shortcuts are respect, not clutter.
 - Hover is an information channel (web.md): tooltips (with delay +
   dismiss/hover-safe), previews, secondary action reveal, inline edit
   hints. Critical actions stay visible without hover.
-- Pointer precision licenses density: compact rows (24–32px), tight
-  tables, icon-button toolbars, small controls with tooltips.
+- Pointer precision permits smaller acquisition targets than touch in some
+  contexts, but density still depends on platform guidance, accessibility,
+  content, consequence, expertise, and mixed-input support. Tooltips do not
+  rescue mystery controls or provide a touch path.
 - Context menus (right-click) for object-level actions on power
   surfaces; cursor states per affordance (pointer, not-allowed, text,
   grab, col-resize, wait).
@@ -28,9 +30,9 @@ shortcuts are respect, not clutter.
 
 - Tab order = logical/visual order; focus-visible mandatory
   (accessibility/floor.md — corpus leaders style focus-visible).
-- Shortcuts: ⌘/ctrl-K command palette, ⌘/ctrl-S save, enter/esc
-  contracts, j/k navigation in lists, arrows in menus/grids; show
-  shortcuts in tooltips/menus (discoverable).
+- Respect standard platform/widget key behavior. Add discoverable shortcuts
+  for frequent product actions without repurposing familiar combinations or
+  making shortcuts/command palettes the only path.
 - Focus traps in modals (with release); focus returns on close;
   skip-to-content on pages.
 - Forms: label click focuses, enter submits, autocomplete attrs,

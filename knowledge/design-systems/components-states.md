@@ -2,53 +2,60 @@
 
 ## Component API discipline
 
-Every component = intent + variants + states + slots:
+Every component contract = intent + semantics + content + composition + states:
 - **Intent**: what job (Button = action; Badge = status; Card = content
   unit grouping)
-- **Variants**: by emphasis (primary/secondary/ghost), size (sm/md/lg),
-  and media-orientation (leading-icon, icon-only) — NOT by page
+- **Variants**: only meaningful axes supported by repeated product needs;
+  emphasis, size, density, or orientation are candidates—not mandatory sets
 - **States**: default, hover, active, focus-visible, disabled, selected,
   loading (interactive); empty, loading, error, partial (data)
 - **Slots**: composed regions (card: media slot, content slot, action slot)
 
-## Variant matrix method
+## State-space method
 
-Design the matrix, not instances: Button × {5 emphases} × {3 sizes} ×
-{7 states} — specify at token level, document the corners. This is how
-real design systems scale to 100s of components without bloat
-(IBM Carbon/GitHub Primer lineage).
+Map supported properties and states, then test meaningful intersections:
+content extremes, loading + disabled, selected + focus, error + read-only,
+RTL + icon placement, compact + touch, and high/forced contrast. Do not create
+a combinatorial variant API to appear systematic. Prefer composition,
+semantic props, and shared primitives over page flags or a god component.
 
 ## State spec essentials (commonly missed)
 
-- Focus-visible ring: 2px, offset 2px, uses brand or ink (never removed)
-- Disabled: reduce to 40–50% ink + no pointer events + `aria-disabled`
-  semantics preserved (button element, not div!)
-- Loading: preserve layout (fixed width/height), label + spinner swap,
-  block double submits
+- Focus-visible: clearly identifiable on every surface and in relevant
+  contrast modes; use a system token tested against actual backgrounds
+- Disabled: native/ARIA semantics match behavior; do not rely on opacity or
+  `pointer-events` as the whole contract, and keep explanatory content legible
+- Loading: prevent ambiguous duplicate effects, preserve enough layout and
+  context for orientation, and state whether the command can be cancelled
 - Selected: distinct from hover (persistent), works with `aria-pressed`/
   `aria-selected`
-- Skeleton states match final layout block-for-block
+- Skeletons are optional and must not fabricate structure, loop indefinitely,
+  or hide usable stale content during a background refresh
 
 ## Composition rules (page-level coherence)
 
-- Components compose into sections; sections into templates; templates
-  per page type (see pages/*). Define page **templates** in the system
-  (marketing-2-col, dashboard-3-col, article-reading) — prevents
-  per-page reinvention
+- Components compose into reusable regions and layout primitives. Define
+  constraints (content width, split ratios, density, media placement), not
+  page-type section sequences. Assemble pages from their screen contracts and
+  `pages/README.md`; recurring compositions may be promoted only after real
+  repetition proves them
 - Density variants: comfortable (default) / compact (data tools) — a
   system-level dial, not per-component hacks
 - RTL: variants must be direction-tested; directional icons variant
   (`icon-start` vs `icon-end`) handled by logical properties + flip token
 
-## Versioning & governance (survival rules)
+## Lifecycle, evidence, and governance
 
-- Deprecation over breaking: new variant → migrate usage → remove old in
-  major version; changelog public (design systems ARE products — leaders
-  ship public changelogs, OBSERVED: gov.uk, IBM, GitHub docs)
-- Contribution path: propose → token-check → a11y-check → document →
-  adopt; undocumented components die as forks
-- Adoption metric: % of pages using system components vs one-offs —
-  the health KPI of real systems
+- Track maturity honestly: proposal/experimental → tested candidate → stable →
+  caution/deprecated/retired. Names vary by system; confidence and support do not.
+- Contribution evidence includes a distinct recurring need, representative
+  usage, accessibility testing (including disabled users where relevant),
+  content/localization stress, API review, ownership, documentation, and a
+  maintenance/version plan. One product example rarely proves a shared component.
+- Deprecate with replacement, migration guidance, telemetry/adoption evidence,
+  version boundary, and removal policy. Publish known limitations.
+- Measure adoption together with escape hatches, overrides, defect/accessibility
+  rate, migration completion, and task fit. High adoption can still mean forced use.
 
 ## Documentation minimum per component
 

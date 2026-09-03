@@ -2,7 +2,7 @@
 
 The regional canon, 2025 corpus (39 MENA sites fetched; 31 with full RTL
 CSS evidence). OBSERVED = fetched/analyzed; INFERRED = known, not fetched
-(verify in Deep Mode).
+(verify with targeted current research when the reference matters).
 
 ## News
 - **BBC Arabic** — OBSERVED. Full RTL with Reith ecosystem (Qalam for
@@ -15,7 +15,8 @@ CSS evidence). OBSERVED = fetched/analyzed; INFERRED = known, not fetched
 - **Youm7** — OBSERVED (eg). FA icons, 460 links, ticker energy — mass
   portal density reference.
 - **RT Arabic / Aawsat** — OBSERVED. **Al Jazeera Arabic / Al Arabiya /
-  France24 AR** — blocked from corpus; INFERRED leaders (verify Deep Mode).
+  France24 AR** — blocked from corpus; INFERRED leaders (verify with targeted
+  current research).
 
 ## Ecommerce / Retail
 - **Amazon.eg & .sa (AR)** — OBSERVED. Path i18n `/-/ar/`, Ember Arabic,

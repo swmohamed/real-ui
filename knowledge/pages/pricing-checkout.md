@@ -2,21 +2,23 @@
 
 ## Pricing page
 
-Purpose: qualify + convert with transparency. Hidden pricing destroys more
-trust than any design gains it.
+This section applies only when plans/subscriptions or quoted pricing are
+KNOWN/REQUESTED. It must not invent tiers, trials, annual billing, enterprise
+sales, calculators, discounts, or currencies. Purpose: help the intended
+buyer understand eligible offers and trade-offs with honest constraints.
 
-### Anatomy
+### Candidate modules (select from real offer data)
 
-1. Header: plan-toggle (monthly/annual with "-20%" badge) + currency
-   selector if international
+1. Billing-period/currency controls only when the offer actually varies by
+   those dimensions; savings claims come from supplied pricing data
 2. Plan columns (3–4 max): name, price (largest number on page), billing
    note ("/user/mo, billed annually"), 1-line audience fit, feature list
-   (checked, concrete), CTA; **"Most popular" badge on the target plan**
-   (middle-right visual anchor — right column in LTR, start-side in RTL)
+   (checked, concrete), CTA; recommendation badges only when backed by a
+   defined audience rule or real data
 3. Feature comparison table below (dense, honest) for evaluators
 4. Trust strip: payment methods, refunds, security, support SLA
 5. FAQ: billing questions (what happens when I upgrade, refunds, limits)
-6. Enterprise strip: "Need more? Contact sales" with a short form
+6. Sales-assisted path only when it exists in scope
 
 ### Rules
 
@@ -35,17 +37,19 @@ trust than any design gains it.
 
 ## Checkout
 
-Purpose: complete payment with zero anxiety. Every field is a chance to
-leave; every reassurance is a chance to stay.
+This section applies only when a transaction is KNOWN/REQUESTED. Do not add a
+cart, account, shipping, promotion, payment method, tax claim, or tracking
+capability because it appears in this catalog. Purpose: complete the real
+transaction with clear totals, state continuity, and recoverable errors.
 
-### Flow anatomy
+### Candidate flow stages (include only required stages)
 
 1. Cart/review: items + editable quantities, promo field, order summary
    sticky (desktop right / mobile bottom sheet), edit links
 2. Identity/contact (or login shortcut + guest checkout!)
 3. Shipping/delivery method with dates + costs shown HERE
 4. Payment: cards, wallets (Apple/Google Pay — one-tap above forms),
-   regionals (mada, STC Pay, Fawry, COD for MENA; iDEAL/SEPA/BLIK for EU)
+   regional methods only when supported by the merchant, processor, and market
 5. Review → confirm → **confirmation page** with reference number, next
    steps, receipt email note, tracking link when relevant
 

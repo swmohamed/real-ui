@@ -13,7 +13,7 @@
 - **Mono as identity**: ui-monospace/SF Mono/Source Code Pro for dev/fin
   products — Stripe, GitHub-class
 
-## Choosing a Latin face (decision table)
+## Reference classes for comparison (not a selector)
 
 | Register | Face class | Examples |
 |---|---|---|
@@ -25,17 +25,21 @@
 | Institutional | Humanist sans | Frutiger/GDS Transport class |
 | Brutalist/system | Monospace-forward | IBM Plex Mono accents, Carbon's Plex family |
 
-## Practical rules
+## Practical decisions
 
-- 2 families max + mono optional; 3 weights loaded typically (400/600/700
-  or 400/500/700); variable font when more
+- Use the fewest families, weights, and files needed for content roles,
+  identity, scripts, hierarchy, performance, and platform rendering. One
+  family can be expressive; more than two can be coherent when the product
+  has genuinely different editorial/data/brand modes.
 - Fallback stack with metric tuning: `Inter, "Inter Fallback", system-ui…`
   (OBSERVED pattern on Next.js sites using size-adjust overrides to kill
   layout shift on swap)
-- Line-length discipline: 45–75ch content; UI labels exempt
-- Type hierarchy from ONE scale (see design-systems); don't hand-tune
-  per section
-- Display tightening: -1 to -2% tracking above 40px; never tighten body
+- Choose reading measure from font/script metrics, size, language, content,
+  and testing. Character ranges can seed a test, not settle it.
+- Use a documented role/scale system; products with editorial and operational
+  modes may need coordinated subscales rather than one ratio everywhere.
+- Tracking and optical size follow the actual face and role. Do not copy a
+  display-tightening percentage or alter body tracking without legibility tests.
 - Sentence case for UI (Title Case only for proper nouns/marketing H1s
   where brand voice says so); ALL-CAPS = labels/eyebrows only, with
   tracking

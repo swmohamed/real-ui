@@ -1,73 +1,91 @@
-# Layout Foundations — Grids, Containers, Space
+# Layout Foundations — content, relationships, and space
 
-Grounded in corpus measurements (see `research/observed-findings.md` §5).
+Layout represents the product model. Corpus values in
+`research/observed-findings.md` are plausible candidates—not a universal
+container, grid, sidebar, or breakpoint system.
 
-## Container system (what real sites ship)
+## Derive regions before columns
 
-| Role | Observed range | Recommendation |
-|---|---|---|
-| Content container (marketing) | 1024–1280px | 1200 default; 1280 for media-dense |
-| Wide container (dashboards, catalogs) | up to 1440–1600 | 1440, cap inner density |
-| Text measure (articles, forms) | 600–800px | 68–75ch max |
-| Sidebar + content | 240–320px sidebar | 280px; collapses <1024 |
-| Nav height desktop | 56–72px | 64px sticky |
-| Nav height mobile | 48–56px | 52px + safe-area |
+For each major region record:
 
-Real sites cap content at ≤1600 even on 4K walls (OBSERVED max-width census).
-Gutters: 16–24px mobile, 24–40px desktop; section rhythm: 64–96px desktop,
-48–64px mobile between major sections (INFERRED median from paddings corpus-wide).
+`required content/action → user decision/task → relationship to other regions → persistence → representation → stress condition`
 
-## Grid selection rules
+Then identify shared key lines, reading/scan order, text measure, alignment,
+and what owns leftover space. A grid is useful when it expresses those
+relationships; “12 columns” is not a design rationale.
 
-- **Card catalogs** (games, products, media rows): CSS Grid with
-  `repeat(auto-fill, minmax(card-min, 1fr))`. Card minimums: 150–200px games,
-  200–260px products, 220–300px editorial cards.
-- **Asymmetric marketing** (hero + feature): 12-col grid, content spans 5–7,
-  visual spans 5–7, deliberately unequal for hierarchy.
-- **Editorial mixed** (news front): grid areas — lead story 2×2, secondary
-  stack, sidebar rails (Guardian/NYT pattern family).
-- **Dashboards**: 12-col with fixed left rail; content in 4/8 or 6/6 splits;
-  never center a dashboard at 960px.
-- **Full-bleed moments**: heroes, galleries, video. Bleed the media, not the
-  text — keep captions inside the measure.
+Candidate organizations include linear narrative, aligned comparison,
+master-detail, supporting pane, canvas + inspector, temporal lane, spatial
+map, editorial lead/secondary hierarchy, and modular browse. Select from
+content and interaction shape—not page or industry name.
 
-## The 4-breakpoint spine
+## Width and measure
 
-```
-<640 phone · 640–767 large phone · 768–1023 tablet · 1024–1279 laptop · ≥1280 desktop
-```
-Design at 390 (phone), 768 (tablet), 1280 (desktop) minimum; the spine covers
-~90% of observed behavior. Add 1536+ only when the layout has a wide-desktop
-payoff (multi-column dashboards, epic heroes).
+- Choose reading measure from font/script, size, language, content type, and
+  testing. Character-count heuristics can seed a test but are not pass/fail.
+- Cap or partition wide space when longer lines or detached controls reduce
+  comprehension. Data, media, maps, timelines, and canvases may legitimately
+  use more width than prose.
+- Gutters and internal spacing respond to viewport, safe areas, input targets,
+  text scaling, and density mode. Use a small token scale, not copied values.
+- Distinguish component padding, inter-item rhythm, section separation, and
+  shell gutters; equal numeric values do not mean equal semantic roles.
 
-## Responsive transformation rules (desktop → mobile)
+## Content-derived adaptation
 
-Mandated rethink, not shrink:
-- **Navigation**: horizontal links → hamburger/sheet at 768 (utility-first
-  sites keep 2–3 top actions visible). Search collapses to icon + expandable
-  field; on search-first sites (travel, real estate) search stays expanded.
-- **Cards**: 4-col → 2-col → 1-col with wider media ratio (16:9 → 4:3);
-  hide metadata that duplicates the title on phone.
-- **Tables**: → stacked cards with label:value pairs, or horizontal scroll
-  with sticky first column (financial data keeps tables).
-- **Filters**: sidebar → bottom sheet with "Show N results" CTA (e-commerce
-  standard, OBSERVED on marketplace class).
-- **Heroes**: split hero → stacked with media after text; sticky CTA bar
-  appears at bottom on mobile conversion pages (travel/food 75% sticky rate).
-- **Footers**: 4-col link farm → accordion sections.
+Do not begin with a fixed device spine. Start with representative content and
+find the widths or container sizes where:
 
-## Space as a system
+- labels/actions collide or wrap ambiguously;
+- reading measure becomes uncomfortable;
+- comparison loses alignment;
+- panes cannot preserve useful minimums;
+- touch/keyboard targets or focus order fail;
+- localization, 200% text, reflow, safe areas, or virtual keyboard obscure work;
+- an extra pane/column adds genuine simultaneous context rather than filler.
 
-- Base unit 4px; common multipliers 8/12/16/24/32/48/64/96.
-- Component-internal padding (button 12/20, card 16–24, input 12) vs
-  section rhythm (64/96) — different scales, never mixed.
-- Dense Arabic layouts tolerate tighter rhythm than Western equivalents
-  (OBSERVED: MENA news/social run ~10–15% more items per viewport).
+Normalize resulting thresholds into the smallest coherent project set.
+Platform window classes remain platform inputs; do not reinterpret them as web
+standards. Test immediately on both sides of every threshold.
 
-## Layering & elevation (z-index scale from real systems)
+## Transformation ledger
 
-Standardize: 0 content / 10 sticky nav / 20 sticky sub-bar / 30 dropdown /
-40 modal / 50 toast / 60 tooltip. Sticky nav + sticky filters stack at 768+,
-merge into one bar on mobile. Elevation communicates layer: flat content →
-hover-raised card (+shadow tier 1) → popover (tier 2) → modal (tier 3 + scrim).
-Shadow tiers, not bespoke shadows: 2–3 box-shadow tokens site-wide.
+For each window/container class state what remains, moves, condenses, changes
+representation, becomes progressive disclosure, or is intentionally removed.
+Examples are decisions to evaluate, not automatic transforms:
+
+- navigation may remain visible, become a rail, drawer, sheet, search-first
+  surface, or contextual navigation according to hierarchy and platform;
+- a table may keep comparison through priority columns, sticky identifiers,
+  horizontal scroll, row disclosure, or a different compact representation;
+  cards are valid only when records remain independently intelligible;
+- filters may stay inline, become a compact bar, overlay, sheet, or saved view;
+- split media/text may stack, crop, move, or disappear when the content
+  priority and narrative allow it;
+- a footer may remain grouped, wrap, disclose, or shorten according to link
+  hierarchy and legal/support needs.
+
+State and task continuity must survive recomposition: selection, focus,
+scroll/reading position, edits, media, drafts, and long-running operations.
+
+## Layering and occlusion
+
+Define semantic layers (content, sticky context, transient command surface,
+modal task, notification, teaching overlay) and assign tokens. The number of
+layers depends on the product. Sticky regions must not obscure focus or consume
+the working viewport; overlays need dismissal, focus, scroll, and background
+interaction contracts. Elevation explains ownership and overlap, not prestige.
+
+## Layout QA
+
+- [ ] style-blind regions trace to content/task relationships
+- [ ] wide space has an owner; prose does not stretch by accident
+- [ ] thresholds come from named stress failures or platform classes
+- [ ] comparison, hierarchy, spatial, and temporal meaning survives adaptation
+- [ ] focus, selection, drafts, scroll, and operation state survive recomposition
+- [ ] long localized strings, mixed scripts, 200% text, 320 CSS px reflow, safe areas, and virtual keyboard are tested where applicable
+- [ ] no transformation exists solely because a framework or genre usually uses it
+
+Connects: foundations/{product-modeling,visual-hierarchy}.md ·
+responsive/{breakpoints-adaptation,adaptive-models}.md · devices/* ·
+accessibility/floor.md.

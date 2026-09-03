@@ -1,28 +1,38 @@
 # Responsive: Breakpoints & Real-World Adaptation
 
-## The evidence-based spine (from 2025 corpus, 145 sites)
+## Corpus candidates, not a breakpoint prescription
 
 ```
-sm 640 · md 768 · lg 1024 · xl 1280        (+ 2xl 1536 optional)
+frequent retained widths: 768 (91/145) · 1024 (63/145) · 1200 (46/145)
+other common candidates: 767 · 1280 · 600 · 480 · 640 · 1440
 ```
-- 768px = the most-used breakpoint on the real web (dominant by far)
-- Mobile-first `min-width` is the modern default (Tailwind-era); legacy
-  desktop-first `max-width` persists in enterprise CSS
-- Container queries: adopt where leaders do (component-level: cards,
-  widgets, sidebars) — 19% corpus and rising; use alongside, not
-  instead of, viewport breakpoints
-- RTL sites use the same spine (OBSERVED) — grids are direction-agnostic
+- Counts are per site where the width survived top-N source extraction. They
+  do not prove the query is active on the sampled page.
+- A 640/768/1024/1280 set has at least one member in 104/145 sites, but only 18
+  retained all four. Never copy the set as a framework spine without content
+  stress tests.
+- Container-query syntax appears in 28/145 source samples (19%). Use it when a
+  component truly adapts to container space; source presence does not prove
+  runtime use.
+- RTL samples share several candidates with the wider corpus, but localized
+  strings and content priority still determine their actual boundaries.
 
-## Per-element adaptation map
+## Per-element candidate adaptation map
+
+Every item below is a choice to evaluate at the width where real content or
+interaction fails—not a mandated transformation.
 
 **Navigation**
-- Desktop links → ≤768: hamburger/sheet + bottom tabs (app-like)
+- Visible links → condensed navigation when real labels/actions no longer fit;
+  use a drawer/sheet or bottom destinations only when the hierarchy and
+  platform support it (768 is a corpus candidate, not a universal trigger)
 - Utility bar collapses into menu; language/currency stays accessible
   (≤2 taps)
 - Search: expands to full-screen input on mobile (auto-focus)
 
 **Layout regions**
-- Sidebars: fixed → off-canvas drawer (<1024) or stacked section;
+- Sidebars: fixed → off-canvas drawer or stacked section when the main region
+  breaches its useful width;
   sticky sidebars become inline blocks
 - 3-col → 2-col → 1-col at natural density boundaries (see card
   minimums per vertical)
@@ -34,7 +44,9 @@ sm 640 · md 768 · lg 1024 · xl 1280        (+ 2xl 1536 optional)
 
 **Components**
 - Tables → cards / horizontal-scroll (data keeps tables + sticky col)
-- Filters sidebar → bottom sheet + apply CTA (marketplace standard)
+- Filters sidebar → compact bar, overlay, sheet, dedicated refinement surface,
+  or preserved sidebar according to facet complexity, platform, input, and
+  result-context continuity
 - Modals → full-screen sheets on mobile
 - Tooltips → inline hints / long-press
 - Hover actions → always-visible actions (no hover on touch)
@@ -46,16 +58,18 @@ sm 640 · md 768 · lg 1024 · xl 1280        (+ 2xl 1536 optional)
 ## Mobile-first RTL
 
 - Direction set once on `<html dir>` — children inherit
-- Touch targets ≥44×44 (56 for primary); spacing tokens mobile ≥8
+- Prefer touch hit areas around 44×44 CSS px (48–56 for primary actions);
+  WCAG 2.2 AA conformance floor remains 24×24 CSS px or an allowed exception
 - Sticky elements respect safe-areas (env(safe-area-inset-*))
 - Test at 320–360px (real budget Androids across MENA) not just 390
 
 ## Common failure modes
 
-- Breakpoint-per-component chaos (5 custom values per page) — normalize
-  to the spine; component-specific adaptation belongs in container queries
+- Breakpoint-per-component chaos with no shared rationale — normalize to a
+  small project set while reserving container queries for genuinely reusable
+  component-level adaptations
 - Hiding content at mobile that users need (contact info, filters)
 - Desktop hover-only functionality with no touch equivalent
 - Horizontal page scroll from fixed-width children (min-width leaks)
-- Zoom-blocking viewport meta (maximum-scale=1 — accessibility violation
-  still OBSERVED on 3 corpus sites)
+- Zoom-blocking viewport meta (`maximum-scale=1`) — still SOURCE-OBSERVED on
+  17/145 CSS-evidence sites

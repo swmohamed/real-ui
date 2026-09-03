@@ -4,6 +4,11 @@ A PRIMARY MENA industry, not a niche. Evidence: v2 fetch 2025-08
 `[OBSERVED]` — quran.com (gold standard), islamicfinder.org,
 muslimpro.com.
 
+Apply `industries/README.md`. First identify the subtype: Quran reader,
+prayer-time utility, Hijri calendar, learning product, mosque service, or a
+known combination. Patterns below are conditional and do not authorize extra
+religious content, sensors, audio, accounts, notifications, or location use.
+
 ## Observed design languages
 
 - Quran.com: **dedicated mushaf typography** — UthmanicHafs script for
@@ -15,29 +20,29 @@ muslimpro.com.
 - MuslimPro: conventional utility app framing, WordPress-era site
   `[OBSERVED]`.
 
-## DNA rules
+## Conditional domain patterns and questions
 
-1. **Quranic text is sacred content class**: dedicated script
+1. **When Quranic text is supplied**, treat it as a distinct sacred content class: dedicated script
    (Uthmanic/Amiri/Noto Naskh/Mushaf fonts), generous line-height,
    justify per mushaf tradition, ayah-end markers, surah headers as
    ornaments. NEVER generic sans for Quranic text.
-2. **Time is the hero**: prayer-times widget = homepage's primary
+2. **For a prayer-time utility where “next prayer” is the top task**, a
+   prayer-times widget may become the primary surface
    content (next prayer countdown, not a dashboard) `[OBSERVED - all
    three leaders]`; location-first UX; times in BOTH Arabic-Indic and
    Latin digits option.
-3. Hijri calendar co-present with Gregorian (home + date pickers);
-   Ramadan mode = seasonal IA shift ( fasting timer, iftar/imsak
-   schedules, tarawih content) `[OBSERVED - seasonal nav on leaders]`.
-4. Qibla = sensor-experience: compass screens designed for calibration
+3. When the product uses dates, define its Hijri/Gregorian policy. A Ramadan
+   mode or seasonal IA shift requires real seasonal capabilities/content.
+4. If Qibla is in scope, treat it as a sensor experience with calibration
    states (device flat提示, magnetic interference warning), map fallback.
-5. Audio (recitation): player with reciter picker, per-ayah repeat
+5. If recitation is in scope: player behavior may include a reciter picker, per-ayah repeat
    (learning loop), background play + lock-screen controls (mobile
    states — ux/mobile-states.md).
 6. Calm, respectful motion; adhkar/dhikr counters (tap haptics);
    content accuracy trust (Quran text verified, translations credited
    — source attribution visible `[OBSERVED - quran.com credits]`).
 
-## Key flows
+## Candidate flows by subtype (scope required)
 
 - Home = prayer card + next-prayer progress ring + hijri date + verse-
   of-day + quick tiles (quran/qibla/adhkar).
@@ -51,8 +56,9 @@ muslimpro.com.
 
 ## MENA/global notes
 
-Arabic-first with English UI for global ummah; Tajik/Urdu/French/
-Indonesian translations = content, not just locale; mosque finder
-(nearby + prayer times + juma times); dua/adhkar collections with
-category browsing; no imagery of animate beings in decorative art —
-geometric/calligraphic ornament vocabulary (cultural design literacy).
+Arabic-first with English UI may serve a global ummah; Tajik/Urdu/French/
+Indonesian translations are content, not just locale. Mosque finding and
+dua/adhkar collections are separate capabilities, not genre defaults.
+Establish imagery/ornament policy with the specific community,
+scholarly/brand guidance, and audience research; do not impose one religious
+interpretation as a universal UI rule.

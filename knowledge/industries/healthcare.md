@@ -16,7 +16,7 @@ audiences skew older/disabled — design floor must rise.
 Appointments booked, patient acquisition (private), public health outcomes
 (public), pharmacy conversion, donor/career pipelines.
 
-## Information architecture
+## Candidate information-architecture patterns (not a product sitemap)
 - Public: Home (services A–Z, urgent-care strip, search) → Condition/treatment
   content hub → Find-a-doctor/clinic directory → Appointment booking →
   Patient portal → About/insurance
@@ -31,7 +31,7 @@ Appointments booked, patient acquisition (private), public health outcomes
   blue system, Frutiger-class humanist, arrow-link list components
 - Persistent urgent/emergency strip (111/999-style triage links)
 
-## Components that define the genre
+## Candidate components observed in the genre
 - Symptom/service search with plain-language synonyms (lay terms → clinical)
 - A–Z directory lists (disease index pattern)
 - Appointment wizards: specialty → doctor → slot grid → details → confirm
@@ -55,7 +55,8 @@ Appointments booked, patient acquisition (private), public health outcomes
 - Pharmacy: refill tracking, substitution opt-ins (generic ↔ brand)
 
 ## Mobile patterns
-- Click-to-call everywhere (anxious users phone more)
+- Keep an in-scope urgent phone/contact path easy to find; do not invent phone
+  support or duplicate it indiscriminately
 - Large touch targets (44–56px) — older audiences
 - Content pages with text-size adjusters; dark-mode not a priority vs contrast
 
@@ -69,10 +70,11 @@ Appointments booked, patient acquisition (private), public health outcomes
 - Hijri/Gregorian scheduling; Ramadan clinic hours
 - Insurance card (تأمين) verification UX — card scanning common
 
-## Conventions (follow)
+## Conventions to evaluate (adopt only when model-supported)
 Plain-language content schema, search-first with A–Z fallback, appointment
 wizards, real-staff photography, accessibility floor above commercial sites,
-emergency exits everywhere, verified-badges on clinical claims.
+clear urgent-help exits where clinically relevant; clinical verification must
+come from real governance/content evidence, never a fabricated badge.
 
 ## Overused/anti-patterns
 - Marketing gloss/gradients on clinical surfaces (trust inversion)
@@ -85,10 +87,10 @@ emergency exits everywhere, verified-badges on clinical claims.
 ## Strong references
 NHS (OBSERVED — pattern library public), Mayo Clinic (INFERRED — blocked),
 WHO (OBSERVED), Cleveland/Johns Hopkins class (INFERRED), Walgreens
-(OBSERVED — pharmacy retail hybrid), Sehha/MOH portals (INFERRED — verify in
-Deep Mode).
+(OBSERVED — pharmacy retail hybrid), Sehha/MOH portals (INFERRED — verify with
+targeted current research when the reference matters).
 
-## Decision guidance
+## Contextual decision prompts
 Calm blue/green system, humanist type, big readable body, structured
 clinical schemas, search+A–Z, real photography, elevated a11y floor. Design
 for the most anxious user in the room.

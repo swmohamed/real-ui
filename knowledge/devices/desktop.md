@@ -1,7 +1,8 @@
 # Device: Desktop
 
-Desktop = pointer + keyboard + resizable windows + high density. Users
-are professionals in flow: speed beats delight.
+Desktop can combine pointer, keyboard, touch/pen, resizable windows, multiple
+displays, and long sessions. Audience and task—not the device label—decide
+expertise, density, speed, guidance, and expressive character.
 
 ## Pointer economics
 
@@ -13,9 +14,9 @@ are professionals in flow: speed beats delight.
 
 ## Keyboard-first workflows (the desktop differentiator)
 
-- Everything reachable by keyboard; shortcuts for power actions
-  (⌘K/ctrl-K command palettes are table stakes in 2020s SaaS —
-  corpus-observed across saas/dev tools).
+- Everything operable by keyboard. Add standard and task-specific shortcuts
+  for frequent actions when they improve real workflows; a command palette is
+  optional and never the only path.
 - Focus management: logical tab order, visible focus, focus traps in
   modals with release.
 - Menus (menu bars in desktop apps; top nav + context menus on web).
@@ -33,10 +34,10 @@ are professionals in flow: speed beats delight.
 
 ## Density doctrine
 
-Desktop earns information density: data tables with 32–40px rows,
-compact lists, toolbars. "Cleaning up" a desktop tool by removing
-density = anti-pattern (industries/b2b-enterprise.md). Whitespace for
-rhythm, not emptiness.
+Desktop permits higher information density when comparison, monitoring, or
+expert throughput needs it. Row height, toolbar depth, and pane count must
+survive content, target, text-scaling, platform, and accessibility tests.
+Removing useful density is harmful; adding density to every desktop is too.
 
 ## Desktop-specific states
 
@@ -46,7 +47,7 @@ rhythm, not emptiness.
 
 ## Desktop QA
 
-[ ] keyboard-only path complete [ ] shortcuts + command surface
+[ ] keyboard-only path complete [ ] justified shortcuts + command surfaces
 [ ] hover designed (safe) [ ] context menus where habits expect them
 [ ] window resize safe (min widths) [ ] density appropriate to product
 [ ] focus visible/trapped correctly [ ] multi-column used honestly

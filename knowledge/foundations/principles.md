@@ -11,20 +11,23 @@ different context. Never open a project with aesthetics; open it with
 classification.
 
 ## 2. Evidence over invention of facts
-When reasoning about real sites: OBSERVED / INFERRED / RECOMMENDED / UNCERTAIN.
+When reasoning about real sites: SOURCE-OBSERVED / RUNTIME-OBSERVED /
+RENDER-OBSERVED / DOC-OBSERVED / INFERRED / RECOMMENDED / UNCERTAIN. Legacy OBSERVED labels
+mean source presence unless a runtime/render state is named.
 When designing: principles are reusable, pixels are not — never copy a site,
 combine patterns from multiple references into an original result.
 
 ## 3. Content shapes layout
-Real homepages average exactly one h1 and 60–600 links depending on sector.
-Density is a design decision: news grids are dense because scanning IS the
-product; luxury is sparse because scarcity IS the message. Ask "how much
-content exists?" before "how should it look?"
+Content amount, shape, volatility, source, language, and decision value all
+change the layout. Ask what exists, what must be compared or understood, and
+what can be deferred before choosing a container. A genre may suggest density;
+the actual product and task must justify it.
 
 ## 4. Hierarchy is allocation, not decoration
-Every screen answers: what is the ONE job of this view? Everything else is
-subordinate by size, weight, color, or position. If two elements compete,
-one is wrong.
+Every screen answers which outcome and decisions it supports. Some views have
+one dominant action; monitoring, comparison, creation, and incident surfaces
+may need several coordinated signals. Competition is wrong when priority and
+relationship are unclear—not merely because two elements are salient.
 
 ## 5. Systems, not screens
 Ship a scale, not a value: 2–3 radius steps, 3–4 elevation steps, 8–10 type
@@ -60,10 +63,11 @@ written justification tied to brand/context.
 ## The design decision framework (used at runtime)
 
 For any decision, answer in order:
-1. **Classify** — industry, sub-industry, audience, intent, page type, language/region.
-2. **Retrieve** — load the matching industry file, page file, DNA, patterns.
-3. **Constrain** — content inventory, brand input, technical limits, a11y floor.
-4. **Synthesize** — pick a Visual DNA + adapt 2–4 reference patterns (never one).
-5. **Tokenize** — express decisions as a small scale system before styling anything.
-6. **Validate** — run the finish gate: anti-AI check, a11y check, RTL check,
+1. **Classify** — industry, product type, audience, intent, platform, language/region.
+2. **Model and scope** — entities, tasks, capabilities, content priority, screen contracts.
+3. **Retrieve** — load authority contracts before relevant page/industry catalogs.
+4. **Constrain** — brand, technical limits, a11y, performance, locale, platform.
+5. **Synthesize** — derive visual decision axes + adapt principles from multiple references (never one layout or preset).
+6. **Tokenize** — express decisions as a small scale system before styling anything.
+7. **Validate** — run scope/structure/state plus anti-AI, a11y, RTL,
    performance check, "does it feel like its industry?" check.
