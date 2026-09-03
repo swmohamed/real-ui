@@ -1,0 +1,66 @@
+name: Knowledge or research
+description: Propose new UI/UX knowledge, missing product spaces, or evidence. Requires a why and real-product sources when applicable.
+title: "[Knowledge]: "
+labels: ["knowledge"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this for knowledge gaps, not generic templates. Real products are evidence. Do not submit copied layouts.
+  - type: dropdown
+    id: gap-type
+    attributes:
+      label: Kind of gap
+      multiple: true
+      options:
+        - Missing product space
+        - Category / industry
+        - Product type
+        - Interface family
+        - Workflow or interaction
+        - Regional / language / RTL
+        - Platform or device
+        - Evidence quality or honesty
+        - Other UI/UX knowledge
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: Why is this needed
+      description: What design decision can the skill not make well today? Why do existing files not already cover it?
+    validations:
+      required: true
+  - type: textarea
+    id: existing
+    attributes:
+      label: Existing knowledge checked
+      description: Which files or families did you review? If this already lives in an industry, page, or interface-family file, say so.
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Real-product evidence
+      description: Production products (name + URL). Note what you actually saw (public HTML, store listing, docs). Do not include raw HTML dumps.
+      placeholder: |
+        - Product — https://example.com — public catalog HTML
+        - Product — https://play.google.com/store/apps/details?id=… — store listing
+    validations:
+      required: true
+  - type: textarea
+    id: decision
+    attributes:
+      label: Decision logic to store
+      description: WHAT / WHY / WHEN / WHEN NOT / TRADEOFF. Not a layout to copy.
+    validations:
+      required: true
+  - type: checkboxes
+    id: rules
+    attributes:
+      label: Rules
+      options:
+        - label: This is not a request to copy a real product or add a generic template
+          required: true
+        - label: I am not attaching raw fetches, caches, secrets, or machine-specific paths
+          required: true

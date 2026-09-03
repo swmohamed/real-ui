@@ -1,0 +1,60 @@
+name: Bug report
+description: Incorrect routing, retrieval, regressions, or unexpected skill behavior.
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this form for REAL-UI bugs. Do not use it for security vulnerabilities — see SECURITY.md.
+  - type: dropdown
+    id: kind
+    attributes:
+      label: Kind of bug
+      options:
+        - Incorrect routing or retrieval
+        - Unexpected skill behavior
+        - Regression (used to work)
+        - Install or packaging
+        - Tests or tooling
+        - Documentation mismatch
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened
+      description: What did the skill do, and what should it have done instead?
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: How to reproduce
+      description: Prompt, agent, and any files or URLs involved. Redact secrets.
+      placeholder: |
+        1. Ask the agent to …
+        2. Observed …
+        3. Expected …
+    validations:
+      required: true
+  - type: textarea
+    id: files
+    attributes:
+      label: Files or retrieval involved
+      description: Knowledge files, SKILL.md paths, or routing you expected to load.
+  - type: input
+    id: environment
+    attributes:
+      label: Environment
+      description: Agent, REAL-UI version or commit, OS — if known.
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Checks
+      options:
+        - label: I searched existing issues
+          required: true
+        - label: This is not a request for a generic UI template
+          required: true

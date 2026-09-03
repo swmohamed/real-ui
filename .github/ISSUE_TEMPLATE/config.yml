@@ -1,0 +1,8 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Security vulnerability
+    url: https://github.com/swmohamed/real-ui/security/advisories/new
+    about: Report security issues privately. Do not file a public issue.
+  - name: Contributing guide
+    url: https://github.com/swmohamed/real-ui/blob/main/.github/CONTRIBUTING.md
+    about: How to propose knowledge, research, docs, and code changes.

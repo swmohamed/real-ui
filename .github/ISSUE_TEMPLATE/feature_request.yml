@@ -1,0 +1,52 @@
+name: Feature or capability
+description: Propose a skill capability. Explain the product/design problem. Not for generic templates.
+title: "[Feature]: "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        REAL-UI designs specific products. Feature requests should name the actual design problem, not ask for a reusable kit.
+  - type: textarea
+    id: problem
+    attributes:
+      label: Product or design problem
+      description: Who is trying to do what, on which kind of product? Avoid “add a dashboard template.”
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed capability
+      description: What should the skill be able to do that it cannot do well today?
+    validations:
+      required: true
+  - type: textarea
+    id: today
+    attributes:
+      label: What happens today
+      description: Current routing, knowledge, or behavior, if you know it.
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      options:
+        - Skill workflow / SKILL.md
+        - Knowledge retrieval
+        - Redesign behavior
+        - Platforms or devices
+        - Accessibility / RTL / localization
+        - Tests or tooling
+        - Documentation
+        - Other
+    validations:
+      required: true
+  - type: checkboxes
+    id: not-a-template
+    attributes:
+      label: This is not
+      options:
+        - label: A request for a generic UI kit, dashboard template, or copied product layout
+          required: true
+        - label: I searched existing issues and knowledge files for this problem
+          required: true

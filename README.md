@@ -171,6 +171,14 @@ accessibility, dashboards, and more). They guide manual or future agent-harness
 runs. They are not claims that every future agent run, native app, browser, or
 production backend was executed.
 
+## Contributing
+
+Issues and pull requests are welcome. Please read:
+
+- [Contributing](.github/CONTRIBUTING.md)
+- [Code of Conduct](.github/CODE_OF_CONDUCT.md)
+- [Security policy](.github/SECURITY.md)
+
 ## License
 
 MIT © SwMohamed — see [LICENSE](LICENSE).
